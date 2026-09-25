@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Re_Quaderstrukturen über dem Ozean</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; overflow: hidden;
+    background: #050b14;
+    font-family: 'Courier New', monospace;
+    width: 100%; height: 100%;
+  }
+  canvas { display: block; }
+  #legend {
+    position: fixed; top: 14px; left: 16px;
+    color: #cfe3e8; font-size: 12px; line-height: 1.7;
+    letter-spacing: 0.02em;
+    background: rgba(5,11,20,0.55);
+    padding: 10px 14px;
+    border: 1px solid rgba(207,227,232,0.18);
+    pointer-events: none;
+  }
+  .dot { display:inline-block; width:9px; height:9px; margin-right:6px; border-radius:1px; }
+  #state {
+    position: fixed; bottom: 14px; right: 16px;
+    color: #cfe3e8; font-size: 12px;
+    background: rgba(5,11,20,0.55);
+    padding: 8px 14px;
+    border: 1px solid rgba(207,227,232,0.18);
+    pointer-events: none;
+    min-width: 220px;
+  }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="legend">
+  <div><span class="dot" style="background:#c94b4b"></span>Ro — Bewegung/Rotation</div>
+  <div><span class="dot" style="background:#e6e6e6"></span>Ra — Transformation</div>
+  <div><span class="dot" style="background:#e0c24e"></span>Ri — Korrelation</div>
+  <div><span class="dot" style="background:#4fa980"></span>Re — Umweltkopplung</div>
+  <div style="margin-top:6px;opacity:0.7">Tentakeln: Ru = überkreuzt · Ri = nicht überkreuzt</div>
+  <div style="margin-top:8px;border-top:1px solid rgba(207,227,232,0.18);padding-top:6px">
+    <span class="dot" style="background:#e08a3c"></span>Exekutive
+    <span class="dot" style="background:#4b8fe0;margin-left:8px"></span>Legislative
+    <span class="dot" style="background:#a765d9;margin-left:8px"></span>Judikative
+  </div>
+  <div style="margin-top:8px;border-top:1px solid rgba(207,227,232,0.18);padding-top:6px">
+    <span class="dot" style="background:#5aa9e6"></span>BGB — Zivilrecht (Personen/Verträge/Eigentum)
+  </div>
+  <div style="margin-top:3px">
+    <span class="dot" style="background:#d9534f"></span>StGB — Strafrecht (Straftaten/Rechtsfolgen)
+  </div>
+</div>
+<div id="state">Notruf-Interface: initialisiere …</div>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H;
+function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+resize();
+window.addEventListener('resize', resize);
+
+const stateEl = document.getElementById('state');
+
+// ---- vier Quaderstrukturen ----
+// Reihenfolge/Farbe folgt der Nutzerdefinition:
+// Re1 = Ro-Schwerpunkt (rot), Re2 = Ra-Schwerpunkt (weiß), Re3 = Re-Schwerpunkt (grün), Re4 = Ri-Schwerpunkt (gelb)
+const palette = {
+  Ro: '#c94b4b',
+  Ra: '#e6e6e6',
+  Ri: '#e0c24e',
+  Re: '#4fa980'
+};
+
+const structures = [
+  { name: 'Re1_Quaderstruktur', schwerpunkt: 'Ro', color: palette.Ro, xFrac: 0.18, phase: 0.0, period: 7.0 },
+  { name: 'Re2_Quaderstruktur', schwerpunkt: 'Ra', color: palette.Ra, xFrac: 0.40, phase: 1.7, period: 8.5 },
+  { name: 'Re3_Quaderstruktur', schwerpunkt: 'Re', color: palette.Re, xFrac: 0.62, phase: 3.4, period: 6.2 },
+  { name: 'Re4_Quaderstruktur', schwerpunkt: 'Ri', color: palette.Ri, xFrac: 0.84, phase: 5.1, period: 9.3 }
+];
+
+// Staatsgewalt: drei Knoten im Ozean, die von den vier Re-Einheiten GEZIELT verschoben werden können.
+// Zuordnung: Ro -> Exekutive, Ra -> Legislative, Ri -> Judikative (je 1:1 über den Schwerpunkt).
+// Re hat keinen 1:1-Partner und wirkt stattdessen als globale Störgröße auf alle drei Knoten (Umweltkopplung).
+const staatsgewalt = [
+  { key: 'Exekutive', color: '#e08a3c', baseXFrac: 0.28, schwerpunkt: 'Ro', x: null },
+  { key: 'Legislative', color: '#4b8fe0', baseXFrac: 0.50, schwerpunkt: 'Ra', x: null },
+  { key: 'Judikative', color: '#a765d9', baseXFrac: 0.72, schwerpunkt: 'Ri', x: null }
+];
+
+function drawStaatsgewaltInterface(results){
+  const oy = oceanY();
+  const gy = oy + 150;
+  const byKey = {};
+  results.forEach(r => byKey[r.schwerpunkt] = r);
+  const reActive = byKey['Re'] && byKey['Re'].ru;
+  const globalWobble = reActive ? Math.sin(t*1.8) * 26 : 0;
+
+  staatsgewalt.forEach(node => {
+    if (node.x === null) node.x = node.baseXFrac * W; // Initialposition setzen
+
+    const puller = byKey[node.schwerpunkt];
+    const pulled = puller && puller.ru;
+    const target = (pulled ? puller.cx : node.baseXFrac * W) + globalWobble;
+
+    // gezielte, aber gedämpfte Verschiebung Richtung Ziel (kein Sprung, sondern Zug)
+    node.x += (target - node.x) * 0.025;
+
+    // Verbindungslinie zur ziehenden Struktur, solange sie aktiv zieht
+    if (pulled){
+      ctx.save();
+      ctx.strokeStyle = hexA(node.color, 0.55);
+      ctx.lineWidth = 1.8;
+      ctx.setLineDash([3,4]);
+      ctx.lineDashOffset = -t*25;
+      ctx.beginPath();
+      ctx.moveTo(puller.cx, puller.steinY);
+      ctx.quadraticCurveTo((puller.cx+node.x)/2, gy-40, node.x, gy);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    // Knoten selbst
+    ctx.save();
+    ctx.fillStyle = hexA(node.color, 0.85);
+    ctx.strokeStyle = hexA(node.color, 1);
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(node.x, gy-10);
+    ctx.lineTo(node.x+9, gy);
+    ctx.lineTo(node.x, gy+10);
+    ctx.lineTo(node.x-9, gy);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+    ctx.font = '11px Courier New';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = node.color;
+    ctx.fillText(node.key + (pulled ? ' ← ' + node.schwerpunkt : ''), node.x, gy-16);
+    ctx.textAlign = 'left';
+    ctx.restore();
+  });
+}
+
+// Notruf-Interface: ein pulsierender Wechselwirkungspunkt im Ozean, der Ru-Zustände synchronisiert
+const notruf = { active: false, pulseT: 0, x: 0.5, timer: 3 };
+
+// BGB/StGB als zwei feste Knoten im Ozean — kurze Zusammenfassung, mit denen die
+// Quaderstrukturen wechselwirken, wenn ihr Ru-Zustand (überkreuzt) aktiv ist
+const gesetze = [
+  {
+    key: 'BGB',
+    kurz: 'Zivilrecht: Rechtsbeziehungen zwischen Privatpersonen — Verträge, Eigentum, Familie, Erbrecht',
+    xFrac: 0.30,
+    color: '#5aa9e6'
+  },
+  {
+    key: 'StGB',
+    kurz: 'Strafrecht: definiert Straftaten und ihre Rechtsfolgen (Strafen, Maßregeln)',
+    xFrac: 0.70,
+    color: '#d9534f'
+  }
+];
+// thematische Zuordnung: dynamische Schwerpunkte (Ro/Ra) wechselwirken eher mit StGB,
+// korrelative/umweltbezogene Schwerpunkte (Ri/Re) eher mit BGB
+function gesetzFor(schwerpunkt){
+  return (schwerpunkt === 'Ro' || schwerpunkt === 'Ra') ? gesetze[1] : gesetze[0];
+}
+
+let t = 0;
+let last = performance.now();
+
+function oceanY(){ return H * 0.62; }
+
+function drawSky(){
+  const g = ctx.createLinearGradient(0,0,0,oceanY());
+  g.addColorStop(0, '#050b14');
+  g.addColorStop(0.6, '#0a1a2c');
+  g.addColorStop(1, '#12293f');
+  ctx.fillStyle = g;
+  ctx.fillRect(0,0,W,oceanY());
+
+  // ein paar stille Sterne
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  for (let i=0;i<60;i++){
+    const sx = (i*197 % W);
+    const sy = (i*83 % (oceanY()*0.8));
+    const flick = 0.4 + 0.6*Math.abs(Math.sin(t*0.5 + i));
+    ctx.globalAlpha = 0.15*flick;
+    ctx.fillRect(sx, sy, 1.4, 1.4);
+  }
+  ctx.globalAlpha = 1;
+}
+
+function drawOcean(){
+  const oy = oceanY();
+  const g = ctx.createLinearGradient(0, oy, 0, H);
+  g.addColorStop(0, '#123448');
+  g.addColorStop(1, '#04121c');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, oy, W, H-oy);
+
+  // Farbmischung im Wasser: Anteile der vier Schwerpunkte, leicht wabernd
+  ctx.save();
+  ctx.globalCompositeOperation = 'lighter';
+  structures.forEach((s, i) => {
+    const cx = s.xFrac * W;
+    const wob = Math.sin(t*0.3 + s.phase) * 40;
+    const rg = ctx.createRadialGradient(cx+wob, oy+70, 10, cx+wob, oy+70, 260);
+    rg.addColorStop(0, hexA(s.color, 0.10));
+    rg.addColorStop(1, hexA(s.color, 0));
+    ctx.fillStyle = rg;
+    ctx.fillRect(0, oy, W, H-oy);
+  });
+  ctx.restore();
+
+  // Wellenlinien
+  ctx.strokeStyle = 'rgba(180,220,235,0.18)';
+  ctx.lineWidth = 1;
+  for (let row=0; row<6; row++){
+    const ry = oy + 18 + row*((H-oy-18)/6);
+    ctx.beginPath();
+    for (let x=0; x<=W; x+=8){
+      const yy = ry + Math.sin(x*0.02 + t*1.1 + row) * (2.5 + row*0.6);
+      if (x===0) ctx.moveTo(x,yy); else ctx.lineTo(x,yy);
+    }
+    ctx.stroke();
+  }
+}
+
+function hexA(hex, a){
+  const r = parseInt(hex.slice(1,3),16);
+  const g = parseInt(hex.slice(3,5),16);
+  const b = parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${a})`;
+}
+
+// Tentakel: verbindet eine Quader-Ecke mit einer Zielposition; wavy Linie
+function drawTentacle(x1,y1,x2,y2,color,wobbleSeed, ru){
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2.2;
+  ctx.beginPath();
+  const segs = 14;
+  for (let i=0;i<=segs;i++){
+    const f = i/segs;
+    const bx = x1 + (x2-x1)*f;
+    const by = y1 + (y2-y1)*f;
+    const wob = Math.sin(f*Math.PI*3 + t*2.4 + wobbleSeed) * (ru ? 3 : 6) * (1-f*0.3);
+    const nx = -(y2-y1), ny = (x2-x1);
+    const len = Math.hypot(nx,ny) || 1;
+    const px = bx + (nx/len)*wob;
+    const py = by + (ny/len)*wob;
+    if (i===0) ctx.moveTo(px,py); else ctx.lineTo(px,py);
+  }
+  ctx.stroke();
+}
+
+function drawStein(cx, cy, size, ru, color){
+  // der Stein: Quadrat mit vier markanten Ecken
+  ctx.save();
+  ctx.translate(cx, cy);
+  ctx.rotate(t*0.15);
+  ctx.strokeStyle = ru ? color : 'rgba(230,230,230,0.85)';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.rect(-size/2,-size/2,size,size);
+  ctx.stroke();
+  ctx.fillStyle = hexA(color, ru ? 0.25 : 0.08);
+  ctx.fill();
+  ctx.restore();
+  return [ [cx-size/2,cy-size/2], [cx+size/2,cy-size/2], [cx+size/2,cy+size/2], [cx-size/2,cy+size/2] ];
+}
+
+function drawQuader(s){
+  const cx = s.xFrac * W;
+  const bob = Math.sin(t*0.6 + s.phase) * 10;
+  const cy = H*0.30 + bob;
+  const w = 46, h = 30, depth = 16;
+
+  // Ru-Zustand periodisch (überkreuzt <-> nicht überkreuzt)
+  const cyclePos = ((t + s.phase*3) % s.period) / s.period;
+  const ru = cyclePos < 0.5;
+
+  // Quader (leicht 3D, isometrisch angedeutet)
+  const corners = [
+    [cx-w/2, cy-h/2], [cx+w/2, cy-h/2], [cx+w/2, cy+h/2], [cx-w/2, cy+h/2]
+  ];
+  ctx.save();
+  ctx.fillStyle = hexA(s.color, 0.85);
+  ctx.strokeStyle = hexA(s.color, 1);
+  ctx.lineWidth = 1.5;
+  // Rückseite (Tiefe)
+  ctx.beginPath();
+  ctx.moveTo(corners[0][0]+depth, corners[0][1]-depth);
+  ctx.lineTo(corners[1][0]+depth, corners[1][1]-depth);
+  ctx.lineTo(corners[1][0], corners[1][1]);
+  ctx.lineTo(corners[0][0], corners[0][1]);
+  ctx.closePath();
+  ctx.globalAlpha = 0.55;
+  ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(corners[1][0]+depth, corners[1][1]-depth);
+  ctx.lineTo(corners[2][0]+depth, corners[2][1]-depth);
+  ctx.lineTo(corners[2][0], corners[2][1]);
+  ctx.lineTo(corners[1][0], corners[1][1]);
+  ctx.closePath();
+  ctx.globalAlpha = 0.4;
+  ctx.fill();
+  ctx.globalAlpha = 1;
+  // Vorderfläche
+  ctx.beginPath();
+  corners.forEach((p,i)=> i===0?ctx.moveTo(p[0],p[1]):ctx.lineTo(p[0],p[1]));
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+  ctx.restore();
+
+  // Schwerpunkt-Markierung
+  ctx.fillStyle = '#0a0a0a';
+  ctx.beginPath();
+  ctx.arc(cx, cy, 3.5, 0, Math.PI*2);
+  ctx.fill();
+  ctx.fillStyle = s.color;
+  ctx.font = '11px Courier New';
+  ctx.fillText(s.schwerpunkt, cx+7, cy-6);
+
+  // Ziel: ein Stein auf dem Wasser unter dem Quader
+  const oy = oceanY();
+  const steinY = oy + 55 + Math.sin(t*0.4+s.phase)*6;
+  const steinPts = drawStein(cx, steinY, 30, ru, s.color);
+
+  // vier Tentakel von den vier Quader-Ecken
+  const quaderCorners = [
+    [cx-w/2, cy-h/2], [cx+w/2, cy-h/2], [cx+w/2, cy+h/2], [cx-w/2, cy+h/2]
+  ];
+
+  if (ru){
+    // überkreuzt: jede Tentakel zielt auf die DIAGONAL gegenüberliegende Ecke des Steins (X-Muster)
+    const order = [2,3,0,1];
+    quaderCorners.forEach((qc, i) => {
+      const target = steinPts[order[i]];
+      drawTentacle(qc[0], qc[1], target[0], target[1], s.color, i*1.3, true);
+    });
+  } else {
+    // nicht überkreuzt: jede Tentakel zu ihrer entsprechenden Ecke
+    quaderCorners.forEach((qc, i) => {
+      const target = steinPts[i];
+      drawTentacle(qc[0], qc[1], target[0], target[1], s.color, i*1.3, false);
+    });
+  }
+
+  return { ru, steinY, cx, schwerpunkt: s.schwerpunkt, color: s.color };
+}
+
+function drawNotrufInterface(activeStructs){
+  const oy = oceanY();
+  // Notruf entsteht, wenn mindestens zwei Quaderstrukturen gleichzeitig 'ru' (überkreuzt) sind
+  const ruCount = activeStructs.filter(a=>a.ru).length;
+  notruf.active = ruCount >= 2;
+
+  if (notruf.active){
+    notruf.pulseT += 0.045;
+    const avgX = activeStructs.filter(a=>a.ru).reduce((acc,a)=>acc+a.cx,0) / Math.max(1,ruCount);
+    const by = oy + 130;
+
+    // konzentrische Notruf-Ringe = Wechselwirkung/Interface im Ozean
+    for (let k=0;k<4;k++){
+      const r = ((notruf.pulseT*90 + k*45) % 180);
+      const alpha = Math.max(0, 0.5 - r/180*0.5);
+      ctx.strokeStyle = `rgba(230,90,90,${alpha})`;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.ellipse(avgX, by, r, r*0.35, 0, 0, Math.PI*2);
+      ctx.stroke();
+    }
+    // Beacon-Kern
+    ctx.fillStyle = 'rgba(255,120,120,0.9)';
+    ctx.beginPath();
+    ctx.arc(avgX, by, 4+Math.sin(t*6)*1.5, 0, Math.PI*2);
+    ctx.fill();
+
+    stateEl.textContent = `Notruf-Interface: AKTIV — ${ruCount}/4 Ru (überkreuzt) · Ozean vermittelt Wechselwirkung`;
+  } else {
+    stateEl.textContent = `Notruf-Interface: ruhig — ${ruCount}/4 Ru (überkreuzt)`;
+  }
+}
+
+function drawGesetzeInterface(results){
+  const oy = oceanY();
+  const gy = oy + 210;
+
+  // Knoten selbst: leicht schwebende Bojen, immer sichtbar
+  gesetze.forEach(g => {
+    const gx = g.xFrac * W;
+    const bob = Math.sin(t*0.5 + gx*0.01) * 5;
+    ctx.save();
+    ctx.fillStyle = hexA(g.color, 0.85);
+    ctx.strokeStyle = hexA(g.color, 1);
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(gx, gy+bob, 10, 0, Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+    ctx.font = 'bold 12px Courier New';
+    ctx.fillStyle = g.color;
+    ctx.textAlign = 'center';
+    ctx.fillText(g.key, gx, gy+bob-16);
+    ctx.textAlign = 'left';
+    ctx.restore();
+  });
+
+  // Wechselwirkungslinien: nur von Quaderstrukturen, die gerade 'ru' (überkreuzt) sind
+  results.forEach(r => {
+    if (!r.ru) return;
+    const target = gesetzFor(r.schwerpunkt);
+    const gx = target.xFrac * W;
+    const gyy = gy + Math.sin(t*0.5 + gx*0.01) * 5;
+    ctx.save();
+    ctx.strokeStyle = hexA(target.color, 0.5);
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([4,5]);
+    ctx.lineDashOffset = -t*30;
+    ctx.beginPath();
+    ctx.moveTo(r.cx, r.steinY);
+    ctx.quadraticCurveTo((r.cx+gx)/2, gy+40, gx, gyy);
+    ctx.stroke();
+    ctx.restore();
+  });
+
+  // aktiver Knoten zeigt seine Kurzzusammenfassung an
+  const activeKeys = new Set(results.filter(r=>r.ru).map(r=>gesetzFor(r.schwerpunkt).key));
+  let y = H - 18;
+  gesetze.forEach(g => {
+    if (activeKeys.has(g.key)){
+      ctx.font = '11px Courier New';
+      ctx.fillStyle = hexA(g.color, 0.9);
+      ctx.fillText(`${g.key}: ${g.kurz}`, 16, y);
+      y -= 16;
+    }
+  });
+}
+
+function frame(now){
+  const dt = (now-last)/1000; last = now;
+  t += dt;
+
+  ctx.clearRect(0,0,W,H);
+  drawSky();
+  drawOcean();
+
+  const results = structures.map(drawQuader);
+  drawStaatsgewaltInterface(results);
+  drawNotrufInterface(results);
+  drawGesetzeInterface(results);
+
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
