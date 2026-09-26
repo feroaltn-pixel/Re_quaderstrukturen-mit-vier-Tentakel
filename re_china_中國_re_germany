@@ -75,3 +75,59 @@ Re → Ri_eigene_interessen_re → Ra → Ro → Re
 - 模型概念 ≠ 实际行为
 - 私人思维模型 ≠ 欺骗 / 胁迫 / 文书伪造
 - "自身利益" ≠ 自动等于利己主义
+
+model:
+  name: Ro/Ra/Ri/Re
+
+  extended_sequence:
+    - 罗
+    - Ra1
+    - Ra2
+    - Ra3
+    - Ra4
+    - 罗
+    - Ri
+    - Re1
+    - Re2
+    - Re3
+    - Re4
+    - Ri
+    - Ra
+    - Ri1
+    - Ri2
+    - Ri3
+    - Ri4
+    - Ra
+    - Re
+    - Re1
+    - Re2
+
+  element_mapping:
+    罗: Ro_transition
+    Ra: processing_construction_representation
+    Ri: internal_linking_perception_own_interests
+    Re: external_information_environment_result
+
+  concrete_assignments:
+    "Ra 是一艘宇宙飞船": "Ra as construct / representation (spaceship)"
+    "法律诉讼": "Re (external information: legal proceedings)"
+    "行政": "Re_Exekutive"
+    "司法": "Re_Judikative"
+    "立法": "Re_Legislative"
+    "ri's_own_interests_ri": "Ri (own interests)"
+
+  core_pattern: >
+    Ro → Ra(1..4) → Ro → Ri → Re(1..4) → Ri
+    → Ra → Ri(1..4) → Ra → Re → Re(1..2)
+
+  interpretation:
+    Ro: transition / state change
+    Ra: processing / construction / representation
+    Ri: internal linking / perception / own interests
+    Re: external information / environment / result
+
+  legal_status:
+    - model_terms_are_not_independent_criminal_offenses
+    - model_terms_do_not_automatically_create_civil_claims
+    - legal_relevance_depends_on_concrete_actions_and_context
+    - symbolic_modeling_is_distinct_from_real_world_claims
