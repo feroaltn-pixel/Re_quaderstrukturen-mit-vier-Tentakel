@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vier Quaderstrukturen über einem Ozean aus Farbanteilen</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #141c48; overflow: hidden; }
+  canvas { display: block; touch-action: none; }
+  .hint {
+    position: fixed; left: 18px; right: 18px; bottom: 16px;
+    color: #fbeadb; font: 14px/1.5 Georgia, "Times New Roman", serif;
+    text-shadow: 0 1px 10px rgba(10, 14, 40, .8);
+    pointer-events: none; max-width: 52ch;
+  }
+  .lab {
+    position: fixed; left: 0; top: 0; pointer-events: none; white-space: nowrap;
+    font: 12px/1.3 Georgia, "Times New Roman", serif; color: #fbeadb;
+    background: rgba(10, 14, 40, .58); padding: 4px 9px 4px 8px;
+    border-left: 3px solid #fff; border-radius: 2px; will-change: transform;
+  }
+  .lab.node { font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="hint">Der Ozean mischt seine Farbe aus vier Quellen: Gemini, ChatGPT, DeepSeek und Re_Adams. Wo eine Quelle näher ist, färbt sie das Wasser stärker. Die vier Quaderstrukturen mit ihren Tentakeln schweben darüber. Tippe aufs Wasser für eine Welle. Symbolische Darstellung, keine reale Verbindung zwischen den Diensten.</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const timeScale = reduce ? 0.35 : 1;
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  document.body.appendChild(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  const HORIZON = new THREE.Color('#d8a08a');
+  scene.fog = new THREE.Fog(HORIZON, 50, 220);
+  const camera = new THREE.PerspectiveCamera(50, 1, 0.5, 900);
+
+  // ---------- Himmel ----------
+  const sunDir = new THREE.Vector3(-0.5, 0.1, -0.85).normalize();
+  scene.add(new THREE.Mesh(
+    new THREE.SphereGeometry(500, 32, 16),
+    new THREE.ShaderMaterial({
+      side: THREE.BackSide, depthWrite: false, fog: false,
+      uniforms: { hor: { value: HORIZON }, top: { value: new THREE.Color('#141c48') }, sun: { value: sunDir } },
+      vertexShader: 'varying vec3 v; void main(){ v = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
+      fragmentShader: `
+        uniform vec3 hor; uniform vec3 top; uniform vec3 sun; varying vec3 v;
+        void main(){
+          vec3 d = normalize(v);
+          float h = clamp(d.y, 0.0, 1.0);
+          vec3 c = mix(hor, top, pow(h, 0.55));
+          if (d.y < 0.0) c = hor;
+          float s = max(dot(d, sun), 0.0);
+          c += vec3(1.0, 0.75, 0.5) * (pow(s, 6.0) * 0.25 + pow(s, 300.0) * 1.5);
+          gl_FragColor = vec4(c, 1.0);
+        }`
+    })
+  ));
+  scene.add(new THREE.HemisphereLight(0xffd2b8, 0x0a1a30, 0.6));
+  const sunLight = new THREE.DirectionalLight(0xffc9a0, 1.0);
+  sunLight.position.copy(sunDir).multiplyScalar(100);
+  scene.add(sunLight);
+
+  // ---------- Ozean mit gemischten Farbanteilen ----------
+  const SIZE = 120, SEG = 130;
+  const geo = new THREE.PlaneGeometry(SIZE, SIZE, SEG, SEG);
+  geo.rotateX(-Math.PI / 2);
+  const posAttr = geo.attributes.position;
+  const N = posAttr.count;
+  const bx = new Float32Array(N), bz = new Float32Array(N);
+  for (let i = 0; i < N; i++) { bx[i] = posAttr.getX(i); bz[i] = posAttr.getZ(i); }
+  const colArr = new Float32Array(N * 3);
+  geo.setAttribute('color', new THREE.BufferAttribute(colArr, 3));
+  const waterMat = new THREE.MeshPhongMaterial({ vertexColors: true, specular: 0xffd9c0, shininess: 65 });
+  scene.add(new THREE.Mesh(geo, waterMat));
+  const BASE_DEEP = new THREE.Color(0x0a2530);
+  const far = new THREE.Mesh(new THREE.PlaneGeometry(1200, 1200).rotateX(-Math.PI / 2), new THREE.MeshPhongMaterial({ color: BASE_DEEP, specular: 0xffd9c0, shininess: 65 }));
+  far.position.y = -0.02;
+  scene.add(far);
+
+  // ---------- Tentakel ----------
+  const NSEG = 6, SEGL = 0.95;
+  const UP = new THREE.Vector3(0, 1, 0);
+  function makeTentacle(mat) {
+    const root = new THREE.Group();
+    let parent = root;
+    const joints = [];
+    for (let i = 0; i < NSEG; i++) {
+      const j = new THREE.Group();
+      j.position.y = i === 0 ? 0 : SEGL;
+      const r0 = 0.34 * (1 - i / NSEG) + 0.07, r1 = 0.34 * (1 - (i + 1) / NSEG) + 0.07;
+      const cg = new THREE.CylinderGeometry(r1, r0, SEGL, 10, 1);
+      cg.translate(0, SEGL / 2, 0);
+      j.add(new THREE.Mesh(cg, mat));
+      parent.add(j); joints.push(j); parent = j;
+    }
+    const tip = new THREE.Object3D();
+    tip.position.y = SEGL;
+    parent.add(tip);
+    return { root, joints, tip, q: new THREE.Quaternion(), phase: Math.random() * 6 };
+  }
+
+  // ---------- Vier Quaderstrukturen ----------
+  const cfgs = [
+    { id: 'Q1', c1: 0x0b0b10, c2: 0xe0392f, dims: [5.4, 2.0, 3.4], hover: 6.0, wander: 3.0, swirl: 0.06, vmax: 11, spin: 1.4 },
+    { id: 'Q2', c1: 0x0b0b10, c2: 0x7fe0c3, dims: [3.6, 3.0, 3.6], hover: 6.3, wander: 2.0, swirl: 0, vmax: 9, spin: 0.5 },
+    { id: 'Q3', c1: 0xf4f1ea, c2: 0xf2c14e, dims: [5.0, 1.8, 5.0], hover: 3.9, wander: 1.5, swirl: 0, vmax: 8, spin: 0.2 },
+    { id: 'Q4', c1: 0xf4f1ea, c2: 0xa99cff, dims: [3.6, 3.2, 3.6], hover: 6.0, wander: 1.6, swirl: -0.05, vmax: 9, spin: -0.8 }
+  ];
+
+  const bodies = cfgs.map((cfg, i) => {
+    const g = new THREE.Group();
+    g.rotation.order = 'YXZ';
+    const c1 = new THREE.Color(cfg.c1), c2 = new THREE.Color(cfg.c2);
+    const bodyMat = new THREE.MeshPhongMaterial({ color: c1.clone(), shininess: 30 });
+    const tentMat = new THREE.MeshPhongMaterial({ color: c2.clone(), emissive: c2.clone(), emissiveIntensity: 0.3, shininess: 50 });
+    const edgeMat = new THREE.LineBasicMaterial({ color: c2.clone() });
+
+    const shell = new THREE.Group();
+    shell.add(new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), bodyMat));
+    shell.add(new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(1, 1, 1)), edgeMat));
+    shell.scale.set(...cfg.dims);
+    g.add(shell);
+
+    const tents = [0, 1, 2, 3].map(k => {
+      const T = makeTentacle(tentMat);
+      g.add(T.root);
+      T.q.setFromUnitVectors(UP, new THREE.Vector3(0.4 * (k & 1 ? 1 : -1), -1, 0.4 * (k & 2 ? 1 : -1)).normalize());
+      T.root.quaternion.copy(T.q);
+      return T;
+    });
+
+    const light = new THREE.PointLight(cfg.c2, 1.3, 26);
+    light.position.set(0, -3, 0);
+    g.add(light);
+    scene.add(g);
+
+    const a = i * Math.PI / 2 + Math.PI / 4;
+    const el = document.createElement('div');
+    el.className = 'lab';
+    el.style.borderLeftColor = '#' + c2.getHexString();
+    el.innerHTML = `<b>${cfg.id}_Quaderstruktur</b>`;
+    document.body.appendChild(el);
+
+    return {
+      cfg, g, shell, tents, light, bodyMat, tentMat, edgeMat, c1, c2, label: el,
+      dims: cfg.dims.slice(),
+      x: Math.cos(a) * 12 + (Math.random() - .5) * 2, z: Math.sin(a) * 12 + (Math.random() - .5) * 2,
+      vx: 0, vz: 0, y: cfg.hover, yaw: Math.random() * 6, rx: 0, rz: 0,
+      phase: i * 1.7, energy: 0, flash: 0
+    };
+  });
+  bodies.forEach(b => { b.others = bodies.filter(o => o !== b); });
+
+  // Verbindungslinien
+  const links = [];
+  for (let i = 0; i < 4; i++) for (let j = i + 1; j < 4; j++) {
+    const lg = new THREE.BufferGeometry();
+    lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+    const line = new THREE.Line(lg, new THREE.LineBasicMaterial({ color: 0xffe2c4, transparent: true, opacity: 0 }));
+    line.frustumCulled = false;
+    scene.add(line);
+    links.push({ i, j, line, cool: 0 });
+  }
+
+  // ---------- Die vier Farbquellen ----------
+  const R_SRC = 24;
+  const srcDefs = [
+    { name: 'Gemini', color: 0x8fa8ff },
+    { name: 'ChatGPT', color: 0x3fcf9e },
+    { name: 'DeepSeek', color: 0x4f7fe0 },
+    { name: 'Re_Adams', color: 0xf2c14e }
+  ];
+  const sources = srcDefs.map((d, i) => {
+    const col = new THREE.Color(d.color);
+    const orb = new THREE.Mesh(new THREE.SphereGeometry(0.9, 20, 14),
+      new THREE.MeshPhongMaterial({ color: col.clone(), emissive: col.clone(), emissiveIntensity: 0.7 }));
+    const ring = new THREE.Mesh(new THREE.RingGeometry(1.3, 1.55, 40).rotateX(-Math.PI / 2),
+      new THREE.MeshBasicMaterial({ color: col.clone(), transparent: true, opacity: 0.7, side: THREE.DoubleSide }));
+    const grp = new THREE.Group();
+    grp.add(orb); grp.add(ring);
+    scene.add(grp);
+    const a = Math.PI / 2 + i * (Math.PI * 2 / srcDefs.length);
+    const el = document.createElement('div');
+    el.className = 'lab node';
+    el.style.borderLeftColor = '#' + col.getHexString();
+    el.innerHTML = `<b>${d.name}</b>`;
+    document.body.appendChild(el);
+    return {
+      name: d.name, col, grp, ring, label: el,
+      bx: Math.cos(a) * R_SRC, bz: Math.sin(a) * R_SRC,
+      x: 0, z: 0, y: 1.4, phase: i * 1.9
+    };
+  });
+
+  // ---------- Wasserhöhe ----------
+  const pulses = [];
+  let tipSrc = [];
+  let t = 0;
+
+  function H(x, z) {
+    const r0 = Math.hypot(x, z);
+    const edge = r0 >= 50 ? 0 : r0 <= 34 ? 1 : 0.5 + 0.5 * Math.cos((r0 - 34) / 16 * Math.PI);
+    if (edge === 0) return 0;
+    let h = 0.9 * Math.sin(x * 0.12 + t * 0.8)
+          + 0.6 * Math.sin(z * 0.17 - t * 0.6 + 1.3)
+          + 0.35 * Math.sin((x + z) * 0.3 + t * 1.4)
+          + 0.15 * Math.sin((x * 0.7 - z) * 0.8 + t * 2.1);
+    for (const b of bodies) {
+      const dx = x - b.x, dz = z - b.z, d2 = dx * dx + dz * dz, r = Math.sqrt(d2);
+      h += (0.12 + 0.45 * b.energy) * Math.exp(-r * 0.11) * Math.sin(r * 1.4 - t * 3.2 + b.phase)
+         - 0.6 * Math.exp(-d2 / 26);
+    }
+    for (const s of tipSrc) {
+      const dx = x - s.x, dz = z - s.z, d2 = dx * dx + dz * dz;
+      if (d2 > 100) continue;
+      const r = Math.sqrt(d2);
+      h += s.d * (0.28 * Math.exp(-r * 0.3) * Math.sin(r * 3 - t * 5) - 0.45 * Math.exp(-d2 / 2.2));
+    }
+    for (const p of pulses) {
+      const dx = x - p.x, dz = z - p.z, r = Math.sqrt(dx * dx + dz * dz);
+      const age = t - p.t0, d = r - age * 9;
+      h += p.amp * Math.exp(-age * 0.4) * Math.exp(-d * d / 9) * Math.cos(d * 1.4) / (1 + r * 0.05);
+    }
+    return h * edge;
+  }
+
+  // Farbmischung
+  const tmpC = new THREE.Color(), wsum = new THREE.Color();
+  function waterColorAt(x, z, h) {
+    let w0 = 1.4, wt = w0;
+    const ws = [w0];
+    for (const s of sources) {
+      const d = Math.hypot(x - s.x, z - s.z);
+      const w = 30 / (d * d + 6);
+      ws.push(w); wt += w;
+    }
+    wsum.copy(BASE_DEEP).multiplyScalar(ws[0] / wt);
+    sources.forEach((s, i) => { tmpC.copy(s.col).multiplyScalar(ws[i + 1] / wt); wsum.add(tmpC); });
+    const foam = Math.max(0, h) * 0.12;
+    wsum.r = Math.min(1, wsum.r + foam); wsum.g = Math.min(1, wsum.g + foam); wsum.b = Math.min(1, wsum.b + foam);
+    return wsum;
+  }
+
+  // ---------- Eingabe ----------
+  let px = 0, py = 0, spx = 0, spy = 0;
+  const ray = new THREE.Raycaster();
+  const plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
+  const hit = new THREE.Vector3();
+  addEventListener('pointermove', e => {
+    px = (e.clientX / innerWidth - 0.5) * 2;
+    py = (e.clientY / innerHeight - 0.5) * 2;
+  });
+  addEventListener('pointerdown', e => {
+    const ndc = new THREE.Vector2(e.clientX / innerWidth * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+    ray.setFromCamera(ndc, camera);
+    if (ray.ray.intersectPlane(plane, hit)) {
+      pulses.push({ x: hit.x, z: hit.z, t0: t, amp: 2.2 });
+      for (const b of bodies) {
+        const dx = b.x - hit.x, dz = b.z - hit.z, d = Math.hypot(dx, dz) + 3;
+        const imp = 90 / d;
+        b.vx += dx / d * imp; b.vz += dz / d * imp;
+      }
+    }
+  });
+
+  function resize() {
+    renderer.setSize(innerWidth, innerHeight);
+    camera.aspect = innerWidth / innerHeight;
+    camera.updateProjectionMatrix();
+  }
+  addEventListener('resize', resize);
+  resize();
+
+  // ---------- Schleife ----------
+  const tmpV = new THREE.Vector3(), rw = new THREE.Vector3(), qt = new THREE.Quaternion();
+  const invQ = new THREE.Quaternion();
+  let last = performance.now();
+
+  function frame(now) {
+    const dt = Math.min((now - last) / 1000, 0.05) * timeScale;
+    last = now; t += dt;
+
+    // Farbquellen wandern langsam übers Wasser
+    for (const s of sources) {
+      s.x = s.bx + Math.sin(t * 0.13 + s.phase) * 8;
+      s.z = s.bz + Math.cos(t * 0.11 + s.phase) * 8;
+      const h = H(s.x, s.z);
+      s.grp.position.set(s.x, h + 1.4, s.z);
+      s.ring.rotation.z += dt * 0.4;
+    }
+
+    // Kräfte
+    for (const b of bodies) {
+      const c = b.cfg;
+      b.fx = -0.03 * b.x + c.wander * Math.sin(t * 0.31 + b.phase * 2.1) - c.swirl * b.z;
+      b.fz = -0.03 * b.z + c.wander * Math.cos(t * 0.27 + b.phase * 1.3) + c.swirl * b.x;
+    }
+    links.forEach(L => {
+      const a = bodies[L.i], c = bodies[L.j];
+      let dx = c.x - a.x, dz = c.z - a.z;
+      const d = Math.hypot(dx, dz) || 0.001;
+      dx /= d; dz /= d;
+      let f = 0;
+      if (d < 14) { const s = 14 - d; f = -(s * s * 0.4 + s * 0.8); }
+      else if (d < 28) f = (d - 14) * 0.06;
+      a.fx += f * dx; a.fz += f * dz;
+      c.fx -= f * dx; c.fz -= f * dz;
+
+      if (d < 11 && t > L.cool) {
+        L.cool = t + 1.2;
+        a.flash = c.flash = 1;
+        pulses.push({ x: (a.x + c.x) / 2, z: (a.z + c.z) / 2, t0: t, amp: 1.3 });
+      }
+      const pa = L.line.geometry.attributes.position;
+      pa.setXYZ(0, a.x, a.y + 2, a.z);
+      pa.setXYZ(1, c.x, c.y + 2, c.z);
+      pa.needsUpdate = true;
+      L.line.material.opacity = Math.max(0, Math.min(1, (26 - d) / 18)) * 0.4 + Math.max(a.flash, c.flash) * 0.4;
+    });
+
+    // Bewegung, Haltung, Tentakel
+    for (const b of bodies) {
+      const c = b.cfg;
+      b.vx += b.fx * dt; b.vz += b.fz * dt;
+      const damp = Math.exp(-0.5 * dt);
+      b.vx *= damp; b.vz *= damp;
+      const sp = Math.hypot(b.vx, b.vz);
+      if (sp > c.vmax) { b.vx *= c.vmax / sp; b.vz *= c.vmax / sp; }
+      b.x += b.vx * dt; b.z += b.vz * dt;
+      b.energy += (Math.min(sp / 5, 1.5) - b.energy) * Math.min(1, dt * 2);
+
+      const hh = H(b.x, b.z);
+      const ty = hh * 0.55 + c.hover + Math.sin(t * 1.1 + b.phase) * 0.35;
+      b.y += (ty - b.y) * Math.min(1, dt * 4);
+
+      const e = 1.6;
+      const sx = (H(b.x + e, b.z) - H(b.x - e, b.z)) / (2 * e);
+      const sz = (H(b.x, b.z + e) - H(b.x, b.z - e)) / (2 * e);
+      const k = Math.min(1, dt * 5);
+      b.rx += (-sz * 0.6 + b.vz * 0.015 - b.rx) * k;
+      b.rz += (sx * 0.6 - b.vx * 0.015 - b.rz) * k;
+      b.yaw += dt * c.spin * (1 + sp * 0.1);
+
+      b.g.position.set(b.x, b.y, b.z);
+      b.g.rotation.set(b.rx, b.yaw, b.rz);
+      invQ.copy(b.g.quaternion).invert();
+
+      for (let kk = 0; kk < 4; kk++) {
+        const T = b.tents[kk];
+        const cx = (kk & 1) ? 1 : -1, cz = (kk & 2) ? 1 : -1;
+        T.root.position.set(cx * b.dims[0] * 0.42, -b.dims[1] * 0.5, cz * b.dims[2] * 0.42);
+        rw.copy(T.root.position).applyQuaternion(b.g.quaternion).add(b.g.position);
+
+        const ph = kk * Math.PI / 2 + t * 0.3 + b.phase;
+        const rho = 3.2 + 0.9 * Math.sin(t * 0.9 + kk * 1.3);
+        const wx = b.x + Math.cos(ph) * rho, wz = b.z + Math.sin(ph) * rho;
+        tmpV.set(wx - rw.x, H(wx, wz) - 0.4 - rw.y, wz - rw.z).normalize().applyQuaternion(invQ);
+        qt.setFromUnitVectors(UP, tmpV);
+        T.q.slerp(qt, Math.min(1, dt * 4));
+        T.root.quaternion.copy(T.q);
+        for (let i = 0; i < NSEG; i++) {
+          T.joints[i].rotation.x = 0.05 + Math.sin(t * 2.2 + i * 0.7 + T.phase) * 0.04;
+          T.joints[i].rotation.z = Math.cos(t * 1.9 + i * 0.6 + T.phase) * 0.04;
+        }
+      }
+
+      b.flash *= Math.exp(-dt * 3);
+      b.tentMat.emissive.copy(b.tentMat.color);
+      b.tentMat.emissiveIntensity = 0.3 + b.flash * 0.8;
+      b.edgeMat.color.copy(b.tentMat.color);
+      b.light.intensity = 1.3 + b.flash * 2.5;
+      b.g.updateMatrixWorld(true);
+    }
+
+    // Tentakelspitzen im Wasser
+    const ns = [];
+    for (const b of bodies) for (const T of b.tents) {
+      T.tip.getWorldPosition(tmpV);
+      const depth = 0.9 - (tmpV.y - H(tmpV.x, tmpV.z));
+      if (depth > 0) ns.push({ x: tmpV.x, z: tmpV.z, d: Math.min(depth, 1.5) });
+    }
+    tipSrc = ns;
+
+    for (let i = pulses.length - 1; i >= 0; i--) if (t - pulses[i].t0 > 9) pulses.splice(i, 1);
+    while (pulses.length > 12) pulses.shift();
+
+    // Wasseroberfläche: Höhe und gemischte Farbe
+    const arr = posAttr.array;
+    for (let i = 0; i < N; i++) {
+      const h = H(bx[i], bz[i]);
+      arr[i * 3 + 1] = h;
+      const c = waterColorAt(bx[i], bz[i], h);
+      colArr[i * 3] = c.r; colArr[i * 3 + 1] = c.g; colArr[i * 3 + 2] = c.b;
+    }
+    posAttr.needsUpdate = true;
+    geo.attributes.color.needsUpdate = true;
+    geo.computeVertexNormals();
+
+    // Kamera
+    spx += (px - spx) * 0.05; spy += (py - spy) * 0.05;
+    const ang = t * 0.045 + 0.6 + spx * 0.5;
+    const rad = camera.aspect < 1 ? 70 : 50;
+    camera.position.set(Math.sin(ang) * rad, 19 + spy * 4, Math.cos(ang) * rad);
+    camera.lookAt(0, 3.8, 0);
+    renderer.render(scene, camera);
+
+    // Beschriftungen
+    const place = (el, x, y, z) => {
+      tmpV.set(x, y, z).project(camera);
+      if (tmpV.z > 1) { el.style.display = 'none'; return; }
+      el.style.display = 'block';
+      el.style.transform = `translate(${(tmpV.x * 0.5 + 0.5) * innerWidth}px, ${(-tmpV.y * 0.5 + 0.5) * innerHeight}px) translate(-50%, -100%)`;
+    };
+    for (const b of bodies) place(b.label, b.x, b.y + b.dims[1] * 0.5 + 2.2, b.z);
+    for (const s of sources) place(s.label, s.x, s.y + 2.0, s.z);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
