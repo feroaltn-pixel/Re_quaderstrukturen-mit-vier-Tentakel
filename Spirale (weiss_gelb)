@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Ro-System (Rot-Schwarz)</title>
+    <style>
+        body { margin: 0; background: #111; color: #fff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; overflow: hidden; }
+        canvas { background: #000; border: 1px solid #333; box-shadow: 0 0 20px rgba(255,0,0,0.2); }
+        h1 { margin: 5px; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <h1>Ro-System (Start im Ursprung)</h1>
+    <canvas id="canvasRo" width="600" height="600"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvasRo');
+        const ctx = canvas.getContext('2d');
+        const center = { x: canvas.width / 2, y: canvas.height / 2 };
+
+        // Kommunikation über Git/Browser-Ebene (Kein Server nötig!)
+        const channel = new BroadcastChannel('spiral_resonance');
+
+        let re4_pos = { x: 0, y: 0 };
+        let re8_pos = { x: 0, y: 0 };
+
+        // Empfange Position von Re8 aus dem anderen File
+        channel.onmessage = (event) => {
+            if (event.data.type === 're8_update') {
+                re8_pos = event.data.position;
+            }
+        };
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Raster zeichnen
+            ctx.strokeStyle = '#222';
+            ctx.lineWidth = 1;
+            for(let i=0; i<canvas.width; i+=40) {
+                ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, canvas.height); ctx.stroke();
+                ctx.beginPath(); ctx.moveTo(0, i); ctx.lineTo(canvas.width, i); ctx.stroke();
+            }
+
+            // 1. Ro-Spirale (Rot-Schwarz gestreift)
+            ctx.beginPath();
+            ctx.lineWidth = 3;
+            ctx.setLineDash([8, 4]);
+            ctx.strokeStyle = '#ff3333';
+            
+            let a = 3; 
+            ctx.moveTo(center.x, center.y);
+            for (let theta = 0; theta < 25; theta += 0.1) {
+                let x = center.x + (a * theta) * Math.cos(theta);
+                let y = center.y + (a * theta) * Math.sin(theta);
+                ctx.lineTo(x, y);
+                
+                // Diskreten Knoten berechnen (z.B. Re4 bei festem Winkel)
+                if (Math.abs(theta - 12) < 0.05) {
+                    re4_pos = { x, y };
+                }
+            }
+            ctx.stroke();
+            ctx.setLineDash([]); // Reset
+
+            // 2. Ri-Knoten: Re4 (weiss_gelb) mit 4 Tentakeln zeichnen
+            if (re4_pos.x !== 0) {
+                let tLen = 25; // Tentakellänge
+                
+                // Wechselwirkungs-Verschiebung (Schwerpunkt-Verhalten hin zu Re8)
+                let dx = re8_pos.x - re4_pos.x;
+                let dy = re8_pos.y - re4_pos.y;
+                let dist = Math.sqrt(dx*dx + dy*dy);
+                let shiftX = 0, shiftY = 0;
+                
+                if (dist > 0 && dist < 300) { // Wenn nah genug, zieht es an
+                    shiftX = (dx / dist) * 15;
+                    shiftY = (dy / dist) * 15;
+                }
+
+                let sx = re4_pos.x + shiftX;
+                let sy = re4_pos.y + shiftY;
+
+                // Tentakel (Orthogonal)
+                ctx.strokeStyle = '#ffffcc';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(sx - tLen, sy); ctx.lineTo(sx + tLen, sy);
+                ctx.moveTo(sx, sy - tLen); ctx.lineTo(sx, sy + tLen);
+                ctx.stroke();
+
+                // Quader-Kern (weiss_gelb)
+                ctx.fillStyle = '#fff';
+                ctx.fillRect(sx - 8, sy - 8, 16, 16);
+                ctx.strokeStyle = '#ffff00';
+                ctx.lineWidth = 2;
+                ctx.strokeRect(sx - 8, sy - 8, 16, 16);
+
+                ctx.fillStyle = '#fff';
+                ctx.fillText("Re4 (weiss_gelb)", sx + 12, sy - 12);
+
+                // Sende eigene verschobene Position an Datei 2
+                channel.postMessage({ type: 're4_update', position: { x: sx, y: sy } });
+            }
+
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>
