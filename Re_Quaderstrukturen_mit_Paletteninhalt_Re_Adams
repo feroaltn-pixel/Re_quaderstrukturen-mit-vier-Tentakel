@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Re_Adams · Git-Interface für KI-Systeme</title>
+<style>
+  :root { --bg: #141c48; --panel: #1b2557; --accent: #f2c14e; --text: #fbeadb; --line: rgba(251,234,219,.18); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); font: 15px/1.55 Georgia, "Times New Roman", serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 26px 18px 60px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { opacity: .75; margin: 0 0 20px; font-size: 14px; }
+  .notice { background: rgba(242,193,78,.1); border: 1px solid rgba(242,193,78,.4); border-radius: 6px; padding: 12px 14px; font-size: 13.5px; margin-bottom: 22px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+  .panel h2 { font-size: 15px; margin: 0 0 10px; color: var(--accent); }
+  .route { border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; margin-bottom: 10px; }
+  .route .m { display: inline-block; font: 11px monospace; padding: 2px 6px; border-radius: 3px; margin-right: 8px; }
+  .m.get { background: rgba(143,168,255,.25); }
+  .m.post { background: rgba(63,191,106,.25); }
+  .route code.path { font: 13px monospace; }
+  .route .desc { font-size: 13px; opacity: .85; margin-top: 6px; }
+  pre { background: #0a1130; border: 1px solid var(--line); border-radius: 6px; padding: 12px; overflow-x: auto; font-size: 12.5px; margin: 8px 0 0; }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+  button { background: var(--accent); color: #1a1200; border: none; border-radius: 5px; padding: 9px 16px; font: 14px Georgia, serif; font-weight: bold; cursor: pointer; }
+  button.secondary { background: transparent; border: 1px solid var(--line); color: var(--text); font-weight: normal; }
+  .foot { font-size: 12.5px; opacity: .6; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Re_Adams · Git-Interface für KI-Systeme</h1>
+  <p class="sub">Schreibgeschützte Schnittstelle, über die KI-Agenten (Claude, Gemini, ChatGPT usw.) gezielt Daten aus Git-Repositories abfragen können – ohne Projektcode auszuführen.</p>
+
+  <div class="notice">
+    <b>Wichtig:</b> Diese Seite beschreibt und testet die Schnittstelle, sie stellt sie nicht selbst
+    bereit. Ein Browser kann keine Git-Operationen ausführen. Die eigentlichen Routen müssen auf
+    einem eigenen Server laufen (Beispielcode unten). KI-Systeme greifen typischerweise per
+    Funktions-/Tool-Aufruf (z. B. MCP, OpenAPI-Function-Calling) auf so eine Schnittstelle zu, indem
+    ihnen dieses Schema als Werkzeugdefinition gegeben wird.
+  </div>
+
+  <div class="panel">
+    <h2>Verfügbare Routen</h2>
+
+    <div class="route">
+      <span class="m get">GET</span><code class="path">/api/git/repos</code>
+      <div class="desc">Listet alle freigegebenen Repositories mit Name, URL und Standard-Branch.</div>
+      <pre>Antwort: { repos: [{ id, name, url, defaultBranch }] }</pre>
+    </div>
+
+    <div class="route">
+      <span class="m get">GET</span><code class="path">/api/git/tree?repo=&lt;id&gt;&amp;ref=&lt;branch&gt;&amp;path=&lt;pfad&gt;</code>
+      <div class="desc">Listet Dateien/Ordner an einem Pfad, ohne Inhalte zu laden — für Navigation durch ein Repo.</div>
+      <pre>Antwort: { entries: [{ path, type: "file"|"dir", size }] }</pre>
+    </div>
+
+    <div class="route">
+      <span class="m get">GET</span><code class="path">/api/git/file?repo=&lt;id&gt;&amp;ref=&lt;branch&gt;&amp;path=&lt;datei&gt;</code>
+      <div class="desc">Liefert den Inhalt einer einzelnen Datei (Text). Für Binärdateien/Datenbankdateien wird stattdessen /api/git/data empfohlen.</div>
+      <pre>Antwort: { path, size, content }</pre>
+    </div>
+
+    <div class="route">
+      <span class="m post">POST</span><code class="path">/api/git/data</code>
+      <div class="desc">Fragt strukturierte Daten (JSON, CSV, SQLite) aus einer Datei ab, optional mit einer einfachen Filter-/Query-Angabe. Führt keinen Code aus dem Repo aus.</div>
+      <pre>Body: { repo, ref, path, format: "json"|"csv"|"sqlite", query? }
+Antwort: { ok: true, columns?: [...], rows?: [...], data?: ... }</pre>
+    </div>
+
+    <div class="route">
+      <span class="m get">GET</span><code class="path">/api/git/commits?repo=&lt;id&gt;&amp;ref=&lt;branch&gt;&amp;limit=20</code>
+      <div class="desc">Letzte Commits (Hash, Autor, Zeitpunkt, Nachricht) – nützlich, damit ein KI-Agent Änderungen nachvollziehen kann.</div>
+      <pre>Antwort: { commits: [{ hash, author, date, message }] }</pre>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Werkzeugdefinition für KI-Agenten (Function-/Tool-Calling-Schema)</h2>
+    <p style="font-size:13px; opacity:.85">Dieses JSON-Schema kann direkt als Tool-Beschreibung in ein KI-System (z. B. via MCP-Server oder OpenAI/Anthropic Function-Calling) eingebunden werden.</p>
+    <pre id="schemaBlock">wird geladen …</pre>
+    <div class="actions">
+      <button id="copyBtn" type="button">Schema kopieren</button>
+      <button id="downloadBtn" class="secondary" type="button">Als JSON herunterladen</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Schnelltest gegen einen echten Endpunkt</h2>
+    <p style="font-size:13px; opacity:.85">Trage die Basis-URL deines Servers ein, um <code>/api/git/repos</code> testweise abzufragen.</p>
+    <input id="endpoint" type="text" placeholder="https://dein-git-server.example.com"
+      style="width:100%; background:#0f1638; border:1px solid var(--line); color:var(--text); border-radius:4px; padding:8px 10px; font:13px monospace; margin-bottom:10px;">
+    <button id="testBtn" type="button">Repos abfragen</button>
+    <pre id="testResult">— noch kein Test —</pre>
+  </div>
+
+  <div class="panel">
+    <h2>Minimaler Beispiel-Server (Node.js/Express)</h2>
+    <pre>const express = require('express');
+const { execFileSync } = require('child_process');
+const app = express();
+app.use(express.json());
+
+// Nur freigegebene Repos, nie beliebige URLs vom Client
+const REPOS = { demo: { url: 'https://github.com/nutzer/projekt.git' } };
+
+app.get('/api/git/repos', (req, res) => {
+  res.json({ repos: Object.entries(REPOS).map(([id, r]) => ({ id, ...r })) });
+});
+
+app.get('/api/git/file', (req, res) => {
+  const { repo, ref = 'main', path } = req.query;
+  if (!REPOS[repo]) return res.status(404).json({ ok: false, error: 'unbekanntes Repo' });
+  // sparse/read-only Zugriff, kein 'npm install', kein Ausführen von Projektcode
+  const content = execFileSync('git', ['show', `${ref}:${path}`], { cwd: `./repos/${repo}` }).toString();
+  res.json({ path, size: content.length, content });
+});
+
+app.listen(3000);</pre>
+    <p class="foot">Dieser Server liest nur passiv Dateien aus – kein Build, kein Start des fremden Projekts.</p>
+  </div>
+</div>
+
+<script>
+(() => {
+  const schema = {
+    "type": "function",
+    "function": {
+      "name": "git_repository_query",
+      "description": "Fragt schreibgeschützt Dateien, Verzeichnisse, Commits oder strukturierte Daten aus freigegebenen Git-Repositories ab, ohne Projektcode auszuführen.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": { "type": "string", "enum": ["list_repos", "list_tree", "read_file", "read_data", "list_commits"] },
+          "repo": { "type": "string", "description": "ID des freigegebenen Repositories" },
+          "ref": { "type": "string", "description": "Branch oder Tag, Standard: main" },
+          "path": { "type": "string", "description": "Datei- oder Verzeichnispfad im Repository" },
+          "format": { "type": "string", "enum": ["json", "csv", "sqlite"], "description": "nur für action=read_data" },
+          "query": { "type": "string", "description": "optionale einfache Filterangabe für action=read_data" },
+          "limit": { "type": "integer", "description": "maximale Anzahl Ergebnisse, z. B. bei list_commits" }
+        },
+        "required": ["action", "repo"]
+      }
+    }
+  };
+
+  const pretty = JSON.stringify(schema, null, 2);
+  document.getElementById('schemaBlock').textContent = pretty;
+
+  document.getElementById('copyBtn').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(pretty); } catch {}
+  });
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const blob = new Blob([pretty], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'git-interface-tool-schema.json';
+    a.click();
+  });
+
+  document.getElementById('testBtn').addEventListener('click', async () => {
+    const out = document.getElementById('testResult');
+    const base = document.getElementById('endpoint').value.trim().replace(/\/$/, '');
+    if (!base) { out.textContent = 'Bitte zuerst eine Basis-URL eintragen.'; return; }
+    out.textContent = 'lade …';
+    try {
+      const res = await fetch(base + '/api/git/repos');
+      const data = await res.json();
+      out.textContent = JSON.stringify(data, null, 2);
+    } catch (e) {
+      out.textContent = 'Fehler: ' + e.message + ' (Endpunkt vorhanden und erreichbar?)';
+    }
+  });
+})();
+</script>
+</body>
+</html>
