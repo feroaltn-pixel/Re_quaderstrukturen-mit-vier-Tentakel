@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Ri-Explosion im Kegel - Re_Adams O(X)</title>
+    <style>
+        body { margin: 0; background: #050505; color: #fff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; overflow: hidden; }
+        canvas { background: #000; border: 1px solid #444; box-shadow: 0 0 30px rgba(255, 255, 0, 0.15); }
+        .controls { margin-top: 15px; background: #111; padding: 10px; border-radius: 5px; border: 1px solid #222; }
+        label { margin-right: 15px; font-size: 0.9rem; color: #aaa; }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-bottom: 10px;">
+        <h1 style="margin: 0; font-size: 1.4rem; color: #ffff00;">Ri-Explosions-Kegel</h1>
+        <small style="color: #888;">Beobachter: Re_Adams | Operator: O(X)</small>
+    </div>
+
+    <canvas id="coneCanvas" width="700" height="600"></canvas>
+
+    <div class="controls">
+        <label>Operator O(X) [Menge]: <input type="range" id="opX" min="0.5" max="2.5" step="0.1" value="1.5"></label>
+        <label>Kegel-Winkel (α): <input type="range" id="alpha" min="10" max="45" step="1" value="25"></label>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('coneCanvas');
+        const ctx = canvas.getContext('2d');
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height - 100; // Basis des Kegels nach unten setzen
+
+        // Interaktive Steuerelemente für den Beobachter Re_Adams
+        const opXInput = document.getElementById('opX');
+        const alphaInput = document.getElementById('alpha');
+
+        let rotationAngle = 0;
+
+        function draw3DSpirale() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Parameter aus den O(X) Steuerungen von Stein 1 auslesen
+            let X_factor = parseFloat(opXInput.value); 
+            let alphaRad = parseFloat(alphaInput.value) * Math.PI / 180;
+            
+            let c = 1.8; // Vertikale Steigung
+
+            // 1. Mathematische Zeichnung des Hüllkegels (Hintergrund-Linien)
+            ctx.strokeStyle = 'rgba(50, 50, 50, 0.3)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX - 300 * Math.tan(alphaRad) * X_factor, centerY - 300);
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX + 300 * Math.tan(alphaRad) * X_factor, centerY - 300);
+            ctx.stroke();
+
+            // 2. Berechnung der konischen Ri-Spirale
+            ctx.lineWidth = 2.5;
+            let lastX = centerX;
+            let lastY = centerY;
+
+            for (let theta = 0; theta < 60; theta += 0.1) {
+                // Original 3D-Koordinaten aus der Formel
+                let z = c * theta; 
+                let r = z * Math.tan(alphaRad) * X_factor;
+
+                // 3D-Rotation um die Z-Achse für die Animation
+                let animatedTheta = theta + rotationAngle;
+                let x3d = r * Math.cos(animatedTheta);
+                let y3d = r * Math.sin(animatedTheta);
+
+                // Simple 3D-zu-2D Projektion (Kippung der Y/Z Achse für räumliche Tiefe)
+                let screenX = centerX + x3d;
+                let screenY = centerY - z + (y3d * 0.3); // 0.3 simuliert die Tiefenperspektive
+
+                // Farbverlauf während der Ri-Explosion (Wechselwirkung weiss_gelb zu blau_gelb)
+                if (theta < 25) {
+                    ctx.strokeStyle = `rgba(255, 255, ${Math.floor(150 + theta * 4)}, 0.8)`; // weiss_gelb Basis
+                } else {
+                    ctx.strokeStyle = `rgba(${Math.floor(255 - (theta-25)*5)}, 255, 255, 0.8)`; // Übergang zu blau_gelb
+                }
+
+                if (theta > 0) {
+                    ctx.beginPath();
+                    ctx.moveTo(lastX, lastY);
+                    ctx.lineTo(screenX, screenY);
+                    ctx.stroke();
+                }
+
+                // Markante Punkte/Quaderstrukturen entlang des Verlaufs einstreuen
+                if (Math.floor(theta) % 12 === 0 && Math.abs(theta - Math.floor(theta)) < 0.05) {
+                    ctx.fillStyle = '#ffff00';
+                    ctx.fillRect(screenX - 4, screenY - 4, 8, 8);
+                    
+                    // 4 Tentakel-Ansätze andeuten
+                    ctx.strokeStyle = 'rgba(255,255,255,0.6)';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(screenX - 12, screenY); ctx.lineTo(screenX + 12, screenY);
+                    ctx.moveTo(screenX, screenY - 12); ctx.lineTo(screenX, screenY + 12);
+                    ctx.stroke();
+                    ctx.lineWidth = 2.5; // Reset LineWidth für Spirale
+                }
+
+                lastX = screenX;
+                lastY = screenY;
+            }
+
+            rotationAngle += 0.01; // Drehung des Kegels aus Sicht des Beobachters
+            requestAnimationFrame(draw3DSpirale);
+        }
+
+        draw3DSpirale();
+    </script>
+</body>
+</html>
