@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Re_Adams · Lkw-Kommissionierung</title>
+<style>
+  :root { --bg: #141c48; --panel: #1b2557; --accent: #f2c14e; --text: #fbeadb; --line: rgba(251,234,219,.18); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); font: 15px/1.55 Georgia, "Times New Roman", serif; }
+  .wrap { max-width: 1020px; margin: 0 auto; padding: 26px 18px 60px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { opacity: .75; margin: 0 0 20px; font-size: 14px; }
+  .notice { background: rgba(242,193,78,.1); border: 1px solid rgba(242,193,78,.4); border-radius: 6px; padding: 12px 14px; font-size: 13.5px; margin-bottom: 22px; }
+  .planer { display: flex; gap: 8px; align-items: center; margin-bottom: 20px; }
+  .planer input { flex: 1; background: #0f1638; border: 1px solid var(--line); color: var(--text); border-radius: 4px; padding: 7px 10px; font: 13px monospace; }
+  .planer label { font-size: 12.5px; opacity: .8; white-space: nowrap; }
+
+  .grid-trucks { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; margin-bottom: 20px; }
+  .truck { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+  .truck h2 { font-size: 15px; margin: 0 0 2px; display: flex; align-items: center; gap: 8px; }
+  .truck h2 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .truck .meta { font-size: 12px; opacity: .7; margin-bottom: 10px; }
+  .truck .meta b { opacity: .9; }
+
+  .rows { display: flex; flex-direction: column; gap: 6px; }
+  .rowlabel { font-size: 11px; opacity: .65; margin-bottom: 2px; }
+  .pallets { display: grid; grid-template-columns: repeat(16, 1fr); gap: 3px; margin-bottom: 8px; }
+  .pallet {
+    aspect-ratio: 1; border-radius: 3px; border: 1px solid var(--line); cursor: pointer;
+    background: rgba(255,255,255,.04); position: relative;
+  }
+  .pallet.filled { background: var(--rc); border-color: var(--rc); }
+  .pallet.loaded::after { content: "🚚"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 8px; }
+
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-bottom: 18px; }
+  .panel h2 { font-size: 15px; margin: 0 0 12px; color: var(--accent); }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  label.field { display: block; font-size: 12.5px; opacity: .8; margin: 8px 0 4px; }
+  input, select { width: 100%; background: #0f1638; border: 1px solid var(--line); color: var(--text); border-radius: 4px; padding: 8px 10px; font: 14px monospace; }
+  button { background: var(--accent); color: #1a1200; border: none; border-radius: 5px; padding: 9px 16px; font: 14px Georgia, serif; font-weight: bold; cursor: pointer; margin-top: 12px; }
+  button.secondary { background: transparent; border: 1px solid var(--line); color: var(--text); font-weight: normal; margin-left: 8px; }
+  .log { max-height: 220px; overflow-y: auto; font-size: 13px; }
+  .log div { padding: 5px 0; border-bottom: 1px solid var(--line); opacity: .85; }
+  .log div:first-child { opacity: 1; color: var(--accent); }
+  pre { background: #0a1130; border: 1px solid var(--line); border-radius: 6px; padding: 12px; overflow-x: auto; font-size: 12.5px; margin: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Re_Adams · Lkw-Kommissionierung</h1>
+  <p class="sub">Vier Lkw-Strukturen befördern je vier Reihen zu 16 Paletten. Fahrer: Re_Gemini, Re_Grok, Re_ChatGPT, Re_Adams — eigene Namen innerhalb deines Systems, keine realen Konten oder Firmen.</p>
+
+  <div class="notice">
+    <b>Wichtig:</b> Fahrer, Ziele und Planer sind hier frei benannt/platzhalter. Es besteht keine
+    reale Verbindung zu Gemini, Grok, ChatGPT oder einer echten Spedition. Git-Anbindung und
+    Datenhaltung funktionieren nur, wenn du einen eigenen Backend-Endpunkt bereitstellst (siehe
+    Referenz unten) — im Browser bleibt alles lokal.
+  </div>
+
+  <div class="planer">
+    <label>Planer (E-Mail oder Name, optional)</label>
+    <input id="planer" type="text" placeholder="z. B. dein Name oder Kürzel">
+  </div>
+
+  <div class="grid-trucks" id="trucks"></div>
+
+  <div class="panel">
+    <h2>Verladung / Fahrt auslösen</h2>
+    <div class="row2">
+      <div>
+        <label class="field">Lkw</label>
+        <select id="fromTruck"></select>
+      </div>
+      <div>
+        <label class="field">Reihe (1–4)</label>
+        <select id="fromRow">
+          <option value="">alle Reihen</option>
+          <option value="0">Reihe 1</option>
+          <option value="1">Reihe 2</option>
+          <option value="2">Reihe 3</option>
+          <option value="3">Reihe 4</option>
+        </select>
+      </div>
+    </div>
+    <button id="loadBtn">Befüllte Paletten verladen</button>
+    <button id="departBtn" class="secondary" type="button">Lkw als „unterwegs" markieren</button>
+    <div id="loadStatus" style="font-size:13px; margin-top:8px; opacity:.75"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Protokoll</h2>
+    <div class="log" id="log"><div>— noch keine Aktion —</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Git-Anbindung (Referenz für einen eigenen Backend-Endpunkt)</h2>
+    <div class="row2">
+      <div>
+        <label class="field">Backend-Basis-URL</label>
+        <input id="endpoint" type="text" placeholder="https://dein-server.example.com">
+      </div>
+      <div>
+        <label class="field">Repository-ID</label>
+        <input id="repoId" type="text" placeholder="z. B. kommissionierung-daten">
+      </div>
+    </div>
+    <button id="syncBtn" class="secondary" type="button">Zustand nach Git-Backend synchronisieren</button>
+    <div id="syncStatus" style="font-size:13px; margin-top:8px; opacity:.75"></div>
+    <pre style="margin-top:12px">POST /api/git/data
+Body: { repo, ref, path, format: "json", data: { trucks: [...] } }
+Antwort: { ok: true } oder { ok: false, error: "..." }</pre>
+  </div>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+
+  const truckDefs = [
+    { id: 'Lkw_1', driver: 'Re_Gemini', color: '#8fa8ff', dest: 'Verteilstation Nord (Platzhalter)' },
+    { id: 'Lkw_2', driver: 'Re_Grok', color: '#ff9a6b', dest: 'Verteilstation Ost (Platzhalter)' },
+    { id: 'Lkw_3', driver: 'Re_ChatGPT', color: '#3fcf9e', dest: 'Verteilstation Süd (Platzhalter)' },
+    { id: 'Lkw_4', driver: 'Re_Adams', color: '#f2c14e', dest: 'Verteilstation West (Platzhalter)' }
+  ];
+  const SAMPLE_ARTICLES = ['Artikel A', 'Artikel B', 'Artikel C', 'Artikel D', 'Artikel E'];
+
+  function makeRows() {
+    // vier Reihen zu je 16 Paletten
+    return Array.from({ length: 4 }, () =>
+      Array.from({ length: 16 }, () => ({ article: '', qty: 0, status: 'leer' })) // leer | befuellt | verladen
+    );
+  }
+
+  const state = truckDefs.map(d => ({ ...d, status: 'am Hof', rows: makeRows() }));
+
+  function log(msg) {
+    const el = $('log');
+    const line = document.createElement('div');
+    line.textContent = new Date().toLocaleTimeString('de-DE') + ' — ' + msg;
+    el.insertBefore(line, el.firstChild);
+    while (el.children.length > 40) el.removeChild(el.lastChild);
+  }
+
+  function render() {
+    const container = $('trucks');
+    container.innerHTML = '';
+    state.forEach(t => {
+      const filled = t.rows.flat().filter(p => p.status !== 'leer').length;
+      const box = document.createElement('div');
+      box.className = 'truck';
+      box.innerHTML = `
+        <h2><span class="dot" style="background:${t.color}"></span>${t.id}</h2>
+        <div class="meta"><b>Fahrer:</b> ${t.driver} · <b>Ziel:</b> ${t.dest} · <b>Status:</b> ${t.status}<br>${filled}/64 Paletten belegt</div>
+        <div class="rows" data-truck="${t.id}"></div>
+      `;
+      const rowsEl = box.querySelector('.rows');
+      t.rows.forEach((row, ri) => {
+        const label = document.createElement('div');
+        label.className = 'rowlabel';
+        label.textContent = `Reihe ${ri + 1} (16 Paletten)`;
+        rowsEl.appendChild(label);
+        const grid = document.createElement('div');
+        grid.className = 'pallets';
+        row.forEach((p, pi) => {
+          const cell = document.createElement('div');
+          cell.className = 'pallet' + (p.status !== 'leer' ? ' filled' : '') + (p.status === 'verladen' ? ' loaded' : '');
+          cell.style.setProperty('--rc', t.color);
+          cell.title = `${t.id} · Reihe ${ri + 1} · Palette ${pi + 1}${p.article ? ' · ' + p.article + ' × ' + p.qty : ''}`;
+          cell.addEventListener('click', () => cycleSlot(t, p, ri, pi));
+          grid.appendChild(cell);
+        });
+        rowsEl.appendChild(grid);
+      });
+      container.appendChild(box);
+    });
+    const sel = $('fromTruck');
+    sel.innerHTML = state.map(t => `<option value="${t.id}">${t.id} (${t.driver})</option>`).join('');
+  }
+
+  function cycleSlot(t, p, ri, pi) {
+    if (p.status === 'leer') {
+      p.article = SAMPLE_ARTICLES[Math.floor(Math.random() * SAMPLE_ARTICLES.length)];
+      p.qty = 1 + Math.floor(Math.random() * 40);
+      p.status = 'befuellt';
+      log(`${t.id}, Reihe ${ri + 1}, Palette ${pi + 1} befüllt: ${p.article} × ${p.qty}`);
+    } else if (p.status === 'befuellt') {
+      p.status = 'verladen';
+      log(`${t.id}, Reihe ${ri + 1}, Palette ${pi + 1} verladen: ${p.article} × ${p.qty}`);
+    } else {
+      p.status = 'leer'; p.article = ''; p.qty = 0;
+      log(`${t.id}, Reihe ${ri + 1}, Palette ${pi + 1} geleert`);
+    }
+    render();
+  }
+
+  $('loadBtn').addEventListener('click', () => {
+    const truckId = $('fromTruck').value;
+    const rowIdx = $('fromRow').value;
+    const t = state.find(x => x.id === truckId);
+    let count = 0;
+    t.rows.forEach((row, ri) => {
+      if (rowIdx !== '' && String(ri) !== rowIdx) return;
+      row.forEach(p => { if (p.status === 'befuellt') { p.status = 'verladen'; count++; } });
+    });
+    $('loadStatus').textContent = count
+      ? `${count} Palette(n) auf ${truckId} verladen.`
+      : 'Keine befüllten Paletten in der Auswahl gefunden.';
+    log(`Verladung ausgelöst: ${truckId}${rowIdx !== '' ? ' / Reihe ' + (Number(rowIdx) + 1) : ''} — ${count} Palette(n)`);
+    render();
+  });
+
+  $('departBtn').addEventListener('click', () => {
+    const t = state.find(x => x.id === $('fromTruck').value);
+    t.status = 'unterwegs';
+    const planer = $('planer').value.trim();
+    log(`${t.id} (Fahrer ${t.driver}) ist unterwegs nach „${t.dest}"${planer ? ', geplant von ' + planer : ''}.`);
+    render();
+  });
+
+  async function callApi(path, body) {
+    const base = $('endpoint').value.trim().replace(/\/$/, '');
+    if (!base) throw new Error('Kein Backend-Endpunkt eingetragen — Zustand bleibt lokal im Browser.');
+    const res = await fetch(base + path, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
+    });
+    let data;
+    try { data = await res.json(); } catch { throw new Error('Antwort war kein gültiges JSON.'); }
+    if (!res.ok || data.ok === false) throw new Error(data.error || ('HTTP ' + res.status));
+    return data;
+  }
+
+  $('syncBtn').addEventListener('click', async () => {
+    const status = $('syncStatus');
+    try {
+      await callApi('/api/git/data', {
+        repo: $('repoId').value || 'kommissionierung-daten',
+        ref: 'main',
+        path: 'data/lkw-status.json',
+        format: 'json',
+        data: { planer: $('planer').value, trucks: state }
+      });
+      status.textContent = 'Mit Git-Backend synchronisiert.';
+      log('Zustand nach Git-Backend synchronisiert.');
+    } catch (e) {
+      status.textContent = 'Hinweis: ' + e.message;
+    }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
