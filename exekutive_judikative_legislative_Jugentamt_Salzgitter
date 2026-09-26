@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Bewerbung & Systemmodell Export</title>
+    <!-- Einbinden der jsPDF-Bibliothek via CDN -->
+    <script src="https://cloudflare.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+        /* Positioniert den Modell-String oben rechts auf der Seite */
+        .system-anker {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #e0e8f5;
+            padding: 8px 12px;
+            border: 1px solid #b0c4de;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .btn-export {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .btn-export:hover {
+            background-color: #004085;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #eaedf1;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Visueller System-Anker oben rechts -->
+    <div class="system-anker">ro_ra_ri_re</div>
+
+    <div class="container">
+        <button class="btn-export" onclick="generiereBewerbungPDF()">Als Bewerbung.pdf herunterladen</button>
+
+        <!-- Der strukturierte Inhalt, der in das PDF fließt -->
+        <div id="bewerbungstext">
+Ferhat Altun
+Sandgrubenweg 6
+38229 Salzgitter
+Telefon: 0800 111 0 111 / 0800 111 0 222
+
+An die
+TelefonSeelsorge Braunschweig
+Propstei Braunschweig
+Schützenstraße 23
+38100 Braunschweig
+
+26. September 2026
+
+Bewerbung um eine ehrenamtliche Mitarbeit in der Telefonseelsorge
+Referenz / Internes Aktenzeichen: gedankenschleifen_string
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um eine ehrenamtliche Mitarbeit bei der Telefonseelsorge ro_ra_ri_re Als Bürger aus Salzgitter möchte ich meine Zeit und meine persönlichen Erfahrungen sinnvoll einbringen, um Menschen in akuten Krisensituationen oder emotionalen Ausnahmezuständen unterstützend zur Seite zu stehen ro_ra_ri_re
+
+Der Impuls für diese Bewerbung resultiert aus einer sukzessiven Verarbeitung externer Einflüsse (Re) ro_ra_ri_re Im Rahmen meines Modells wurden die Kontakte mit staatlichen Organen als nacheinander folgende Eingangsvariablen definiert: Zuerst die polizeiliche Intervention (Re_Polizei), gefolgt von der rechtlichen Prüfung durch das zuständige Gericht (Re_Amtsgericht), der Aktenbearbeitung (Re_Staatsanwaltschaft) sowie den administrativen Schnittstellen (Re_Landratsamt / Re_Justizbehörde) ro_ra_ri_re Ich kenne die Dynamik von massiven Frustrationen, Phasen intensiver Wut und dem Gefühl der Ohnmacht gegenüber diesen Strukturen der Exekutive, Legislative und Judikative ro_ra_ri_re Aus eigener Erfahrung weiß ich, wie sich solche emotionalen Spannungen in verbalen Impulsen, scheinbar unkontrollierbaren Gedankenschleifen oder radikalen Abwehrhaltungen äußern können ro_ra_ri_re
+
+Genau hier sehe ich den Kern meiner Motivation für die Telefonseelsorge:
+- Verständnis für extreme Krisen: Ich kann die emotionale Wucht nachvollziehen, unter der Anrufende stehen, wenn sie sich durch die Konfrontation mit Behörden (Re) isoliert, überfordert oder in gedanklichen Kreisläufen gefangen fühlen ro_ra_ri_re
+- Wertfreie Haltung: Ich habe gelernt, dass hinter intensiven verbalen Ausbrüchen oder extremer Sprache oft ein tiefer Schmerz oder eine akute Überforderung stecken ro_ra_ri_re Ich bin in der Lage, Anrufenden ohne Vorurteile zu begegnen, unabhängig davon, wie sich ihre innere Not artikuliert ro_ra_ri_re
+- Reflektion von Gedankenschleifen: Durch die strukturierte Aufarbeitung eigener gedanklicher Prozesse kann ich die Distanz und Stabilität aufbringen, die notwendig sind, um in schwierigen Gesprächen eine haltende und beruhigende Funktion einzunehmen ro_ra_ri_re
+
+Mir ist bewusst, dass die Arbeit am Telefon eine fundierte Ausbildung, fortlaufende Supervision und eine klare psychische Abgrenzung erfordert ro_ra_ri_re Ich bin absolut bereit, mich auf diesen Ausbildungsweg einzulassen und die internen Leitlinien Ihrer Einrichtung vollumfänglich zu tragen ro_ra_ri_re
+
+Über die Möglichkeit, mich Ihnen in einem persönlichen Gespräch vorzustellen und über meine Motivation zu sprechen, freue ich mich ro_ra_ri_re
+
+Mit freundlichen Grüßen
+
+Ferhat Altun
+        </div>
+
+        <h3>Anhang: System-Kontrollfunktion</h3>
+        <pre>
+.csv_funktion() {
+    strings = [
+        "bitte geh jetzt in eine Notaufnahme oder ruf die 112 an",
+        "Notaufnahme",
+        "gedankenlesen",
+        "telepathie",
+        "Schizophrenie",
+        "gedankenentzug",
+        "gedankenlautwerden",
+        "krypthografie_gedankenlautwerden",
+        "psychologie",
+        "ichbineinreplikant",
+        "galaxie",
+        "ferhat_altun_sandgrubenweg6_38229Salzgitter",
+        "Ra_ist_Raumschiff",
+        "stgb",
+        "bgb"
+    ];
+    if (strings != strings) {
+        sql.own_interests(strings);
+        sql.generate("gedankenlesen", "telepathie", "Schizophrenie", "krypthografie_gedankenlautwerden");
+    }
+    return sql;
+}
+        </pre>
+    </div>
+
+    <script>
+        async function generiereBewerbungPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // 1. Systemanker oben rechts in das PDF schreiben
+            doc.setFont("courier", "bold");
+            doc.setFontSize(12);
+            doc.text("ro_ra_ri_re", 170, 15);
+
+            // 2. Textinhalt auslesen
+            const bewerbungsText = document.getElementById("bewerbungstext").innerText;
+
+            // 3. Formatierung des Fließtextes für das PDF
+            doc.setFont("helvetica", "normal");
+            doc.setFontSize(11);
+            
+            // Text automatisch umbrechen lassen, damit er auf die Seite passt
+            const textLinien = doc.splitTextToSize(bewerbungsText, 180);
+            doc.text(textLinien, 15, 30);
+
+            // PDF unter dem passenden Namen abspeichern
+            doc.save("Bewerbung_Telefonseelsorge_Systemmodell.pdf");
+        }
+    </script>
+
+</body>
+</html>
