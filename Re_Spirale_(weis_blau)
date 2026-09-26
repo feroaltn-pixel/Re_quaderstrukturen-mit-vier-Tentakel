@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Re-System (Quaderstrukturen)</title>
+    <style>
+        body { margin: 0; background: #111; color: #fff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; overflow: hidden; }
+        canvas { background: #000; border: 1px solid #333; box-shadow: 0 0 20px rgba(0,100,255,0.2); }
+        h1 { margin: 5px; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <h1>Re-System (Phasenverschoben)</h1>
+    <canvas id="canvasRe" width="600" height="600"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvasRe');
+        const ctx = canvas.getContext('2d');
+        const center = { x: canvas.width / 2, y: canvas.height / 2 };
+
+        const channel = new BroadcastChannel('spiral_resonance');
+
+        let re4_pos = { x: 0, y: 0 };
+        let re8_pos = { x: 0, y: 0 };
+
+        // Empfange Position von Re4 aus dem ersten File
+        channel.onmessage = (event) => {
+            if (event.data.type === 're4_update') {
+                re4_pos = event.data.position;
+            }
+        };
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Raster
+            ctx.strokeStyle = '#222';
+            for(let i=0; i<canvas.width; i+=40) {
+                ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, canvas.height); ctx.stroke();
+                ctx.beginPath(); ctx.moveTo(0, i); ctx.lineTo(canvas.width, i); ctx.stroke();
+            }
+
+            // 2. Re-Spirale (Blau, um PI verschoben)
+            ctx.beginPath();
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = '#0066ff';
+            
+            let a = 3;
+            for (let theta = 0; theta < 25; theta += 0.1) {
+                let x = center.x + (a * theta) * Math.cos(theta + Math.PI);
+                let y = center.y + (a * theta) * Math.sin(theta + Math.PI);
+                ctx.lineTo(x, y);
+
+                // Knoten Re8 bestimmen
+                if (Math.abs(theta - 20) < 0.05) {
+                    re8_pos = { x, y };
+                }
+            }
+            ctx.stroke();
+
+            // Ri-Knoten: Re8 (blau_gelb) mit Wechselwirkung
+            if (re8_pos.x !== 0) {
+                let tLen = 25;
+
+                // Schwerpunkt-Verhalten (zieht in Richtung Re4)
+                let dx = re4_pos.x - re8_pos.x;
+                let dy = re4_pos.y - re8_pos.y;
+                let dist = Math.sqrt(dx*dx + dy*dy);
+                let shiftX = 0, shiftY = 0;
+
+                if (dist > 0 && dist < 300) {
+                    shiftX = (dx / dist) * 20; // Re8 reagiert etwas stärker
+                    shiftY = (dy / dist) * 20;
+                }
+
+                let sx = re8_pos.x + shiftX;
+                let sy = re8_pos.y + shiftY;
+
+                // 4 Tentakel
+                ctx.strokeStyle = '#ccccff';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(sx - tLen, sy); ctx.lineTo(sx + tLen, sy);
+                ctx.moveTo(sx, sy - tLen); ctx.lineTo(sx, sy + tLen);
+                ctx.stroke();
+
+                // Quader-Kern (blau_gelb)
+                ctx.fillStyle = '#0000ff';
+                ctx.fillRect(sx - 8, sy - 8, 16, 16);
+                ctx.strokeStyle = '#ffff00';
+                ctx.lineWidth = 2;
+                ctx.strokeRect(sx - 8, sy - 8, 16, 16);
+
+                ctx.fillStyle = '#fff';
+                ctx.fillText("Re8 (blau_gelb)", sx + 12, sy - 12);
+
+                // Visuelle Kopplungslinie zeichnen, wenn Interaktion aktiv ist
+                if (dist > 0 && dist < 300) {
+                    ctx.strokeStyle = 'rgba(255, 255, 0, 0.4)';
+                    ctx.setLineDash([4, 4]);
+                    ctx.beginPath();
+                    ctx.moveTo(sx, sy);
+                    ctx.lineTo(re4_pos.x, re4_pos.y);
+                    ctx.stroke();
+                    ctx.setLineDash([]);
+                }
+
+                // Sende Position zurück
+                channel.postMessage({ type: 're8_update', position: { x: sx, y: sy } });
+            }
+
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>
