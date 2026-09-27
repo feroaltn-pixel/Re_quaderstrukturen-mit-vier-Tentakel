@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Raumschiff — Ro/Ra/Ri/Re Animation</title>
+<style>
+  html, body { margin:0; padding:0; overflow:hidden; background:#03040a; height:100%; }
+  #hud {
+    position:fixed; top:14px; left:14px; z-index:10;
+    font-family: 'Courier New', monospace; color:#8fe3c7; font-size:12px;
+    background:rgba(4,8,14,0.55); border:1px solid rgba(143,227,199,0.25);
+    padding:10px 14px; border-radius:2px; line-height:1.55; max-width:300px;
+    backdrop-filter: blur(2px);
+  }
+  #hud b { color:#ffe27a; }
+  #phone {
+    position:fixed; z-index:11; font-family:'Courier New', monospace;
+    color:#ff5c5c; font-size:22px; font-weight:bold; letter-spacing:2px;
+    text-shadow:0 0 12px rgba(255,92,92,0.8);
+    opacity:0; pointer-events:none; transition:opacity 0.3s;
+  }
+  #legend {
+    position:fixed; bottom:14px; left:14px; z-index:10;
+    font-family:'Courier New', monospace; color:#cfd8e3; font-size:11px;
+    background:rgba(4,8,14,0.55); border:1px solid rgba(255,255,255,0.1);
+    padding:8px 12px; border-radius:2px; line-height:1.7;
+  }
+  .sw { display:inline-block; width:9px; height:9px; margin-right:6px; border-radius:1px; }
+  canvas { display:block; }
+</style>
+</head>
+<body>
+<div id="hud">
+  <b>Ro/Ra/Ri/Re — RAUMSCHIFF</b><br>
+  24 Re_Kegel · Ro1–Ro9 Kreuzmengen<br>
+  4 Re_Standfüße · ri_8s Ruz-Zyklus<br>
+  Hyperbelflug entlang 4 Flaggen (ri_4s Wechsel)<br>
+  <span id="cycle">Ruz in --.-s</span>
+</div>
+<div id="legend">
+  <span class="sw" style="background:#ff2f2f"></span>Ro (schwarz-rot)&nbsp;&nbsp;
+  <span class="sw" style="background:#e8e8e8"></span>Ra (schwarz-weiß)<br>
+  <span class="sw" style="background:#ffe15a"></span>Ri (weiß-gelb)&nbsp;&nbsp;
+  <span class="sw" style="background:#63e6a3"></span>Re (weiß-grün)
+</div>
+<div id="phone">0800 111 0 222</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x03040a, 0.010);
+
+const camera = new THREE.PerspectiveCamera(55, window.innerWidth/window.innerHeight, 0.1, 2000);
+camera.position.set(0, 6, 26);
+
+const renderer = new THREE.WebGLRenderer({ antialias:true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x03040a, 1);
+document.body.appendChild(renderer.domElement);
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth/window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ---------- Sternenfeld ----------
+{
+  const starGeo = new THREE.BufferGeometry();
+  const N = 2200;
+  const pos = new Float32Array(N*3);
+  for (let i=0;i<N;i++){
+    pos[i*3]   = (Math.random()-0.5)*700;
+    pos[i*3+1] = (Math.random()-0.5)*700;
+    pos[i*3+2] = (Math.random()-0.5)*700;
+  }
+  starGeo.setAttribute('position', new THREE.BufferAttribute(pos,3));
+  const starMat = new THREE.PointsMaterial({ color:0xaad4ff, size:0.6, transparent:true, opacity:0.6 });
+  scene.add(new THREE.Points(starGeo, starMat));
+}
+
+const ambient = new THREE.AmbientLight(0x334455, 1.1);
+scene.add(ambient);
+const key = new THREE.PointLight(0x9fd8ff, 1.4, 300);
+key.position.set(20,30,20);
+scene.add(key);
+const rim = new THREE.PointLight(0xffe15a, 0.6, 300);
+rim.position.set(-20,-10,-20);
+scene.add(rim);
+
+// =========================================================
+// RAUMSCHIFF-GRUPPE
+// =========================================================
+const ship = new THREE.Group();
+scene.add(ship);
+
+// Zylindrischer Grundkörper
+const bodyMat = new THREE.MeshStandardMaterial({ color:0x555f6b, metalness:0.75, roughness:0.35 });
+const body = new THREE.Mesh(new THREE.CylinderGeometry(3.2, 3.6, 7.5, 24, 1, false), bodyMat);
+ship.add(body);
+
+// oberer Bereich: markant "eckiger" (Oktaeder-artiger, kantiger Aufsatz statt runder Kuppe)
+const topMat = new THREE.MeshStandardMaterial({ color:0x7d8a99, metalness:0.6, roughness:0.25, flatShading:true });
+const top = new THREE.Mesh(new THREE.CylinderGeometry(0, 2.6, 3.4, 8, 1), topMat); // 8-seitig = eckig, spitz
+top.position.y = 5.4;
+ship.add(top);
+const topCollar = new THREE.Mesh(new THREE.CylinderGeometry(3.3, 2.9, 1.0, 8), topMat); // eckiger Kragen
+topCollar.position.y = 3.65;
+ship.add(topCollar);
+
+// Re_Steine auf der Oberfläche (kleine Höcker, "anders interpretiert" -> Farbwechsel)
+const steinMats = [
+  new THREE.MeshStandardMaterial({ color:0x63e6a3, roughness:0.8 }), // Re-Interpretation: weiß-grün
+  new THREE.MeshStandardMaterial({ color:0xffe15a, roughness:0.8 }), // Ri-Interpretation: weiß-gelb
+  new THREE.MeshStandardMaterial({ color:0xff2f2f, roughness:0.8 }), // Ro-Interpretation: schwarz-rot
+  new THREE.MeshStandardMaterial({ color:0xe8e8e8, roughness:0.8 }), // Ra-Interpretation: schwarz-weiß
+];
+const steine = [];
+const steinCount = 40;
+for (let i=0;i<steinCount;i++){
+  const s = new THREE.Mesh(new THREE.DodecahedronGeometry(0.16,0), steinMats[i%4]);
+  const a = Math.random()*Math.PI*2;
+  const h = -2.8 + Math.random()*6.2;
+  const r = 3.2 + 0.05;
+  s.position.set(Math.cos(a)*r, h, Math.sin(a)*r);
+  s.lookAt(new THREE.Vector3(0,h,0).multiplyScalar(-1));
+  s.userData.matIndex = i%4;
+  steine.push(s);
+  ship.add(s);
+}
+
+// -------- 24 kegelförmige Spitzen, jeweils mit Ro1..Ro9-Spirale --------
+const coneMat = new THREE.MeshStandardMaterial({ color:0x9aa7b5, metalness:0.5, roughness:0.4 });
+const kreuzMatBase = new THREE.MeshStandardMaterial({ color:0xffe15a, emissive:0x552b00, roughness:0.5 });
+const spitzenGroup = new THREE.Group();
+ship.add(spitzenGroup);
+const spiralGroups = [];
+
+const RING_COUNTS = [8, 8, 8]; // 24 Spitzen in 3 Ringen
+const RING_Y = [4.4, 1.0, -2.4];
+const RING_R = [2.55, 3.55, 3.75];
+
+let coneIndex = 0;
+for (let ring=0; ring<3; ring++){
+  for (let k=0; k<RING_COUNTS[ring]; k++){
+    const a = (k/RING_COUNTS[ring])*Math.PI*2 + (ring*0.26);
+    const y = RING_Y[ring];
+    const r = RING_R[ring];
+    const px = Math.cos(a)*r, pz = Math.sin(a)*r;
+
+    // Re_Kegel (die Spitze selbst)
+    const cone = new THREE.Mesh(new THREE.ConeGeometry(0.42, 1.5, 10), coneMat);
+    cone.position.set(px, y, pz);
+    const outward = new THREE.Vector3(px, 0, pz).normalize();
+    cone.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), outward);
+    cone.rotateX(Math.PI); // Spitze zeigt nach außen
+    spitzenGroup.add(cone);
+
+    // Spirale mit Ro1..Ro9 Kreuzmengen innerhalb dieses Re_Kegels
+    const spiralGrp = new THREE.Group();
+    spiralGrp.position.copy(cone.position);
+    spiralGrp.quaternion.copy(cone.quaternion);
+    const nodes = [];
+    for (let n=0;n<9;n++){
+      const t = n/8;
+      const spiralR = 0.05 + t*0.32;
+      const ang = t*Math.PI*5;
+      const sx = Math.cos(ang)*spiralR;
+      const sz = Math.sin(ang)*spiralR;
+      const sy = -0.65 + t*1.15;
+      const node = new THREE.Mesh(
+        new THREE.OctahedronGeometry(0.055,0),
+        kreuzMatBase.clone()
+      );
+      node.position.set(sx, sy, sz);
+      node.userData.phase = t*Math.PI*2 + coneIndex;
+      spiralGrp.add(node);
+      nodes.push(node);
+    }
+    spitzenGroup.add(spiralGrp);
+    spiralGroups.push({grp:spiralGrp, nodes, idx:coneIndex});
+    coneIndex++;
+  }
+}
+
+// -------- 4 Re_Standfüße --------
+const footMat = new THREE.MeshStandardMaterial({ color:0x3d4552, metalness:0.7, roughness:0.4 });
+const feet = [];
+for (let i=0;i<4;i++){
+  const a = (i/4)*Math.PI*2 + Math.PI/4;
+  const footGrp = new THREE.Group();
+  const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.22,0.32,3.0,8), footMat);
+  leg.position.set(Math.cos(a)*2.6, -4.3, Math.sin(a)*2.6);
+  leg.rotation.z = Math.cos(a)*0.35;
+  leg.rotation.x = -Math.sin(a)*0.35;
+  const pad = new THREE.Mesh(new THREE.CylinderGeometry(0.5,0.5,0.25,10), footMat);
+  pad.position.set(Math.cos(a)*3.3, -5.85, Math.sin(a)*3.3);
+  footGrp.add(leg, pad);
+  footGrp.userData.tip = pad.position.clone();
+  feet.push(footGrp);
+  ship.add(footGrp);
+}
+
+// -------- Explosions-/Ruz-System an den Standfüßen: 4 Denkarchitekturen Ro/Ra/Ri/Re --------
+const denkFarben = [0xff2f2f, 0xe8e8e8, 0xffe15a, 0x63e6a3]; // Ro, Ra, Ri, Re
+const explosionGroups = [];
+feet.forEach((foot, fi) => {
+  const grp = new THREE.Group();
+  grp.position.copy(foot.userData.tip);
+  scene.add(grp);
+  const particles = [];
+  for (let d=0; d<4; d++){ // vier Denkarchitekturen je Fuß
+    for (let p=0; p<7; p++){
+      const mesh = new THREE.Mesh(
+        new THREE.ConeGeometry(0.06+Math.random()*0.05, 0.22, 6),
+        new THREE.MeshStandardMaterial({ color: denkFarben[d], emissive: denkFarben[d], emissiveIntensity:0.3 })
+      );
+      mesh.visible = false;
+      mesh.userData = {
+        dir: new THREE.Vector3((Math.random()-0.5), Math.random()*0.6+0.2, (Math.random()-0.5)).normalize(),
+        inside: p%2===0, // ri_innerhalb / ri_außerhalb der Explosion
+        speed: 1.2 + Math.random()*1.6,
+        jitter: Math.random()*10
+      };
+      grp.add(mesh);
+      particles.push(mesh);
+    }
+  }
+  explosionGroups.push({ grp, particles, footIndex: fi });
+});
+
+// -------- Vier Flaggen der Internationalität --------
+const flagGroup = new THREE.Group();
+scene.add(flagGroup);
+const flagPalettes = [
+  [0x1c3f94, 0xffffff, 0xd42e2e], // Muster A
+  [0x111111, 0xd42e2e, 0xf2c500], // Muster B
+  [0x1a7a3d, 0xffffff, 0xff8c1a], // Muster C
+  [0x111111, 0xffffff, 0x2f9bd6], // Muster D
+];
+const flags = [];
+for (let i=0;i<4;i++){
+  const poleMat = new THREE.MeshStandardMaterial({ color:0x777777, metalness:0.6, roughness:0.5 });
+  const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.07,0.07,6,8), poleMat);
+  const stripesGrp = new THREE.Group();
+  for (let s=0;s<3;s++){
+    const stripe = new THREE.Mesh(
+      new THREE.PlaneGeometry(2.6, 6/3),
+      new THREE.MeshStandardMaterial({ color:flagPalettes[i][s], side:THREE.DoubleSide, roughness:0.9 })
+    );
+    stripe.position.set(1.3, 3 - (s+0.5)*(6/3), 0);
+    stripesGrp.add(stripe);
+  }
+  const flagGrp = new THREE.Group();
+  flagGrp.add(pole, stripesGrp);
+  flagGrp.userData.stripesGrp = stripesGrp;
+  flagGrp.userData.paletteIdx = i;
+  flagGrp.position.set(-30 + i*20, -6, -18 - (i%2)*6);
+  flagGroup.add(flagGrp);
+  flags.push(flagGrp);
+}
+
+function applyFlagPalette(flagGrp, paletteIdx){
+  const stripes = flagGrp.userData.stripesGrp.children;
+  const pal = flagPalettes[paletteIdx % flagPalettes.length];
+  stripes.forEach((st,i)=> st.material.color.setHex(pal[i]));
+}
+
+// -------- Abdrücke (Trail) des Raumschiffs --------
+const trailMaxPoints = 400;
+const trailPositions = new Float32Array(trailMaxPoints*3);
+const trailGeo = new THREE.BufferGeometry();
+trailGeo.setAttribute('position', new THREE.BufferAttribute(trailPositions,3));
+const trailMat = new THREE.LineBasicMaterial({ color:0x63e6a3, transparent:true, opacity:0.45 });
+const trailLine = new THREE.Line(trailGeo, trailMat);
+scene.add(trailLine);
+let trailPtr = 0, trailFilled = 0;
+
+// =========================================================
+// ANIMATIONSSCHLEIFE
+// =========================================================
+const clock = new THREE.Clock();
+const RUZ_PERIOD = 8.0;     // ri_acht Sekunden
+const FLAG_PERIOD = 4.0;    // ri_vier Sekunden
+let lastRuzCycle = -1;
+let lastFlagCycle = -1;
+const phoneEl = document.getElementById('phone');
+const cycleEl = document.getElementById('cycle');
+
+function triggerRuz(){
+  // Telefonnummer erscheint kurz an einem Standfuß
+  const fi = Math.floor(Math.random()*4);
+  const tip = feet[fi].userData.tip;
+  const vec = tip.clone().add(ship.position);
+  const screenPos = vec.clone().project(camera);
+  const x = (screenPos.x*0.5+0.5)*window.innerWidth;
+  const y = (-(screenPos.y*0.5)+0.5)*window.innerHeight;
+  phoneEl.style.left = (x-70)+'px';
+  phoneEl.style.top = (y-20)+'px';
+  phoneEl.style.opacity = '1';
+  setTimeout(()=> phoneEl.style.opacity='0', 1400);
+
+  // Explosion in Kegelform an allen vier Standfüßen
+  explosionGroups.forEach(eg => {
+    eg.particles.forEach(p => {
+      p.visible = true;
+      p.position.set(0,0,0);
+      p.scale.setScalar(0.001);
+      p.userData.t0 = clock.getElapsedTime();
+    });
+  });
+}
+
+function animate(){
+  requestAnimationFrame(animate);
+  const t = clock.getElapsedTime();
+  const dt = clock.getDelta();
+
+  // Hyperbelflug: x(t)=a*cosh-ähnliche geschwungene Bahn, hier stilisiert als
+  // gebrochene Hyperbel-Trajektorie (weite Kurve statt Kreisbahn)
+  const speed = 0.15;
+  const ht = t*speed;
+  const a = 14, b = 5;
+  ship.position.x = a * Math.sinh(Math.sin(ht)*0.6);
+  ship.position.z = -b * Math.cosh(Math.sin(ht)*0.6) + b + Math.cos(ht*0.5)*4 - 6;
+  ship.position.y = Math.sin(ht*1.3)*1.6;
+  ship.rotation.y = -Math.atan2(Math.cos(ht)*0.6, 1) + Math.sin(t*0.2)*0.05;
+  ship.rotation.z = Math.sin(t*0.6)*0.06;
+
+  // Grundrotation des Raumschiffs (Ro-Dynamik)
+  spitzenGroup.rotation.y += dt*0.15;
+
+  // Ro1..Ro9 Kreuzmengen-Spiralen animieren (Pulsieren + leichte Rotation)
+  spiralGroups.forEach(({grp, nodes, idx}) => {
+    grp.rotation.y = t*0.8 + idx*0.3;
+    nodes.forEach((n,ni) => {
+      const s = 0.7 + 0.5*Math.sin(t*2.2 + n.userData.phase);
+      n.scale.setScalar(s);
+    });
+  });
+
+  // Re_Steine: "andere Interpretation" -> zyklischer Farbwechsel
+  steine.forEach((s, i) => {
+    const cyc = Math.floor((t*0.25 + i*0.13) % 4);
+    if (s.material !== steinMats[cyc]) s.material = steinMats[cyc];
+  });
+
+  // Standfüße leichtes Beben
+  feet.forEach((f,i)=>{ f.position.y = Math.sin(t*3+i)*0.03; });
+
+  // Ruz-Zyklus (alle 8 Sekunden)
+  const cycleNow = Math.floor(t / RUZ_PERIOD);
+  if (cycleNow !== lastRuzCycle){
+    lastRuzCycle = cycleNow;
+    triggerRuz();
+  }
+  const timeInCycle = t % RUZ_PERIOD;
+  cycleEl.textContent = 'Ruz in ' + (RUZ_PERIOD - timeInCycle).toFixed(1) + 's';
+
+  // Explosionspartikel weiterentwickeln
+  explosionGroups.forEach(eg => {
+    const worldTip = feet[eg.footIndex].userData.tip;
+    eg.grp.position.copy(ship.position).add(worldTip.clone().applyEuler(ship.rotation));
+    eg.particles.forEach(p => {
+      if (!p.visible) return;
+      const age = t - (p.userData.t0 || t);
+      if (age > 2.2){ p.visible = false; return; }
+      const dirScale = p.userData.inside ? 0.7 : 1.6; // ri_innerhalb / ri_außerhalb
+      p.position.copy(p.userData.dir).multiplyScalar(age*p.userData.speed*dirScale);
+      // "kratzen": hochfrequentes Jittern während der Bewegung
+      p.position.x += Math.sin(age*40 + p.userData.jitter)*0.03;
+      p.position.z += Math.cos(age*37 + p.userData.jitter)*0.03;
+      const sc = Math.max(0, 1 - age/2.2);
+      p.scale.setScalar(sc*1.4);
+      p.lookAt(p.parent.position.clone().add(p.position).add(p.userData.dir));
+    });
+  });
+
+  // Flaggenmuster-Wechsel alle 4 Sekunden
+  const flagCycle = Math.floor(t / FLAG_PERIOD);
+  if (flagCycle !== lastFlagCycle){
+    lastFlagCycle = flagCycle;
+    flags.forEach((f, i) => {
+      f.userData.paletteIdx = (f.userData.paletteIdx + 1) % flagPalettes.length;
+      applyFlagPalette(f, f.userData.paletteIdx);
+    });
+  }
+  flags.forEach((f,i)=>{ f.rotation.y = Math.sin(t*0.4+i)*0.15; });
+
+  // Abdrücke (Trail) aktualisieren
+  trailPositions[trailPtr*3]   = ship.position.x;
+  trailPositions[trailPtr*3+1] = ship.position.y - 6.2;
+  trailPositions[trailPtr*3+2] = ship.position.z;
+  trailPtr = (trailPtr+1) % trailMaxPoints;
+  trailFilled = Math.min(trailFilled+1, trailMaxPoints);
+  trailGeo.setDrawRange(0, trailFilled);
+  trailGeo.attributes.position.needsUpdate = true;
+
+  // Kamera folgt dem Raumschiff sanft
+  camera.position.x += (ship.position.x*0.6 + 8 - camera.position.x)*0.02;
+  camera.position.z += (ship.position.z + 24 - camera.position.z)*0.02;
+  camera.position.y += (ship.position.y + 7 - camera.position.y)*0.02;
+  camera.lookAt(ship.position.x, ship.position.y, ship.position.z);
+
+  renderer.render(scene, camera);
+}
+animate();
+</script>
+</body>
+</html>
