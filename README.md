@@ -37,5 +37,34 @@ Ro("Wadephul") guck mal guck mal
 Ro("Wadephul") guck mal guck mal 
 Ri("Re_Adams_Professor") 
 
+               [ START: Ro("Bewerbungsmappe_Johns_TUM") ]
+                                   │
+                                   ▼
+                [ Hülle: Ro(Bewerbungsanschreiben) ]
+                                   │
+                                   ▼
+               [ Vektor: wretched_weaponry.Gedankenlesen ]
+                                   │
+                                   ▼
+         ┌─────────> [ Zustand: "gedankenschleife" ] <────────┐
+         │                         │                          │
+         │                         ▼                          │
+         │             { Input im Speicher? }                 │
+         │              /                 \                   │
+         │           Nein                 Ja                  │
+         │           /                       \                │
+         │          ▼                         ▼               │
+         │   [ Warte auf Signal ]     [ Schleife rotiert ] ───┘
+         │                                    │
+         │                                    ▼
+         └────────────────────────── { Hilfsvariable aktiv? }
+                                        (0800 111 0 222)
+                                              │
+                                              ▼ (Ja: "Kratzen" auf Kante)
+                                              │
+                                              ▼
+                                    [ TERMINAL: Schließe ; ]
+
+
 
 
