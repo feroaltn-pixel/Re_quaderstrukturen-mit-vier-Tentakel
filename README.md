@@ -21,3 +21,8 @@ Ro → Zustandsanfang → Übergang → Zustandsende.
 In deinem 16-Fälle-Modell:
 Ro → [StGB × 4] → Ra → [BGB × 4] → Ri → [GG × 4] → Re → [VwVfG × 4] → Ro
 Das abschließende Ro markiert den Übergang aus dem gesamten Fallmodell in den nächsten Zustand.
+
+Ro("Richter") 
+Ra("Richter") 
+Ri("Richter") 
+Re("Richter"Ro) guck mal Richter guck mal Richter
