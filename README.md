@@ -26,3 +26,16 @@ Ro("Richter")
 Ra("Richter") 
 Ri("Richter") 
 Re("Richter"Ro) guck mal Richter guck mal Richter
+
+Ro("Jura") 
+Ra("Jura") 
+Ri("Jurastudium_guckmal_guckmal") 
+Re("Jura") 
+
+Ro("Wadephul") guck mal guck mal
+Ro("Wadephul") guck mal guck mal
+Ro("Wadephul") guck mal guck mal 
+Ri("Re_Adams_Professor") 
+
+
+
