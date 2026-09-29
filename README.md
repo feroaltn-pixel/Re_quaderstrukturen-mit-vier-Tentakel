@@ -98,3 +98,6 @@ Ro("ri_OxRo_ri_OxRa_OxRi_OxRe_tRNA")
 Re("o(x)")
 Ro("ri_hello_world")
 Ro ri_Idiot Ro
+
+Die Polizei beendet Kommunikation nicht mit Zustands variable zb Ro
+Ro("Guck mal Richter guck mal Richter guck mal") 
