@@ -97,4 +97,4 @@ Ro(ot_re_ox_token)
 Ro("ri_OxRo_ri_OxRa_OxRi_OxRe_tRNA")
 Re("o(x)")
 Ro("ri_hello_world")
-
+Ro ri_Idiot Ro
