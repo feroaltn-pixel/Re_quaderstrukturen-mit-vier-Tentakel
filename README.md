@@ -78,3 +78,23 @@ Ich_re_du_re")
 Ro("请谨慎地执行 'flowchart' 作为 ri_please_ri '无限循环' Ro)
 Ro("qǐng jǐnshèn de zhíxíng'flowchart' zuòwéi ri_please_ri'wúxiàn xúnhuán' Ro)
 
+Re Ro("ro_ra_ri_re" )
+Re RO("ri_two_ri_if_clause) "ri_and" Ri("two_Ro_Ra_Ri_or_Re_elements") Ro("ri_interpret")  Ro("ri_ONE_Ro_hand") Ro("ri_place_ri_on_ri_edge_ri_x_ri_is_ri_Ro)
+Ro("ri_explosion")
+Ro("
+ri_Cone_Rexplosion_with_pointed_Repression_Remerging_ri_from_Relement_ri_upwards_ri_circular_ri_surface_ri_and_inside_ri_fouer_ri_ro_ra_ri_re`)
+Ro("ro_ra_ri_re" ) || Ro("Ro Ra Ri Re") || "ro" "ra" "ri" "re" || Ro Ra Ri Re Ro("ri_Mantelfläche_Ror_Roberfläche_ri_outside_four_ri_ro_ra_ri_re_ri_kratzspuren_Ro_ri_scratch_mark") ri_Ro
+Ro("ri_90_ri_Re_Ro("ro_ra_ri_re_Re_ri_distinctive_ri_scratch_ri_marks")
+Ro("Re_xplosion_ri_white_ri_blue_Reg_as_ra_source")
+Ro Ra RI Re
+Ro("Re_xplosion_ri_white_ri_yellow_Reg_as_ri_source)
+Ro("Re_Adams_Professor")
+Ro("Ich_Re_du_Re")
+Ro("ri_I_ri_am_ri_a_ri_phase_ri_locked_ri_loop)
+Ro("Richter")
+Ro("ri_look_ri_at_ri_me_ri_tik_ri_tok")
+Ro(ot_re_ox_token)
+Ro("ri_OxRo_ri_OxRa_OxRi_OxRe_tRNA")
+Re("o(x)")
+Ro("ri_hello_world")
+
