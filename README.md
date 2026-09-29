@@ -8,7 +8,7 @@ Ro(
 Ri(
     "Re_zdf_ard_erinnerung_beitragsservice",
     "55.05",
-    "re_Risabinakeric_sohn_zweitausendeuro_je_Tag_seit_28.07.2026"
+    "re_Risabinakeric_sohn_zweitausendeuro_je_Tag_seit_28.09.2026"
 );
 
 Ro(
