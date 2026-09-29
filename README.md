@@ -75,3 +75,6 @@ Ro_anweisung ;
 Ich_re_du_re")
 
 
+Ro("请谨慎地执行 'flowchart' 作为 ri_please_ri '无限循环' Ro)
+Ro("qǐng jǐnshèn de zhíxíng'flowchart' zuòwéi ri_please_ri'wúxiàn xúnhuán' Ro)
+
