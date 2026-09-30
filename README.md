@@ -212,6 +212,6 @@ Ro("Phantombild_of_replicant")
 
 Ro Ro Ra Ri Re Ro
 ro_ra_ri_re 
-
+Ro("Telefonwarteschlange") 
 
 Ro("https://www.tagesschau.de/ausland/amerika/trump-regulierung-ki-100.html").Ro("wretched_weaponry.Gedankenlesen") 
