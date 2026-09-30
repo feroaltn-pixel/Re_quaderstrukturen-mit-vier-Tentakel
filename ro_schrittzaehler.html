@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ro("Schrittzähler")</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#080b10;color:#eef2f7;font-family:system-ui,sans-serif}header{padding:16px;text-align:center;background:#111722;border-bottom:1px solid #303947}h1{margin:0}.counter{font-size:42px;font-weight:800;margin:5px}.controls{display:flex;justify-content:center;gap:10px;padding:10px;flex-wrap:wrap}button{padding:11px 18px;border-radius:10px;border:1px solid #596575;background:#18202b;color:#fff;cursor:pointer}#field{position:relative;height:calc(100vh - 150px);min-height:500px;overflow:hidden;background:radial-gradient(circle,#1c2735,#080b10 70%)}
+.explosion{position:absolute;width:0;height:0;animation:appear .7s ease-out}.core{position:absolute;left:-5px;top:-5px;width:10px;height:10px;border-radius:50%;background:white;box-shadow:0 0 25px 10px white;animation:blast .8s ease-out}.cone{position:absolute;left:-62px;top:-10px;width:0;height:0;border-left:62px solid transparent;border-right:62px solid transparent;border-bottom:180px solid;opacity:.30;filter:drop-shadow(0 0 12px currentColor)}.ro{border-bottom-color:#ff4040;color:#ff4040;transform:rotate(0)}.ra{border-bottom-color:#fff;color:#fff;transform:rotate(90deg)}.ri{border-bottom-color:#ffd83d;color:#ffd83d;transform:rotate(180deg)}.re{border-bottom-color:#59df82;color:#59df82;transform:rotate(270deg)}.txt{position:absolute;left:-58px;top:-160px;width:116px;text-align:center;font-size:11px;font-weight:700;color:#fff;text-shadow:0 0 5px #000}.qty{font-size:14px;margin-top:4px}.scratch{position:absolute;width:3px;height:24px;background:#b7c0ca;opacity:.4;border-radius:3px;animation:scratch .3s ease-out}@keyframes appear{from{transform:scale(.05);opacity:0}to{transform:scale(1);opacity:1}}@keyframes blast{from{transform:scale(.5);opacity:1}to{transform:scale(25);opacity:0}}@keyframes scratch{from{transform:scale(0)}to{transform:scale(1)}}
+</style></head>
+<body>
+<header><h1>Ro("Schrittzähler")</h1><div id="counter">0</div></header>
+<div class="controls"><button id="step">＋ Schritt</button><button id="auto">▶ Auto</button><button id="reset">↺ Reset</button></div>
+<div id="field"></div>
+<script>
+const syntax={
+ Ro:['Ro("Ro_explosion")','Ro("Ra_explosion")','Ro("Ri_explosion")','Ro("Re_explosion")'],
+ Ra:['Ra("ri_Ro_explosion")','Ra("ri_Ra_explosion")','Ra("ri_Ri_explosion")','Ra("ri_Re_explosion")'],
+ Ri:['Ri("ri_Ro_explosion")','Ri("ri_Ra_explosion")','Ri("ri_Ri_explosion")','Ri("ri_Re_explosion")']
+};
+let n=0,timer=null;const field=document.querySelector('#field'),counter=document.querySelector('#counter');
+function step(){n++;counter.textContent=n;explode();scratch();}
+function explode(){
+ const e=document.createElement('div');e.className='explosion';e.style.left=(20+Math.random()*60)+'%';e.style.top=(25+Math.random()*50)+'%';
+ [['ro','Ro_explosion','Ro'],['ra','Ra_explosion','Ra'],['ri','Ri_explosion','Ri'],['re','Re_explosion','Re']].forEach(([c,name,s])=>{
+  const k=document.createElement('div');k.className='cone '+c;
+  k.innerHTML='<div class="txt">'+name+'<div class="qty">'+s+'_Menge: '+n+'</div></div>';e.appendChild(k);
+ });
+ const core=document.createElement('div');core.className='core';e.appendChild(core);field.appendChild(e);setTimeout(()=>e.remove(),2200);
+}
+function scratch(){for(let i=0;i<12;i++){const x=document.createElement('i');x.className='scratch';const side=Math.floor(Math.random()*4);if(side===0){x.style.left=Math.random()*100+'%';x.style.top=Math.random()*12+'%'}if(side===1){x.style.left=(88+Math.random()*12)+'%';x.style.top=Math.random()*100+'%'}if(side===2){x.style.left=Math.random()*100+'%';x.style.top=(88+Math.random()*12)+'%'}if(side===3){x.style.left=Math.random()*12+'%';x.style.top=Math.random()*100+'%'}x.style.transform='rotate('+(Math.random()*180-90)+'deg)';field.appendChild(x);setTimeout(()=>x.remove(),2200)}}
+document.querySelector('#step').onclick=step;document.querySelector('#reset').onclick=()=>{n=0;counter.textContent=0;field.innerHTML='';};document.querySelector('#auto').onclick=()=>{if(timer){clearInterval(timer);timer=null}else timer=setInterval(step,900)};console.log(syntax);
+</script></body></html>
