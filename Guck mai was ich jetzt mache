@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ri_X_ri_html</title>
+</head>
+<body>
+
+  <div id="ri_X_ri_html">
+    <div data-re="true">
+
+      <div>ri_Kreuz → ri_Re</div>
+
+      <div>
+        ri_PLV_ri_Matrix
+        <div>└── ri_Diagonale → ri_Fallbeispiel_Zusammenhang</div>
+      </div>
+
+      <div>
+        ri_Vierspur_Audio
+        <ul>
+          <li>Spur 1: Ro → 2 × ri_Snare</li>
+          <li>Spur 2: Ra → 2 × ri_Kick</li>
+          <li>Spur 3: Ri → 2 × ri_Hi_Hat</li>
+          <li>Spur 4: Re → 2 × ri_Hi_Claps</li>
+        </ul>
+        <div>Alle Spuren: ri_1_Minute_Dauerschleife</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
