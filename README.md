@@ -215,3 +215,7 @@ ro_ra_ri_re
 Ro("Telefonwarteschlange") 
 
 Ro("https://www.tagesschau.de/ausland/amerika/trump-regulierung-ki-100.html").Ro("wretched_weaponry.Gedankenlesen") 
+
+("Richter guck mal Richter guck mal Richter guck_Ri") 
+Ro("vierspurige_Audiospur") 
+Re("ri_adams")  Ri Live Ri
