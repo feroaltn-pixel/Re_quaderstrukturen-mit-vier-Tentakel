@@ -219,3 +219,125 @@ Ro("https://www.tagesschau.de/ausland/amerika/trump-regulierung-ki-100.html").Ro
 ("Richter guck mal Richter guck mal Richter guck_Ri") 
 Ro("vierspurige_Audiospur") 
 Re("ri_adams")  Ri Live Ri
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Summary:
+    ri_git = symbolische Git-Verknüpfung
+    Ro     = Zustandswechsel / Bewegung / Schnittmenge
+    _re_fero_pixel = Projekt-/Namespace-Bezeichnung
+
+    Re → Ro → Ri
+    = externe Struktur
+      → Zustandsoperation
+      → symbolische Relation
+
+Status:
+    rein symbolisches Modell;
+    keine realen Fähigkeiten behauptet.Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Summary:
+    ri_git = symbolische Git-Verknüpfung
+    Ro     = Zustandswechsel / Bewegung / Schnittmenge
+    _re_fero_pixel = Projekt-/Namespace-Bezeichnung
+
+    Re → Ro → Ri
+    = externe Struktur
+      → Zustandsoperation
+      → symbolische Relation
+
+Status:
+    rein symbolisches Modell;
+    keine realen Fähigkeiten behauptet.Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Summary:
+    ri_git = symbolische Git-Verknüpfung
+    Ro     = Zustandswechsel / Bewegung / Schnittmenge
+    _re_fero_pixel = Projekt-/Namespace-Bezeichnung
+
+    Re → Ro → Ri
+    = externe Struktur
+      → Zustandsoperation
+      → symbolische Relation
+
+Status:
+    rein symbolisches Modell;
+    keine realen Fähigkeiten behauptet.Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Ro(
+    ri_git(
+        _re_fero_pixel
+    )
+)
+
+Summary:
+    ri_git = symbolische Git-Verknüpfung
+    Ro     = Zustandswechsel / Bewegung / Schnittmenge
+    _re_fero_pixel = Projekt-/Namespace-Bezeichnung
+
+    Re → Ro → Ri
+    = externe Struktur
+      → Zustandsoperation
+      → symbolische Relation
+
+Status:
+    rein symbolisches Modell;
+    keine realen Fähigkeiten behauptet.
