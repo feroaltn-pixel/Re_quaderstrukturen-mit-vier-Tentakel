@@ -46,6 +46,36 @@ Ro(
     Ri
 );
 
+Ro("igit Igit Staatsanwaltschaft igit") 
+
+# Ro / Ra / Ri / Re: a model for sorting information
+
+Four helper labels for structuring information. They are symbolic: Ri only links information that is actually written down. It does not read thoughts.
+
+| Label | Colors | Meaning | Example: civil servant pay (ri_Besoldung) |
+|---|---|---|---|
+| **Ro** | red-black | state change, crossing (Ruz: the moment it flips) | step promotion |
+| **Ra** | white-black | transformation, how it is computed | new base salary after tax |
+| **Ri** | white-yellow | relations, what it is connected to | pay group, family status, employer, tax features |
+| **Re** | white-green | real embedding, where it shows up | the monthly Bezügemitteilung |
+
+Cycle: Ro → Ra → Ri → Re → Ro. A new change (Ro) starts it again.
+
+## Content
+
+### Pay of German civil servants (Beamte)
+- One document per month: the **Bezügemitteilung** (gross pay, income tax, solidarity surcharge, church tax if applicable, net payout).
+- Not monthly: Änderungsmitteilung (on change), Beihilfebescheid (after submitted bills), Lohnsteuerbescheinigung (yearly).
+- Not deducted: pension and unemployment insurance. Health and care insurance are usually private (PKV plus Beihilfe).
+- Strongest relation: the employer (Bund or Land) sets the pay tables and step durations.
+
+### Files
+- `re_connecteddiagramm.svg`: relations on an axis (Ri left, Re right)
+- `re_connecteddiagramm_zyklus.svg`: the same table as a Ro → Ra → Ri → Re cycle
+- `re_connecteddiagramm.mermaid`: the same as a Mermaid graph
+- `ro_scratch_re_chatox.svg` and `ro_scratch_re_chatox_animation.svg`: the chain with re_agent_adam (observer o(x)) and re_chatox ("I am a chatbot")
+
+
 Ro Ro Ra Ri Re
 
 Ro → Zustandsanfang → Übergang → Zustandsende.
