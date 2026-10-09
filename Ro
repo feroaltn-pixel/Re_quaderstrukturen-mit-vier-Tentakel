@@ -1,0 +1,111 @@
+#include <iostream> // Ro("#include <iostream>") 
+#include <string> // Ra("#include <string>") 
+#include <vector> // Ri("#include <vector>") 
+#include <cstdint> // Re("#include <cstdint>") 
+
+// Structure1: Ri ("Reichweitenmessung")
+// Bildet Kennzahlen der Medienanalyse und des Web-Trackings (z.B. Matomo) ab.
+struct Reichweitenmessung_Ri {
+    uint64_t uniqueUsers;         // Nettoreichweite (eindeutige Besucher)
+    uint64_t totalImpressions;    // Bruttoreichweite (Seitenaufrufe / Kontakte total)
+    double bounceRate;            // Absprungrate in Prozent (z.B. 45.2)
+    std::string platform;         // Name des Tracking-Systems (z.B. "Matomo Maxomo")
+
+    // Konstruktor
+    Reichweitenmessung_Ri(uint64_t uu, uint64_t ti, double br, std::string pf)
+        : uniqueUsers(uu), totalImpressions(ti), bounceRate(br), platform(std::move(pf)) {}
+
+    // Konsolenausgabe
+    void print() const {
+        std::cout << "[Ri - Reichweitenmessung]\n"
+                  << "  Plattform: " << platform << "\n"
+                  << "  Nettoreichweite (Unique Users): " << uniqueUsers << "\n"
+                  << "  Bruttoreichweite (Impressions): " << totalImpressions << "\n"
+                  << "  Absprungrate: " << bounceRate << "%\n\n";
+    }
+};
+
+// Structure2: Re ("Kontakte")
+// Repräsentiert Kontaktdaten und Interaktionshistorie für CRM-Systeme.
+struct Kontakte_Re {
+    uint64_t contactId;
+    std::string firstName;
+    std::string lastName;
+    std::string email;
+    uint32_t interactionCount;    // Anzahl der bisherigen Kontaktpunkte
+
+    // Konstruktor
+    Kontakte_Re(uint64_t id, std::string first, std::string last, std::string mail, uint32_t count)
+        : contactId(id), firstName(std::move(first)), lastName(std::move(last)), email(std::move(mail)), interactionCount(count) {}
+
+    // Konsolenausgabe
+    void print() const {
+        std::cout << "[Re - Kontakte]\n"
+                  << "  ID: " << contactId << "\n"
+                  << "  Name: " << firstName << " " << lastName << "\n"
+                  << "  E-Mail: " << email << "\n"
+                  << "  Interaktionen: " << interactionCount << "\n\n";
+    }
+};
+
+// Structure3: Ra ("Straßen")
+// Enthält geographische und infrastrukturelle Daten zu Verkehrswegen.
+struct Strassen_Ra {
+    std::string streetName;
+    std::string postalCode;
+    double lengthInMeters;
+    bool isOneWayStreet;          // true = Einbahnstraße
+
+    // Konstruktor
+    Strassen_Ra(std::string name, std::string pc, double length, bool oneWay)
+        : streetName(std::move(name)), postalCode(std::move(pc)), lengthInMeters(length), isOneWayStreet(oneWay) {}
+
+    // Konsolenausgabe
+    void print() const {
+        std::cout << "[Ra - Straßen]\n"
+                  << "  Name: " << streetName << " (" << postalCode << ")\n"
+                  << "  Länge: " << lengthInMeters << " m\n"
+                  << "  Einbahnstraße: " << (isOneWayStreet ? "Ja" : "Nein") << "\n\n";
+    }
+};
+
+// Structure4: Ri ("Anwaltskanzlei")
+// Bildet geschäftliche und organisatorische Kennzahlen einer Kanzlei ab.
+struct Anwaltskanzlei_Ri {
+    std::string companyName;
+    std::string city;
+    uint32_t lawyerCount;
+    std::vector<std::string> lawSpecialties; // Liste von Fachgebieten
+
+    // Konstruktor
+    Anwaltskanzlei_Ri(std::string name, std::string c, uint32_t lawyers, std::vector<std::string> specialties)
+        : companyName(std::move(name)), city(std::move(c)), lawyerCount(lawyers), lawSpecialties(std::move(specialties)) {}
+
+    // Konsolenausgabe
+    void print() const {
+        std::cout << "[Ri - Anwaltskanzlei]\n"
+                  << "  Kanzlei: " << companyName << " (" << city << ")\n"
+                  << "  Anwälte: " << lawyerCount << "\n"
+                  << "  Schwerpunkte: ";
+        for (size_t i = 0; i < lawSpecialties.size(); ++i) {
+            std::cout << lawSpecialties[i] << (i + 1 < lawSpecialties.size() ? ", " : "");
+        }
+        std::cout << "\n\n";
+    }
+};
+
+int main() {
+    // Beispielhafte Initialisierung der Datenstrukturen
+    Reichweitenmessung_Ri messung(45000, 112000, 38.4, "Matomo Analytics");
+    Kontakte_Re kontakt(9982, "Sabine", "Müller", "sabine.mueller@example.com", 14);
+    Strassen_Ra strasse("Kaiserstraße", "38100", 1250.0, false);
+    Anwaltskanzlei_Ri kanzlei("Schulze & Partner", "Braunschweig", 8, {"Medienrecht", "Datenschutzrecht", "IT-Recht"});
+
+    // Ausgabe aller Strukturen auf der Konsole
+    messung.print();
+    kontakt.print();
+    strasse.print();
+    kanzlei.print();
+
+    return 0;
+}
