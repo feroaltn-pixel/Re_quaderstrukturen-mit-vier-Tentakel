@@ -1,0 +1,42 @@
+# Struktur 1: Positivsymptome (Symptome 1. Ranges nach Kurt Schneider)
+ri_bitte_positiv = {
+    "kategorie": "Positivsymptome / Symptome 1. Ranges",
+    "beispiele": [
+        "Akustische Halluzinationen (z. B. Stimmenhören)",
+        "Ich-Störungen (z. B. Gedankenausbreitung, Gedankenentzug)",
+        "Wahnwahrnehmungen"
+    ]
+}
+
+# Struktur 2: Negativsymptome / Symptome 2. Ranges (inklusive desorganisiertem Sprechen und Denken)
+ri_bitte_negativ = {
+    "kategorie": "Negativsymptome / Symptome 2. Ranges",
+    "beispiele": [
+        "Affektverflachung",
+        "Antriebsminderung",
+        "Sozialer Rückzug",
+        "Desorganisiertes Sprechen und Denken (formale Denkstörungen)"
+    ]
+}
+
+# Struktur 3: 1. Staatsexamen
+ri_bitte_staatsexamen_1 = {
+    "kategorie": "1. Staatsexamen",
+    "fokus": "Theoretischer und akademischer Teil des Abschlusses",
+    "bereiche": [
+        "Schriftliche Prüfungen",
+        "Mündliche Prüfungen",
+        "Grundlagenwissen"
+    ]
+}
+
+# Struktur 4: 2. Staatsexamen
+ri_bitte_staatsexamen_2 = {
+    "kategorie": "2. Staatsexamen",
+    "fokus": "Praktischer und berufsbezogener Teil des Abschlusses",
+    "bereiche": [
+        "Praktische Prüfungen (z. B. Referendariat oder Praktisches Jahr)",
+        "Berufliche Anwendung",
+        "Abschließende Staatsprüfung"
+    ]
+}
