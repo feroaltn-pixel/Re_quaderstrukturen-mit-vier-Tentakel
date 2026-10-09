@@ -1,0 +1,76 @@
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+struct RiStructure {
+    std::string token;
+    std::string titel;
+    std::vector<std::string> kerninhalte;
+};
+
+struct RoArchitecture {
+    RiStructure structure1; // Ro
+    RiStructure structure2; // Ra
+    RiStructure structure3; // Ri
+    RiStructure structure4; // Re
+};
+
+void printStructure(const RiStructure& s) {
+    std::cout << "\n[" << s.token << "] "
+              << s.titel << '\n';
+
+    for (const auto& inhalt : s.kerninhalte) {
+        std::cout << " - " << inhalt << '\n';
+    }
+}
+
+int main() {
+    const RoArchitecture modell{
+        {
+            "Ro",
+            "Schizophrenie – Symptomrang 1",
+            {
+                "Wahn und Halluzinationen",
+                "Desorganisiertes Denken oder Sprechen",
+                "Beobachtung und Dokumentation"
+            }
+        },
+        {
+            "Ra",
+            "Schizophrenie – Symptomrang 2",
+            {
+                "Negative Symptome",
+                "Aufmerksamkeit und Gedaechtnis",
+                "Alltagsfunktion und Verlauf"
+            }
+        },
+        {
+            "Ri",
+            "Erstes juristisches Staatsexamen",
+            {
+                "Buergerliches Recht",
+                "Strafrecht",
+                "Oeffentliches Recht",
+                "Gutachtenstil und Fallloesung"
+            }
+        },
+        {
+            "Re",
+            "Zweites juristisches Staatsexamen",
+            {
+                "Praxisorientierte Fallbearbeitung",
+                "Urteile und Beschluesse",
+                "Anwaltliche Schriftsaetze",
+                "Prozessrecht und Klausurtechnik"
+            }
+        }
+    };
+
+    printStructure(modell.structure1);
+    printStructure(modell.structure2);
+    printStructure(modell.structure3);
+    printStructure(modell.structure4);
+
+    return 0;
+}
