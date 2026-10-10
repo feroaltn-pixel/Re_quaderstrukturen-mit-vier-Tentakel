@@ -1,0 +1,26 @@
+ri_sechs = {
+    "Fak_1": "Carl-Friedrich-Gauß-Fakultät",
+    "Fak_2": "Lebenswissenschaften",
+    "Fak_3": "Architektur, Bauingenieurwesen und Umweltwissenschaften",
+    "Fak_4": "Maschinenbau",
+    "Fak_5": "Elektrotechnik, Informationstechnik, Physik",
+    "Fak_6": "Geistes- und Erziehungswissenschaften"
+}
+
+Richter_International = {
+    "BS_1": "Prof. Dr. Wilhelm-Albrecht Achilles (BGH-Richter a.D., geb. in Braunschweig)",
+    "BS_2": "Dr. Bruno Heusinger (2. Präsident des BGH, geb. in Braunschweig)",
+    "Int_3": "Nawaf Salam (Präsident des Internationalen Gerichtshofs - IGH)",
+    "Int_4": "Julia Sebutinde (Vizepräsidentin des Internationalen Gerichtshofs - IGH)",
+    "Int_5": "Georg Nolte (Richter am Internationalen Gerichtshof - IGH)",
+    "Int_6": "Hilary Charlesworth (Richterin am Internationalen Gerichtshof - IGH)"
+}
+Ro("ri_Edit") Re(#) 
+Ra("ri_Edit") Ri(#) 
+Ri("ri_Edit") Ra(#) 
+Re("ri_edit") Ro(#)
+
+I am a preview
+I am a preview
+SRAM1 SRAM2 Ri SRAM3
+I am a preview
