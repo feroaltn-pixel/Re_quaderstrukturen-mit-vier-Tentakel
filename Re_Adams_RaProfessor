@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ri_zwei · Re_Adams</title>
+<style>
+:root {
+  --ro:#d4263a;
+  --ra:#f4f4f0;
+  --ri:#f2d22e;
+  --re:#3cb371;
+  --bg:#0d0f14;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; background:var(--bg); color:#f4f4f0;
+  font:14px system-ui,sans-serif;
+}
+header { padding:14px; border-bottom:1px solid #303440; }
+h2 { font-size:18px; margin:0 0 5px; }
+p { color:#b8c0ce; margin:0; font-size:12px; }
+.controls { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+button {
+  padding:9px 12px; border:1px solid #51586a;
+  border-radius:8px; color:white; background:#202532;
+}
+canvas { display:block; width:100%; height:65vh; min-height:350px; }
+footer { padding:12px; color:#c1c7d3; line-height:1.8; }
+</style>
+</head>
+<body>
+<header>
+  <h2>ri_zwei · Re_Adams</h2>
+  <p>Zwei bidirektionale Parabelbahnen · acht Kreuzschnittmengen</p>
+  <div class="controls">
+    <button id="pause">Pause</button>
+    <button id="start">Neu starten</button>
+    <button id="speed">Geschwindigkeit: 1×</button>
+  </div>
+</header>
+
+<canvas id="bild"></canvas>
+
+<footer>
+  <span style="color:var(--ro)">■ Re_Adams A</span> ·
+  <span style="color:var(--ra)">■ Re_Adams B</span> ·
+  <span style="color:var(--ri)">■ Ri-Beziehung</span> ·
+  <span style="color:var(--re)">■ Re-Ergebnisebene</span>
+  <p id="status">Ri: wartet auf Überkreuzung.</p>
+  <p>Acht gelbe Markierungen stellen die acht symbolischen
+  Kreuzschnittmengen dar. Ri und Re entstehen im Modell
+  bei einer erkannten Begegnung.</p>
+</footer>
+
+<script>
+(() => {
+  const canvas = document.getElementById("bild");
+  const ctx = canvas.getContext("2d");
+  const status = document.getElementById("status");
+  const pause = document.getElementById("pause");
+  const start = document.getElementById("start");
+  const speedButton = document.getElementById("speed");
+
+  let w, h, dpr, time = 0, last = 0;
+  let running = true, speed = 1;
+  let previousMeet = -10, events = [];
+
+  function resize() {
+    const r = canvas.getBoundingClientRect();
+    dpr = Math.min(devicePixelRatio || 1, 2);
+    w = r.width;
+    h = r.height;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  addEventListener("resize", resize);
+  resize();
+
+  // Zwei spiegelbildliche Parabeltrajektorien.
+  function point(u, lane) {
+    const x = Math.sin(u);
+    const center = w / 2;
+    const scale = Math.min(w * .36, 290);
+    const bend = x * x * h * .20;
+    return {
+      x: center + x * scale,
+      y: h * .49 + (lane === 0 ? -bend : bend)
+    };
+  }
+
+  function drawPath(lane, color) {
+    ctx.beginPath();
+    for (let i = 0; i <= 240; i++) {
+      const x = -1 + 2 * i / 240;
+      const p = {
+        x: w / 2 + x * Math.min(w * .36, 290),
+        y: h * .49 + (lane === 0 ? -1 : 1) * x*x*h*.20
+      };
+      if (!i) ctx.moveTo(p.x, p.y);
+      else ctx.lineTo(p.x, p.y);
+    }
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+
+  function drawAdams(p, color, label, angle) {
+    ctx.save();
+    ctx.translate(p.x, p.y);
+    ctx.rotate(angle);
+
+    // Quaderkörper
+    ctx.strokeStyle = color;
+    ctx.fillStyle = "#151923";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.rect(-10, -7, 20, 14);
+    ctx.fill();
+    ctx.stroke();
+
+    // Vier Tentakel
+    for (let i = 0; i < 4; i++) {
+      const a = i * Math.PI / 2;
+      ctx.beginPath();
+      ctx.moveTo(Math.cos(a)*10, Math.sin(a)*7);
+      ctx.lineTo(Math.cos(a)*19, Math.sin(a)*13);
+      ctx.stroke();
+    }
+
+    ctx.fillStyle = color;
+    ctx.font = "bold 11px system-ui";
+    ctx.textAlign = "center";
+    ctx.fillText(label, 0, -19);
+    ctx.restore();
+  }
+
+  function drawCrossSections() {
+    for (let i = 0; i < 8; i++) {
+      const x = -0.88 + i * (1.76 / 7);
+      const px = w/2 + x * Math.min(w*.36,290);
+      const y1 = h*.49 - x*x*h*.20;
+      const y2 = h*.49 + x*x*h*.20;
+
+      ctx.save();
+      ctx.strokeStyle = "#f2d22e";
+      ctx.globalAlpha = .35;
+      ctx.setLineDash([4,5]);
+      ctx.beginPath();
+      ctx.moveTo(px,y1);
+      ctx.lineTo(px,y2);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = "#f2d22e";
+      ctx.beginPath();
+      ctx.arc(px,(y1+y2)/2,4,0,Math.PI*2);
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  function drawRiRe(e, age) {
+    const fade = Math.max(0, 1-age/2);
+    const radius = 12 + age*23;
+
+    ctx.save();
+    ctx.globalAlpha = fade;
+
+    // Ri: Beziehung / Kreuz
+    ctx.strokeStyle = "#f2d22e";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(e.x-radius,e.y);
+    ctx.lineTo(e.x+radius,e.y);
+    ctx.moveTo(e.x,e.y-radius);
+    ctx.lineTo(e.x,e.y+radius);
+    ctx.stroke();
+
+    // Re: grüne Ebene innerhalb des Parabelbereichs
+    ctx.strokeStyle = "#3cb371";
+    ctx.fillStyle = "rgba(60,179,113,.12)";
+    ctx.beginPath();
+    ctx.ellipse(e.x,e.y,radius*1.5,radius*.72,0,0,Math.PI*2);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.fillStyle = "#f2d22e";
+    ctx.font = "bold 11px system-ui";
+    ctx.textAlign = "center";
+    ctx.fillText("Ri",e.x,e.y-radius-7);
+
+    ctx.fillStyle = "#3cb371";
+    ctx.fillText("Re",e.x,e.y+radius+15);
+    ctx.restore();
+  }
+
+  function frame(now) {
+    if (!last) last = now;
+    const dt = Math.min((now-last)/1000,.05);
+    last = now;
+    if (running) time += dt*speed;
+
+    ctx.clearRect(0,0,w,h);
+
+    // Raster
+    ctx.strokeStyle = "rgba(160,170,190,.07)";
+    ctx.lineWidth = 1;
+    for(let x=0;x<w;x+=32) {
+      ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,h); ctx.stroke();
+    }
+    for(let y=0;y<h;y+=32) {
+      ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(w,y); ctx.stroke();
+    }
+
+    drawPath(0,"#d4263a");
+    drawPath(1,"#f4f4f0");
+    drawCrossSections();
+
+    // Beide Adams laufen in entgegengesetzte Richtungen.
+    const a = point(time*1.1,0);
+    const b = point(-time*1.1+Math.PI,1);
+
+    const distance = Math.hypot(a.x-b.x,a.y-b.y);
+    const meet = distance < 24;
+
+    if (meet && time-previousMeet > 1.0) {
+      previousMeet = time;
+      events.push({
+        x:(a.x+b.x)/2,
+        y:(a.y+b.y)/2,
+        t:time
+      });
+      status.textContent =
+        "Ri-Beziehung erkannt → Re-Ebene im Modell erzeugt.";
+    }
+
+    events = events.filter(e => time-e.t < 2.0);
+    for(const e of events) drawRiRe(e,time-e.t);
+
+    drawAdams(a,"#d4263a","Re_Adams A",Math.cos(time)*.15);
+    drawAdams(b,"#f4f4f0","Re_Adams B",-Math.cos(time)*.15);
+
+    requestAnimationFrame(frame);
+  }
+
+  pause.onclick = () => {
+    running = !running;
+    pause.textContent = running ? "Pause" : "Weiter";
+  };
+
+  start.onclick = () => {
+    time = 0;
+    last = 0;
+    previousMeet = -10;
+    events = [];
+    running = true;
+    pause.textContent = "Pause";
+    status.textContent = "Ri: wartet auf Überkreuzung.";
+  };
+
+  speedButton.onclick = () => {
+    speed = speed === 1 ? 2 : speed === 2 ? .5 : 1;
+    speedButton.textContent = "Geschwindigkeit: " + speed + "×";
+  };
+
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
