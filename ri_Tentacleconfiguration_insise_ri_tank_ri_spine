@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ri_Animation – Panzer Information</title>
+<style>
+:root{--bg:#0b0d12;--fg:#e8eaf0;--mut:#8b91a0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f2f3f7;--fg:#14161c;--mut:#5b6170}}
+:root[data-theme="light"]{--bg:#f2f3f7;--fg:#14161c;--mut:#5b6170}
+:root[data-theme="dark"]{--bg:#0b0d12;--fg:#e8eaf0;--mut:#8b91a0}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+body{padding:8px}
+canvas{display:block;width:100%;max-width:800px;margin:0 auto;border-radius:12px;background:#0b0d12}
+.leg{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;font-size:13px;color:var(--mut);margin:10px 0}
+.leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+</style>
+</head>
+<body>
+<canvas id="c" width="800" height="800"></canvas>
+<div class="leg">
+<span><i style="background:linear-gradient(90deg,#e02424,#111)"></i>Ro</span>
+<span><i style="background:linear-gradient(90deg,#fff,#111)"></i>Ra</span>
+<span><i style="background:linear-gradient(90deg,#fff,#f5d90a)"></i>Ri</span>
+<span><i style="background:linear-gradient(90deg,#fff,#22c55e)"></i>Re</span>
+</div>
+<script>
+const cv=document.getElementById('c'),g=cv.getContext('2d');
+const W=800,H=800;
+const N=['Ro','Ra','Ri','Re'];
+const COL=[['#e02424','#111'],['#ffffff','#111'],['#ffffff','#f5d90a'],['#ffffff','#22c55e']];
+const ACC=['#e02424','#d8d8d8','#f5d90a','#22c55e'];
+const ss=(a,b,x)=>{x=Math.min(1,Math.max(0,(x-a)/(b-a)));return x*x*(3-2*x)};
+const CYC=18; // Sekunden pro Zyklus
+let VI=0;
+function vn(i){return i<7?'C'+(i+1):i<19?'T'+(i-6):'L'+(i-18);}
+
+function person(t,look,sway,act){
+  const x=250+sway, y=500;
+  g.lineWidth=5;g.lineCap='round';g.strokeStyle='#cfd3dc';g.fillStyle='#cfd3dc';
+  // Beine
+  g.beginPath();g.moveTo(x,y-110);g.lineTo(x-26,y);g.moveTo(x,y-110);g.lineTo(x+26,y);g.stroke();
+  // Wirbelsäule / Körper
+  g.beginPath();g.moveTo(x,y-110);g.lineTo(x,y-215);g.stroke();
+  g.save();
+  for(let i=0;i<24;i++){const vy=y-218+i*4.6,on=i==VI;g.beginPath();g.arc(x,vy,on?3.4:2,0,7);g.fillStyle=on?ACC[act]:'#8b91a0';g.fill();}
+  g.font='9px system-ui';g.textAlign='right';g.lineWidth=1;
+  [[0,6,'C1–C7'],[7,18,'T1–T12'],[19,23,'L1–L5']].forEach(([a,b,n])=>{const y0=y-218+a*4.6-2,y1=y-218+b*4.6+2;g.strokeStyle='#8b91a0';g.beginPath();g.moveTo(x-9,y0);g.lineTo(x-9,y1);g.stroke();g.fillStyle='#cfd3dc';g.fillText(n,x-13,(y0+y1)/2+3);});
+  g.restore();
+  // Kopf (dreht sich zur Panzer-Info)
+  const hx=x+look*6, hy=y-245;
+  g.fillStyle='#14161c';g.strokeStyle='#cfd3dc';g.beginPath();g.arc(hx,hy,26,0,7);g.fill();g.stroke();
+  g.fillStyle=ACC[act];g.beginPath();g.arc(hx+look*13,hy-3,4,0,7);g.fill();
+  g.strokeStyle='#cfd3dc';g.beginPath();g.moveTo(hx+look*3,hy+12);g.lineTo(hx+look*16,hy+12);g.stroke();
+  // Arme + System (abstrakter Block mit vier Schnittstellen)
+  const sx=x+46, sy=y-150;
+  g.beginPath();g.moveTo(x,y-195);g.lineTo(sx-8,sy);g.moveTo(x,y-195);g.lineTo(x+10,y-135);g.lineTo(sx-22,sy+8);g.stroke();
+  g.fillStyle='#2a2f3a';g.strokeStyle='#cfd3dc';g.lineWidth=2;
+  g.beginPath();g.roundRect(sx-14,sy-10,76,22,4);g.fill();g.stroke();
+  for(let i=0;i<4;i++){g.fillStyle=ACC[i];g.globalAlpha=(i==act)?1:.45;g.beginPath();g.arc(sx+4+i*16,sy+1,4,0,7);g.fill();}
+  g.globalAlpha=1;
+  return {hx,hy,sx:sx+62,sy};
+}
+
+function layers(t,hx,hy,act){
+  // vier Ebenen über dem Kopf, aktive vibriert aus markanter Ecke (Quelle) zur Senke
+  const out=[];
+  for(let i=0;i<4;i++){
+    const by=hy-70-i*34, w=170, d=48, skew=34;
+    const on=i==act;
+    const vib=on?Math.sin(t*38)*2.2:0;
+    const P=[[hx-w/2+vib,by],[hx+w/2+vib,by],[hx+w/2+skew+vib,by-d*.6],[hx-w/2+skew+vib,by-d*.6]];
+    const gr=g.createLinearGradient(P[0][0],by,P[1][0],by);
+    gr.addColorStop(0,COL[i][0]);gr.addColorStop(1,COL[i][1]);
+    g.globalAlpha=on?.92:.38;g.fillStyle=gr;
+    g.beginPath();g.moveTo(...P[0]);for(let k=1;k<4;k++)g.lineTo(...P[k]);g.closePath();g.fill();
+    g.globalAlpha=1;g.strokeStyle=ACC[i];g.lineWidth=on?2.5:1;g.stroke();
+    g.fillStyle='#fff';g.font='bold 12px system-ui';g.fillText(N[i],hx-8,by-8);
+    out.push(P);
+    if(on){ // Quelle -> Senke Wellen
+      const q=P[0], s=P[2];
+      const ph=(t*1.3)%1;
+      for(let k=0;k<3;k++){const f=(ph+k/3)%1;
+        g.strokeStyle=ACC[i];g.globalAlpha=1-f;g.lineWidth=2;
+        g.beginPath();g.arc(q[0]+(s[0]-q[0])*f,q[1]+(s[1]-q[1])*f,6+f*16,0,7);g.stroke();}
+      g.globalAlpha=1;g.fillStyle='#fff';g.beginPath();g.arc(q[0],q[1],5,0,7);g.fill();
+      g.strokeStyle='#fff';g.beginPath();g.arc(s[0],s[1],8,0,7);g.stroke();
+      g.font='11px system-ui';g.fillText('Quelle',q[0]-14,q[1]+16);g.fillText('Senke',s[0]-12,s[1]-12);
+    }
+  }
+  return out;
+}
+
+function tank(t,conn){
+  // Info-Panel
+  const px=430,py=480,pw=350,ph=230;
+  g.fillStyle='#10131a';g.strokeStyle=ACC[3];g.lineWidth=1.5;
+  g.beginPath();g.roundRect(px,py,pw,ph,10);g.fill();g.stroke();
+  g.fillStyle='#8b91a0';g.font='bold 13px system-ui';g.fillText('PANZER INFORMATION',px+14,py+22);
+  const rows=['Ro  Bewegung / Kurs','Ra  Transformation / Zustand','Ri  Korrelation / Schnittstellen','Re  Umgebung / Einbettung'];
+  g.font='12px ui-monospace,Menlo,monospace';
+  rows.forEach((r,i)=>{g.fillStyle=ACC[i];g.globalAlpha=.5+.5*Math.sin(t*2+i*1.6)**2*conn+.2;g.fillText(r,px+14,py+44+i*16);});
+  g.globalAlpha=1;
+  // Panzer-Silhouette (stilisiert)
+  const ox=px+150,oy=py+160;
+  g.fillStyle='#2a2f3a';g.strokeStyle='#cfd3dc';g.lineWidth=2;
+  g.beginPath();g.roundRect(ox-110,oy,230,40,14);g.fill();g.stroke();
+  for(let i=0;i<6;i++){g.beginPath();g.arc(ox-85+i*40,oy+30,9,0,7);g.stroke();}
+  g.beginPath();g.roundRect(ox-52,oy-30,110,32,8);g.fill();g.stroke();
+  // Rohr nach links
+  const bx0=ox-52,by0=oy-14,bx1=px+14,by1=oy-24;
+  g.lineWidth=9;g.strokeStyle='#cfd3dc';g.beginPath();g.moveTo(bx0,by0);g.lineTo(bx1,by1);g.stroke();
+  g.lineWidth=5;g.strokeStyle='#2a2f3a';g.beginPath();g.moveTo(bx0,by0);g.lineTo(bx1,by1);g.stroke();
+  // vier Schnittstellen entlang des Rohrs
+  const ports=[];
+  for(let i=0;i<4;i++){
+    const f=.18+i*.22, x=bx0+(bx1-bx0)*f, y=by0+(by1-by0)*f;
+    ports.push([x,y-8]);
+    g.strokeStyle=ACC[i];g.lineWidth=3;g.globalAlpha=.55+.45*conn;
+    g.beginPath();g.arc(x,y,9,0,7);g.stroke();
+    g.fillStyle=ACC[i];g.beginPath();g.arc(x,y,3,0,7);g.fill();
+  }
+  g.globalAlpha=1;
+  return ports;
+}
+
+function tentacle(x0,y0,x1,y1,t,k,col,amp){
+  g.strokeStyle=col;g.lineCap='round';
+  const n=26;
+  for(let pass=0;pass<2;pass++){
+    g.lineWidth=pass?2:6;g.globalAlpha=pass?1:.35;
+    g.beginPath();
+    for(let i=0;i<=n;i++){
+      const u=i/n, x=x0+(x1-x0)*u, y=y0+(y1-y0)*u;
+      const dx=x1-x0,dy=y1-y0,L=Math.hypot(dx,dy)||1;
+      const w=Math.sin(u*7-t*3+k*1.7)*amp*Math.sin(u*Math.PI);
+      const px=x-dy/L*w, py=y+dx/L*w;
+      i?g.lineTo(px,py):g.moveTo(px,py);
+    }
+    g.stroke();
+  }
+  g.globalAlpha=1;
+  g.fillStyle=col;g.beginPath();g.arc(x1,y1,4,0,7);g.fill();
+}
+
+function cuboid(t,cx,cy,act){
+  const s=44,d=16;
+  const f=[[cx-s,cy-s],[cx+s,cy-s],[cx+s,cy+s],[cx-s,cy+s]];
+  g.fillStyle='#1d2a22';g.strokeStyle=ACC[3];g.lineWidth=2;
+  g.beginPath();g.moveTo(f[0][0],f[0][1]);g.lineTo(f[0][0]+d,f[0][1]-d);g.lineTo(f[1][0]+d,f[1][1]-d);g.lineTo(f[1][0],f[1][1]);g.closePath();g.fill();g.stroke();
+  g.beginPath();g.moveTo(f[1][0],f[1][1]);g.lineTo(f[1][0]+d,f[1][1]-d);g.lineTo(f[2][0]+d,f[2][1]-d);g.lineTo(f[2][0],f[2][1]);g.closePath();g.fill();g.stroke();
+  const gr=g.createLinearGradient(cx-s,cy,cx+s,cy);gr.addColorStop(0,'#fff');gr.addColorStop(1,'#22c55e');
+  g.fillStyle=gr;g.globalAlpha=.85;g.beginPath();g.rect(cx-s,cy-s,2*s,2*s);g.fill();g.globalAlpha=1;g.stroke();
+  g.fillStyle='#0b0d12';g.font='bold 15px system-ui';g.fillText('Re',cx-9,cy+5);
+  return f;
+}
+
+function w0(i){return 0}
+function frame(ms){
+  const t=ms/1000, c=t%CYC;
+  // Phasen: 0-6 Ebenen-Wechselwirkung, 6-12 Blick in Panzer-Info + Tentakel koppeln, 12-18 zurück
+  const look=ss(5,7,c)-ss(12,14,c);              // 0..1 Kopfdrehung
+  const conn=ss(6.5,8.5,c)-ss(11.5,13.5,c);     // 0..1 Tentakel-Kopplung
+  const act=Math.floor(t/2)%4;
+  VI=Math.floor(t*4)%24;
+  // Person bewegt sich entgegengesetzt zur vibrierenden Ecke (Quelle links -> nach rechts)
+  const sway=Math.sin(t*0.5)*26;
+
+  g.clearRect(0,0,W,H);
+  g.fillStyle='#0b0d12';g.fillRect(0,0,W,H);
+  // Boden
+  g.strokeStyle='#232733';g.lineWidth=1;
+  for(let i=0;i<14;i++){g.beginPath();g.moveTo(0,500+i*10);g.lineTo(W,500+i*10);g.stroke();}
+
+  const P=person(t,look,sway,act);
+  const L=layers(t,P.hx,P.hy,act);
+  const ports=tank(t,conn);
+  const cb=cuboid(t,630,230,act);
+
+  // vier Tentakel des Re-Quaders
+  const corners=[[cb[0][0],cb[0][1]],[cb[1][0]+16,cb[1][1]-16],[cb[2][0]+16,cb[2][1]-16],[cb[3][0],cb[3][1]]];
+  for(let i=0;i<4;i++){
+    // frei schwingende Ziele
+    const fx=corners[i][0]+(i<2?-1:1)*(70+i*12)+Math.sin(t*1.3+i)*20, fy=corners[i][1]+60+Math.cos(t*1.1+i*2)*20;
+    // Ziel A: Schnittstelle am Rohr (Kopplung), Ziel B: aktive Ebene (Tentakel 0 wechselt ab)
+    let tx=ports[i][0],ty=ports[i][1];
+    if(i==0){const q=L[act][2];const m=0.5+0.5*Math.sin(t*0.9); tx=tx+(q[0]-tx)*m*(1-conn*.6);ty=ty+(q[1]-ty)*m*(1-conn*.6);}
+    const x1=fx+(tx-fx)*conn, y1=fy+(ty-fy)*conn;
+    tentacle(corners[i][0],corners[i][1],x1,y1,t,i,ACC[i],14+10*(1-conn));
+  }
+  // Blickstrahl Person -> Panzer Information
+  if(look>0.05){
+    g.strokeStyle='#f5d90a';g.globalAlpha=.55*look;g.setLineDash([6,6]);g.lineWidth=1.5;
+    g.beginPath();g.moveTo(P.hx+14,P.hy);g.lineTo(450,555);g.stroke();g.setLineDash([]);g.globalAlpha=1;
+  }
+  // Ri-Verbindung Ebene <-> System in der Hand
+  g.strokeStyle=ACC[act];g.globalAlpha=.4;g.setLineDash([3,5]);g.beginPath();g.moveTo(P.sx-30,P.sy);g.lineTo(L[act][0][0]+20,L[act][0][1]);g.stroke();g.setLineDash([]);g.globalAlpha=1;
+  // Ri: Relationsgraph – jede Ebene i verbindet sich mit Schnittstelle i am Rohr, Kopf und Quader
+  for(let i=0;i<4;i++){
+    const a=L[i][1], b=ports[i], on=i==act;
+    g.strokeStyle=ACC[i];g.lineWidth=on?2:1;g.globalAlpha=(on?.7:.25)*(.4+.6*Math.max(look,conn));
+    g.setLineDash([2,6]);g.beginPath();g.moveTo(a[0],a[1]);g.quadraticCurveTo((a[0]+b[0])/2+30,Math.min(a[1],b[1])-40,b[0],b[1]);g.stroke();
+    g.setLineDash([]);
+    g.strokeStyle='#f5d90a';g.globalAlpha=.18;g.beginPath();g.moveTo(P.hx,P.hy-26);g.lineTo(a[0]-w0(i),a[1]);g.stroke();
+  }
+  g.globalAlpha=1;
+  {const sx0=250+sway,c1=[sx0,500-218],cv=[sx0,500-218+VI*4.6];
+  g.setLineDash([4,6]);g.lineWidth=1.5;
+  g.strokeStyle='#f5d90a';g.globalAlpha=.45;g.beginPath();g.moveTo(630,230);g.quadraticCurveTo(450,150,c1[0],c1[1]);g.stroke();
+  g.strokeStyle=ACC[act];g.globalAlpha=.6;g.beginPath();g.moveTo(L[act][3][0],L[act][3][1]);g.quadraticCurveTo(sx0+70,cv[1]-30,cv[0],cv[1]);g.stroke();
+  g.setLineDash([]);g.globalAlpha=1;g.fillStyle='#f5d90a';g.font='bold 11px system-ui';g.fillText('Ri → C1',c1[0]+12,c1[1]-6);}
+  g.fillStyle='#f5d90a';g.font='bold 12px system-ui';g.fillText('Ri(B) = {(B,X1)…(B,Xn)}',16,H-16);
+  // Titel
+  g.fillStyle='#8b91a0';g.font='13px system-ui';
+  g.fillText('Ri_Animation  ·  aktiv: '+N[act]+' · '+vn(VI)+'  ·  '+(conn>.5?'Tentakel gekoppelt':look>.3?'Blick: Panzer Information':'Ebenen-Wechselwirkung'),16,26);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
