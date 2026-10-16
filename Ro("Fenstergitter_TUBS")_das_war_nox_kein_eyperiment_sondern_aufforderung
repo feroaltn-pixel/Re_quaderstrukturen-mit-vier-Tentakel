@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ri_Animation – Fenstergitter</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{background:#0d0f14;color:white;font-family:system-ui}
+canvas{width:100%;height:100%;display:block}
+.panel{
+ position:fixed;top:14px;left:14px;z-index:2;
+ background:#10131cdd;border:1px solid #505768;
+ padding:12px 15px;border-radius:12px
+}
+h3{margin:0 0 7px;font-size:17px}
+p{margin:5px 0;color:#c4cad5;font-size:12px}
+button{background:#292e3b;color:white;border:1px solid #687184;
+ border-radius:7px;padding:7px 12px;margin:7px 4px 0 0}
+</style>
+</head>
+<body>
+<div class="panel">
+<h3>Ri_Fenstergitter</h3>
+<div id="phase">Ro · Bewegung</div>
+<p>Vier Tentakel · Perspektivischer Übergang</p>
+<button id="toggle">Pause</button>
+<button id="view">Perspektive wechseln</button>
+</div>
+<canvas id="scene"></canvas>
+<script>
+const c=document.querySelector("#scene");
+const ctx=c.getContext("2d");
+let w,h,t=0,paused=false,inside=false,last=0;
+const fields=[
+ {name:"Ro",color:"#d4263a"},
+ {name:"Ra",color:"#f4f4f0"},
+ {name:"Ri",color:"#f2d22e"},
+ {name:"Re",color:"#3cb371"}
+];
+function resize(){
+ const d=Math.min(devicePixelRatio||1,2);
+ w=innerWidth;h=innerHeight;
+ c.width=w*d;c.height=h*d;
+ ctx.setTransform(d,0,0,d,0,0);
+}
+addEventListener("resize",resize);resize();
+document.querySelector("#toggle").onclick=()=>{
+ paused=!paused;
+ document.querySelector("#toggle").textContent=paused?"Start":"Pause";
+};
+document.querySelector("#view").onclick=()=>inside=!inside;
+
+function line(x1,y1,x2,y2,color,width=1){
+ ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);
+ ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke();
+}
+function draw(now){
+ requestAnimationFrame(draw);
+ if(!paused)t+=0.009;
+ const z=(Math.sin(t*.55)+1)/2;
+ const zoom=inside?1.1+z*2.5:1+z*.32;
+ ctx.fillStyle="#0d0f14";ctx.fillRect(0,0,w,h);
+ const cx=w*.5,cy=h*.52;
+ const cols=12,rows=9,step=48*zoom;
+ // Perspective: Fenstergitter
+ ctx.save();ctx.translate(cx,cy);
+ for(let i=-cols;i<=cols;i++){
+   const bend=Math.sin(t*.5+i*.16)*9;
+   line(i*step*.5,-h*zoom,i*step*.5+bend,h*zoom,
+        "#65708466",1);
+ }
+ for(let j=-rows;j<=rows;j++){
+   const yy=j*step*.5;
+   line(-w*zoom,yy,w*zoom,yy,
+        "#65708466",1);
+ }
+ // Four tentacle arms, each with a smooth curved path
+ const colors=fields.map(f=>f.color);
+ const spread=inside?Math.max(.16,1-z*.82):1;
+ for(let k=0;k<4;k++){
+   const a=k*Math.PI/2+t*.17;
+   ctx.beginPath();
+   for(let n=0;n<=100;n++){
+     const u=n/100;
+     const r=u*(inside?Math.min(w,h)*.68:Math.min(w,h)*.35);
+     const wave=Math.sin(u*9-t*1.7+k)*22*spread*u;
+     const x=Math.cos(a)*r+Math.cos(a+1.1)*wave;
+     const y=Math.sin(a)*r+Math.sin(a+1.1)*wave;
+     if(n===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);
+   }
+   ctx.strokeStyle=colors[k];
+   ctx.lineWidth=inside?3.4:2.7;
+   ctx.shadowBlur=12;ctx.shadowColor=colors[k];
+   ctx.stroke();ctx.shadowBlur=0;
+   // glowing tip
+   const r=inside?Math.min(w,h)*.68:Math.min(w,h)*.35;
+   ctx.beginPath();
+   ctx.arc(Math.cos(a)*r,Math.sin(a)*r,4,0,Math.PI*2);
+   ctx.fillStyle=colors[k];ctx.fill();
+ }
+ // Central junction
+ ctx.beginPath();ctx.arc(0,0,inside?12:8,0,Math.PI*2);
+ ctx.fillStyle="#0d0f14";ctx.fill();
+ ctx.lineWidth=2;ctx.strokeStyle="#f4f4f0";ctx.stroke();
+ ctx.restore();
+ // State label changes with phase
+ const index=Math.floor(t/3)%4;
+ document.querySelector("#phase").textContent=
+ fields[index].name+" · "+[
+ "Bewegung","Konstruktion","Beziehungen","Umgebung / Übergang"
+ ][index];
+ // Tunnel frame when looking into a tentacle
+ if(inside){
+   for(let i=0;i<9;i++){
+     const p=(i+1)/10;
+     const ww=w*p*.9,hh=h*p*.9;
+     ctx.strokeStyle="#91a0b522";
+     ctx.lineWidth=1;
+     ctx.strokeRect((w-ww)/2,(h-hh)/2,ww,hh);
+   }
+ }
+}
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>
