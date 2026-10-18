@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPR Bodenradar - Anomalie-Analyse</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #050d0a;
+            color: #33ff99;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .interface-container {
+            display: flex;
+            background: rgba(5, 20, 15, 0.85);
+            border: 2px solid #145234;
+            box-shadow: 0 0 30px rgba(0, 255, 128, 0.15);
+            padding: 20px;
+            border-radius: 8px;
+            gap: 25px;
+            position: relative;
+        }
+
+        /* Dekorative Ecken für das HUD */
+        .interface-container::before {
+            content: "MODE: RE(GPR_SUB_SURFACE_SCAN)";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #050d0a;
+            padding: 0 10px;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Linke Seite: Bidirektionales Frequenzspektrum */
+        .spectrum-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-right: 1px dashed #145234;
+            padding-right: 20px;
+            width: 100px;
+        }
+
+        .panel-label {
+            font-size: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #00ff88;
+        }
+
+        .spectrum-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 250px;
+            width: 80px;
+            position: relative;
+        }
+
+        .spectrum-bar {
+            width: 6px;
+            background: linear-gradient(to top, #00ff88, #007733);
+            border-radius: 3px;
+            transition: height 0.05s ease;
+        }
+
+        /* Rechte Seite: Rundes Radar-Display */
+        .radar-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .radar-display {
+            width: 320px;
+            height: 320px;
+            border: 2px solid #00ff88;
+            border-radius: 50%;
+            position: relative;
+            background: radial-gradient(circle, #092015 0%, #030a07 100%);
+            box-shadow: inset 0 0 20px rgba(0, 255, 128, 0.3);
+            overflow: hidden;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+        }
+
+        /* System Telemetriedaten */
+        .telemetry {
+            font-size: 11px;
+            line-height: 1.4;
+            width: 100%;
+            background: rgba(0, 40, 20, 0.2);
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #145234;
+        }
+
+        .alert-text {
+            color: #ff3344;
+            font-weight: bold;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="interface-container">
+    <!-- LINKES BEDIENFELD: Bidirektionales Signalspektrum -->
+    <div class="spectrum-panel">
+        <div class="panel-label">Bi-Dir<br>Spectrum</div>
+        <div class="spectrum-container" id="spectrumContainer">
+            <!-- Balken werden dynamisch per JS erzeugt -->
+        </div>
+        <div class="panel-label" style="color: #ff3344;">RO_4T Quant</div>
+    </div>
+
+    <!-- RECHTES BEDIENFELD: GPR Haupt-Bodenradar -->
+    <div class="radar-panel">
+        <div class="radar-display">
+            <canvas id="radarCanvas" width="320" height="320"></canvas>
+        </div>
+        
+        <div class="telemetry">
+            <div>TARGET ID: <span style="color: #fff;">QUAD-STRUCTURE // RE_MODE</span></div>
+            <div>DEPTH_EST: <span style="color: #fff;" id="depthVal">-14.28m</span></div>
+            <div>RADAR BEAMS: <span style="color: #00ff88;">4x ANTENNA ARRAYS ACTIVATED</span></div>
+            <div class="alert-text">STATUS: ANOMALOUS DETOUR DETECTED</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('radarCanvas');
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    const cx = width / 2;
+    const cy = height / 2;
+
+    // Spektrum-Balken links generieren
+    const spectrumContainer = document.getElementById('spectrumContainer');
+    const numBars = 8;
+    const bars = [];
+    
+    for (let i = 0; i < numBars; i++) {
+        const bar = document.createElement('div');
+        bar.className = 'spectrum-bar';
+        spectrumContainer.appendChild(bar);
+        bars.push(bar);
+    }
+
+    let angle = 0;
+
+    function drawRadarGrid() {
+        ctx.strokeStyle = 'rgba(0, 255, 136, 0.15)';
+        ctx.lineWidth = 1;
+
+        // Konzentrische Kreise
+        for (let r = 40; r < cx; r += 40) {
+            ctx.beginPath();
+            ctx.arc(cx, cy, r, 0, Math.PI * 2);
+            ctx.stroke();
+        }
+
+        // Fadenkreuz-Achsen
+        ctx.beginPath();
+        ctx.moveTo(0, cy); ctx.lineTo(width, cy);
+        ctx.moveTo(cx, 0); ctx.lineTo(cx, height);
+        ctx.stroke();
+    }
+
+    function drawStrahlenkeulen(currentAngle) {
+        ctx.save();
+        ctx.translate(cx, cy);
+
+        // 4 rotierende, kreuzweise versetzte Radar-Strahlenkeulen
+        for (let i = 0; i < 4; i++) {
+            const beamAngle = currentAngle + (i * Math.PI / 2);
+            
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            // Definiert den Kegelüberstreichwinkel der Radarkeule
+            ctx.arc(0, 0, cx, beamAngle - 0.15, beamAngle + 0.15);
+            ctx.closePath();
+
+            let gradient = ctx.createRadialGradient(0, 0, 10, 0, 0, cx);
+            gradient.addColorStop(0, 'rgba(0, 255, 136, 0.4)');
+            gradient.addColorStop(0.5, 'rgba(0, 255, 136, 0.1)');
+            gradient.addColorStop(1, 'rgba(0, 255, 136, 0)');
+            
+            ctx.fillStyle = gradient;
+            ctx.fill();
+        }
+        ctx.restore();
+    }
+
+    function drawTentacles(time) {
+        ctx.strokeStyle = '#00ff88';
+        ctx.shadowColor = '#00ff88';
+        ctx.lineWidth = 3;
+
+        // Zentraler mathematischer Quader (Kern)
+        ctx.fillStyle = '#051a10';
+        ctx.fillRect(cx - 15, cy - 15, 30, 30);
+        ctx.strokeRect(cx - 15, cy - 15, 30, 30);
+
+        // 4 Tentakeln, die sich rhythmisch überkreuzen und schwingen
+        const baseAngles = [0, Math.PI/2, Math.PI, (3 * Math.PI)/2];
+        
+        baseAngles.forEach((baseAngle, index) => {
+            ctx.beginPath();
+            ctx.moveTo(cx, cy);
+
+            // Bestimmung der Wellenbewegung für die Überkreuzungs-Optik
+            let length = 110;
+            let segments = 20;
+            
+            for(let j = 1; j <= segments; j++) {
+                let t = j / segments;
+                let currentLen = t * length;
+                
+                // Sinus- und Kosinusfunktionen erzeugen das periodische Überkreuzen
+                let wave = Math.sin(time * 0.004 + t * 5 + index) * 20 * t;
+                
+                let targetX = cx + Math.cos(baseAngle) * currentLen + Math.sin(baseAngle) * wave;
+                let targetY = cy + Math.sin(baseAngle) * currentLen - Math.cos(baseAngle) * wave;
+                
+                ctx.lineTo(targetX, targetY);
+            }
+            ctx.stroke();
+        });
+    }
+
+    function updateSpectrum(time) {
+        // Berechnet die Amplituden des bidirektionalen Spektrums synchron zur Frequenz der Tentakeln
+        bars.forEach((bar, index) => {
+            let offset = index * 0.5;
+            let noise = Math.sin(time * 0.01 + offset) * 35 + Math.cos(time * 0.007 - offset) * 15;
+            let finalHeight = Math.max(10, Math.min(100, 50 + noise));
+            bar.style.height = finalHeight + '%';
+        });
+
+        // Simuliert eine fluktuierende Tiefenberechnung im Interface
+        document.getElementById('depthVal').innerText = (-14.28 + Math.sin(time * 0.002) * 0.12).toFixed(2) + "m";
+    }
+
+    function animate(timestamp) {
+        // Löschen und Canvas-Hintergrund auffrischen
+        ctx.clearRect(0, 0, width, height);
+
+        // Langsame Rotation der Radarkeulen
+        angle += 0.012;
+
+        drawRadarGrid();
+        drawStrahlenkeulen(angle);
+        drawTentacles(timestamp);
+        updateSpectrum(timestamp);
+
+        requestAnimationFrame(animate);
+    }
+
+    // Start der Animationsschleife
+    requestAnimationFrame(animate);
+</script>
+
+</body>
+</html>
