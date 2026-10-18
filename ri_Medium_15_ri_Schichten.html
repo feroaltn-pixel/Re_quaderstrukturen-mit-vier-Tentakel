@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_Medium_15_ri_Schichten</title>
+<style>
+:root{--bg:#f5f4ef;--fg:#1f1e1d;--ro-f:#FCEBEB;--ro-s:#A32D2D;--ra-f:#F1EFE8;--ra-s:#5F5E5A;--ri-f:#FAEEDA;--ri-s:#854F0B;--re-f:#EAF3DE;--re-s:#3B6D11;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1b1a;--fg:#efede5;--ro-f:#791F1F;--ro-s:#F7C1C1;--ra-f:#444441;--ra-s:#D3D1C7;--ri-f:#633806;--ri-s:#FAC775;--re-f:#27500A;--re-s:#C0DD97;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1b1a;--fg:#efede5;--ro-f:#791F1F;--ro-s:#F7C1C1;--ra-f:#444441;--ra-s:#D3D1C7;--ri-f:#633806;--ri-s:#FAC775;--re-f:#27500A;--re-s:#C0DD97;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;justify-content:center;padding:12px}
+ol{list-style:none;margin:0;padding:0;width:100%;max-width:420px;display:flex;flex-direction:column;gap:3px}
+li{display:flex;align-items:center;gap:12px}
+span{width:64px;text-align:right;flex:none}
+i{flex:1;height:20px;border-radius:4px;border:0.5px solid}
+.ro i{background:var(--ro-f);border-color:var(--ro-s)}
+.ra i{background:var(--ra-f);border-color:var(--ra-s)}
+.ri i{background:var(--ri-f);border-color:var(--ri-s)}
+.re i{background:var(--re-f);border-color:var(--re-s)}
+.w{position:relative;width:100%;max-width:420px}
+canvas{position:absolute;left:0;top:0;pointer-events:none}
+p{margin:12px 0 0}
+</style></head>
+<body>
+<div class="w"><ol aria-label="Medium aus 15 Schichten, zyklisch Ro, Ra, Ri, Re">
+<li class="ro"><span>1 · Ro</span><i></i></li>
+<li class="ra"><span>2 · Ra</span><i></i></li>
+<li class="ri"><span>3 · Ri</span><i></i></li>
+<li class="re"><span>4 · Re</span><i></i></li>
+<li class="ro"><span>5 · Ro</span><i></i></li>
+<li class="ra"><span>6 · Ra</span><i></i></li>
+<li class="ri"><span>7 · Ri</span><i></i></li>
+<li class="re"><span>8 · Re</span><i></i></li>
+<li class="ro"><span>9 · Ro</span><i></i></li>
+<li class="ra"><span>10 · Ra</span><i></i></li>
+<li class="ri"><span>11 · Ri</span><i></i></li>
+<li class="re"><span>12 · Re</span><i></i></li>
+<li class="ro"><span>13 · Ro</span><i></i></li>
+<li class="ra"><span>14 · Ra</span><i></i></li>
+<li class="ri"><span>15 · Ri</span><i></i></li>
+</ol><canvas id="c" aria-hidden="true"></canvas>
+<p>ra_Tentakel durch alle 15 Schichten. Bei ra_eigene_Interessen_ra wandert der größte Ausschlag zur Schicht im Fokus (gelb).<br>Die Schichten lassen sich unterschiedlich anwenden, z. B. als Etagen eines Hochhauses oder zur Approximation einer Gruppe. Die Pfeile links sind ReObjekte je Schicht. Ri verbindet benachbarte Pfeile umso dicker, je ähnlicher ihre Ausrichtung ist, und die Schwingung ordnet sie nach und nach.</p></div>
+<script>
+var cv=document.getElementById('c'),g=cv.getContext('2d'),ol=document.querySelector('ol');
+var dpr=Math.min(window.devicePixelRatio||1,2),W,H,t=0,last=null;
+var ks=['--ro-s','--ra-s','--ri-s','--re-s'];
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function size(){W=ol.clientWidth;H=ol.clientHeight;cv.width=W*dpr;cv.height=H*dpr;cv.style.width=W+'px';cv.style.height=H+'px';}
+size();window.addEventListener('resize',size);
+function amp(i,foc){return 8+14*Math.exp(-(i-foc)*(i-foc)/4);}
+function draw(){
+  var cs=getComputedStyle(document.documentElement);
+  function col(n){return cs.getPropertyValue(n).trim();}
+  g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,W,H);
+  var x0=76,cx=x0+(W-x0)/2,fg=col('--fg'),foc=7+6*Math.sin(t*0.35),drift=16*Math.sin(t*0.5);
+  function dr(y){return drift+0.1*Math.sin(t*0.4)*(y-H/2);}
+  for(var q=0;q<15;q++){
+    var qy=10+q*23;
+    g.globalAlpha=0.4*Math.abs(Math.sin(qy*0.06-t*2.4));g.fillStyle=col(ks[q%4]);
+    g.fillRect(x0+1,qy-9,W-x0-2,18);
+  }
+  g.globalAlpha=0.25;g.fillStyle=col('--ri-s');
+  g.fillRect(x0,10+foc*23-12,W-x0,24);
+  var cpl=0.5+0.5*Math.sin(t*0.2),ang=[],ax=x0+16;
+  for(var a=0;a<15;a++){ang.push(1.4*Math.sin(a*1.7)*(1-cpl)+0.9*Math.sin((10+a*23)*0.06-t*2.4)*cpl);}
+  for(var b=0;b<15;b++){
+    var ay=10+b*23,ddx=Math.sin(ang[b]),ddy=-Math.cos(ang[b]);
+    if(b<14){
+      var cr=1-Math.min(Math.abs(ang[b]-ang[b+1]),Math.PI)/Math.PI;
+      g.strokeStyle=col('--ri-s');g.globalAlpha=0.15+0.85*cr*cr;g.lineWidth=0.5+2*cr*cr;
+      g.beginPath();g.moveTo(ax,ay+8);g.lineTo(ax,ay+15);g.stroke();
+    }
+    g.strokeStyle=fg;g.fillStyle=fg;g.globalAlpha=0.9;g.lineWidth=1.5;
+    g.beginPath();g.moveTo(ax-ddx*7,ay-ddy*7);g.lineTo(ax+ddx*7,ay+ddy*7);g.stroke();
+    g.beginPath();g.arc(ax+ddx*7,ay+ddy*7,2,0,6.2832);g.fill();
+  }
+  g.globalAlpha=0.95;g.strokeStyle=fg;g.lineCap='round';
+  var px=null,py=null;
+  for(var y=0;y<=H;y+=2){
+    var f=(y-10)/23,x=cx+dr(y)+amp(f,foc)*Math.sin(y*0.06-t*2.4);
+    if(px!==null){g.lineWidth=3.2-2*y/H;g.beginPath();g.moveTo(px,py);g.lineTo(x,y);g.stroke();}
+    px=x;py=y;
+  }
+  var fi=Math.round(foc),fy=10+fi*23,fx=cx+dr(fy)+amp(fi,foc)*Math.sin(fy*0.06-t*2.4);
+  g.strokeStyle=col('--ri-s');g.lineWidth=0.5;g.globalAlpha=0.55;
+  for(var j=0;j<15;j++){
+    if(j===fi)continue;
+    var jy=10+j*23,jx=cx+dr(jy)+amp(j,foc)*Math.sin(jy*0.06-t*2.4);
+    g.beginPath();g.moveTo(jx,jy);g.lineTo(fx,fy);g.stroke();
+  }
+  g.globalAlpha=0.95;g.strokeStyle=fg;
+  for(var i=0;i<15;i++){
+    var yy=10+i*23,xx=cx+dr(yy)+amp(i,foc)*Math.sin(yy*0.06-t*2.4);
+    g.fillStyle=col(ks[i%4]);g.lineWidth=1;
+    g.beginPath();g.arc(xx,yy,3.5,0,6.2832);g.fill();g.stroke();
+  }
+  g.globalAlpha=1;
+}
+function f(ts){
+  if(last===null)last=ts;
+  t+=Math.min((ts-last)/1000,0.1);last=ts;
+  draw();requestAnimationFrame(f);
+}
+if(reduce){draw();}else{requestAnimationFrame(f);}
+</script>
+</body></html>
