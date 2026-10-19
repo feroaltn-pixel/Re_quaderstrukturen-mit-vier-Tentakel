@@ -1,0 +1,280 @@
+
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ri_eigene_ra_Animation – vier Ri_Raudiospuren</title>
+<style>
+:root {
+  --ro:#e0161b; --ra:#f4f4f0;
+  --ri:#ffd92a; --re:#3cb371; --bg:#0d0f14;
+}
+* { box-sizing:border-box }
+body {
+  margin:0;background:var(--bg);color:#f4f4f0;
+  font:15px system-ui,sans-serif;
+}
+main {max-width:950px;margin:auto;padding:18px}
+h1 {font-size:22px}
+p {color:#b9c2d0;line-height:1.5}
+canvas {
+  display:block;width:100%;height:auto;
+  background:#10151e;border:1px solid #414956;border-radius:12px;
+}
+button {
+  padding:9px 13px;border-radius:8px;
+  border:1px solid #596579;background:#252d3a;
+  color:white;cursor:pointer;
+}
+button:hover {background:#394558}
+.controls {display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.audio {
+  border:1px solid #394353;border-radius:10px;
+  padding:12px;margin:10px 0;
+}
+.audio-head {display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.audio-head strong {min-width:30px}
+.audio input[type=range] {width:100%;margin:12px 0}
+.audio label {font-size:13px;color:#bbc4d0}
+.row {display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ro {color:var(--ro)} .ra {color:var(--ra)}
+.ri {color:var(--ri)} .re {color:var(--re)}
+small {color:#aab4c3}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<h1>Ri – Vier Ri_Raudiospuren</h1>
+<p>
+Eigenständige Ro–Ra–Ri–Re-Animation mit beweglichem
+ri_tor, vier Schwingungsspuren und vier synthetisch
+erzeugten Audiosignalen.
+</p>
+
+<canvas id="scene" width="840" height="480"></canvas>
+
+<div class="controls">
+<button id="play">▶ Alle Spuren starten</button>
+<button id="pause">Ⅱ Alle pausieren</button>
+<button id="reset">↺ Animation zurücksetzen</button>
+</div>
+
+<div id="tracks"></div>
+
+<p>
+<strong>Signalmodell:</strong> Jede Audiospur wird als Sinusschwingung
+erzeugt. Die Frequenz, Lautstärke und Aktivierung sind pro Spur
+einstellbar. Die Audiosignale werden lokal im Browser erzeugt.
+</p>
+<small>
+Hinweis: Der Browser benötigt eine aktive Benutzeraktion,
+bevor er Audio abspielen darf.
+</small>
+</main>
+
+<script>
+const defs = [
+ {name:"Ro",color:"#e0161b",freq:220,volume:.18,
+  desc:"Bewegung"},
+ {name:"Ra",color:"#f4f4f0",freq:277,volume:.14,
+  desc:"Konstruktion"},
+ {name:"Ri",color:"#ffd92a",freq:330,volume:.14,
+  desc:"Beziehung"},
+ {name:"Re",color:"#3cb371",freq:392,volume:.14,
+  desc:"Umgebung"}
+];
+
+const tracks = defs.map((d,i)=>({
+ ...d,enabled:true,osc:null,gain:null,analyser:null,
+ phase:i*.8
+}));
+
+const tracksEl=document.querySelector("#tracks");
+tracks.forEach((tr,i)=>{
+ const el=document.createElement("section");
+ el.className="audio";
+ el.innerHTML=`
+ <div class="audio-head">
+   <span style="color:${tr.color}">●</span>
+   <strong style="color:${tr.color}">${tr.name}</strong>
+   <span>${tr.desc}</span>
+   <button class="toggle">Spur aus</button>
+ </div>
+ <div class="row">
+  <label>Frequenz: <span class="hz">${tr.freq}</span> Hz
+   <input class="frequency" type="range"
+    min="80" max="880" value="${tr.freq}">
+  </label>
+  <label>Lautstärke: <span class="vol">
+   ${Math.round(tr.volume*100)}%</span>
+   <input class="volume" type="range"
+    min="0" max="35" value="${tr.volume*100}">
+  </label>
+ </div>`;
+ tracksEl.appendChild(el);
+ tr.el=el;
+ el.querySelector(".toggle").onclick=()=>{
+   tr.enabled=!tr.enabled;
+   el.querySelector(".toggle").textContent=
+     tr.enabled?"Spur aus":"Spur ein";
+   if(tr.gain && tr.ctx){
+     tr.gain.gain.setTargetAtTime(
+       tr.enabled?tr.volume:0,tr.ctx.currentTime,.025);
+   }
+ };
+ el.querySelector(".frequency").oninput=e=>{
+   tr.freq=+e.target.value;
+   el.querySelector(".hz").textContent=tr.freq;
+   if(tr.osc && tr.ctx)
+     tr.osc.frequency.setTargetAtTime(
+       tr.freq,tr.ctx.currentTime,.03);
+ };
+ el.querySelector(".volume").oninput=e=>{
+   tr.volume=+e.target.value/100;
+   el.querySelector(".vol").textContent=e.target.value+"%";
+   if(tr.gain && tr.ctx)
+     tr.gain.gain.setTargetAtTime(
+       tr.enabled?tr.volume:0,tr.ctx.currentTime,.03);
+ };
+});
+
+let audioCtx=null,playing=false,t=0;
+
+async function startAudio(){
+ if(!audioCtx){
+   const AC=window.AudioContext||window.webkitAudioContext;
+   if(!AC){alert("Web Audio wird in diesem Browser nicht unterstützt.");return;}
+   audioCtx=new AC();
+ }
+ await audioCtx.resume();
+
+ tracks.forEach(tr=>{
+   tr.ctx=audioCtx;
+   if(!tr.osc){
+     tr.osc=audioCtx.createOscillator();
+     tr.gain=audioCtx.createGain();
+     tr.analyser=audioCtx.createAnalyser();
+     tr.analyser.fftSize=256;
+     tr.osc.type="sine";
+     tr.osc.frequency.value=tr.freq;
+     tr.gain.gain.value=0;
+     tr.osc.connect(tr.gain);
+     tr.gain.connect(tr.analyser);
+     tr.analyser.connect(audioCtx.destination);
+     tr.osc.start();
+   }
+   tr.gain.gain.setTargetAtTime(
+     tr.enabled?tr.volume:0,audioCtx.currentTime,.04);
+ });
+ playing=true;
+}
+function pauseAudio(){
+ playing=false;
+ if(audioCtx){
+   tracks.forEach(tr=>{
+     if(tr.gain)tr.gain.gain.setTargetAtTime(
+       0,audioCtx.currentTime,.04);
+   });
+ }
+}
+document.querySelector("#play").onclick=startAudio;
+document.querySelector("#pause").onclick=pauseAudio;
+document.querySelector("#reset").onclick=()=>{
+ t=0;
+};
+
+// Animation
+const canvas=document.querySelector("#scene");
+const ctx=canvas.getContext("2d");
+
+function draw(){
+ const W=canvas.width,H=canvas.height;
+ ctx.clearRect(0,0,W,H);
+
+ // Koordinatengitter
+ for(let x=20;x<W;x+=40){
+  ctx.beginPath();ctx.moveTo(x,15);ctx.lineTo(x,H-15);
+  ctx.strokeStyle="#293342";ctx.lineWidth=1;ctx.stroke();
+ }
+ for(let y=15;y<H;y+=40){
+  ctx.beginPath();ctx.moveTo(15,y);ctx.lineTo(W-15,y);
+  ctx.strokeStyle="#293342";ctx.lineWidth=1;ctx.stroke();
+ }
+ // Achsen
+ ctx.strokeStyle="#9aa5b5";ctx.lineWidth=1.5;
+ ctx.beginPath();ctx.moveTo(15,H/2);ctx.lineTo(W-15,H/2);
+ ctx.moveTo(W/2,15);ctx.lineTo(W/2,H-15);ctx.stroke();
+ ctx.fillStyle="#ccd3df";ctx.font="13px system-ui";
+ ctx.fillText("x",W-22,H/2-9);
+ ctx.fillText("y",W/2+9,24);
+ ctx.fillText("O(0|0)",W/2+8,H/2+16);
+
+ // Tor bewegt sich und rotiert
+ const cx=W/2+Math.sin(t*.7)*100;
+ const cy=H/2+Math.cos(t*.5)*65;
+ const ww=190,hh=150;
+ const x=cx-ww/2,y=cy-hh/2;
+
+ ctx.save();
+ ctx.translate(cx,cy);
+ ctx.rotate(Math.sin(t*.4)*.10);
+ ctx.translate(-cx,-cy);
+
+ // Torfläche mit zwei spitzen und zwei gerundeten Ecken
+ ctx.beginPath();
+ ctx.moveTo(x,y);
+ ctx.lineTo(x+ww*.68,y);
+ ctx.quadraticCurveTo(x+ww,y,x+ww,y+hh*.32);
+ ctx.lineTo(x+ww,y+hh);
+ ctx.lineTo(x,y+hh);
+ ctx.closePath();
+ ctx.fillStyle="rgba(60,179,113,.07)";
+ ctx.fill();
+ ctx.strokeStyle="#3cb371";ctx.lineWidth=2.5;ctx.stroke();
+
+ // Die vier Audiospuren erscheinen als lokale Wellen
+ tracks.forEach((tr,i)=>{
+   const yy=y+25+i*30;
+   ctx.beginPath();
+   for(let k=0;k<=100;k++){
+     const px=x+12+(ww-24)*k/100;
+     const py=yy+7*Math.sin(k/100*Math.PI*4+t*(1+i*.12)+tr.phase);
+     if(k===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);
+   }
+   ctx.strokeStyle=tr.color;
+   ctx.globalAlpha=tr.enabled?1:.25;
+   ctx.lineWidth=1.8;ctx.stroke();
+   ctx.globalAlpha=1;
+   ctx.fillStyle=tr.color;ctx.font="12px system-ui";
+   ctx.fillText(tr.name,x+ww-32,yy-9);
+ });
+
+ // Zwei markante Spitzen
+ [[x,y],[x,y+hh]].forEach(([px,py])=>{
+   ctx.beginPath();ctx.arc(px,py,4,0,Math.PI*2);
+   ctx.fillStyle="#e0161b";ctx.fill();
+ });
+
+ // Markierung der beiden Bogen-Ecken
+ ctx.strokeStyle="#ffd92a";ctx.lineWidth=3;
+ ctx.beginPath();
+ ctx.moveTo(x+ww*.68,y);
+ ctx.quadraticCurveTo(x+ww,y,x+ww,y+hh*.32);
+ ctx.stroke();
+
+ ctx.restore();
+
+ ctx.fillStyle="#f4f4f0";ctx.font="bold 14px system-ui";
+ ctx.fillText("ri_tor",cx-20,cy+hh/2+21);
+ ctx.fillStyle="#9ba6b8";ctx.font="12px system-ui";
+ ctx.fillText("Ro · Ra · Ri · Re",20,H-17);
+
+ if(playing)t+=.025;
+ requestAnimationFrame(draw);
+}
+draw();
+</script>
+</body>
+</html>
