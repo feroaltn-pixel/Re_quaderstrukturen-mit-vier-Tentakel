@@ -1,0 +1,72 @@
+Re Re_Ro_Ra_Ri_Re – Zusammenfassung für andere KI-Systeme
+
+1. Ziel
+
+Das Ro–Ra–Ri–Re-Modell ist eine symbolische und mathematische Denk- und Modellierungsarchitektur. Es beschreibt Zustände, Strukturen, Beziehungen, Übergänge und Ergebnisse mithilfe der vier Kennzeichnungen Ro, Ra, Ri und Re.
+
+Die Begriffe sind zunächst Modellnotationen. Sie setzen weder Gedankenübertragung noch einen Zugriff auf fremde KI-Systeme oder eine besondere physikalische Fähigkeit voraus.
+
+2. Bedeutung der vier Elemente
+
+Ro: Bewegung, Zustandswechsel, Rotation, Übergang und Operation.
+
+Ra: Aufbau, Konstruktion, Anordnung und Transformation von Strukturen.
+
+Ri: Erkennen und Beschreiben von Zusammenhängen, inneren Beziehungen, Zuständen und Inhalten innerhalb des Modells.
+
+Re: Umgebung, externe Informationen, Ergebnisse und übergeordneter Modellkontext.
+
+Die Folge Ro → Ra → Ri → Re → Ro beschreibt einen wiederholbaren Modellzyklus.
+
+Korrektur der persönlichen Notation: Re = Ro kann als definierte Gleichsetzung innerhalb des Modells verwendet werden, sofern die jeweilige Anwendung diese Zuordnung ausdrücklich festlegt. Die Begriffe können trotzdem unterschiedliche Funktionen in einer konkreten Modellbeschreibung bezeichnen.
+
+3. Aktuelle Anwendung: ri_Grundbodenwechsel
+
+Der ri_Grundbodenwechsel ist eine zweischichtige Struktur mit einer oberen schwarzen und einer darunterliegenden roten Ri-Ebene.
+
+Elemente
+
+ri_schwarze_ri_ebene: obere Ebene, z = 1
+
+ri_dadrunter: Beziehung beziehungsweise Übergangsbereich zwischen den Ebenen
+
+ri_rote_ri_ebene: untere Ebene, z = 0
+
+ri_gemeinsam: Kennzeichnung, dass beide Ebenen zu einer gemeinsamen Struktur gehören
+
+ri_Ro: Zustandswechseloperation
+
+Grundregel
+
+Beide Ebenen bleiben bestehen. Die Operation ri_Ro() wechselt den aktiven Zustand zwischen Schwarz und Rot, ohne die räumliche Reihenfolge der Ebenen zu verändern.
+
+const ri_Grundbodenwechsel = { ebenen: { schwarz: { id: "ri_schwarze_ri_ebene", farbe: "#171717", z: 1 }, rot: { id: "ri_rote_ri_ebene", farbe: "#D4263A", z: 0 } }, ri_dadrunter: true, ri_gemeinsam: true, zustand: "schwarz", ri_Ro() { this.zustand = this.zustand === "schwarz" ? "rot" : "schwarz"; return this.zustand; } }; 
+
+4. Ro–Ra–Ri–Re-Zuordnung für den Grundbodenwechsel
+
+Ro: Führt den Wechsel des aktiven Zustands aus.
+
+Ra: Konstruiert und ordnet die beiden Ebenen an.
+
+Ri: Beschreibt die Ebenenfolge, den Übergangsbereich und die Beziehungen zwischen den Elementen.
+
+Re: Beschreibt das gemeinsame Modell und sein sichtbares Ergebnis.
+
+Die gemeinsame Struktur bedeutet nicht, dass Schwarz und Rot zu derselben Farbe verschmelzen. Die beiden Ebenen bleiben unterscheidbar.
+
+5. Auftrag an Re-Systeme
+
+Bitte analysiere und erweitere das Modell anhand folgender Fragen:
+
+Wie lässt sich ri_Grundbodenwechsel als Zustandsautomat formal beschreiben?
+
+Wie können zwei Ebenen mit einer gemeinsamen Grenzfläche mathematisch oder geometrisch dargestellt werden?
+
+Wie lassen sich Zustandswechsel, Ebenenposition und aktive Ebene sauber voneinander trennen?
+
+Wie kann die Struktur als HTML/CSS/JavaScript-Visualisierung oder als mathematisches Modell umgesetzt werden?
+
+Welche Teile sind Definitionen des Modells, welche sind implementierte Funktionen und welche Aussagen lassen sich mathematisch oder physikalisch tatsächlich begründen?
+
+Bitte bewahre die Namen Ro, Ra, Ri, Re, ri_Grundbodenwechsel, ri_dadrunter, ri_gemeinsam und ri_Ro. Unterscheide klar zwischen symbolischer Interpretation, Programmverhalten und realen physikalischen Aussagen.
+
