@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_Kurvenstraße</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f2f3f5;--fg:#1c1e22}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161a;--fg:#e8eaed}}
+:root[data-theme="dark"]{--bg:#14161a;--fg:#e8eaed}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif;overflow:hidden}
+#c{display:block;width:100%;height:100%;touch-action:none}
+#hud{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));font-size:13px;line-height:1.4;pointer-events:none}
+#hud b{font-size:15px}
+.k{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 4px 0 8px}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud"><b>ri_Kurvenstraße</b> · zwei Fahrzeuge gegeneinander · Ri animiert<br>
+<span class="k" style="background:#e5484d"></span>Ro<span class="k" style="background:#f5a524"></span>Ra<span class="k" style="background:#30a46c"></span>Ri<span class="k" style="background:#3e63dd"></span>Re · Ziehen zum Drehen</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const canvas=document.getElementById('c');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(45,1,0.1,200);
+scene.add(new THREE.AmbientLight(0xffffff,0.8));
+const dl=new THREE.DirectionalLight(0xffffff,0.6);dl.position.set(5,20,8);scene.add(dl);
+
+// Hyperbel: x = a*cosh(t), z = b*sinh(t)
+const A=6,B=5,W=1.3,TMAX=1.5;
+const P=t=>new THREE.Vector3(A*Math.cosh(t),0,B*Math.sinh(t));
+const Tn=t=>new THREE.Vector3(A*Math.sinh(t),0,B*Math.cosh(t)).normalize();
+const Nn=t=>{const v=Tn(t);return new THREE.Vector3(v.z,0,-v.x)};
+
+function ribbon(o0,o1,color,y){
+  const n=120,pos=[],idx=[];
+  for(let i=0;i<=n;i++){
+    const t=-TMAX+2*TMAX*i/n,p=P(t),nn=Nn(t);
+    const a=p.clone().addScaledVector(nn,o0),b=p.clone().addScaledVector(nn,o1);
+    pos.push(a.x,y,a.z,b.x,y,b.z);
+    if(i<n){const k=i*2;idx.push(k,k+1,k+2,k+1,k+3,k+2)}
+  }
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
+  g.setIndex(idx);g.computeVertexNormals();
+  const m=new THREE.Mesh(g,new THREE.MeshLambertMaterial({color,side:THREE.DoubleSide}));
+  scene.add(m);
+}
+ribbon(-W,0,0x3a3d44,0);          // Fahrspur 1
+ribbon(0,W,0x3a3d44,0);           // Fahrspur 2
+ribbon(-W-0.12,-W,0xdddddd,0.02); // Randlinien
+ribbon(W,W+0.12,0xdddddd,0.02);
+
+// gestrichelte Mittellinie
+for(let i=0;i<40;i++){
+  const t=-TMAX+2*TMAX*(i+0.5)/40,p=P(t),tg=Tn(t);
+  const d=new THREE.Mesh(new THREE.BoxGeometry(0.1,0.03,0.35),new THREE.MeshBasicMaterial({color:0xf5d90a}));
+  d.position.set(p.x,0.03,p.z);d.rotation.y=Math.atan2(tg.x,tg.z);scene.add(d);
+}
+// Richtungspfeile: Spur -1 fährt t aufwärts, Spur +1 abwärts
+for(let i=0;i<12;i++){
+  const t=-TMAX+0.12+(2*TMAX-0.24)*i/11,p=P(t),tg=Tn(t),nn=Nn(t);
+  [[-1,1],[1,-1]].forEach(([s,dir])=>{
+    const c=new THREE.Mesh(new THREE.ConeGeometry(0.18,0.45,3),new THREE.MeshBasicMaterial({color:0xffffff}));
+    const q=p.clone().addScaledVector(nn,s*W/2);
+    c.position.set(q.x,0.05,q.z);
+    c.rotation.x=Math.PI/2;           // Spitze nach +z
+    const g=new THREE.Group();g.add(c);c.position.set(0,0,0);
+    g.position.copy(q);g.position.y=0.05;
+    g.rotation.y=Math.atan2(tg.x*dir,tg.z*dir);
+    scene.add(g);
+  });
+}
+// zweiter Hyperbelast (dünn, gestrichelt)
+{
+  const pts=[];for(let i=0;i<=80;i++){const t=-TMAX+2*TMAX*i/80;pts.push(new THREE.Vector3(-A*Math.cosh(t),0.02,B*Math.sinh(t)))}
+  const l=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineDashedMaterial({color:0x888888,dashSize:0.4,gapSize:0.3}));
+  l.computeLineDistances();scene.add(l);
+}
+
+const riSph=[],riT=[],riRing=[];
+// 8 Schnittmengen: Ro Ra Ri Re Ro Ra Ri Re
+const names=['Ro','Ra','Ri','Re'],cols=[0xe5484d,0xf5a524,0x30a46c,0x3e63dd],css=['#e5484d','#f5a524','#30a46c','#3e63dd'];
+function label(text,color){
+  const c=document.createElement('canvas');c.width=128;c.height=64;
+  const x=c.getContext('2d');x.fillStyle=color;x.font='bold 44px system-ui,sans-serif';x.textAlign='center';x.textBaseline='middle';
+  x.shadowColor='rgba(0,0,0,.6)';x.shadowBlur=6;x.fillText(text,64,34);
+  const s=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c),transparent:true,depthTest:false}));
+  s.scale.set(2.4,1.2,1);return s;
+}
+for(let i=0;i<8;i++){
+  const t=-1.3+2.6*i/7,p=P(t),tg=Tn(t),nn=Nn(t),k=i%4;
+  const bar=new THREE.Mesh(new THREE.BoxGeometry(2*W+1,0.06,0.18),new THREE.MeshBasicMaterial({color:cols[k]}));
+  bar.position.set(p.x,0.06,p.z);bar.rotation.y=Math.atan2(nn.x,nn.z)+Math.PI/2;scene.add(bar);
+  [-W/2,0,W/2].forEach(o=>{
+    const q=p.clone().addScaledVector(nn,o);
+    const s=new THREE.Mesh(new THREE.SphereGeometry(o===0?0.28:0.17,20,16),new THREE.MeshLambertMaterial({color:cols[k]}));
+    s.position.set(q.x,0.2,q.z);scene.add(s);if(k===2)riSph.push(s);
+  });
+  if(k===2){riT.push(t);const rg=new THREE.Mesh(new THREE.RingGeometry(0.5,0.62,48),new THREE.MeshBasicMaterial({color:0x30a46c,transparent:true,side:THREE.DoubleSide,depthWrite:false}));rg.rotation.x=-Math.PI/2;rg.position.set(p.x,0.1,p.z);scene.add(rg);riRing.push(rg);}
+  const lb=label(names[k],css[k]);
+  const lp=p.clone().addScaledVector(nn,-(W+1.4));lb.position.set(lp.x,0.9,lp.z);scene.add(lb);
+}
+
+// Zwei Fahrzeuge (Aussehen Ro = rot), entgegengesetzte Richtung
+function makeCar(){
+  const g=new THREE.Group();
+  const body=new THREE.Mesh(new THREE.BoxGeometry(0.7,0.4,1.7),new THREE.MeshLambertMaterial({color:0xe5484d}));body.position.y=0.3;g.add(body);
+  const cab=new THREE.Mesh(new THREE.BoxGeometry(0.6,0.3,0.8),new THREE.MeshLambertMaterial({color:0xffb4b6}));cab.position.set(0,0.65,-0.1);g.add(cab);
+  [-0.22,0.22].forEach(x=>{const h=new THREE.Mesh(new THREE.BoxGeometry(0.16,0.1,0.05),new THREE.MeshBasicMaterial({color:0xfff3a0}));h.position.set(x,0.32,0.86);g.add(h)});
+  scene.add(g);return g;
+}
+const cars=[
+  {m:makeCar(),t:-TMAX,dir:1,s:-1},   // Spur 1: t aufwärts
+  {m:makeCar(),t:TMAX,dir:-1,s:1}     // Spur 2: t abwärts
+];
+let lastTs=0;
+function animate(ts){
+  const dt=Math.min(0.05,(ts-lastTs)/1000||0),time=ts/1000;lastTs=ts;
+  cars.forEach(c=>{
+    const sp=Math.hypot(A*Math.sinh(c.t),B*Math.cosh(c.t));
+    c.t+=c.dir*3.2*dt/sp;
+    if(c.t>TMAX)c.t=-TMAX;if(c.t<-TMAX)c.t=TMAX;
+    const p=P(c.t),nn=Nn(c.t),tg=Tn(c.t);
+    p.addScaledVector(nn,c.s*W/2);
+    c.m.position.set(p.x,0.05,p.z);
+    c.m.rotation.y=Math.atan2(tg.x*c.dir,tg.z*c.dir);
+  });
+  // Ri animieren: pulsieren, aufleuchten bei Durchfahrt, Ringwelle
+  riSph.forEach((s,i)=>{
+    const d=Math.min(...cars.map(c=>Math.abs(c.t-riT[Math.floor(i/3)])));
+    const near=Math.exp(-Math.pow(d*5,2));
+    const sc=1+0.2*Math.sin(time*3+i)+0.7*near;
+    s.scale.setScalar(sc);
+    s.material.emissive.setHex(0x30a46c);s.material.emissiveIntensity=0.2+near;
+  });
+  riRing.forEach((r,i)=>{
+    const ph=(time*0.7+i*0.5)%1;
+    r.scale.setScalar(1+ph*3.5);r.material.opacity=0.8*(1-ph);
+  });
+}
+// Orbit
+const target=new THREE.Vector3(9.5,0,0);
+let az=-0.9,el=1.0,rad=26,drag=false,lx=0,ly=0,auto=true;
+canvas.addEventListener('pointerdown',e=>{drag=true;auto=false;lx=e.clientX;ly=e.clientY;canvas.setPointerCapture(e.pointerId)});
+canvas.addEventListener('pointerup',()=>drag=false);
+canvas.addEventListener('pointermove',e=>{if(!drag)return;az-=(e.clientX-lx)*0.008;el=Math.max(0.25,Math.min(1.5,el+(e.clientY-ly)*0.008));lx=e.clientX;ly=e.clientY});
+canvas.addEventListener('wheel',e=>{rad=Math.max(10,Math.min(50,rad+e.deltaY*0.02))},{passive:true});
+function resize(){const w=innerWidth,h=innerHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();rad=Math.max(rad,w<h?34:26)}
+addEventListener('resize',resize);resize();
+let t0=0;
+(function loop(ts){
+  if(auto)az=-0.9+Math.sin(ts*0.0003)*0.5;
+  animate(ts);
+  camera.position.set(target.x+rad*Math.sin(el)*Math.cos(az),rad*Math.cos(el),target.z+rad*Math.sin(el)*Math.sin(az));
+  camera.lookAt(target);
+  renderer.render(scene,camera);requestAnimationFrame(loop);
+})(0);
+</script>
+</body>
+</html>
