@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_Senke – Re_Quaderstruktur über dem Ozean</title>
+<style>
+:root{--bg:#06121c;--fg:#e6eef2;--panel:rgba(6,18,28,.78);--line:rgba(230,238,242,.22);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#06121c;--fg:#e6eef2;--panel:rgba(6,18,28,.78);--line:rgba(230,238,242,.22)}}
+:root[data-theme="dark"]{--bg:#06121c;--fg:#e6eef2;--panel:rgba(6,18,28,.78);--line:rgba(230,238,242,.22)}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:Georgia,"Times New Roman",serif;overflow:hidden}
+canvas{display:block;touch-action:none}
+.box{position:fixed;left:12px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:14px;line-height:1.45;max-width:calc(100vw - 24px)}
+#hud{top:calc(env(safe-area-inset-top,0px) + 10px)}
+#hud b{font-size:16px;font-weight:600}
+#leg{bottom:calc(env(safe-area-inset-bottom,0px) + 10px);display:flex;gap:14px}
+#leg span{display:inline-flex;align-items:center;gap:6px}
+#leg i{width:12px;height:12px;border-radius:50%;display:inline-block;border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="box" id="hud"><b>ri_Senke</b><br><span id="s">Re_Quaderstruktur sendet Vibrationen</span></div>
+<div class="box" id="leg"><span><i style="background:#e0243a"></i>Ro</span><span><i style="background:#f4f4f4"></i>Ra</span><span><i style="background:#ffd93b"></i>Ri</span><span><i style="background:#3ddc6a"></i>Re</span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const C=[0xe0243a,0xf4f4f4,0xffd93b,0x3ddc6a],N=['Ro','Ra','Ri','Re'];
+const sc=new THREE.Scene();sc.background=new THREE.Color(0x06121c);sc.fog=new THREE.Fog(0x06121c,24,52);
+const cam=new THREE.PerspectiveCamera(50,1,.1,100);
+const R=new THREE.WebGLRenderer({antialias:true});R.setPixelRatio(Math.min(window.devicePixelRatio||1,2));document.body.appendChild(R.domElement);
+function fit(){R.setSize(innerWidth,innerHeight);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+addEventListener('resize',fit);fit();
+sc.add(new THREE.AmbientLight(0x6f8fa8,.7));
+const dl=new THREE.DirectionalLight(0xffffff,.9);dl.position.set(6,12,8);sc.add(dl);
+
+// Ozean
+const og=new THREE.PlaneGeometry(46,46,60,60);og.rotateX(-Math.PI/2);
+sc.add(new THREE.Mesh(og,new THREE.MeshPhongMaterial({color:0x0d4468,shininess:60,flatShading:true})));
+const op=og.attributes.position;
+
+// Senke
+const SX=7,SZ=-3;
+const senkeMat=new THREE.MeshPhongMaterial({color:0x222a30,emissive:0x000000});
+const senke=new THREE.Group();senke.position.set(SX,0,SZ);sc.add(senke);
+const pil=new THREE.Mesh(new THREE.CylinderGeometry(.35,.5,2.4,16),senkeMat);pil.position.y=1.2;senke.add(pil);
+const ring=new THREE.Mesh(new THREE.TorusGeometry(.8,.08,8,32),senkeMat);ring.rotation.x=Math.PI/2;ring.position.y=2.5;senke.add(ring);
+
+// Insel mit ri_Person
+const PX=3.5,PZ=2;
+const isl=new THREE.Mesh(new THREE.CylinderGeometry(3.2,3.4,.4,40),new THREE.MeshPhongMaterial({color:0x2c3a44}));isl.position.set(PX,.05,PZ);sc.add(isl);
+const person=new THREE.Group();sc.add(person);
+const pm=new THREE.MeshPhongMaterial({color:0xd8dde0});
+const body=new THREE.Mesh(new THREE.CylinderGeometry(.2,.25,.9,12),pm);body.position.y=.65;person.add(body);
+const head=new THREE.Mesh(new THREE.SphereGeometry(.2,16,12),pm);head.position.y=1.28;person.add(head);
+const nose=new THREE.Mesh(new THREE.BoxGeometry(.08,.08,.16),new THREE.MeshPhongMaterial({color:0x888888}));nose.position.set(0,1.28,.22);person.add(nose);
+const plateMat=new THREE.MeshBasicMaterial({color:C[0],side:THREE.DoubleSide});
+const plate=new THREE.Mesh(new THREE.PlaneGeometry(1,1),plateMat);plate.rotation.x=-Math.PI/2;plate.position.y=1.9;person.add(plate);
+person.position.set(PX,.25,PZ);
+let h=0,ht=0,px=PX,pz=PZ,turns=0,shake=0;
+
+// Re_Quaderstruktur
+function mkQ(){const Q=new THREE.Group();sc.add(Q);
+Q.add(new THREE.Mesh(new THREE.BoxGeometry(1.6,.8,1.2),new THREE.MeshPhongMaterial({color:0x1a1d22,emissive:0x2a0a10})));
+const tents=[];
+[[1,1],[1,-1],[-1,1],[-1,-1]].forEach((s,k)=>{
+ const mat=new THREE.MeshPhongMaterial({color:C[k],emissive:C[k],emissiveIntensity:.25});
+ const root=new THREE.Group();root.position.set(s[0]*.7,-.4,s[1]*.5);root.rotation.z=s[0]*.6;root.rotation.x=-s[1]*.5;Q.add(root);
+ let p=root;const segs=[];
+ for(let i=0;i<6;i++){
+  const j=new THREE.Group();p.add(j);
+  const m=new THREE.Mesh(new THREE.CylinderGeometry(.06-i*.007,.08-i*.008,.5,6),mat);m.position.y=-.25;j.add(m);
+  const n=new THREE.Group();n.position.y=-.5;j.add(n);segs.push(j);p=n;
+ }
+ tents.push(segs);
+});
+return {Q:Q,tents:tents};}
+const QA=mkQ(),QB=mkQ(),QC=mkQ();
+const rg=new THREE.BufferGeometry();rg.setAttribute('position',new THREE.BufferAttribute(new Float32Array(7*6),3));const rl=new THREE.LineSegments(rg,new THREE.LineBasicMaterial({color:0xffd93b,transparent:true,opacity:.3}));rl.frustumCulled=false;sc.add(rl);
+
+// Vibrationen und Ringe
+const pulses=[],rings=[];
+let nextPulse=1,pk=0,ti=-99,flash=0,flashCol=C[0];
+
+// Kamera
+let az=.5,drag=false,lx=0;
+addEventListener('pointerdown',e=>{drag=true;lx=e.clientX});
+addEventListener('pointerup',()=>drag=false);
+addEventListener('pointermove',e=>{if(drag){az+=(e.clientX-lx)*.006;lx=e.clientX}});
+
+const hud=document.getElementById('s');
+const clock=new THREE.Clock();let t=0;
+function wrap(a){while(a>Math.PI)a-=2*Math.PI;while(a<-Math.PI)a+=2*Math.PI;return a}
+
+const links=[];
+function mkLink(src,col){const m=new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,1,6),new THREE.MeshBasicMaterial({color:col,transparent:true}));sc.add(m);links.push({m:m,src:src,a:0})}
+function impact(col,k,src){
+ ti=t;flash=1;flashCol=col;mkLink(src,col);
+ const rm=new THREE.Mesh(new THREE.RingGeometry(.9,1.05,48),new THREE.MeshBasicMaterial({color:col,transparent:true,side:THREE.DoubleSide}));
+ rm.rotation.x=-Math.PI/2;rm.position.set(SX,.08,SZ);sc.add(rm);rings.push({m:rm,a:0});
+ ht+=Math.PI;turns++;shake=1;plateMat.color.setHex(col);
+ hud.textContent='Vibration '+N[k]+' trifft ri_Senke – Tentakel greift in die ri_Person, sie wechselt die Richtung ('+turns+'×)';
+}
+
+function loop(){
+ const dt=Math.min(clock.getDelta(),.05);t+=dt;
+
+ // Ozean
+ for(let i=0;i<op.count;i++){
+  const x=op.getX(i),z=op.getZ(i);
+  let y=Math.sin(x*.5+t)*.22+Math.cos(z*.4+t*.8)*.18;
+  const age=t-ti;
+  if(age<6){const d=Math.hypot(x-SX,z-SZ)-age*5;y+=Math.exp(-d*d*.15)*Math.sin(d*2)*.7*Math.exp(-age*.5)}
+  op.setY(i,y);
+ }
+ op.needsUpdate=true;
+
+ // Quader auf Bahn
+ [QA,QB,QC].forEach((o,n)=>{const a=t*.18+n*2*Math.PI/3;o.Q.position.set(10*Math.cos(a),2.3+Math.sin(t*1.3+n*2)*.25,7*Math.sin(a)-1);o.Q.rotation.y=-a+Math.PI/2;o.Q.rotation.z=Math.sin(t*.9+n)*.06;o.tents.forEach((segs,k)=>segs.forEach((s,i)=>{s.rotation.z=Math.sin(t*2+i*.6+k*1.3)*.3;s.rotation.x=Math.cos(t*1.7+i*.5+k)*.25}))});
+
+ // Vibration senden
+ if(t>nextPulse){
+  nextPulse=t+2.4;
+  const col=C[pk%4];
+  const m=new THREE.Mesh(new THREE.SphereGeometry(.24,16,12),new THREE.MeshBasicMaterial({color:col}));
+  m.position.copy([QA,QB,QC][pk%3].Q.position);sc.add(m);pulses.push({m:m,k:pk%4,col:col,src:[QA,QB,QC][pk%3]});pk++;
+ }
+ const tgt=new THREE.Vector3(SX,2.5,SZ);
+ for(let i=pulses.length-1;i>=0;i--){
+  const p=pulses[i],d=tgt.clone().sub(p.m.position),L=d.length();
+  if(L<.5){sc.remove(p.m);pulses.splice(i,1);impact(p.col,p.k,p.src)}
+  else{p.m.position.add(d.normalize().multiplyScalar(Math.min(7*dt,L)));p.m.scale.setScalar(.85+.25*Math.sin(t*20))}
+ }
+
+ // Ringe
+ for(let i=rings.length-1;i>=0;i--){
+  const r=rings[i];r.a+=dt;r.m.scale.setScalar(1+r.a*6);r.m.material.opacity=Math.max(0,1-r.a/1.6);
+  if(r.a>1.6){sc.remove(r.m);rings.splice(i,1)}
+ }
+
+ // Senke
+ flash=Math.max(0,flash-dt*1.2);
+ senkeMat.emissive.setHex(flashCol);senkeMat.emissiveIntensity=flash*1.4;
+ ring.scale.setScalar(1+flash*.25);
+
+ // ri_Person
+ const dc=Math.hypot(px-PX,pz-PZ);
+ if(dc>2.5){ht=Math.atan2(PX-px,PZ-pz)+(Math.random()-.5)*.6}
+ h+=wrap(ht-h)*Math.min(1,dt*4);
+ px+=Math.sin(h)*.9*dt;pz+=Math.cos(h)*.9*dt;
+ person.position.set(px,.25+Math.abs(Math.sin(t*6))*.04,pz);person.rotation.y=h;
+ shake=Math.max(0,shake-dt*.8);
+ plate.position.x=Math.sin(t*60)*.06*shake;plate.rotation.z=Math.sin(t*55)*.12*shake;
+
+ // Ri: Relationsschicht
+ {const P=[QA.Q.position,QB.Q.position,QC.Q.position],S=new THREE.Vector3(SX,2.5,SZ),H=new THREE.Vector3(px,1.55,pz),E=[[P[0],P[1]],[P[1],P[2]],[P[2],P[0]],[P[0],S],[P[1],S],[P[2],S],[S,H]],ar=rg.attributes.position.array;E.forEach((e,i)=>{ar[i*6]=e[0].x;ar[i*6+1]=e[0].y;ar[i*6+2]=e[0].z;ar[i*6+3]=e[1].x;ar[i*6+4]=e[1].y;ar[i*6+5]=e[1].z});rg.attributes.position.needsUpdate=true;rl.material.opacity=.25+flash*.6}
+ // Tentakel greift in die ri_Person
+ const hp=new THREE.Vector3(px,1.55,pz);
+ for(let i=links.length-1;i>=0;i--){const l=links[i];l.a+=dt;const s=l.src.Q.position,e=s.clone().lerp(hp,Math.min(1,l.a*2.5)),d=e.clone().sub(s),L=Math.max(d.length(),.01);l.m.position.copy(s).add(e).multiplyScalar(.5);const w=1+Math.sin(t*30)*.3;l.m.scale.set(w,L,w);l.m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize());l.m.material.opacity=Math.max(0,Math.min(1,(2.2-l.a)/.7));if(l.a>2.2){sc.remove(l.m);links.splice(i,1)}}
+ // Kamera
+ if(!drag)az+=dt*.03;
+ const rad=cam.aspect<1?26:18;
+ cam.position.set(rad*Math.sin(az),rad*.5,rad*Math.cos(az));cam.lookAt(3,1,-.5);
+ R.render(sc,cam);requestAnimationFrame(loop);
+}
+loop();
+</script>
+</body>
+</html>
