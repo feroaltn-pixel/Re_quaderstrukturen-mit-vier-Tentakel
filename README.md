@@ -112,7 +112,7 @@ Ro("Scientific_constraint:_Anything_that_cannot_withstand_the_conditions_aboard_
 Musikinstrumente Notenspiegel Noxenspiegel 4.0
 RoRaRiRe Ro("4.0") Ro("Social_Media") Ri
 Re("Porno") Ri("ri_Vibrationen") Ro("Ri_pattern_recognition") Ri("ri_Neumann_ri_Sonde") 
-Ri Ri Ri Ri
+Ri Ri Ro("ri_Raumzeitkrümmung") Ri
 
 Ro("[Ra,b]") Ri("Skripte_x_ist_Ro") Ro("RoRaRiRe_Professor") Ro("Revery_univeRsity_international_Ro") 
 Ro("wretched_science") Ra("wretched_weaponry.Gedankenlesen") Ro Ro("Neutronensterne") 
