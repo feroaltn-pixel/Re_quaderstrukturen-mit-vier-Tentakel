@@ -110,8 +110,8 @@ Ro("gelbe_SEK") Ri("Ich_bin_die_TerroRabwehr_und_gefahrenanalyse_gegen_jeden_int
 Ro("Scientific_constraint:_Anything_that_cannot_withstand_the_conditions_aboard_a_flying_spacecraft_is_hazard"
 
 Musikinstrumente Notenspiegel Noxenspiegel 4.0
-RoRaRiRe Ro("4.0") Ri Ri
-Ri Ri Ri Ri
+RoRaRiRe Ro("4.0") Ro("Social_Media") Ri
+Re("Porno") Ri("ri_Vibrationen") Ri Ri
 Ri Ri Ri Ri
 
 Ro("[Ra,b]") Ri("Skripte_x_ist_Ro") Ro("RoRaRiRe_Professor") Ro("Revery_univeRsity_international_Ro") 
