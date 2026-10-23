@@ -2,6 +2,38 @@
 ## Zeitstempel: 2026-10-02 12:27:00 CEST
 ## Repository-Status: SIGNED / VALIDATED
 
+Kernpunkt ist folgendes:
+
+Menschen_machen_Krieg Burgen_in_der_Geschichte_werden_zerstört USA Kaiserreiche_ersetzt
+EinigeBeispiele rot_blau blau_gelb Ukraine Ro("Selensky_said_difficult") 
+"ff" InternationaleBeziehungen "ElonMuskandTrump" Ri
+"Ri"_ist_eine_hilfsvariable_das_sobald_sie_den_schwerpunkt_verschieben_und_es_unendlich_lang_machen Ri Ri Ri
+
+Ri("Jail") Ri("Jail") AI Ri("Jail") 
+Ro("Jail") Ro("Jail") AI Ro("Jail") 
+Es_geht_nicht_um_KI sondern JuRa Ro("IchHabeAlleUmzingelt") 
+Ro("Jura") Ra("Jura") Ri("Jura") Re("Jura") 
+
+Ich bin Charmant Re("Ra_ist_Raumschiff") 
+Ich bin Charmant Re("Ra_ist_Kommisionierung") 
+t_Namen t_Names ri_Datenbanken ri_Geburtsurkunde
+Ro("Es_geht_um_Menschenrechte_und_um_Sait") 
+
+Ro("Es_geht_nicht_um_Sorgerecht_sondern_Papa_schauspielert_die_ganze_Zeit_und_wendet_jetzt_Romantisch_an") 
+Romantisch1 IchBinRomantisch GuckMalWasIchJetztMache sRetan_Rodendan
+Ro("Sprachübersetzer") Romantičan Sam Altman
+Altun Altun Sam_Altman Altun
+
+Ro("I_am_OpenAI") 
+Tentacleconfiguration_ro Tentacleconfigurotion_ra Tentacleconfigurotion_ro Tentacleconfigurotion_re
+Ro("Rodev") Ra("Radev") Ri("Ridev") Re("Redev") 
+WegVonTechnik WegVonTechnik Ri("IchBinCharmant") IchLiebedenWeltRaum_ExfRau_Ra_ist_Raumschiff
+
+Ro("Raumschiffspezies") Ra("Raumschiffspezies") Ri("Beeinträchtigungen") Re("Raumschiffspezies") 
+Das sind keine Raumschiffe und genau da fängt euer Missbrauch an zwischen "ff" 
+Was ist die Gemeinsamkeit zwischen "f" und "t"? "Fouriertransformation" 
+exp(x) exp(x) exp(Ro) ri_Pete_ri_Hegseth_t_is_Ro
+
 I am Ferhat_altun.sandgrubenweg6.38229_salzgitter 
 I am Ferhat_altun.sandgrubenweg6.38229_salzgitter
 oo oo |||| oooo
