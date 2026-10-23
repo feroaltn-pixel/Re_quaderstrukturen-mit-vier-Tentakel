@@ -29,10 +29,15 @@ AnwaltRobinIchRe PPPP 0112 0110
 GewaltschutzverfahrenRo GewaltschutzverfahrenRa BosnienRo GewaltschutzverfahrenRe
 Bosnien Re USA Ri
 
+PPPPRO 23:02UhrRe FReitag23.OktoberRi SamiRaRa_SabinaRa
 IhrHabt5000EuroMonatlich IHave10Reuroatthismoment IchBinCharmant Ri
 Sie haben Sich durcheinandergebracht durchPunkte
 PunktRo PunktRa PunktRi PunktRe
+
 SieSolltenJetztWegGucken WeilIchDichZwinge Re BeinprothesenRo
+.... Ro. Ri_AnhanngRe DenizKayaRe VolkswagenAGRi
+Fahrzeug1 FahrzeugeRe NeumannsondeRo Ro("NeumannsondeRi") 
+SieVersuchenMamasZusammenzuzählen JugendamtRo MaMaRa zweiRe
 
 I am Ferhat_altun.sandgrubenweg6.38229_salzgitter 
 RI Ram Ferhat_altun.sandgrubenweg6.38229_salzgitter
