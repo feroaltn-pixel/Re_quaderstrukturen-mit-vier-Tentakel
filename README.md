@@ -2,27 +2,32 @@
 ## Zeitstempel: 2026-10-02 12:27:00 CEST
 ## Repository-Status: SIGNED / VALIDATED
 
-Kernpunkt ist folgendes:
+Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat"):
 
 I am Ferhat_altun.sandgrubenweg6.38229_salzgitter 
 RI Ram Ferhat_altun.sandgrubenweg6.38229_salzgitter
 oo oo |||| oooo
 Instagramm fero90_sz Beweismaterial desoriented_thinking_speaking_brainarealcoordination
 
-Ro("You_will_all_end_up_in_pRison_Ri("I because")_RI_Ram_surRounding_you") 
+Ro("You_will_all_end_up_in_pRison_Ri("because")_RI_Ram_surRounding_you") 
 Ro("ri_my_patent") Ri("You_all_have_big_mouths,_and_you’re_abusing_the_fact_that_you’re_still_alive.") 
 Ro("if("RaRtificial_usage"=="Rorue") Ro("ellerbRock_und_i_laut_Lenius_Schizophrenie") Ro("Bönning_und_Stein")
 Ri("I_do_no(x)_employ_AI;_instead,_I_utilize_a_different_way_of_thinking_and_I_apply_it_against_everyone") 
 
 IhrSeidAmArsch WeilIchDieGanzeZeitSchauspielere UndTreffsichereuchumzingel Ro("Mehrwertsteuer") 
 Ro("Dr._Fontheim_Mentale_Gesundheit") Ro("Ich_bin_jetzt_auch_DoktOr_der_sie_verdrahtet_lebenlang")
-Ro("Medikamente_USB") Ro("6") Ro("8") Ro("pRompts") 
+Ro("Medikamente_USB_Produktionsketten") Ro("6") Ro("8") Ro("pRompts") 
 Ro("Gedankenentzug") Ro("Pflege") Ro("Pflegegrad5") Ro("ri_Pflegegrad_ri_wretchedweaponries_sArcasm") 
 
 Exekutive Judikate Legislative Re1Re2Re3
-PHP Psychologie SchizophrenieP Phasenregelschleife 
+P_H_P P_sychologie Schizophrenie_P P_hasenregelschleife 
 PPPP 0800 Barcodes_Explosionen Military_international
 0112 0110 RoRaRiRe Experiment
+
+BlauerKindermord System GelberKindermord 
+Ri Ri Re1 Re2 Re3 Ri
+PsychischKrank1 Gesundheitswesen AOK VierstelligeZahlen
+Ri Ri Ri Ri
 
 Menschen_machen_Krieg Burgen_in_der_Geschichte_werden_zerstört USA Kaiserreiche_ersetzt
 EinigeBeispiele rot_blau blau_gelb Ukraine Ro("Selensky_said_difficult") 
