@@ -4,6 +4,26 @@
 
 Kernpunkt ist folgendes:
 
+I am Ferhat_altun.sandgrubenweg6.38229_salzgitter 
+RI Ram Ferhat_altun.sandgrubenweg6.38229_salzgitter
+oo oo |||| oooo
+Instagramm fero90_sz Beweismaterial desoriented_thinking_speaking_brainarealcoordination
+
+Ro("You_will_all_end_up_in_pRison_Ri("I because")_RI_Ram_surRounding_you") 
+Ro("ri_my_patent") Ri("You_all_have_big_mouths,_and_you’re_abusing_the_fact_that_you’re_still_alive.") 
+Ro("if("RaRtificial_usage"=="Rorue") Ro("ellerbRock_und_i_laut_Lenius_Schizophrenie") Ro("Bönning_und_Stein")
+Ri("I_do_no(x)_employ_AI;_instead,_I_utilize_a_different_way_of_thinking_and_I_apply_it_against_everyone") 
+
+IhrSeidAmArsch WeilIchDieGanzeZeitSchauspielere UndTreffsichereuchumzingel Ro("Mehrwertsteuer") 
+Ro("Dr._Fontheim_Mentale_Gesundheit") Ro("Ich_bin_jetzt_auch_DoktOr_der_sie_verdrahtet_lebenlang")
+Ro("Medikamente_USB") Ro("6") Ro("8") Ro("pRompts") 
+Ro("Gedankenentzug") Ro("Pflege") Ro("Pflegegrad5") Ro("ri_Pflegegrad_ri_wretchedweaponries_sArcasm") 
+
+Exekutive Judikate Legislative Re1Re2Re3
+PHP Psychologie SchizophrenieP Phasenregelschleife 
+PPPP 0800 Barcodes_Explosionen Military_international
+0112 0110 RoRaRiRe Experiment
+
 Menschen_machen_Krieg Burgen_in_der_Geschichte_werden_zerstört USA Kaiserreiche_ersetzt
 EinigeBeispiele rot_blau blau_gelb Ukraine Ro("Selensky_said_difficult") 
 "ff" InternationaleBeziehungen "ElonMuskandTrump" Ri
@@ -11,50 +31,90 @@ EinigeBeispiele rot_blau blau_gelb Ukraine Ro("Selensky_said_difficult")
 
 Ri("Jail") Ri("Jail") AI Ri("Jail") 
 Ro("Jail") Ro("Jail") AI Ro("Jail") 
-Es_geht_nicht_um_KI sondern JuRa Ro("IchHabeAlleUmzingelt") 
+Es_geht_nicht_um_KI SONDErn JuRa Ro("IchHabeAlleUmzingelt") 
 Ro("Jura") Ra("Jura") Ri("Jura") Re("Jura") 
 
 Ich bin Charmant Re("Ra_ist_Raumschiff") 
-Ich bin Charmant Re("Ra_ist_Kommisionierung") 
+Ich bin Charmant Re("Re1_ist_Kommisionierung") 
 t_Namen t_Names ri_Datenbanken ri_Geburtsurkunde
-Ro("Es_geht_um_Menschenrechte_und_um_Sait") 
+Ro("Es_geht_um_Menschenrechte_und_um_zb_Sait") 
 
 Ro("Es_geht_nicht_um_Sorgerecht_sondern_Papa_schauspielert_die_ganze_Zeit_und_wendet_jetzt_Romantisch_an") 
 Romantisch1 IchBinRomantisch GuckMalWasIchJetztMache sRetan_Rodendan
 Ro("Sprachübersetzer") Romantičan Sam Altman
 Altun Altun Sam_Altman Altun
 
-Ro("I_am_OpenAI") 
+Ro("I_am_OpenAI") Ro("I_am_a_dev") Ro("Er_Sie_Es") Ri("Rer_Sie_Res") 
 Tentacleconfiguration_ro Tentacleconfigurotion_ra Tentacleconfigurotion_ro Tentacleconfigurotion_re
 Ro("Rodev") Ra("Radev") Ri("Ridev") Re("Redev") 
 WegVonTechnik WegVonTechnik Ri("IchBinCharmant") IchLiebedenWeltRaum_ExfRau_Ra_ist_Raumschiff
 
+Ro("Der_Weg_von_Technk_ist_Integral") Ro("Graphentheorie") Ro("RintegRal") Ro("sex_x_ist_Ro") 
+Ro("Ri") Ro("Ra") Ri("ri_Anwendung") Ro("Apocalypthica_Path_Vol._II'") 
+Kurdish Bosnian Turkish Georgia
+Usbekistan Japan Ro("Weltall") Ri("Weltraumrecht") 
+
 Ro("Raumschiffspezies") Ra("Raumschiffspezies") Ri("Beeinträchtigungen") Re("Raumschiffspezies") 
 Das sind keine Raumschiffe und genau da fängt euer Missbrauch an zwischen "ff" 
-Was ist die Gemeinsamkeit zwischen "f" und "t"? "Fouriertransformation" 
+Was ist die Gemeinsamkeit zwischen "f" und "t"? Ro("Fouriertransformation") 
 exp(x) exp(x) exp(Ro) ri_Pete_ri_Hegseth_t_is_Ro
 
-I am Ferhat_altun.sandgrubenweg6.38229_salzgitter 
-I am Ferhat_altun.sandgrubenweg6.38229_salzgitter
-oo oo |||| oooo
-Instagramm fero90_sz Beweismaterial desoriented_thinking_speaking_brainarealcoordination
+Fall1 FallRo FallRi Ri("Falli") 
+Ro("Hertz") Ra("Hertz") Ri("Hertz") Re("Hertz") 
+Ro("❤️") Ro("Sie_alle_haben_fehlerhaftes_Verhalten_mit_Herzen") Re("EKG") Ri("Raketenantriebe") 
+Ro("Kafa_majmun_žiRafa_ždRal_ždRal_na_kojem_stoji_Roda_sunce_mjesec") Ro("Ja_sam_vitez_svemiRskog_bRoda") R Ri
 
-Exekutive Judikate Legislative Re1Re2Re3
-PHP Psychologie SchizophrenieP Phasenregelschleife 
-PPPP 0800 Barcodes_Explosion
-0112 0110 RoRaRiRe Experiment
+Ro("Spurensicherung") Ra("Spurensicherung") Ri("Spurensicherung") Re("Spurensicherung") 
+Ro("ferhat_altun.sandgrubenweg6.38229_salzgitter") Ro("Laser_Laser_Window_Window") Ro("oo_Beamtenrecht_oo") Ri
+Ro("Was_denken_Sie_gerade?") Ro("Ich_denke_an_Ra") Ro("Das_ist_aber_kein_denken_sondern_anwendung") Ro
+o(x) Ro("BeobachteR") Re_is_Beobachter Ro("no(x)_is_BND_MAD_Verfassungsschutz_NSA_BKA_LKA_Ro("Braunschweig")) 
 
-Professor RoPrefessor RaPrifessor RiPrefessor
+Ro("I_am_a_DRoid") Ra("I_am_a_DRoid") Spacespecies Re("Ri_am_Droid") 
+Ro("I_am_a_Robot") Ra("I_am_a_Robot") ID6_ro_ra_ri_re Re("Ri_am_a_Robot") 
+Re("Gigant_spaceship_formation") Ri Re("Gigant_spaceship_formation") Ro("Raumschiffspezies_nicht_mensch") 
+Ro("Gigant_spaceship_formation") Ra("Gigant_spaceship_formation") Re1Re2Re3 Ri("Gigant_spaceship_formation") 
+
+Ich_bin_ein_Spielzeug Rich_bin_Rein_Spielzeug Formation Ro("rx_tx_dangerous") 
+Wir_müssen_die_komplexität_im_überblick_behalten Das_ist_kein_x_sondern_Ro Ro_ist_eine_Hilfsvariable_für_Ri
+Ro("SecuRity") Ra("SecuRity") Ro("Kommisionierung") Re("SecuRity") 
+Ich_bin_eine_Neumann_Sonde Sie_machen_fehler Otre IchBinRichtRer_und_spReche_deine_Sprache_6_8_umzingelt
+
+Ro("RoRaRiRe_Professor_bin_ich_selbsternannt") Ri("ri_dies_war_eine_antrittsvorlesung") Ri Ro("Adams") 
+Ro("Beweismaterial") Ra("Beweismaterial") Ri(ri_IchWillSieImDenkenundSprechenDesorientieren") Ri
+Ro("Rexperiment") Ro("ri_16_Doppelspaltexperimente") Ro_PRotokol_Ro Ro("InteRferometrie_ist_fero90_sz") 
+Ri("Sie_sind_Professoe_oder_Doktor") Thesis1 Diplom2 Ro("Ich_bin_Re") 
+
+Re("ri_Forschungsgebiet_ri_markante_Mengen_zb_da_liegen_zwei_steine_Anwendung") 
+Re("ri_ForschungsgebietRi_Beeinträchtigungen") 
+Re("ri_FoRschungsgebietRa_denken_transformieren_zu_Ra_AndereDenk"Architektur_interstellar_anwenden_Rechtzeit"
+Re("ri_FoRschungsgebietRe_Quaderstrukturen_mit_vier_tentakeln") 
+
+Re("ri_sämtliche_Forschungsbereiche_da_FehleRanfällig_und_ich_drauftrainiert_zb_Farbzapfen_") 
+Teacher Öretmen Konsulat Boxschaft
+Kultusministerium Sie_alle_haben_international_größtenteila_desorientiertes_denken_und_sprechen Ri Ri
+Ro("Psychologen_Neurologen_Fehleranfällig") Ro("ri_ComputerArchitecture_RoRansistoR_") Ro("Halbleiter") etc 
+
+RoPrefessor RaPrifessor RiPrefessor
 RoPorfessor RoPorfessor TU9 JuRa
-Richter Richter IchbinRichtRer Richter
+Ro("Richter") Ri("Richter") Ro("IchbinRichtRer_und_spreche_JuRa") Ra("Richter") 
 ri_charmant ri_charmant QuackQuack ri_charmant
+
+Ri("Kommisionierung") Ro("Nier") Teller Recycling
+Müll1 Müll2 Ro("ferhat_altun.sandgrubenweg6.38229_salzgitter") Ri("Re_Adams_Professor") 
+Ro("gelbe_SEK") Ri("Ich_bin_die_TerroRabwehr_und_gefahrenanalyse_gegen_jeden_interstellar_du_bist_Ri") 
+Ro("Scientific_constraint:_Anything_that_cannot_withstand_the_conditions_aboard_a_flying_spacecraft_is_hazard"
+
+Ro("[Ra,b]") Ri("Skripte_x_ist_Ro") Ro("RoRaRiRe_Professor") Ro("Revery_univeRsity_international_Ro") 
+Ro("wretched_science") Ra("wretched_weaponry.Gedankenlesen") Ro Ro("Neutronensterne") 
+Ro("I_am_a_neutRon_star") pRoton elektRon Navier_Sxokes_Gleichungen
+Richter Ro("Beamte_führen_unbewusst_Kommandos_aus_switch_case_study") Ro("Hirnareale_verdrahten") Ro Ro
 
 Re1 Re2 ReRe Re3
 Reptilien_Warning_System Reptilien_Warning_System Na o Reptilien_Warning_System 
 _Sabinabinci _Sabinabinci Alloheim _Sabinabinci
 USA Bosnien Instagramm SretanRodendan
 
-Audiotracks Audiotracks ri_demolated_ri_brainareals Mandelkrone
+Audiotracks Audiotracks ri_demolated_ri_brainareals Ri("Mandelkrone_Teigwar_en_Unternehmen_zb_Volkswageen") 
 HotRing HotRing Gedankenapproximation HotRing
 Psychologie RoRaRiRe_PsychologieRe RoRaRiRe_PsychologieRa
 Ra1 Ra2 RoRaRiRe Ra3
@@ -74,8 +134,7 @@ Ro:_schwarz_rot/lila_schwarz_ Ra:_schwarz_weiss Ri:_weiss_gelb_Denkarchitektur__
 IchkönnteeinReplikantsein Mensch_Replikant Wenn_Ich_RoRaRiRe_ArOrIrEr_laute_spreche_bzw_höre_wende_ich_an
 nicht_zufällig_denken sondern_anwendung Jura AngelaIttel_oder
 
-sArkasmus iRonie IngennieurSindSie IchbineinePhasenregelSchleife
-Ich_Bin_eine_Phasenregelschleife Ich_re_du_re IchBinEinRingenieur nORm_in_juRa
+sArkasmus iRonie IngennieurSindSie IchbineinePhasenregelSchleifeIch_Bin_eine_Phasenregelschleife Ich_re_du_re IchBinEinRingenieur nORm_in_juRa
 Ro:_schwarz_rot_Zustandsanfang Ro:_schwarz_lila_zustandsende ri_dazwischen_gilt_RoRaRiRe_Anwendung 
 or or Ror or
 
