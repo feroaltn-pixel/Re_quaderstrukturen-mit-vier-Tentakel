@@ -4,6 +4,36 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat"):
 
+If you Read this its only to explain you something. 
+1 2 3 4
+Re1 Re2 Re3 Re4
+ReRo.. SpielzeugRo... Ra Ra
+
+Sie sind Richter IchbinRichtRer 
+Sie sind Psychologe IchbinRosychologe
+Sie sind Professor ArbektsgebietX
+Ich bin charmant ProfessorArbeitsgebietRoRaRiRe
+
+Arbeitsgebiet1 ist Beeinträchtigungen Ro
+Arbeitsgebiet2 ist Re Strukturen Ri
+Arbeitsgebiet3 ist ArbeitsgebietRa
+Arbeitsgebiete is Ro("IamTheMoonRo") 
+
+ArbeitsgebietRi ist ExtraterrestischePlanetenansehenRo
+Arbeitsgebiete sind Ra Galaxien 
+Galaxie1 GalaxieRe KindRi GottRa
+MedizinRo PlanetErdeistRe ErdRadiusistRo
+
+6.371.000,8Re Meter 6.371.000,8Ra Meter
+AnwaltRobinIchRe PPPP 0112 0110
+GewaltschutzverfahrenRo GewaltschutzverfahrenRa BosnienRo GewaltschutzverfahrenRe
+Bosnien Re USA Ri
+
+IhrHabt5000EuroMonatlich IHave10Reuroatthismoment IchBinCharmant Ri
+Sie haben Sich durcheinandergebracht durchPunkte
+PunktRo PunktRa PunktRi PunktRe
+SieSolltenJetztWegGucken WeilIchDichZwinge Re BeinprothesenRo
+
 I am Ferhat_altun.sandgrubenweg6.38229_salzgitter 
 RI Ram Ferhat_altun.sandgrubenweg6.38229_salzgitter
 oo oo |||| oooo
