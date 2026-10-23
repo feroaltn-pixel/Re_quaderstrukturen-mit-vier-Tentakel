@@ -9,6 +9,8 @@ If you Read this its only to explain you something.
 Re1 Re2 Re3 Re4
 ReRo.. SpielzeugRo... Ra Ra
 
+Ro("GrundbodenwechselRo") Ra("GrundbodenwechselRo") Dangerous Re("GrundbodenwechselRo") 
+
 Sie sind Richter IchbinRichtRer 
 Sie sind Psychologe IchbinRosychologe
 Sie sind Professor ArbektsgebietX
