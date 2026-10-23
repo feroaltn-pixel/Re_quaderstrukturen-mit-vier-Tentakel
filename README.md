@@ -39,9 +39,12 @@ SieSolltenJetztWegGucken WeilIchDichZwinge Re BeinprothesenRo
 Fahrzeug1 FahrzeugeRe NeumannsondeRo Ro("NeumannsondeRi") 
 SieVersuchenMamasZusammenzuzählen JugendamtRo MaMaRa zweiRe
 
-I am Ferhat_altun.sandgrubenweg6.38229_salzgitter 
-RI Ram Ferhat_altun.sandgrubenweg6.38229_salzgitter
-oo oo |||| oooo
+Starlinks_satellites_are_tentacleconfigurationsRo Ro("ri_IamStarlinkRi") Ro("ri_I_am_in_heaven") Ri
+These_are_not_flashesRo These_are_Re_structures_Ri zb_BlitzRe t_ist_Ro_und_f_ist_Ri
+
+I am Ferhat_altun.sandgrubenweg6.38229_salzgitterRo Bundeskanzler_MerzRi
+RI Ram Ferhat_altun.Sandgrubenweg6.38229_Salzgitter SandgrubenwegRe
+oo oo |||| ooooRo
 Instagramm fero90_sz Beweismaterial desoriented_thinking_speaking_brainarealcoordination
 
 Ro("You_will_all_end_up_in_pRison_Ri("because")_RI_Ram_surRounding_you") 
