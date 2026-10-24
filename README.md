@@ -37,6 +37,7 @@ ReRo.. SpielzeugRo... Ra Ra
 Ro("GrundbodenwechselRo") Ra("GrundbodenwechselRo") Dangerous Re("GrundbodenwechselRo") 
 1Re 2Re 3Re 4Re
 Ri(RaRotation)=0Ri
+Müllkommisionierung Gebaudesanierung StadtverwaltungRo VersicherungRo
 
 
 Sie sind Richter IchbinRichtRer 
