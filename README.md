@@ -4,7 +4,7 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
 
-WissenschaftRo WissenschaftRo WissenschaftRo WissenschaftRe
+WissenschaftRo WissenschaftRa WissenschaftRi WissenschaftRe
 ReStructures ReStructures ReStructures ReStructures
 Pflegegrad1Re Pflegegrad2Re PflegegradRi Pflegegrad5Re
 GefängnisRo GefängnisRa IchinCharmant GefängnisRe
