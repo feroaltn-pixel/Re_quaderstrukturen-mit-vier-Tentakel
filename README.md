@@ -35,6 +35,9 @@ Re1 Re2 Re3 Re4
 ReRo.. SpielzeugRo... Ra Ra
 
 Ro("GrundbodenwechselRo") Ra("GrundbodenwechselRo") Dangerous Re("GrundbodenwechselRo") 
+1Re 2Re 3Re 4Re
+Ri(RaRotation)=0Ri
+
 
 Sie sind Richter IchbinRichtRer 
 Sie sind Psychologe IchbinRosychologe
