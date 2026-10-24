@@ -7,7 +7,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 WissenschaftRo WissenschaftRa WissenschaftRi WissenschaftRe
 ReStructures ReStructures ReStructures ReStructures
 Pflegegrad1Re Pflegegrad2Re PflegegradRi Pflegegrad5Re
-GefängnisRo GefängnisRa IchinCharmant GefängnisRe
+GefängnisRo GefängnisRa IchbinCharmant GefängnisRe
 
 AnwältRo ParagraphRe IchSchauspielereUndBeobachteUnkoordinationHirnareale IchKennMichüberAllAus
 Neurologie Psychologie Naturwissenschaften GleichungRoGleichungRaGleichungRiGleichungRe
