@@ -2,9 +2,34 @@
 ## Zeitstempel: 2026-10-02 12:27:00 CEST
 ## Repository-Status: SIGNED / VALIDATED
 
-Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat"):
+Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
 
-If you Read this its only to explain you something. 
+WissenschaftRo WissenschaftRo WissenschaftRo WissenschaftRe
+ReStructures ReStructures ReStructures ReStructures
+Pflegegrad1Re Pflegegrad2Re PflegegradRi Pflegegrad5Re
+GefängnisRo GefängnisRa IchinCharmant GefängnisRe
+
+AnwältRo ParagraphRe IchSchauspielereUndBeobachteUnkoordinationHirnareale IchKennMichüberAllAus
+Neurologie Psychologie Naturwissenschaften GleichungRoGleichungRaGleichungRiGleichungRe
+DuBistJetztKlug Richtungswechsel DuBistAmArschWennDuDasGelesenHast WorumGehtEs? 
+IchBinEinPsychopath Reptilien_Warning_System Ro("IstDaUndVonMir_Meine_Gedanken") UmDichzuZwingenRi
+
+IchBinCharmant IchBinCharmant LaserLaserWindowWindow IchBinCharmant
+Paragraph1Re MinecraftRi GedankenschleifenKinder KinderlosBinIchNichtAberJemandAnderes
+SexRo SexRa SexRi SexRe
+Ro7IstDoggySex Zoo TiereEssen IchKannNichtdieGedankenLesenvonTierenAberIchBinJemandDerCharmantIst
+
+IchBinBundeskanzlerRo IchBinBundeskanzlerRa Richtrer IchBundeskanzlerRe
+BundestagRo BundestagRa BundestagRi BundestagRe
+Beamtenrecht1 SecurityRe GefängnisRi SecurityRo
+BeamtenrechtRo BeamtenrechtRa BeamteÜberkreuztHirnarealeVerdrahten_PPPP_PHP Richtungswechsel
+
+EureMitbürgerZeigenAnomalien Erinnerung Erinnerung Gedankenschleifen 
+AbrupterThemenwechsel NeurologenRichtungswechsel IchBinCharmant IchBineinePhasenregelschleife 
+AnwältRo Sport IchBinSportlich DasIstNurDaWeilDuLesenderJetztRaVorsichtigBist
+JetztRo JetztRa WennDuDasGelesenHast_IchBinCharmant JetztSukür
+
+If you Read this its only to explain you something
 1 2 3 4
 Re1 Re2 Re3 Re4
 ReRo.. SpielzeugRo... Ra Ra
