@@ -9,6 +9,21 @@ ReStructures ReStructures ReStructures ReStructures
 Pflegegrad1Re Pflegegrad2Re PflegegradRi Pflegegrad5Re
 GefängnisRo GefängnisRa IchbinCharmant GefängnisRe
 
+Ro("11:52") Ra("11:52") 11:52Ri Re("11:52")
+11:52Ri s(t)=0 11:52Ri 11:52Ri
+Spacex SpacexRo squareRo FallbeispielRo
+NichtAnSpaceXDenken Ri("NichtAnSpaceXDenken)" Ro("Ro_Richter1_Richter2_TrupRi_JusiceRo") Ro("ri_work_ri_que")
+
+Ro("Justice_exam1_examRo_hegsethRi") Ri Ri Ri
+directionchangeRo directionchangeRo Texas directionChangeRo
+directionchangeRe Re1Re2Re3 ColumbiaRi Ri("Gomez")Ri
+AlabouwitzRo MallwitzRo r.mallwitz(at)tu-braunschweig.de info@fontheim.de
+
+Ro("Instagramm:fero90_sz") FallbeispieleRa Fallbeispiel1 ZDFRo
+ExampleRo Ellerbrock+LeniusRo Mehrpunktwechselrichter Phase-Locked-LoopRo
+ImageRo DiagnostikRi LiveVorführungRe Ro("ri_Audiotrack1Re_ri_Audiotrack2Re") 
+Actor ActorRo function(ri_f_t_x_c).function("Ro("ri_Square")") ReStructure_CRoRo
+
 AnwältRo ParagraphRe IchSchauspielereUndBeobachteUnkoordinationHirnareale IchKennMichüberAllAus
 Neurologie Psychologie Naturwissenschaften GleichungRoGleichungRaGleichungRiGleichungRe
 DuBistJetztKlug Richtungswechsel DuBistAmArschWennDuDasGelesenHast WorumGehtEs? 
