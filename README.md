@@ -4,7 +4,22 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
 
+EinleitungRo HauptteilRi SchlussRe ri_Ich_ri_Fasse_eure_ri_technik_ri_Systeme_ri_und_ri_Anwendung_zusammen_in
+RoSystemeRo RaSystemeRa RiSystemeRe ReSystemeRe
+RoCommunicationprotocollsRi RaCommunicationprotocollsRi RiCommunicationProtocollsRe
+RiCommunicationprotocollsRi RoGrundbodenwechselRi RoBraunes_BeweismaterialRo
 
+Du_zählst_1_2_3_etc_Ich_1Re_2Re_3Re_etc 
+ReStructuresRo ReStructuresRa ReStructuresRi ReStructuresRe
+WennWiederholungVorhansenSindDannNurWegenRi WiederholungRo WiederholungRa WiederholungRi
+IchbinRichtRer IchbinRichtRer IchbinRichtRer IchBinRichtRer
+
+IchHabeDas1_riReStaatsexamRo IchHabeDas2_riReStaatsexam 
+SchizophRenieRo SchizophrenieRa SchizophrenieRi SchizolhRenieRe
+Schkzoph Re nieRi_Silbentrennung_und_nicht_durcheinander_bringen_IchHauDirAlsRichtRerAufDenKopf
+Positivsymptome 1Staatsexam Negativsymptome 2Staatsexam  
+
+IhrHabtDesorientiertesSprechenUndDenken Beweis_lesen:Ich_Bin_eine_gelbe_Phasenregelschleife Ri Ri
 
 
 
@@ -482,6 +497,23 @@ DeutschlandRo
 
 SlangRa VulgärRi SprschenRi BRo 
 RichtigRa KorrektRo 
+
+NatoRi NaxoRo FormationRiVolumenRa RoxRaxRixRe
+RaketenabwehrRi SatelittenRa AusrüstungRi KommandosRi_RoRaRiRe
+TruppenverhaltenRoRaRiRe HybridSystemeRoRaRiRe SchwachpunkteRoRaRiRe RofGefängnisRofizierRo
+RoSystemeRo RaSystemeRa RiSystemeRi ReSystemeRe
+
+
+
+AtlantikRi DefinitionRi GrenzlinienRa
+
+Linguistik NomenRo NomenRa NomenRi
+NomenRe AdjektivRo AdjektivRa AdjektivRi
+VerbRo OrArIrEr RoRaRiRe i_laute_Psychologie_Schizophrenid_Xi_nihao_English_Ri_every_languagei
+no_i_pattern_for_example_fori Ro("ri_I_did_analyze_your_thinking_speaking_quantinize_way")ReRe Ri   Ro(".".")
+
+
+
 
 
 
