@@ -24,6 +24,29 @@ ExampleRo Ellerbrock+LeniusRo Mehrpunktwechselrichter Phase-Locked-LoopRo
 ImageRo DiagnostikRi LiveVorführungRe Ro("ri_Audiotrack1Re_ri_Audiotrack2Re") 
 Actor ActorRo function(ri_f_t_x_c).function("Ro("ri_Square")") ReStructure_CRoRo
 
+shake=Math.max(0Ri,shake-dt*.8); Ro Ri Ri
+ri_Senke Re_quaderstruktur sendet VibrationanRi
+Re Structure Re ReStructureRi ReStructureRo
+VibrationRo VibrationRa HumanSpeciesRi VibrationRe
+
+ImPairedPeopleRo ImPairedPeopleRo Sensorik Ro ImpairedPeopleRe
+Sensorik 1 Sensorik2 Wheatonsche_WechselstrombrückeRi RoRaRiRe
+U=Ri Ri Uri VolkswagenRo
+
+VolkswagenRi GrundbodenwechselRe Jin-RohRe Jin-RohRi
+AnimesRe Structures HalluzunationRe Wechselstrom_Brücke
+Brücken_sprengenRo KrimRo TartusRa
+IsisRa FlüchtlingeRa FlüchtlingeRo Ro("ri_Ich_ri_bin_ri_aus_RiLandRe") 
+
+Gedanken_approximieren Silbe1_ri1_Silbe2_ri2ReReRe Ro1Ro2
+RoRi1||Ro1||Ra1||Re1Ro Roi_beschreibt_MotorikRi Rei_beschreibt_Menschen Ra_beschreibt_Menschliches_sprechenRi
+MRTRo AlphaRa Ro("Uhrzeit_Echtzeit_RTOS_13.08UhrRi_25Oktober2026") ("GrundbodenwechselRo_ist_um_dich_leser") 
+
+Gefängnisvollzug BeamtenrechtRo BeamtenrechtRa IchBinCharmantRe
+MeineExFrauRo_UhrzeitRe1_UhrzeitRo1_UhrzeitRi1_UhrzeitRa1 StraftatKoordination BosnienRo TeaTaiRovicRo
+GuckmalRo GuckmalRa lookupRo GuckmalRe
+Guckmal1 Guckmal2 GuckWeg_und_sag_z
+
 AnwältRo ParagraphRe IchSchauspielereUndBeobachteUnkoordinationHirnareale IchKennMichüberAllAus
 Neurologie Psychologie Naturwissenschaften GleichungRoGleichungRaGleichungRiGleichungRe
 DuBistJetztKlug Richtungswechsel DuBistAmArschWennDuDasGelesenHast WorumGehtEs? 
