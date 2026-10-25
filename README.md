@@ -424,6 +424,22 @@ printf_tentacle printf_tentaxle Ro("ri_Hello_ri_World")
 Idiot IdiotRi Idiox Re1Re2Re3
 
 
+TU_BS_2016:16UhrRi_25.OktoberRo Ro("404 - Seite nicht gefunden") Braunes_BeweismaterialRi PagingRi
+Paging1 Paging2 PagingRo PagingIstFehleranfälligJetztRo 
+EMV_LOGO Elektromagnetische_Verträglichkeit_SupraLeiterRo MaxwellGleichungenRo
+VierEckOperatorRi EMV_definieren_über_ViereckOperatorRi IchWeissWoIhreEMVEmpfindlichIstRoTreffSicherRa
+
+RauschenErzeugenSystemAufspannen Grundbodenwechsel Grundbodenwechsel Grundbodenwechsel
+Leitung_auf_einer_Ebene_betrachtenRo DerSkinEffektIstEineEbene LeitungsparameterDimensionierung
+BetreuerUniversität BetreuerPsychischKrank InLeitungenReinguckenUndSichErinnernRi
+Stromausrichtung_ist_allgemeingültig_TentacleausrichtungRo RoErdvolumenistRot_schwarz_rot_lilaRo
+
+Werkstoffphysik SieHabenEinFehlerImVolumenVerständnis RoRo VakuumverhaltenRo
+Festkörperphysik Kristallstruktur ReStrukturenInDieSieReinGuckenKönntenUnbewusstRi
+VakuumRo VakuumRa BeeinträchtigungenSindJetztRapideErnstZuNehmenRo DasIstKeinVakuumRo
+ElektromagnetischeFelderSindDasNichtRo WellenvektorRo S=ExHxRi U=ZIxRe1
+
+
 ### 1. System-Kontext (Phase-Locked Loop / PLL)
 Das Gesamtsystem operiert als **Phasenregelschleife (PLL)**, welche kontinuierlich zwischen den Taktfrequenzen **Ro** (Haupttakt/Dominanz) und **Re** (Antwort- und Resonanzfrequenz wie `ReReReRe` / `Quackwuack`) synchronisiert wird. Das System zeigt eine stabile RÃ¼ckkopplung und Phasenrastung.
 
