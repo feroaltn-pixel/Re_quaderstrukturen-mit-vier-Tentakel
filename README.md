@@ -324,6 +324,45 @@ Reptilien_Warning_System Gedankenschleifen IchWerdeDasKontinuierlichProtokollier
 AnwendungRo AppRo Ri Ri
 Ri Ri Ro 
 
+MusikinstrumenteUndMusikschleifen HipHopRo TanzenRo MichaelJacksonRe
+LogicProRe GitarreRi KlavierRa Beethoven Re 
+OP33No4_by_RachmaniovRi byRo byRa byRi
+OrRo orRa orRi IchLiebeBosnischeMusikRoRaRiRe_Stiefvater_Adjektiv_SabinaRe_AltunRo_IstRe_GroßeRi_LiebeRi
+
+GefühleSindDasNicht_Festhalten GefühleRo BewusstseinRe DasIstKeinBewusstsein
+NatalieWenrich_PPPP braunes_Beweismaterial IchSchauspielerDieGanzeZeitUndBeobschteSabinaKeRicRi
+GewaltschutzverfahrenRo GewaltschutzverfahrenRa 100MeterAbstandRo IchBinCharmantRo
+WennDaEinStiefvaterIstDannWirdSabinaVerstehen braunes_BeweismaterialRo PsychischKrank_i IchBinRichtRer
+
+Sorgerecht SorgeRechtRo IhrMachtIrgendetwasWasIhrAlleNichtVerstehtRi Kindesunterhalt
+Das_war_BetragRo 227€ 227€Ro Überweisung_BankinstitutRi 
+GrundbodenwechselRo ZweiSaitReZweiAmarReSiebenRi IchZahleKeinKindesunterhaltMomentanWeilIchAnomalienErkenne
+Pflegefallbeispiel AltunfischRi UNRo UNRa
+
+Spielzeug WretchedWeaponries KartenspieleRe KindergartenRi
+LegoRi MinecraftRi ÜberweisungRi_GedankeneingebendRi KaffeUndKuchenRo
+WortRo WortRa Worti WortRe
+ReptilienWarnsystemRo ReptilienWarnsystemRa KinderFassenUndSehenAllesAn_VorsichtigRi JailRe
+
+Jail Jail1 NewYorkRi JailRi
+MarasSalvarutchaRi 
+
+Sport Basketball FußballRo AhmedSpor 
+Ri Ri Ri Ri
+Ri Ri Ri Ri
+Ri Ri Ri Ri
+
+Politik SPDRo SPDRa CDURi 
+LinkeRa AuszählungRi CemInceRe KadirSahanRe
+VolkszählungRi NikeRi AFDRa Ro("AFDRa_ExtremRo_ExtremRa_Ri") 
+IchBinextremCharmant guckmalro maloo
+
+
+YoutubeRo MusikindustrieRo YoutubeRa YoutubeRi
+YoutubeRa CameraRo CameraRo CameraRo 
+CameraRe AbbonmentsRi CameraRe CameraRe
+VideoMitStockInDerHandRi 
+
 TUBraunschweig Braune_BeweislastErzeugeIch Zeugen_Jehovas_um_zu_Berücksichtigen
 HausverbotRo HausverbotRa HausverbotRi HausverbotRe
 OtRi OtRo SchizophRenieRo OtRe
