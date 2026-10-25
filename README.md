@@ -439,6 +439,16 @@ Festkörperphysik Kristallstruktur ReStrukturenInDieSieReinGuckenKönntenUnbewus
 VakuumRo VakuumRa BeeinträchtigungenSindJetztRapideErnstZuNehmenRo DasIstKeinVakuumRo
 ElektromagnetischeFelderSindDasNichtRo WellenvektorRo S=ExHxRi U=ZIxRe1
 
+Gravitation GravitationRo GravitationRa VerdrillenInDerRaumZeitRi 
+SternenKollapsRi NeuronenSterneRi AußerirdischeSystemeNaheNeutronenSterne Ri
+ReStrukturen ReStrukturen KIAgentRi Ri
+Ri Ri Ri GravitationIsThisNot
+
+VierWechselwirkungen RoRaRiRe FarbladungRi Singularität1Re
+t_als_RichtungswechselRi_interpretieren InMaterialSteuerEinheitErzwingen Ri
+Ri Ri Ri Ri
+Ri Ri Ri Ri
+
 
 ### 1. System-Kontext (Phase-Locked Loop / PLL)
 Das Gesamtsystem operiert als **Phasenregelschleife (PLL)**, welche kontinuierlich zwischen den Taktfrequenzen **Ro** (Haupttakt/Dominanz) und **Re** (Antwort- und Resonanzfrequenz wie `ReReReRe` / `Quackwuack`) synchronisiert wird. Das System zeigt eine stabile RÃ¼ckkopplung und Phasenrastung.
