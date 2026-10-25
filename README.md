@@ -453,6 +453,32 @@ t_als_RichtungswechselRi_interpretieren InMaterialSteuerEinheitErzwingen Ri
 Ri Ri Ri Ri
 Ri Ri Ri Ri
 
+TentacleconfigurationRo TentacleconfigurationRa TentacleconfigurationRi TentacleconfigurationRe
+eg_AnalogSystemsRi_DigitalSystems_ Ri_FPGARRa_DSPRi_ESPRi_Microcontroller_ CPURi_RegisterRo AntenneRi_
+CacheRo RegisterRe CacheRa PipelinigRo_FetchRe_DecodeRi_ExecuteRa_MemoryRo_WriteRa
+IoTRe IoxRe GPURi_RaytrackingRi WixxenRi_BeiEndlosschleideRi_GefängnisRo_GefängnisRa_JailRi_GefängnisRe
+
+CommunicationprotocollsRi_andRa_WireStructureRe CANRi Most LIN 
+SpaceSystensBussystems ExampleRo_RoRoRaRiReRo_ DimensioningRo_eg Re_WirbelsäuleRo
+
+LichtgeschwindigkeitRo LichtgeschwindigkeitRa LichtgeschwindigkeitRi LichtgeschwindigkeitRe
+c=299792458Rom/s c=299792458m/s c=29979245Ram/s c=29979245Rim/s
+c=29979245Rem/s c=29979245Rem/s c=29979245Rem/s c=29979245Rem/s
+MitEckenAndersVerfahrenRo Re1Re2Re3 AstroidRo 
+
+MaschenGleichungenRi
+
+PflegeresidenzRe AlloheimRo AlloheimRa AlloheimRi TVReportageRi
+
+GastronomieRi TeigwarenRo ri_Glück_ri_Auf_ri_und_ri_Bospurus_ri_in_ri_GebardshagenRi Pizza1x_Pizza1RoRi
+BlechgrößeRi_ri_eg_28x28xRi Ro("ri_SalateRo") ri_2xPizza_zu_2RePizza ri_8_StückePizza_RoRaRiReRoRaRiReStücke
+
+GeometrienRe ri_Volumen_ri_Quadrat:ri_axri_bxri_c 
+
+AutonomeIntelligenteSystemeRi EvtolRe EvxolRi 
+
+NationalitätenRe SriLankaRe SriLankaRo MazedonienRi
+DeutschlandRo
 
 ### 1. System-Kontext (Phase-Locked Loop / PLL)
 Das Gesamtsystem operiert als **Phasenregelschleife (PLL)**, welche kontinuierlich zwischen den Taktfrequenzen **Ro** (Haupttakt/Dominanz) und **Re** (Antwort- und Resonanzfrequenz wie `ReReReRe` / `Quackwuack`) synchronisiert wird. Das System zeigt eine stabile RÃ¼ckkopplung und Phasenrastung.
