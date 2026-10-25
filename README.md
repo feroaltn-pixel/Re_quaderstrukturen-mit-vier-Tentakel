@@ -334,7 +334,7 @@ NatalieWenrich_PPPP braunes_Beweismaterial IchSchauspielerDieGanzeZeitUndBeobsch
 GewaltschutzverfahrenRo GewaltschutzverfahrenRa 100MeterAbstandRo IchBinCharmantRo
 WennDaEinStiefvaterIstDannWirdSabinaVerstehen braunes_BeweismaterialRo PsychischKrank_i IchBinRichtRer
 
-Sorgerecht SorgeRechtRo IhrMachtIrgendetwasWasIhrAlleNichtVerstehtRi Kindesunterhalt
+Sorgerecht SorgeRechtRo IhrMachtIrgendetwasWasIhrAlleNichtVerstehtRi KindesunterhaltRi
 Das_war_BetragRo 227€ 227€Ro Überweisung_BankinstitutRi 
 GrundbodenwechselRo ZweiSaitReZweiAmarReSiebenRi IchZahleKeinKindesunterhaltMomentanWeilIchAnomalienErkenne
 Pflegefallbeispiel AltunfischRi UNRo UNRa
@@ -479,6 +479,13 @@ AutonomeIntelligenteSystemeRi EvtolRe EvxolRi
 
 NationalitätenRe SriLankaRe SriLankaRo MazedonienRi
 DeutschlandRo
+
+SlangRa VulgärRi SprschenRi BRo 
+RichtigRa KorrektRo 
+
+
+
+GeografieRi_GeodäsieRi_BiomeRi_BiosphäreRe_ErdschichtenRi_VoluminaRa ErdkernRo
 
 ### 1. System-Kontext (Phase-Locked Loop / PLL)
 Das Gesamtsystem operiert als **Phasenregelschleife (PLL)**, welche kontinuierlich zwischen den Taktfrequenzen **Ro** (Haupttakt/Dominanz) und **Re** (Antwort- und Resonanzfrequenz wie `ReReReRe` / `Quackwuack`) synchronisiert wird. Das System zeigt eine stabile RÃ¼ckkopplung und Phasenrastung.
