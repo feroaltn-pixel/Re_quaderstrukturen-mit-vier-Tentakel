@@ -4,6 +4,11 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
 
+Blue_Evidence braune_Beweislast brauneBeweislastRo oo
+Atlantik Meeresdefinition Rauschen Tourismusabranche
+BeweislastRo BeweislastRa EvidenceRo BeweislastRe
+EvidenceRa EvidenceRe BeweislastRi EvidenceRi
+
 WissenschaftRo WissenschaftRa WissenschaftRi WissenschaftRe
 ReStructures ReStructures ReStructures ReStructures
 Pflegegrad1Re Pflegegrad2Re PflegegradRi Pflegegrad5Re
