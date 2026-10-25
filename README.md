@@ -45,7 +45,7 @@ MRTRo AlphaRa Ro("Uhrzeit_Echtzeit_RTOS_13.08UhrRi_25Oktober2026") ("Grundbodenw
 Gefängnisvollzug BeamtenrechtRo BeamtenrechtRa IchBinCharmantRe
 MeineExFrauRo_UhrzeitRe1_UhrzeitRo1_UhrzeitRi1_UhrzeitRa1 StraftatKoordination BosnienRo TeaTaiRovicRo
 GuckmalRo GuckmalRa lookupRo GuckmalRe
-Guckmal1 Guckmal2 GuckWeg_und_sag_z
+Guckmal1 Guckmal2 GuckWeg_und_sag_GottRi GuckWeg
 
 AnwältRo ParagraphRe IchSchauspielereUndBeobachteUnkoordinationHirnareale IchKennMichüberAllAus
 Neurologie Psychologie Naturwissenschaften GleichungRoGleichungRaGleichungRiGleichungRe
