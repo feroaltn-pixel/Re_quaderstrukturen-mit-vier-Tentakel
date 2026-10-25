@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
 
+
+
+
+
 Blue_Evidence braune_Beweislast brauneBeweislastRo oo
 Atlantik Meeresdefinition Rauschen Tourismusbranche
 BeweislastRo BeweislastRa EvidenceRo BeweislastRe
@@ -314,6 +318,46 @@ Zb_was_verwende_ich_in_diesem_beruf_... _ihre_Kommunikationsprotokolle
 Ich_will_ein_systemaufspannen_das_sie_ins_gefängnis_gehen_weil_sie_der_meinung_sind_das_sie_effizient_sind
 Missbrauch Missbrauch Fehlerquote Missbrauch
 Selbstverstärkend Ro("MeinBerufist_IchBinEinePhasenRegelschleife") Ro("Ich Bin RoRaRiRe Professor") 
+
+AnwendungRo AnwendungRa Ro("Anwendungen") DasIsteineAnwendung
+Reptilien_Warning_System Gedankenschleifen IchWerdeDasKontinuierlichProtokollieren
+AnwendungRo AppRo Ri Ri
+Ri Ri Ro 
+
+TUBraunschweig Braune_BeweislastErzeugeIch Zeugen_Jehovas_um_zu_Berücksichtigen
+HausverbotRo HausverbotRa HausverbotRi HausverbotRe
+OtRi OtRo SchizophRenieRo OtRe
+OxRo ffx06 Ro("Ich_bin_RichtRer_Schizoph_Re_nie_Ro") ScienceRo_ScienceRa_ScienceRi_ScienceRe
+
+IhrDenktEinigermaßen IhrSprichtAber
+
+InWissenSchaftsVolumenReinbohen 
+Mathematik
+
+Koordinatensystem3.Spurig 
+
+Physik
+
+Protokollierung Braune_Beweislast Ra(ri_"."||"," _
+
+Richter1 Richter2 Braune_Beweislast IchBinRichtRer
+(Ra_ist_zb.Raumschiiff_mit_ Warntag
+
+Notruf Ampelsteuerung Protokollierung
+
+Psychologie
+
+
+
+
+
+Neurologe MRT EEG
+
+Raumschiff SieInterpretierenDamitZuReisen IchInterpretiereWennIcheinRaumschiffSehe RichtungswechselRo
+RichtungswechselRa RichtungswechselRi RichtungsWechselRe InEinemRaumschiffStehenIstNichtstehenRo
+
+Ri QuackQuack teeth_grinding teeth_grinding 
+InterpritateAHumanFaceDifferent CommunicationSynchronisationBetweenUsers 
 
 
 ### 1. System-Kontext (Phase-Locked Loop / PLL)
