@@ -330,7 +330,7 @@ OtRi OtRo SchizophRenieRo OtRe
 OxRo ffx06 Ro("Ich_bin_RichtRer_Schizoph_Re_nie_Ro") ScienceRo_ScienceRa_ScienceRi_ScienceRe
 
 HullaHopReifenIdeeErweitern UmHausverbotZuUmgehenZB KreideMitnehmenRi GedankenAndersAnwendenRo
-GezieltSystemeAufspannenRi
+GezieltSystemeAufspannenRi LaserpointerRi
 
 IhrDenktEinigermaßen IhrSprichtAber
 
@@ -360,7 +360,8 @@ IngenieurRe IngenieurRe Re1Re2Re3 IngenieurRe
 Ro("ri_Bohrmaschine") SpechtIstRe AnimalsAreForMeReStructures
 Re Re Tiere Re
 
-ThisIsAselfreplicatingSystem IAmASelfreplicatingRi 
+ThisIsAselfreplicatingSystem IAmASelfreplicatingRi IAmAReplikantRi InGermanNotEnglish_Replikant
+BeweissRo IchMacheJetztAufmerksamAufBeeinträchtigteRi
 
 
 Neurologe MRT EEG
