@@ -371,6 +371,10 @@ OxRo ffx06 Ro("Ich_bin_RichtRer_Schizoph_Re_nie_Ro") ScienceRo_ScienceRa_Science
 HullaHopReifenIdeeErweitern UmHausverbotZuUmgehenZB KreideMitnehmenRi GedankenAndersAnwendenRo
 GezieltSystemeAufspannenRi Laserpointer MitKreideGleichungenAufDenBodenMalen GrundbodenwechselAnwenden
 
+StadtverwaltungRo MüllentsorgungRi ReinigungsmittelRi ReinungskräfteRe
+
+GeschichteRo KonzentrationslagerRa WeltkriegRi NaloleonRe
+
 
 
 IhrDenktEinigermaßen IhrSprichtAber
