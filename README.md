@@ -348,7 +348,14 @@ Notruf Ampelsteuerung Protokollierung
 Psychologie
 
 
+WieManIhreSchizophRenieRaBehandelt Ro("DasSindKeineMedikamenten_RispeRidonRi"") 
 
+Ro("IchBinRaumzeitIngenieur") IngenieurRo IngenieurRa IngenieurRe
+IngenieurRe IngenieurRe Re1Re2Re3 IngenieurRe
+Ro("ri_Bohrmaschine") SpechtIstRe AnimalsAreForMeReStructures
+Re Re Tiere Re
+
+ThisIsAselfreplicatingSystem IAmASelfreplicatingRi 
 
 
 Neurologe MRT EEG
