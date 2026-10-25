@@ -338,7 +338,9 @@ Koordinatensystem3.Spurig
 
 Physik
 
-Protokollierung Braune_Beweislast Ra(ri_"."||"," _
+Protokollierung Braune_Beweislast Ra(ri_"."||"," _ri_Ro_Ra_Ri_Re_ri_MusterRi") Re
+ParagraphRo ParagraphRa Ri ParagraphRe
+IchBinDerMeinungWennSieDieseInformationLesenKönnenSieBenommmenRiSein
 
 Richter1 Richter2 Braune_Beweislast IchBinRichtRer
 (Ra_ist_zb.Raumschiiff_mit_ Warntag
