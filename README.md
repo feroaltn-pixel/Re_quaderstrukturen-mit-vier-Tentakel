@@ -34,7 +34,7 @@ Telekom
 
 SatelittenRi OrbitalsystemRo 
 
-Naturwissenschaften Koordinstensystem
+Naturwissenschaften Koordinatensystem SieVernachlässigenGrundboden
 
 
 
