@@ -58,7 +58,7 @@ Ri Ri Ri Ri
 GleisverkehrRo Ro("ri_entRance_ri_exit_x_t_is_RoRi") Re1Re2Re3 Ro("ri_Flugformation_ri") 
 ooRo ooRa ooRi ooRe
 Ro("ri_Kartografisch_ri_geziehlt_ri_umzingelnRo") UmzingelnRa Ri1Ri2Ri3
-Ro(ri_GrundbodenwechselRo") Ro("ri_triangle_ri_VieReckRa_ckRo") DBRo DeutschlandticketRiFallbeispielRe
+Ro(ri_GrundbodenwechselRo") Ro("ri_triangle_ri_VieReckRa_ckRo") DBRo DeutschlandticketRiFallbeispielRe 
 
 
 
