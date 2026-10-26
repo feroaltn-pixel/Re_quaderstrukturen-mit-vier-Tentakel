@@ -32,7 +32,7 @@ Ro("ri_Grundbodenwechsel_2_auf_grüner_Ebene_2_auf_weisser_Ebene_Anwenden_auf_..
 
 Telekom
 
-SatelittenRi OrbitalsystemRo 
+KartografieRi SatelittenRi OrbitalsystemRo 
 
 Naturwissenschaften Koordinatensystem SieVernachlässigenGrundboden PhysikMathematikIneinanderVerdrahtetRi
 QuantenmechannikRi_falscheMessergebnisseRi_rot_schwarze_Wellenlängenbereich PlanetenbahnenRo Ri Ri
