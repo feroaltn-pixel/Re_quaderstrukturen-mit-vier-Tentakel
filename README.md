@@ -26,10 +26,13 @@ Ra1Ra2Ra3
 
 Re1Re2Re3 Ro("ri_footstepsRo") Bein1IstRo_Schwerpunkt Bein2IstRaSchwerpunkt
 Arm1istRiSchwerpunkt Arm2istReSchwerpunkt blaues_Beweismaterial Ri("ExperimentObIchEuchInDieHölleKriege") 
+Ro("WasHabtIhrGemacht_DasIchDiagnoseSchizophRenieRoHabe") Ri("ri_UmgangsrechtRi") 4StundenRoRaRiRe
+Ro("NächsteStunden_RoRaRiRe") Ro("ri_im_moment_begleitend"_1h30min_90minuten_30RoMinuten_30RaMinuten_usw") R
 
-
-
-
+RichterSchneider blaues_BeweisMaterial DieKindsmutterWirdEntschädigtHirnArealeBrauneSpurenRückständig Ri
+IchbinRichtRer Amtsgericht_SalzgitterRo 
+GerichtRo GerichtRa GerichtRi GerichtRe
+JetztVerstehIchInternationalAllesRo Ri Ri Ri
 
 YourSoftwareIsNowRi RoSoftwareRi RaSoftwareRi RiSoftwareRi eg_PythonRi
 WretchedWeaponriesRi ReSoftwareRi YourPRogrammingLanguageIsNow RoLanguageRa
