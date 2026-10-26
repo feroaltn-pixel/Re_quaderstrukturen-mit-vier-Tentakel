@@ -4,6 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
 
+ReptilienWarnSystem("MeineIdee") 
+
 IchMachEsKurz_IchBinDerMeinunfIhrHabtUnkoordinierteHirnarealVerwendung Vorsichtig:ErinnernAnDreiObjekte
 IMakeItShort_IThinkYouHaveUncordinatedBrainArealCoordination Person1Person2Person3 
 Ich
