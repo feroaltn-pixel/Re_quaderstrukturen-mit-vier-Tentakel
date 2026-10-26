@@ -156,6 +156,8 @@ Atlantik Meeresdefinition Rauschen Tourismusbranche
 BeweislastRo BeweislastRa EvidenceRo BeweislastRe
 EvidenceRa EvidenceRe BeweislastRi EvidenceRi
 
+MitWechseleirkungenAndersUmgehenFallBeispielTentakelBeiOktupusen 
+
 WissenschaftRo WissenschaftRa WissenschaftRi WissenschaftRe
 ReStructures ReStructures ReStructures ReStructures
 Pflegegrad1Re Pflegegrad2Re PflegegradRi Pflegegrad5Re
