@@ -37,6 +37,7 @@ ri_four_ri_UniversitiesRi Ro("I_am_a_UniversityRe1Re2Re3") ScienceRi ooRo_ooRa_o
 Ro("MilitarRo") Ro("MilitaryRa") Ro("MilitaryRi") Ro("MilitärRe") 
 Ra1Ra2Ra3
 
+HardwareSinnvollZerlegenInReBereicheRe1Re2ReRegehörtzuBereichRe1Re2Re3Secons_beiautosiehtesauswievierrotie
 WahnRo Wahn1 WahnRi WahnRe
 BlaueKommisionierung_eg_Paletten_Masken_Kittel_egRe1Re2Re3 GetarnteBlaueKommisionieurng_egMaterialRi Ro Re
 DiagonalZuBlauWeisseKommisionierungRoerzeugen GrundbodenwechselRi
