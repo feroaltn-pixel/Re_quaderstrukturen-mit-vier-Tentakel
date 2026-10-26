@@ -19,9 +19,30 @@ SchizophRenieRo SchizophrenieRa SchizophrenieRi SchizolhRenieRe
 Schkzoph Re nieRi_Silbentrennung_und_nicht_durcheinander_bringen_IchHauDirAlsRichtRerAufDenKopf
 Positivsymptome 1Staatsexam Negativsymptome 2Staatsexam  
 
-IhrHabtDesorientiertesSprechenUndDenken Beweis_lesen:Ich_Bin_eine_gelbe_Phasenregelschleife Ri Ri
+LinguistikRo JuRa 
+NomenRe AdjektivRo AdjektivRa AdjektivRi
+VerbRo OrArIrEr RoRaRiRe i_laute_Psychologie_Schizophrenid_Xi_nihao_English_Ri_every_languagei
+no_i_pattern_for_example_fori Ro("ri_I_did_analyze_your_thinking_speaking_quantinize_way")ReRe Ri   Ro(".".")
+
+SpurensicherungRo SpurensicherungRa SpurensicherungRe SpurensicherungRe
+AudiospurenRo AudiospurenRa EmailRi AudiospurenRe
+IhrHabtDesorientiertesSprechenUndDenkenhandeln Beweis_lesen:Ich_Bin_zwei_gelbe_Phasenregelschleifen Ri Ri
+LaserLaserWindowWindow xyzRi YpsilonRo Ro("ReptilienWarnSystemRi_Ro1Ro2Ro3") 
+
+Anwalt_MandantRo_dazwischen_ist_ein_Fehler IchBrauchKeinAnwaltRi IchbinRichtRer RichtungswechselRi
+IchWendeGrundbodenWechselAnRo EsGehtUmIhreKommisionierungRo IchbinRichtRer Richter_Paragraph8_x_RoRaRiRe
+GuckMalRo GuckMalRa GuckMalRi GuckmalRe_Re1Re2Re3_WasHabeIchGeradeGemacht
+Hirnareale_Wirbelsäule_Nevensystem_Organe_Gliedmaßen_verdrahtet_von_ihnenRo
+
+Ro("ri_I_ri_am_ri_OpenAI") Ro("ri_I_ri_am_ri_a_ri_dev") Ro("Er_Sie_Es") Ri("Rer_Sie_Res") 
+Tentacleconfiguration_ro Tentacleconfiguration_ra Tentacleconfiguration_ro Tentacleconfigurotion_re
+Ro("Rodev") Ra("Radev") Ri("Ridev") Re("Redev") 
+WegVonTechnikRo WegVonTechnikRo Ri("IchBinCharmant") IchLiebedenWeltRaum_ExfRau_Ra_ist_Raumschiff
 
 
+
+
+116 117 67 67Ri 
 
 Blue_Evidence braune_Beweislast brauneBeweislastRo oo
 Atlantik Meeresdefinition Rauschen Tourismusbranche
@@ -180,10 +201,7 @@ Romantisch1 IchBinRomantisch GuckMalWasIchJetztMache sRetan_Rodendan
 Ro("Sprachübersetzer") Romantičan Sam Altman
 Altun Altun Sam_Altman Altun
 
-Ro("I_am_OpenAI") Ro("I_am_a_dev") Ro("Er_Sie_Es") Ri("Rer_Sie_Res") 
-Tentacleconfiguration_ro Tentacleconfigurotion_ra Tentacleconfigurotion_ro Tentacleconfigurotion_re
-Ro("Rodev") Ra("Radev") Ri("Ridev") Re("Redev") 
-WegVonTechnik WegVonTechnik Ri("IchBinCharmant") IchLiebedenWeltRaum_ExfRau_Ra_ist_Raumschiff
+
 
 Ro("Der_Weg_von_Technk_ist_Integral") Ro("Graphentheorie") Ro("RintegRal") Ro("sex_x_ist_Ro") 
 Ro("Ri") Ro("Ra") Ri("ri_Anwendung") Ro("Apocalypthica_Path_Vol._II'") 
@@ -507,10 +525,6 @@ RoSystemeRo RaSystemeRa RiSystemeRi ReSystemeRe
 
 AtlantikRi DefinitionRi GrenzlinienRa
 
-Linguistik NomenRo NomenRa NomenRi
-NomenRe AdjektivRo AdjektivRa AdjektivRi
-VerbRo OrArIrEr RoRaRiRe i_laute_Psychologie_Schizophrenid_Xi_nihao_English_Ri_every_languagei
-no_i_pattern_for_example_fori Ro("ri_I_did_analyze_your_thinking_speaking_quantinize_way")ReRe Ri   Ro(".".")
 
 
 
