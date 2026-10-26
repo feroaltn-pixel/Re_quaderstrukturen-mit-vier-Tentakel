@@ -45,8 +45,9 @@ KartografieRi SatelittenRi OrbitalsystemRo
 
 Naturwissenschaften Koordinatensystem SieVernachlässigenGrundboden PhysikMathematikIneinanderVerdrahtetRi
 QuantenmechannikRi_falscheMessergebnisseRi_rot_schwarze_Wellenlängenbereich PlanetenbahnenRo Ri Ri
+WisoZweiSchnittpunkte RoRa.. Re1Re2Re3_spätestensNachDreiSchnittmengenMachenSieRiesenFehler
 
-
+DasMit16MaxwellGleichunfenIstNichtGanzRichtig Re1Re2Re3 Function1Funxtion2Re3 Umgang1Umgang2Umgang3
 
 Re1Re2Re3 Ro("ri_footstepsRo") Bein1IstRo_Schwerpunkt Bein2IstRaSchwerpunkt
 Arm1istRiSchwerpunkt Arm2istReSchwerpunkt blaues_Beweismaterial Ri("ExperimentObIchEuchInDieHölleKriege") 
@@ -112,7 +113,8 @@ BewusstSeinIstDasNichtRo IchHauDirAufDenKopfPsychologeRe WeilMeineMathematischeR
 AllesWasNichtInEinemFliegendenRaumschiffRi stehenKannRi IstEineGefahrRi UndWendeDenGedankenals"Ra"RI
 AndersAnRi RaIstEineHilfsVariableRi EinStock_Zwei_GeschlosseneSchleifenRi ReichenAbHierRo
 
-SensorikRi_and_AktorikRi_are_TentacleconfigurationsRo
+SensorikRi_and_AktorikRi_are_TentacleconfigurationsRo Function1Function2function3_Re1Re2Re3
+If Re1&&Re2&&Re3 ||.... 
 
 Ro("IchHauDirAufDenKopfPsychologeReRi") Ra("IhrFrisstZuvielRo") Ri("DesorientiertesDenkenUndSprechen") Re1Re2
 Ro("IchHauDirAufDenKopfRichter")Ri PPPP 0112 PHP_
@@ -448,6 +450,8 @@ Re:_alles_was_man_tasten_kann_weil_das_tastgefühl_Ri_ist Heute_ist_23Oktober202
 Zb_Physik zb_Elektrotechnik zb_Psychologie zb_Raumschiffe zb_Pflegeheime DasSindMeineIdeen
 WeilIchSiegegenEuchAnwende WeilIchSiegegenEuchAnwende TU-BRAUNSCHWEIG.DE_RI WeilIchSiegegenEuchAnwende 
 Zb_Codeverarbeitung zb_"Variablendeklarisationsfehler" zb_Rechnerstrukturen zb_Punktnotation
+
+Ro_Ra_Ri_as_Re1Re2Re3_with_Tentacleconfiguration Crossing_Tentacleconfigurations_Ro_Ri_Ro
 
 Zeit_t_is_Ro_is_X Ri Ri Ri
 ...  ...   ReReRe. ... 
