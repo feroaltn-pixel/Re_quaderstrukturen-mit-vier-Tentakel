@@ -143,7 +143,10 @@ Ri Ri Ri Ri
 
 Ri
 
-
+DNA_SequenzenRo FingerabdruckVonFerhatAltunRo ChromosoneRo 23andmeRiFallbeispielRiRo 
+DNA_SatelittenRi DNA_NanotechnologieRi PatentanwältRo PatentanwaltRa
+IchBinRo("ri_GewaltschutzverfahrenAnwaltRi") Ro("ri_sechszehnstellige_ri_Vorbereitung") Re1Re2Re3 
+RoRoRoRo RaRaRaRa RiRiRiRi ReReReRi
 
 
 116 117 67 67Ri 
