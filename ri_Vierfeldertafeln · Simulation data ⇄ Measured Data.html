@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_Vierfeldertafeln · Simulation data ⇄ Measured Data</title>
+<style>
+:root{--bg:#0b0b12;--fg:#e8e8f0;--mut:#9a9ab0;--card:#14141f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0b0b12;--fg:#e8e8f0}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;padding:14px}
+h1{font-size:18px;margin:0 0 4px}p.s{margin:0 0 14px;font-size:12px;color:var(--mut)}
+h2{font-size:14px;margin:0 0 8px}
+.wrap{display:flex;flex-wrap:wrap;gap:14px}
+section{background:var(--card);border-radius:12px;padding:12px;flex:1 1 260px;min-width:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.cell{position:relative;aspect-ratio:1/1;border-radius:8px;overflow:hidden;border:1px solid #333}
+.cell b{position:absolute;left:8px;top:6px;font-size:18px;color:#fff;mix-blend-mode:difference;z-index:2}
+.cell i{position:absolute;right:8px;top:9px;font-size:11px;font-style:normal;color:#fff;mix-blend-mode:difference;z-index:2}
+.fill{position:absolute;left:0;right:0;bottom:0;background:rgba(20,20,40,.38);border-top:2px dashed rgba(255,255,255,.9);transition:height .12s}
+.hi{box-shadow:0 0 0 2px #ffd400,0 0 12px #1e6bff}
+.ro{animation:p 1.6s ease-in-out infinite}@keyframes p{50%{transform:scale(1.05)}}
+.row{display:flex;align-items:center;gap:6px;font-size:12px;margin-bottom:10px}
+.row span{width:24px;font-weight:700}
+.bar{flex:1;height:8px;background:#222;border-radius:4px;position:relative;overflow:hidden}
+.bar u{position:absolute;top:0;bottom:0;left:50%;background:#e24;width:0}
+.bar.k u{background:#fc2}
+.lab{width:84px;color:var(--mut);font-size:11px}
+.ctl{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:13px}
+button{background:#2a2a40;color:var(--fg);border:1px solid #444;border-radius:8px;padding:8px 12px;font-size:13px}
+input[type=range]{width:150px}
+</style></head><body>
+<h1>ri_Vierfeldertafeln</h1>
+<p class="s">Simulation data ⇄ Measured Data · Ro Ra Ri Re · r = ri_Fehler, i = ri_Korrektur</p>
+<div class="wrap">
+<section><h2>Simulation data</h2><div class="grid" id="gs"></div></section>
+<section><h2>r_i Wechselwirkung</h2><div id="mid"></div></section>
+<section><h2>Measured Data</h2><div class="grid" id="gm"></div></section>
+</div>
+<div class="ctl">
+<button id="b">Störung (Ri)</button>
+<label>i-Stärke <input id="g" type="range" min="0" max="0.3" step="0.01" value="0.08"></label>
+</div>
+<script>
+const N=['Ro','Ra','Ri','Re'];
+const GS=['#d11a1a,#000','#000,#fff','#fff,#ffd400','#fff,#18a84a'];
+const GM=['#8a2be2,#000','#000,#fff','#fff,#1e6bff','#fff,#18a84a'];
+const sub=['schwarz-rot','schwarz-weiß','weiß-gelb','weiß-grün'];
+const subm=['schwarz-lila','schwarz-weiß','weiß-blau','weiß-grün'];
+function build(el,G,S){return N.map((n,k)=>{const c=document.createElement('div');c.className='cell'+(k==2?' hi':'')+(k==0?' ro':'');
+c.style.background='linear-gradient(135deg,'+G[k]+')';
+c.innerHTML='<b>'+n+'</b><i>'+S[k]+'</i><div class="fill"></div>';el.appendChild(c);return c.querySelector('.fill')})}
+const fs=build(document.getElementById('gs'),GS,sub),fm=build(document.getElementById('gm'),GM,subm);
+const mid=document.getElementById('mid'),rb=[],ib=[],rt=[],it=[];
+N.forEach((n,k)=>{const d=document.createElement('div');
+d.innerHTML='<div class="row"><span>'+n+'</span><div class="lab">r Fehler</div><div class="bar"><u></u></div><em style="width:46px;font-style:normal"></em></div><div class="row"><span></span><div class="lab">i Korrektur</div><div class="bar k"><u></u></div><em style="width:46px;font-style:normal"></em></div>';
+mid.appendChild(d);const u=d.querySelectorAll('u'),e=d.querySelectorAll('em');rb.push(u[0]);ib.push(u[1]);rt.push(e[0]);it.push(e[1])});
+let sim=[.5,.5,.5,.5],dist=0,t0=performance.now();
+document.getElementById('b').onclick=()=>{dist=.45};
+function bar(u,v){const w=Math.min(50,Math.abs(v)*100);u.style.width=w+'%';u.style.left=v<0?(50-w)+'%':'50%'}
+function tick(){const t=(performance.now()-t0)/1000,g=+document.getElementById('g').value;
+dist*=.97;
+for(let k=0;k<4;k++){
+const m=Math.max(0,Math.min(1,.5+.35*Math.sin(t*(.5+.2*k)+k)+(k==2?dist:0)));
+const r=m-sim[k],i=g*r;sim[k]+=i;
+fm[k].style.height=m*100+'%';fs[k].style.height=sim[k]*100+'%';
+bar(rb[k],r);bar(ib[k],i*4);if(k==2){const a=Math.min(1,Math.abs(r)*4);fm[k].parentNode.style.boxShadow=fs[k].parentNode.style.boxShadow='0 0 '+(6+24*a)+'px '+(2+4*a)+'px rgba(255,212,0,'+(.4+.6*a)+')'}rt[k].textContent=(r>=0?'+':'')+r.toFixed(2);it[k].textContent=(i>=0?'+':'')+i.toFixed(2)}
+requestAnimationFrame(tick)}
+tick();
+</script></body></html>
