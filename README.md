@@ -127,6 +127,8 @@ ZweiPoleEineNullstelleAndersAnwendenzb
 
 VolumenAufspannenRe
 
+FührungszeugnisRiRe1Re2Re3 ProtokollRe1Re2Re3
+
 ProfessorRo ProfessorRo ProfessorRi ProfessorRe
 ReStrukturen ReStrukturen GalaxieRa WeilIhrInJedeRichtungGucktRaumzeitFehlverhaltenRi
 BeispielRi ZeichneEinKoordinatensystemMitUrSprungDreiAchsenRoRaRi_weilAndereRoRaRi_erzwingenwird_ FehlerRi Ri
