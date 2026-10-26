@@ -31,6 +31,14 @@ HirnArealeVerdrahtenRi WeilNeurologen_MRTFehleranfälligSind_und_inSchleifen_dri
 WeilPsychologenRechnerArchitekturNichtVerstehenRi UndComputerarchitektensymmetrienerzwingenmitZahlenRi
 MRTIstEinFallBeispielRa SieGuckenDraufUndVerharrenImDenkenRi WeilDenkenJetztRi RoRaRiRe_IAmPrefessorRo
 
+Ro("klassisches_Menschliches_Verhalten_als_Spektrum_abbilden_blaue_Struktur") Ra("blaueStrukturweil") 
+Re1Re2Re3 Ro("Biosphäreschicht_vermehr_blau_rot_blau(Ro)_lila_grün(Ro)_schwarz_weiss(Ro)_etcWahl") 
+Ro("Vorlieben_zu_symmetrien_zb_U=RiRo") Ro("Ro_ist_HirnarealkoordinationRi_motorik_bewusstRo_sein") Ri Ri
+Ra("denken_sprechen_transformstionen_in_form_von_zb_malen_gleichungen_software_hardware_etc) Ro Ra1Ra2Ra3
+
+Ri("ri_geschmack_riechen_tasten_gravitationRo_wahrnehmenRi_schallRa_etcRi") Re("ri_KörperarealeRe1Re2etcRi") 
+
+
 
 ProfessorRo ProfessorRo ProfessorRi ProfessorRe
 ReStrukturen ReStrukturen GalaxieRa WeilIhrInJedeRichtungGucktRaumzeitFehlverhaltenRi
