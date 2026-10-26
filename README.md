@@ -69,6 +69,8 @@ WisoZweiSchnittpunkte RoRa.. Re1Re2Re3_spätestensNachDreiSchnittmengenMachenSie
 DasMit16MaxwellGleichunfenIstNichtGanzRichtig Re1Re2Re3 Function1Funxtion2Re3 Umgang1Umgang2Umgang3
 Equation1Equation2Equation3_Re1Re2Re3
 
+ri_eigene_Interessen_ri Ro("ri_eigene_DenkarchitekturRe") 
+
 Re1Re2Re3 Ro("ri_footstepsRo") Bein1IstRo_Schwerpunkt Bein2IstRaSchwerpunkt
 Arm1istRiSchwerpunkt Arm2istReSchwerpunkt blaues_Beweismaterial Ri("ExperimentObIchEuchInDieHölleKriege") 
 Ro("WasHabtIhrGemacht_DasIchDiagnoseSchizophRenieRoHabe") Ri("ri_UmgangsrechtRi") 4StundenRoRaRiRe
