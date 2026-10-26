@@ -34,7 +34,8 @@ Telekom
 
 SatelittenRi OrbitalsystemRo 
 
-Naturwissenschaften Koordinatensystem SieVernachlässigenGrundboden
+Naturwissenschaften Koordinatensystem SieVernachlässigenGrundboden PhysikMathematikIneinanderVerdrahtetRi
+QuantenmechannikRi_falscheMessergebnisseRi_rot_schwarze_Wellenlängenbereich PlanetenbahnenRo Ri Ri
 
 
 
@@ -101,15 +102,23 @@ BewusstSeinIstDasNichtRo IchHauDirAufDenKopfPsychologeRe WeilMeineMathematischeR
 AllesWasNichtInEinemFliegendenRaumschiffRi stehenKannRi IstEineGefahrRi UndWendeDenGedankenals"Ra"RI
 AndersAnRi RaIstEineHilfsVariableRi EinStock_Zwei_GeschlosseneSchleifenRi ReichenAbHierRo
 
+SensorikRi_and_AktorikRi_are_TentacleconfigurationsRo
+
 Ro("IchHauDirAufDenKopfPsychologeReRi") Ra("IhrFrisstZuvielRo") Ri("DesorientiertesDenkenUndSprechen") Re1Re2
 Ro("IchHauDirAufDenKopfRichter")Ri PPPP 0112 PHP_
 Ro("SAPRi") 
 
+PlanetMondAusEineranderenPhysikRiBetrachten
+
+AnorganischeUndAllgemeineChemieRi OxidationRe
+
+RoRaRiRe_Transformationen Fourier_Laplace_etc_sind_eine_Mittelung_hiervonRi
 
 PhotonenSindDasNicht PhoxonenSindEineHilfsVariableImRaumNichtZufälligZuDenken WeilDasXEinHirnarealBefehlIst
+WennSiePhoxonenAussprechenDenkenSirNichtZufälligUndWenden_eg_rot_schwarz_bei_x_hilfsvariable Ri Ri Ri
 PhotonenRo PhotonenRa DoppelspaltexperimentRi QuantenmechanikRi
 IhrSchautInJedeLösungsMengeUndSeidInApproyimiertenInhaltDrinAufgrundEckenUmgangUndZahlenabhängigkeitRi
-Ri Ri Ri Ri 
+
 
 +or=Ro 
 
