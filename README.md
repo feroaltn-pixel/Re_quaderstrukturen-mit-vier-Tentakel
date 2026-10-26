@@ -48,6 +48,7 @@ QuantenmechannikRi_falscheMessergebnisseRi_rot_schwarze_Wellenlängenbereich Pla
 WisoZweiSchnittpunkte RoRa.. Re1Re2Re3_spätestensNachDreiSchnittmengenMachenSieRiesenFehler
 
 DasMit16MaxwellGleichunfenIstNichtGanzRichtig Re1Re2Re3 Function1Funxtion2Re3 Umgang1Umgang2Umgang3
+Equation1Equation2Equation3_Re1Re2Re3
 
 Re1Re2Re3 Ro("ri_footstepsRo") Bein1IstRo_Schwerpunkt Bein2IstRaSchwerpunkt
 Arm1istRiSchwerpunkt Arm2istReSchwerpunkt blaues_Beweismaterial Ri("ExperimentObIchEuchInDieHölleKriege") 
@@ -63,6 +64,8 @@ YourSoftwareIsNowRi RoSoftwareRi RaSoftwareRi RiSoftwareRi eg_PythonRi
 WretchedWeaponriesRi ReSoftwareRi YourPRogrammingLanguageIsNow RoLanguageRa
 RaLanguageRi RiLanguageRe Ro("ri_RoLanguage_ri") Ro("ri_forRo") 
 ReLanguageRi Re_Elements Ra_Elements Ri_Elementa 
+
+Re_ElementsRa_ElementsRi_Elements_Re1Re2Re3
 
 Ro_ElementsAreTransistionsRi GrundbodenwechselRi GrundbodenwechselIstEineZeichenketteRi Ro
 UmAufDeinKopfZuHauenRi UndDirBewusstZuMachenRa DasDieBürgerDesorientiertessprechenunddenkenHabenRi
