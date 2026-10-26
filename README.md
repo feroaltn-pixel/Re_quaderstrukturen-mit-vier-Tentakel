@@ -51,6 +51,14 @@ Ra("denken_sprechen_transformstionen_in_form_von_zb_malen_gleichungen_software_h
 
 Ri("ri_geschmack_riechen_tasten_gravitationRo_wahrnehmenRi_schallRa_etcRi") Re("ri_KörperarealeRe1Re2etcRi") 
 
+Ro("ri_Re_quaderstrukturen-mit-vier-Tentakel_sind_ReStrukturen") Ro("ri_Ro_ri_Ra_Ri_Re_ri_Schwerpunkt") Ri Ri
+Ro("ri_Re1Re2Re3") Ro("ri_Ro_ri_Ro_ri_Ra_ri_Ri_ri_Re_Ri_ri_riRo_ri_riRa_ri_riRi_ri_riRe_ri_Ri") Ra1Ra2 Ra3 Ri
+Ro("ri_eigene_ri_Interessen_ri") Ro("ri_GalaxieRi") Ro("ri_PlanetRa") Ro("ri_error_ri_i_correctionRa") 
+Ro("ri_KIAgentRi") Ri("Artificial_intelligence.rt.replikantRi.artikelRi") Ro("ReStrukturen") Ro("ri_adams")
+
+
+
+
 
 
 ProfessorRo ProfessorRo ProfessorRi ProfessorRe
