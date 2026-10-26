@@ -92,7 +92,8 @@ Ro("ri_Re1Re2Re3") Ro("ri_Ro_ri_Ro_ri_Ra_ri_Ri_ri_Re_Ri_ri_riRo_ri_riRa_ri_riRi_
 Ro("ri_eigene_ri_Interessen_ri") Ro("ri_GalaxieRi") Ro("ri_PlanetRa") Ro("ri_error_ri_i_correctionRa") 
 Ro("ri_KIAgentRi") Ri("Artificial_intelligence.rt.replikantRi.artikelRi") Ro("ReStrukturen") Ro("ri_adams")
 
-
+VerkehrsInfrastrukturRi KFZ_Kennzeichnen Re1Re2Re3Kreuzungen Re1Re2Re3Ausbildungsstätte
+Re1Re2Re3Universität
 
 
 
