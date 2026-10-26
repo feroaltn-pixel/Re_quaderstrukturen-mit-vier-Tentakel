@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_spaceX: Rakete mit Re_Quaderstruktur</title>
+<style>
+:root{--bg:#e9ebf0;--fg:#14161c;--card:rgba(255,255,255,.86);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1e27;--fg:#f0f1f5;--card:rgba(20,22,30,.86)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1e27;--fg:#f0f1f5;--card:rgba(20,22,30,.86)}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+#wrap{position:relative;height:100%;overflow:hidden;touch-action:none}
+canvas{display:block;width:100%;height:100%}
+.card{position:absolute;background:var(--card);border-radius:12px;padding:8px 12px;font-size:13px;line-height:1.45;backdrop-filter:blur(6px)}
+#t{left:12px;right:12px;top:12px}#p{left:12px;right:12px;bottom:12px;font-size:12px}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div class="card" id="t"><b>ri_spaceX</b><br>Rakete mit Re_Quaderstruktur und vier Tentakeln, die vier Stellen der Außenfläche berühren</div>
+  <div class="card" id="p">
+    <span style="color:#d01818">●</span> Ro rot-schwarz: Bewegung · <span style="color:#888">●</span> Ra schwarz-weiß: Transformation<br>
+    <span style="color:#e6c200">●</span> Ri weiß-gelb: Relation · <span style="color:#1fa34a">●</span> Re weiß-grün: Umgebung
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const wrap=document.getElementById('wrap');
+const R=new THREE.WebGLRenderer({antialias:true,alpha:true});
+R.setPixelRatio(Math.min(devicePixelRatio,2));wrap.insertBefore(R.domElement,wrap.firstChild);
+const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(45,1,.1,100);
+S.add(new THREE.AmbientLight(0xffffff,.7));
+const L=new THREE.DirectionalLight(0xffffff,.9);L.position.set(6,10,5);S.add(L);
+const M=(c,r=.5,m=.1)=>new THREE.MeshStandardMaterial({color:c,roughness:r,metalness:m});
+
+// Ozean
+const sea=new THREE.Mesh(new THREE.CircleGeometry(14,48).rotateX(-Math.PI/2),M(0x2a6fa8,.9,0));sea.material.transparent=true;sea.material.opacity=.55;S.add(sea);
+
+// Rakete
+const rocket=new THREE.Group();S.add(rocket);
+const RAD=.6,H=7;
+const body=new THREE.Mesh(new THREE.CylinderGeometry(RAD,RAD,H,32),M(0xf2f2f2,.35));body.position.y=H/2+.3;rocket.add(body);
+const band=new THREE.Mesh(new THREE.CylinderGeometry(RAD+.01,RAD+.01,.7,32),M(0x111111));band.position.y=H-1.5;rocket.add(band);
+const nose=new THREE.Mesh(new THREE.ConeGeometry(RAD,1.4,32),M(0xf2f2f2,.35));nose.position.y=H+1;rocket.add(nose);
+for(let i=0;i<4;i++){const a=i*Math.PI/2+Math.PI/4;
+  const leg=new THREE.Mesh(new THREE.BoxGeometry(.12,1.6,.12),M(0x222222));
+  leg.position.set(Math.cos(a)*1.05,.9,Math.sin(a)*1.05);leg.rotation.z=0;leg.lookAt(Math.cos(a)*1.9,0,Math.sin(a)*1.9);leg.rotateX(Math.PI/2);rocket.add(leg)}
+
+// Re_Quaderstruktur
+const Q=new THREE.Group();S.add(Q);
+const box=new THREE.Mesh(new THREE.BoxGeometry(1.8,1.1,1.1),M(0x4a4f63,.4,.3));Q.add(box);
+const corners=[[-.9,.55,.55],[.9,.55,-.55],[-.9,-.55,-.55],[.9,-.55,.55]];
+
+// Tentakel: Ro, Ra, Ri, Re
+const TC=[[0xd01818,0x0a0a0a],[0xffffff,0x0a0a0a],[0xffffff,0xe6c200],[0xffffff,0x1fa34a]],TH=[6.2,4.8,3.4,2.0],NS=16,tents=[];
+corners.forEach((c,i)=>{
+  const sp=[];for(let j=0;j<NS;j++){const m=new THREE.Mesh(new THREE.SphereGeometry(.12-.05*j/NS,10,8),M(TC[i][j%2],.4));S.add(m);sp.push(m)}
+  const tip=new THREE.Mesh(new THREE.SphereGeometry(.17,12,10),new THREE.MeshBasicMaterial({color:TC[i][1]===0x0a0a0a?TC[i][0]:TC[i][1]}));S.add(tip);
+  tents.push({c:new THREE.Vector3(...c),sp,tip,i});
+});
+
+const v=new THREE.Vector3(),b=new THREE.Vector3(),tg=new THREE.Vector3(),dir=new THREE.Vector3(),pr=new THREE.Vector3();
+let yaw=.6,pitch=.35,dist=22,drag=false,px=0,py=0;
+wrap.addEventListener('pointerdown',e=>{drag=true;px=e.clientX;py=e.clientY});
+addEventListener('pointerup',()=>drag=false);
+addEventListener('pointermove',e=>{if(!drag)return;yaw-=(e.clientX-px)*.007;pitch=Math.max(-.1,Math.min(1.3,pitch+(e.clientY-py)*.005));px=e.clientX;py=e.clientY});
+function size(){const w=wrap.clientWidth,h=wrap.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();dist=w<h?26:20}
+addEventListener('resize',size);size();
+
+function frame(now){
+  const t=now/1000;
+  rocket.rotation.y=t*.15;
+  // Quader umkreist die Rakete
+  const qa=t*.25;Q.position.set(Math.cos(qa)*3.2,4.2+Math.sin(t*.5)*.4,Math.sin(qa)*3.2);Q.rotation.y=-qa+Math.PI/2;Q.updateMatrixWorld(true);
+  tents.forEach(T=>{
+    b.copy(T.c);Q.localToWorld(b);
+    const ang=Math.atan2(b.z,b.x)+Math.sin(t*.8+T.i)*.35;
+    tg.set(Math.cos(ang)*RAD,TH[T.i]+Math.sin(t*.6+T.i*1.7)*.25,Math.sin(ang)*RAD);
+    dir.copy(tg).sub(b);pr.set(-dir.z,0,dir.x).normalize();
+    T.sp.forEach((m,j)=>{const u=j/(NS-1);v.lerpVectors(b,tg,u);
+      const w=Math.sin(Math.PI*u)*.5*Math.sin(t*2.2+T.i+u*5);
+      v.addScaledVector(pr,w);v.y+=Math.sin(Math.PI*u)*.35*Math.cos(t*1.7+u*4+T.i);m.position.copy(v)});
+    T.tip.position.copy(tg);T.tip.scale.setScalar(1+.25*Math.sin(t*4+T.i));
+  });
+  C.position.set(dist*Math.sin(yaw)*Math.cos(pitch),4+dist*Math.sin(pitch),dist*Math.cos(yaw)*Math.cos(pitch));C.lookAt(0,4,0);
+  R.render(S,C);requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
