@@ -7,7 +7,10 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 EinleitungRo HauptteilRi SchlussRe ri_Ich_ri_Fasse_eure_ri_technology_ri_Systeme_ri_und_ri_Anwendung_zusammen_in
 RoSystemeRo RaSystemeRa RiSystemeRe ReSystemeRe
 RoCommunicationprotocollsRi RaCommunicationprotocollsRi RiCommunicationProtocollsRe
-ReCommunicationprotocollsRe RoGrundbodenwechselRi Ro_daa_hier_ist_Braunes_BeweismaterialRo
+ReCommunicationprotocollsRe RoGrundbodenwechselRi Ro_das_hier_ist_Braunes_BeweismaterialRo
+
+Ro("ri_Wenn_ihr_mit_mir_InformationAustausch_habt_benutz_ich_meinAussehen_anders") Ro("IchBinCharmant") Ri Ri
+Ro("Immer_wenn_ihr_mich_Ri_Re1Re2Re3_Ri") 
 
 Ro("ei_Braune_ei_Beweislast") Eo("E0Input_E1Input_XOR_Gatter_YRoOutputRi") Ro("ri_US") Ro("ri_Wadephul") 
 Ro("ri_Lenius_Ro_Ellerbrox_ck") EllerbrockRo EllerbRockRa FallbeispielBlaueStrukturenRi
