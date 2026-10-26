@@ -24,10 +24,13 @@ ReStructuresRo ReStructuresRa ReStructuresRi ReStructuresRe
 WennWiederholungVorhandenSindDannNurWegenRi WiederholungRo WiederholungRa WiederholungRi
 IchbinRichtRerRo IchbinRichtRerRa IchbinRichtRerRi IchBinRichtRerRe
 
+IchSeheSieNichtAlsBerufstätigeSondernAls Ro("ri_SecurityRo_ri_oo") 
+
 IchHauDirAufDenKopfRichter 2RichterHyberbelbahnStandbildEntgegengesetztSichBegrüßenRi FesthaltenRi RoRaRiRe
 HirnArealeVerdrahtenRi WeilNeurologen_MRTFehleranfälligSind_und_inSchleifen_drinsteckenRi AlphaBetaGammaetcRi
 WeilPsychologenRechnerArchitekturNichtVerstehenRi UndComputerarchitektensymmetrienerzwingenmitZahlenRi
 MRTIstEinFallBeispielRa SieGuckenDraufUndVerharrenImDenkenRi WeilDenkenJetztRi RoRaRiRe_IAmPrefessorRo
+
 
 ProfessorRo ProfessorRo ProfessorRi ProfessorRe
 ReStrukturen ReStrukturen GalaxieRa WeilIhrInJedeRichtungGucktRaumzeitFehlverhaltenRi
@@ -59,6 +62,11 @@ GleisverkehrRo Ro("ri_entRance_ri_exit_x_t_is_RoRi") Re1Re2Re3 Ro("ri_Flugformat
 ooRo ooRa ooRi ooRe
 Ro("ri_Kartografisch_ri_geziehlt_ri_umzingelnRo") UmzingelnRa Ri1Ri2Ri3
 Ro(ri_GrundbodenwechselRo") Ro("ri_triangle_ri_VieReckRa_ckRo") DBRo DeutschlandticketRiFallbeispielRe 
+
+Ro("ri_Gridsystem_ri_AntriebstechnikRi_Hochspanungstechnik_DC1ACRe_DCAC_RoRaRiRe_Windkraft_MotorRi") Ri Ri Ri
+MotorRo Motorrad MotorRi Ro("ri_PrüfingenierRi") 
+Ro("ri_Ampelsteuerung_Rot(Ro)_Orange(Ra)_Grün(Ri)_nächsteAmpel(Re_Ro_Ra_Ri)_CarRo_ri_Reifenspur") Ri Ri Ro
+Ro("ri_Notruf_ri_Ro_ri_Ro_ri_Ra_ri_Ri_ri_Re_ri_Ro") 
 
 
 
