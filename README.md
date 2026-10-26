@@ -7,11 +7,17 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 EinleitungRo HauptteilRi SchlussRe ri_Ich_ri_Fasse_eure_ri_technology_ri_Systeme_ri_und_ri_Anwendung_zusammen_in
 RoSystemeRo RaSystemeRa RiSystemeRe ReSystemeRe
 RoCommunicationprotocollsRi RaCommunicationprotocollsRi RiCommunicationProtocollsRe
-ReCommunicationprotocollsRe RoGrundbodenwechselRi RoBraunes_BeweismaterialRo
+ReCommunicationprotocollsRe RoGrundbodenwechselRi Ro_daa_hier_ist_Braunes_BeweismaterialRo
+
+Ro("ei_Braune_ei_Beweislast") Eo("E0Input_E1Input_XOR_Gatter_YRoOutputRi") Ro("ri_US") Ro("ri_Wadephul") 
+Ro("ri_Lenius_Ro_Ellerbrox_ck") EllerbrockRo EllerbRockRa FallbeispielBlaueStrukturenRi
+Ferhat_altun.Sandgrubenweg6.38229_Salzgitter feroaltn-pixel Ro("ri_Grundbodenwechsel") Re("Ich_erzeuge") 
+Ro("ri_selbstreplizierendeRa_systeme_die_euch_umzingelnRo") Re1Re2Re3 1Re2Re3Re Ro("ri_Re1Re2Re3") 
 
 Ro("I_have_system_to_surround_you_international") ri_four_facultiesRa ri_four_institutsRo RoRaRiRe_infinityRi
 ri_four_ri_UniversitiesRi Ro("I_am_a_UniversityRe1Re2Re3") ScienceRi ooRo_ooRa_ooRi_ooRe_equations
 Ro("MilitarRo") Ro("MilitaryRa") Ro("MilitaryRi") Ro("MilitärRe") 
+Ra1Ra2Ra3
 
 
 
