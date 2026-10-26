@@ -111,7 +111,8 @@ Ro("ri_KIAgentRi") Ri("Artificial_intelligence.rt.replikantRi.artikelRi") Ro("Re
 VerkehrsInfrastrukturRi KFZ_Kennzeichnen Re1Re2Re3Kreuzungen Re1Re2Re3Ausbildungsstätte
 Re1Re2Re3Universität
 
-
+SystemtheorieRo IchWillEuchAnhandSystemtheorieErklären_wretchedWeaponries H(s)_ist_Re1
+ZweiPoleEineNullstelleAndersAnwendenzb
 
 
 ProfessorRo ProfessorRo ProfessorRi ProfessorRe
