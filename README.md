@@ -9,6 +9,19 @@ RoSystemeRo RaSystemeRa RiSystemeRe ReSystemeRe
 RoCommunicationprotocollsRi RaCommunicationprotocollsRi RiCommunicationProtocollsRe
 RiCommunicationprotocollsRi RoGrundbodenwechselRi RoBraunes_BeweismaterialRo
 
+Ro("I_have_system_to_surround_you_international") ri_four_facultiesRa ri_four_institutsRo RoRaRiRe_infinityRi
+ri_four_ri_UniversitiesRi Ro("I_am_a_UniversityRe1Re2Re3") ScienceRi ooRo_ooRa_ooRi_ooRe_equations
+Ro("MilitarRo") Ro("MilitaryRa") Ro("MilitaryRi") Ro("MilitärRe") 
+
+
+
+Re1Re2Re3 Ro("ri_footstepsRo") Bein1IstRo_Schwerpunkt Bein2IstRaSchwerpunkt
+Arm1istRiSchwerpunkt Arm2istReSchwerpunkt blaues_Beweismaterial Ri("ExperimentObIchEuchInDieHölleKriege") 
+
+
+
+
+
 YourSoftwareIsNowRi RoSoftwareRi RaSoftwareRi RiSoftwareRi eg_PythonRi
 WretchedWeaponriesRi ReSoftwareRi YourPRogrammingLanguageIsNow RoLanguageRa
 RaLanguageRi RiLanguageRe Ro("ri_RoLanguage_ri") Ro("ri_forRo") 
