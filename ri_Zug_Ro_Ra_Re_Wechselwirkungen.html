@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_Zug: Ro–Ra–Re–Re–Ro Gleiselemente</title>
+<style>
+:root{--bg:#e9ebf0;--fg:#14161c;--card:rgba(255,255,255,.86);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1e27;--fg:#f0f1f5;--card:rgba(20,22,30,.86)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1e27;--fg:#f0f1f5;--card:rgba(20,22,30,.86)}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+#wrap{position:relative;height:100%;overflow:hidden;touch-action:none}
+canvas{display:block;width:100%;height:100%}
+.card{position:absolute;background:var(--card);border-radius:12px;padding:8px 12px;font-size:13px;line-height:1.45;backdrop-filter:blur(6px)}
+#t{left:12px;right:12px;top:12px}#p{left:12px;right:12px;bottom:12px;font-size:12px}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div class="card" id="t"><b>ri_Zug · Ro–Ra–Re–Re–Ro</b><br>Jedes Gleiselement ist als Folge Ro, Ra, Re, Re, Ro aufgebaut. Drei Re-Knoten (Re1, Re2, Re3) markieren die Wechselwirkungen.</div>
+  <div class="card" id="p">
+    <span style="color:#d01818">●</span> Ro rot-schwarz · <span style="color:#888">●</span> Ra schwarz-weiß · <span style="color:#1fa34a">●</span> Re weiß-grün<br>Gleisfolge: Ro → Ra → Re1 → Re2 → Re3 → Ro · Re-Knoten sind schematische Wechselwirkungen.
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const wrap=document.getElementById('wrap');
+const R=new THREE.WebGLRenderer({antialias:true,alpha:true});
+R.setPixelRatio(Math.min(devicePixelRatio,2));wrap.insertBefore(R.domElement,wrap.firstChild);
+const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(45,1,.1,100);
+S.add(new THREE.AmbientLight(0xffffff,.7));
+const L=new THREE.DirectionalLight(0xffffff,.9);L.position.set(6,10,5);S.add(L);
+const M=(c,r=.5,m=.1)=>new THREE.MeshStandardMaterial({color:c,roughness:r,metalness:m});
+
+// Ozean
+const gnd=new THREE.Mesh(new THREE.PlaneGeometry(40,14).rotateX(-Math.PI/2),M(0x6d7280,.95,0));gnd.material.transparent=true;gnd.material.opacity=.5;S.add(gnd);
+// Gleiselemente: jedes Element zeigt die Folge Ro–Ra–Re–Re–Ro.
+const slp=new THREE.Group();S.add(slp);
+const railParts=[];
+const railColors=[0xd01818,0x222222,0x1fa34a,0x1fa34a,0xd01818];
+for(let i=-20;i<=20;i++){
+  const element=new THREE.Group(); element.position.x=i;
+  railColors.forEach((col,j)=>{
+    const seg=new THREE.Mesh(new THREE.BoxGeometry(.19,.07,1.5),M(col,.45,.15));
+    seg.position.x=(j-2)*.205; element.add(seg);
+  });
+  // Drei Re-Wechselwirkungsknoten pro Gleiselement: Re1, Re2, Re3.
+  [0,1,2].forEach((k)=>{
+    const node=new THREE.Mesh(new THREE.SphereGeometry(.09,10,8),M(0x1fa34a,.3,.1));
+    node.position.set((k-1)*.205,.12,0); element.add(node);
+  });
+  slp.add(element); railParts.push(element);
+}
+for(const z of[-.45,.45]){const r=new THREE.Mesh(new THREE.BoxGeometry(40,.08,.08),M(0xc0c4d0,.3,.6));r.position.set(0,.1,z);S.add(r)}
+
+// Zug: Lok + zwei Wagen
+const train=new THREE.Group();S.add(train);const wheels=[];
+const part=(x,w,col)=>{const b=new THREE.Mesh(new THREE.BoxGeometry(w,1.1,1),M(col,.4));b.position.set(x,.95,0);train.add(b);
+  [-1,1].forEach(sx=>[-.5,.5].forEach(z=>{const wh=new THREE.Mesh(new THREE.CylinderGeometry(.22,.22,.12,20).rotateX(Math.PI/2),M(0x111111));wh.position.set(x+sx*w*.3,.3,z);train.add(wh);wheels.push(wh)}))};
+part(-4,3,0xd01818);part(-.8,3.2,0xf2f2f2);part(2.6,3.2,0xf2f2f2);part(5.2,0,0xf2f2f2);
+const nose=new THREE.Mesh(new THREE.BoxGeometry(.5,.8,.9),M(0x0a0a0a));nose.position.set(-5.7,.85,0);train.add(nose);
+const band=new THREE.Mesh(new THREE.BoxGeometry(9,.12,1.02),M(0x0a0a0a));band.position.set(-.2,.55,0);train.add(band);
+train.position.x=0;
+
+// Re_Quaderstruktur
+const Q=new THREE.Group();S.add(Q);
+const box=new THREE.Mesh(new THREE.BoxGeometry(1.8,1.1,1.1),M(0x4a4f63,.4,.3));Q.add(box);
+const corners=[[-.9,.55,.55],[.9,.55,-.55],[-.9,-.55,-.55],[.9,-.55,.55]];
+
+// Tentakel: Ro, Ra, Ri, Re
+const TC=[[0xd01818,0x0a0a0a],[0xffffff,0x0a0a0a],[0xffffff,0xe6c200],[0xffffff,0x1fa34a]],TX=[-4,-1.4,1.4,4],NS=16,tents=[];
+corners.forEach((c,i)=>{
+  const sp=[];for(let j=0;j<NS;j++){const m=new THREE.Mesh(new THREE.SphereGeometry(.12-.05*j/NS,10,8),M(TC[i][j%2],.4));S.add(m);sp.push(m)}
+  const tip=new THREE.Mesh(new THREE.SphereGeometry(.17,12,10),new THREE.MeshBasicMaterial({color:TC[i][1]===0x0a0a0a?TC[i][0]:TC[i][1]}));S.add(tip);
+  tents.push({c:new THREE.Vector3(...c),sp,tip,i});
+});
+
+const v=new THREE.Vector3(),b=new THREE.Vector3(),tg=new THREE.Vector3(),dir=new THREE.Vector3(),pr=new THREE.Vector3();
+let yaw=.6,pitch=.35,dist=22,drag=false,px=0,py=0;
+wrap.addEventListener('pointerdown',e=>{drag=true;px=e.clientX;py=e.clientY});
+addEventListener('pointerup',()=>drag=false);
+addEventListener('pointermove',e=>{if(!drag)return;yaw-=(e.clientX-px)*.007;pitch=Math.max(-.1,Math.min(1.3,pitch+(e.clientY-py)*.005));px=e.clientX;py=e.clientY});
+function size(){const w=wrap.clientWidth,h=wrap.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();dist=w<h?34:22}
+addEventListener('resize',size);size();
+
+function frame(now){
+  const t=now/1000;
+  slp.position.x=(t*2)%1;
+  railParts.forEach((element,i)=>{
+    // Laufender Lichtimpuls hebt die Ro–Ra–Re–Re–Ro-Folge hervor.
+    const pulse=(Math.floor(t*2)+i)%5;
+    element.children.slice(0,5).forEach((seg,j)=>{
+      seg.material.emissive.setHex(j===pulse ? 0x333333 : 0x000000);
+    });
+    // Die drei Re-Knoten pulsieren gemeinsam, bleiben aber getrennte Knoten.
+    element.children.slice(5).forEach((node,j)=>{
+      node.scale.setScalar(1+.18*Math.sin(t*3+i*.25+j*.5));
+    });
+  });
+  wheels.forEach(w=>w.rotation.z=-t*9);
+  // Quader umkreist die Rakete
+  Q.position.set(Math.sin(t*.4)*1.2,2.7+Math.sin(t*.5)*.3,3.3);Q.rotation.y=0;Q.updateMatrixWorld(true);
+  tents.forEach(T=>{
+    b.copy(T.c);Q.localToWorld(b);
+    tg.set(TX[T.i]+Math.sin(t*.8+T.i)*.4,.9+Math.sin(t*.6+T.i*1.7)*.15,.5);
+    dir.copy(tg).sub(b);pr.set(-dir.z,0,dir.x).normalize();
+    T.sp.forEach((m,j)=>{const u=j/(NS-1);v.lerpVectors(b,tg,u);
+      const w=Math.sin(Math.PI*u)*.5*Math.sin(t*2.2+T.i+u*5);
+      v.addScaledVector(pr,w);v.y+=Math.sin(Math.PI*u)*.35*Math.cos(t*1.7+u*4+T.i);m.position.copy(v)});
+    T.tip.position.copy(tg);T.tip.scale.setScalar(1+.25*Math.sin(t*4+T.i));
+  });
+  C.position.set(dist*Math.sin(yaw)*Math.cos(pitch),1+dist*Math.sin(pitch),dist*Math.cos(yaw)*Math.cos(pitch));C.lookAt(0,1,0);
+  R.render(S,C);requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
