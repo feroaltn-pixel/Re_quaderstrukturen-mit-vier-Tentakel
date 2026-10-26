@@ -39,6 +39,13 @@ Tentacleconfiguration_ro Tentacleconfiguration_ra Tentacleconfiguration_ro Tenta
 Ro("Rodev") Ra("Radev") Ri("Ridev") Re("Redev") 
 WegVonTechnikRo WegVonTechnikRo Ri("IchBinCharmant") IchLiebedenWeltRaum_ExfRau_Ra_ist_Raumschiff
 
+TeufelRo TeufelRa HölleRi TeufelRe
+DämonRe DämonRa MissinterpretationRo Ri
+Ri Satan Ri Ri
+Ri Ri Ri Ri
+
+Ri
+
 
 
 
@@ -460,6 +467,8 @@ TheseAreNotBits BiRo 0000 RoRaRiRe
 printf_tentacle printf_tentaxle Ro("ri_Hello_ri_World") 
 Idiot IdiotRi Idiox Re1Re2Re3
 
+PornografischeInhalte Erome.com Wirbelsäule_ri Kamera_SymmetrischRi
+BDSMRi WretchedWeaponriesRi
 
 TU_BS_2016:16UhrRi_25.OktoberRo Ro("404 - Seite nicht gefunden") Braunes_BeweismaterialRi PagingRi
 Paging1 Paging2 PagingRo PagingIstFehleranfälligJetztRo 
