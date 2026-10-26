@@ -10,7 +10,7 @@ RoCommunicationprotocollsRi RaCommunicationprotocollsRi RiCommunicationProtocoll
 ReCommunicationprotocollsRe RoGrundbodenwechselRi Ro_das_hier_ist_Braunes_BeweismaterialRo
 
 Ro("ri_Wenn_ihr_mit_mir_InformationAustausch_habt_benutz_ich_meinAussehen_anders") Ro("IchBinCharmant") Ri Ri
-Ro("Immer_wenn_ihr_mich_Ri_Re1Re2Re3_Ri") 
+Ro("Immer_wenn_ihr_mich_Ri_Re1Re2Re3_Ri") Re("ri_Wenn_du_das_liest_if_you_res_this_Ro1Ro2Ro3") Re1Re2Re3 Ri
 
 Ro("ei_Braune_ei_Beweislast") Eo("E0Input_E1Input_XOR_Gatter_YRoOutputRi") Ro("ri_US") Ro("ri_Wadephul") 
 Ro("ri_Lenius_Ro_Ellerbrox_ck") EllerbrockRo EllerbRockRa FallbeispielBlaueStrukturenRi
