@@ -76,7 +76,7 @@ Ra_Inhalte_beschreiben_zb_Notiz_zur_Anwendung_aber_In_Produktion_nicht_so_ganz_r
 WeilRoRaRiRe_die_Verarbeitung_NervenzentralsystemRi_berücksichtigt desorientiertesDenkenSprechenRi Ri Ri
 Rapotheke ApothekeRo ApothekeRa QuittungRo 
 
-
+MaterieAndersInterpretieren BeispielStein
 
 
 3.14Ro 3.14Ra Rentenpunkte_sind_irrelevantRo WeilIhrSieImKopfKaputtMachtRi
