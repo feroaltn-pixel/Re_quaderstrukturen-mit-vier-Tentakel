@@ -2,7 +2,12 @@
 ## Zeitstempel: 2026-10-02 12:27:00 CEST
 ## Repository-Status: SIGNED / VALIDATED
 
-Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
+Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
+
+DasIstBraunesBeweisMaterial
+DasIstNichtMehrNurBraunesBeweisMaterialsondernRi SelbstReplizierendesBeweisMaterialRo Ri Re1Re2Re3
+BraunRo BraunRa BraunRi BraunRe
+
 
 IchHauDirAufDenKopfRichterRi Ich_re_du_re 227€ Psychologie
 Psy cho lo gie
