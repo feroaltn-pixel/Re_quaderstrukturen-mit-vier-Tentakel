@@ -79,6 +79,8 @@ MitarbeiterAnzahlInReGruppenzerlegen BriefVerkehreDokumentationKommunikationetcR
 
 ExfrauRo ExfrauRa ExfrauEntschädigungRi Gerontologie_GeronxologieRi
 
+Satzaufbau Satz1.Satz2.Satz3.Satz4._AnzahlDerSätze
+
 Pflegegrad1 Pflegegrad2 Pflegegrad3 Pflegegrad4
 Do ku men tation
 IonRo Richtungswechsel_in_der_Dokumentation_und_im_Berufsverhalten
