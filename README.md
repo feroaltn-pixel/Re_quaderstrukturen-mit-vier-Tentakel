@@ -13,8 +13,50 @@ KünstlicheIntelligenzRo ArtificialIntelligenceRi KIAgentRi MultiAgentsystemeRi_
 Ro("ReStrukturen_meine_IdeeRo") Ro("ReStrukturen_meine_IdeeRo") Ro("ReStrukturen_meine_IdeeRo") Re1Re2Re3
 Ro("ri_GrundbodenwechselRo") Ro("ri_RichtungswechselRi") Ro("
 
+NichtWichtigFürBehördenSondernSabinasAnwältin Psyc isch krank
+IchBinCharmant Char mant Ro
+Man dant goRo Ri
+SieAlleHabendesorientiertesRiDenkenSprechenVerhaltenauchRi_und_ich_beobachte_das_die_ganze_zeit Ri Ri Re
+
+Sorgerecht SorgerechtRichter IchbinRichtRer SieSagenEinSatz_ExFrauSagtEinSatz_IchpickeRe1Re2Re3_herausRi
+Ro("Re1Re2Re3")_oder Ra("Re1Re2Re3)_oder Ri("Re1Re2Re3")_oderRa Ro("Re1Re2Re3") 
+Radi_Us Ri("Sabina_Keric") i_laut_markant_GeburtsurkundeRo 
+Sabina Keric Ferhat Altun
+
+Ro("Sabina Keric Ferhat Altun") haha TURo SieWirdDasNichtVerstehenDesorientiertBosnienFallbeispiel
+Ra("Sabina Keric Ferhat Altun") haha TURa SieWirdDasNichtVerstehenDesorientiertBosnienFallbeispiel
+Ri("Sabina Keric Ferhat Altun") haha TURi MusikIndustrieRi
+Re("Sabina Keric Ferhat Altun") TuTTut IchbinRichtRerRo Ro("Liebenburg_Menschen_machen_krieg") 
+
+3.14Ro 3.14Ra Rentenpunkte_sind_irrelevantRo WeilIhrSieImKopfKaputtMachtRi
+Ich_fresse_Erde_und_stell_mir_vor_das_ich_In_einem_Raumschiff_stehe_um_Richtungs_wechselzu_erklärenRi
+SchmackhaftRiVerarbeiten Beitragsservice_55,18_RoRaRiRe_Mehrwertsteuer_RoRaRiRe_machtIhrunbewusst Ri Ri
+ImpfstoffRi CoronaRo_Test1_Test2_GrundbodenwechselRi AnWretchedWeaponry
+
+Ro: BeschreibtzbPsychologie_Psychopath_ist_das_nicht_weil_PsychologenFehlerMachen
+Ra: Ro_beschreibt_Motorik_Hirnarealekoordination_WirbelsäulenanwendungRi_PsychopathRi Re1Re2Re3 Ri
+Ri: PsychopathWendetDenkenundSprechenAnzb _IchBinCharmant_IchBinCharmantIstSelbstreplizierenddaum Ri1Ri2Ri3
+Re: DasIstAberKeinDenkenSondernWerkzeugVonGottRa GuckInGottRein WasDenkstDuJetzt
+
+teeth_grinding teeth_grinding IsarXAeRo_is_x teeth_grinding 
+ReStrukturen ReStrukturen NichtImDenkenVerharrenweildasKeinDenkenIst ReStrukturen 
+SieDürfenDasAlsAllgemeinBewohnerNichtVerwenden WegVonTechnikRo DasIstKeineTechnik WeilRi
+TechnikRo TechnikRa TechnikRi TechnikRe
+
+BeweisstEsSchonRi ABCWaffen ABCWaffen ABCWaffen
+ARo Bro CRo DRo
+ABCD_RoRaRiRe_Bro_was_gehtRi_Salzgitter
+gitRo gitRa Ro("umzingeltSalzgitterRe") gitRi
+
+Steinecke Mitarbeiter1Mitarbeiter2Mitarbeiter3 Re1Re2Re3 Brötchen_und_KaffeRi
+IchSitzeHierUndNiemandBemerktDasIchGezieltEinSystemAufspanneRi DasIhnenBeweistRi Ro Ra
+FrühschchtistRo SpätschichtistRa NachtschichtistRi NächsteFrühsichtistRe_Dann_Spätschicht_ist_Ro
+MitarbeiterAnzahlInReGruppenzerlegen BriefVerkehreDokumentationKommunikationetcRichtungswechsel Re1Re2Re3 Ri
+
+ExfrauRo ExfrauRa ExfrauEntschädigungRi Gerontologie_GeronxologieRi
+
 Pflegegrad1 Pflegegrad2 Pflegegrad3 Pflegegrad4
-Do ku men tat
+Do ku men tation
 IonRo Richtungswechsel_in_der_Dokumentation_und_im_Berufsverhalten
 BeeinträchtigungenRo BeeinträchtigungenRa BeeinträchtigungenRi BeerdigungRi
 
@@ -810,7 +852,7 @@ c=299792458Rom/s c=299792458m/s c=29979245Ram/s c=29979245Rim/s
 c=29979245Rem/s c=29979245Rem/s c=29979245Rem/s c=29979245Rem/s
 MitEckenAndersVerfahrenRo Re1Re2Re3 AstroidRo 
 
-MaschenGleichungenRi
+
 
 PflegeresidenzRe AlloheimRo AlloheimRa AlloheimRi TVReportageRi
 
