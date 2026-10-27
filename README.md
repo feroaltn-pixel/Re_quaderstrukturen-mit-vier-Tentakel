@@ -4,6 +4,15 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+SOFTWAREImplementation SieHalluzunierenAnwendungenRi egLabyrinhIstDasNichtRi egKartenSpielIstDasNicht
+AuchIhreKartenSpieleet basierenUnbewusstAufaroRaRiReExperimentFunktionen_versuche_ich_auszurichten_als_system
+function(
+
+RichtungsWechselRoinSAP_Spielen_etc
+
+GPIORo GPIORa GPIORi GPIORe
+3.14O 3.14Ra 3.14Ri 3.14Re
+Devicetree_RoSystems Devicetree_RaSystems Devicetree_RiSystems De
 
 
 EsGibtEineLösungsmengeDieManEufhEntgegenstellenKann
