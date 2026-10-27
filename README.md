@@ -14,13 +14,21 @@ NormalerweisemüssteEineMarkanteMengedarsufabgebeildetSeinDieEinenEissenLassenL�
 Empfohlene_Anordnung:MarkanteMenge_um_An_einRichtungswechsel_zu_denken
 Fallbeispiel_Missbrauch_öffentlicher: Pornografie_wo_eineDarstellerinrotschwarzeSocken_trägt_aber_nicht_realisiert_un_unbeeusst_in_kamera_selbstverstärkend_halluzuniert
 
+Problem: Folgewahrscheinlichkeit von Gedanken
+Sind Auch Trainingsdaten Richtungswechsel 
+
+RoRaRiRe SieVerwendenUnbewusstEineMittelungDieserGrößenRi_zbGeometrie_t_ist_auch_Ro_weil_Schnittmengen
+Quantinisiert behandelt werden inRaumzeit
+
+
 Ra: x -> f(x) -> y
 AbgewöhnenSpontanzuDenkenRi
 Schwarz_rot_beschreibt_dynamische_GedankenRo_zb_schiefer_wurf_Flugverlauf_rot_schwarzes_ufo_verhalten
 
 Ro:
 
-Ri:
+Ri: Ro <-> Ra <-> Ri (weis_blau) 
+AnalyseWerkzeugRi KorrelationsmatrixRi
 
 Re
 Weiss_
