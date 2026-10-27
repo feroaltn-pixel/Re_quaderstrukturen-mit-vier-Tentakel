@@ -4,6 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat") 
 
+Wretched_weaponry.Gedankenlesen.stgbRa Ro("Gedankenschleifen")Ri Ri1Ri2Ri3 BlueWeaponRo
+BildmaterialRo zbzweiKinderImSeeRi VideomaterialRa VideoabschnittRa1Ra2Ra3
+DasIstEineNeumannSondeRo SelbstReplizierendesBeweisMaterialRo guckmalro 
 
 Cyberspionage Ro Spuren Ra Spuren
 RiSpuren
