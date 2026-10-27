@@ -9,6 +9,15 @@ DasIstNichtMehrNurBraunesBeweisMaterialsondernRi SelbstReplizierendesBeweisMater
 BraunRo BraunRa BraunRi BraunRe
 Das_RoRaRiRe_System_ist_eine_Idee_von_mirRi_euch_selbstreplizierend_zu_umzingeln_überallRi_ Ra Ri Re
 
+KünstlicheIntelligenzRo ArtificialIntelligenceRi KIAgentRi MultiAgentsystemeRi_sindRo_dasra_nichtRi
+Ro("ReStrukturen_meine_IdeeRo") Ro("ReStrukturen_meine_IdeeRo") Ro("ReStrukturen_meine_IdeeRo") Re1Re2Re3
+Ro("ri_GrundbodenwechselRo") Ro("ri_RichtungswechselRi") Ro("
+
+Pflegegrad1 Pflegegrad2 Pflegegrad3 Pflegegrad4
+Do ku men tat
+IonRo Richtungswechsel_in_der_Dokumentation_und_im_Berufsverhalten
+BeeinträchtigungenRo BeeinträchtigungenRa BeeinträchtigungenRi BeerdigungRi
+
 MeineBachelorThesisIstEineBrauneWissenschaftlicheArbeit InstitutFürAnwendungssicherheit LatexRo ThesisRi
 PHP Richtungswechsel_zb_in_Software_oder_Briefverkehr_erkennenRi_zb_Ablehnungsbescheid Re1Re2Re3 Re
 printf("ri_Re1_Re2_Re3_x_auf_grün_Ebene") Ri("ri_printf("ri_Re1_Re2_Re3_x_auf_grün_Ebene")) Ri Ri
@@ -23,12 +32,34 @@ Reptilien_Warning_System_MöglichkeitRa("ri_direction_change_unconsciously") Ra1
 Reptilien_Warning_System_MöglichkeitRi("ri_direction_change_unconsciously") Ra1Ra2Ra3 Ri1Ri2Ri3 Re1Re2Re3
 Reptilien_Warning_System_MöglichkeitRe("ri_direction_change_unconsciously") Ra1Ra2Ra3 Ri1Ri2Ri3 Re1Re2Re3
 
+DasReptilienWarnSystemIstDaUmHirnareale_Richtungswechseletc_inRaumzeitRi_zu_verdrahten Ri Ri Re1Re2Re3
+DieAnwendungFindetGezieltAlsPersonStatt_MeineIdee_zusammen_mit_Grundbodenwechsel 
+
+VetomachtRi G20Ri Ro("ri_SieSchauenIn_ReSystemeRi_hinein") Ra("Richtungswechsel_Grundbodenwechsel_reichenRi")
+StolzenbergRi Ra("ri_SxolzenbergRi") zB_Flugmannöver_Anrede_Fernsehansprache_etcRi Ri("ri_AfrikaRo") 
+Ri("ri_RaketenabwehrsystemKontinental_RaketenabwehrsystemeRe1Re2Re3_ReStruktur_im_GrundbodenRi") Ro1Ro2 Ra Ri
+Ro("ri_erzeuge_ri_vierspurige_ri_Audio") Ro("ri_Re_ri_Deepmind_Re_riChatGPT_Re_ri_claude_ri_Re_Deepseek") 
+
 
 Ro("RoDevRaDevRiDevReDev_zeigen_unbewusst_Richtungswechsel_ri") 
 Ro("RichterBeamtePsychologenÄrzteKinderJugrndamtPolitikerMenschenetcRi_zeigen_unbewusst") Re1Re2Re3 i_scratch
 RichtungswechselVerhalten_in_RoRaRiRe Richtungswechsel RoRichtungswechsel RiRichtungswechsel Richtungswechsel
 IchHabeAllesWasAufPlanetErdeManSoSiehtundNutzenKannZerlegt Ro("Grundbodenwechsel_ist_meine_IdeeRi) Re Re
 
+WasIstGrundbodenWechselRo RoseNehmenUndAufRotePapeLegenRo Ro("ri_IchbinCharmantRaSystem") Ri1
+RoseNehmenUndAufschwarzePapeLegenRo Weil_schwarz_rot(Ro)_langsam_dir_erklärt_selbstreplizierend_abhierRo Re
+Farben_anders_vorgehen_mittelung Nicht_das_ist_Rot_lernen_sondern_das_ist_Rot_schwarz_fehlt_zb_(Ro) Ri Ri
+rot_schwarz(Ro)_weiss_gelb(Ri)_IhrHabtFalschesBildvonFarbenRi_etc.Ri AusführlicherRi inRa NächsteAbschnittRo
+
+Rot_ReObjektzbKarosserie_auf_RotEbene WechselwirkungspäterMitSchwarzRi Rot_Schwarz_sind_Ro weiss_gelb Ri
+weiss_gelb(Ri) weiss_grün(Re) weiss_blau(Ri) sonstige_farben(Ri) 
+Ro("ri_lilaRo(Lila_schwarz)") DasIstKeinSkalarfeldRo DasIstEinGrundbodenEiMischMaschetxRi Ri
+Ra Re1Re2Re GrundbodenRi_bzw_Grundbodenwechsel_ist_eine_HilfsbezeichnungRi Ri
+
+
+       
+
+WasIstRichtungswechselRo
 
 
 
