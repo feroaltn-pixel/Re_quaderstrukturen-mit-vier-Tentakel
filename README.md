@@ -4,6 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+SieSindJetztVorsichtig IhreWinkelSindEineMittelungVon_RoRaRiRe_ KomplexeZeiger Raumzeigermodulation
+DasSystemrotierteigentlichGarnichtsondernRi_weilWinkelgescheindigkeitJetztauch.. 
+
 
 SOFTWAREImplementation SieHalluzunierenAnwendungenRi egLabyrinhIstDasNichtRi egKartenSpielIstDasNicht
 AuchIhreKartenSpieleet basierenUnbewusstAufaroRaRiReExperimentFunktionen_versuche_ich_auszurichten_als_system
