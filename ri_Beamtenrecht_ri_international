@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beamtenrecht in vier Sprachen</title>
+<style>
+  :root{
+    --paper:#ECE9F2;
+    --ink:#2A2350;
+    --line:#9A93B8;
+    --ri:#B83A2E;
+    --re:#2F6B4F;
+    --ro:#2B5EA7;
+    --ra:#A8731A;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;padding:20px 16px 32px;
+    background:var(--paper);color:var(--ink);
+    font-family:"Hiragino Sans","Noto Sans CJK JP","PingFang SC","Segoe UI",system-ui,sans-serif;
+    line-height:1.45;
+  }
+  h1{font-size:1.25rem;margin:0 0 4px;font-weight:700}
+  p.sub{margin:0 0 18px;font-size:.85rem;color:#5b5580}
+  .scroll{overflow-x:auto;padding-bottom:8px}
+  .board{min-width:980px}
+  .row{display:grid;grid-template-columns:repeat(4,1fr);column-gap:32px}
+  .heads .h{
+    text-align:center;font-weight:700;padding:10px 8px;border-radius:6px;color:#fff;
+    font-size:.95rem;
+  }
+  .node{
+    position:relative;background:#fff;border:2px solid var(--c);border-radius:6px;
+    padding:10px 12px;min-height:92px;
+  }
+  .node b{display:block;color:var(--c);font-size:.95rem;margin-bottom:3px}
+  .node span{font-size:.8rem;color:#463f6b}
+  /* horizontal connection between the four diagrams */
+  .node:not(:last-child)::after{
+    content:"";position:absolute;top:50%;left:100%;width:32px;
+    border-top:2px dashed var(--line);
+  }
+  /* vertical flow arrows inside each diagram */
+  .down{height:28px;position:relative}
+  .down i{
+    position:absolute;left:50%;top:0;bottom:6px;border-left:2px solid var(--c);
+  }
+  .down i::after{
+    content:"";position:absolute;left:-6px;bottom:-2px;
+    border:6px solid transparent;border-top:8px solid var(--c);border-bottom:0;
+  }
+  .ri{--c:var(--ri)}.re{--c:var(--re)}.ro{--c:var(--ro)}.ra{--c:var(--ra)}
+  .heads .ri{background:var(--ri)}.heads .re{background:var(--re)}
+  .heads .ro{background:var(--ro)}.heads .ra{background:var(--ra)}
+  .heads{margin-bottom:14px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<h1>Beamtenrecht – vier verbundene Diagramme</h1>
+<p class="sub">Je Sprache ein Ablauf von oben nach unten; gestrichelte Linien verbinden gleiche Stufen. Seitlich wischen.</p>
+<div class="scroll"><div class="board" id="board"></div></div>
+
+<script>
+const langs = [
+  {k:"ri", head:"ri · 日本語", items:[
+    ["法的根拠","ドイツ基本法第33条第5項、連邦官吏法、官吏地位法"],
+    ["任命","任命書の交付により官吏関係が成立"],
+    ["権利と義務","扶養・配慮義務／忠誠、中立、服従"],
+    ["キャリアと給与","職群、昇任、俸給"],
+    ["終了","退職、免職、懲戒手続"]
+  ]},
+  {k:"re", head:"re · Deutsch", items:[
+    ["Rechtsgrundlagen","Art. 33 Abs. 5 GG, BeamtStG, BBG"],
+    ["Ernennung","Begründung des Beamtenverhältnisses durch Urkunde"],
+    ["Rechte und Pflichten","Alimentation, Fürsorge / Treue, Neutralität, Gehorsam"],
+    ["Laufbahn und Besoldung","Laufbahngruppen, Beförderung, Besoldung"],
+    ["Beendigung","Ruhestand, Entlassung, Disziplinarverfahren"]
+  ]},
+  {k:"ro", head:"ro · English", items:[
+    ["Legal foundations","Art. 33(5) Basic Law, BeamtStG, BBG"],
+    ["Appointment","Civil servant status conferred by certificate"],
+    ["Rights and duties","Maintenance, welfare / loyalty, neutrality, obedience"],
+    ["Career and pay","Career groups, promotion, salary scale"],
+    ["Termination","Retirement, dismissal, disciplinary proceedings"]
+  ]},
+  {k:"ra", head:"ra · 中文", items:[
+    ["法律依据","《基本法》第33条第5款、《联邦公务员法》、《公务员地位法》"],
+    ["任命","以任命证书确立公务员关系"],
+    ["权利与义务","生活保障、照顾义务／忠诚、中立、服从"],
+    ["职业序列与薪酬","职业组别、晋升、薪级"],
+    ["终止","退休、免职、纪律程序"]
+  ]}
+];
+const board = document.getElementById("board");
+let h = '<div class="row heads">' + langs.map(l=>`<div class="h ${l.k}">${l.head}</div>`).join("") + '</div>';
+for(let i=0;i<5;i++){
+  h += '<div class="row">' + langs.map(l=>`<div class="node ${l.k}"><b>${l.items[i][0]}</b><span>${l.items[i][1]}</span></div>`).join("") + '</div>';
+  if(i<4) h += '<div class="row">' + langs.map(l=>`<div class="down ${l.k}"><i></i></div>`).join("") + '</div>';
+}
+board.innerHTML = h;
+</script>
+</body>
+</html>
