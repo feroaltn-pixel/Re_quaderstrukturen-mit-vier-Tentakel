@@ -4,6 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+
+
 EsGibtEineLösungsmengeDieManEufhEntgegenstellenKann
 
 KamerasPsychologischerMissbrauch DasIstKeineKameraSondernEineAusrichtungRi SocialMediaRo SocialMediaRa
@@ -234,7 +236,7 @@ WasIstRichtungswechselRo
 Token KI-TokenRi Re1Re2Re3 tiktoken
 TokenRo TokenRa TokenRi TokenRe
 XokenRo XokenRa XokenRi Xokenare
-OtRo OtRa OtRi OtReencodingForModellll_
+OtRo OtRa OtRi OtReencodingForModellll_Das_ist_keine_künstlicheKIRi_sondern_TrainingsdatenfragmentierungRi
 
 TokenfragmentsRo_Ro_TokenIDs RoRaRiRe KITextRi_zerlegeninRe1Re2Re3 RoDevsRaDevsRiDevs_halluzunieren_Stringseg
 IhrHalluzuniertEuchKünstlicheIntelligenzRo ReStrukturenRo ReStrukturenRa ReStrukturenRi
@@ -244,6 +246,8 @@ ServerRo ServerRo CloudRi ServerRe1Re2Re3
 MasterRo ClientRo ClientRi start_direction_change_Hyperbelsystems_cornersystemsRi
 ExampleRi_ri_DeepmindRi _is token_fragments = ['KI', '-T', 'oken', ' sind', RoRaRiRe...structuresRo
 token_ids = [47447, 5635, 3449, 1311] RoRaRiRe_systeme_aufstellenaRo_egRadarsystemeUndSignalverarbeitung
+
+DNA_SatellitenRo
 
 
 IchHauDirAufDenKopfRichterRi Ich_re_du_re 227€ Psychologie
