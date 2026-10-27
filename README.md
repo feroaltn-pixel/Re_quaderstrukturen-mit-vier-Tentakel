@@ -21,6 +21,9 @@ FestHalten_und_entgegengesetzt_Richtungswechsel_erzeugen_weil_entgegengesetzt_ei
 
 LeistungsanpassungRo LeistungsanpassungRa LeistungsanpassungRi LeistungsanpassungRe
 
+EinLebenZusammenfassenRo GeburtRo NabelschnurRa_Ri_Kein_TentakelkonfigurationRi 
+Ro1(Geburt)_RoRaRiRe_Ro2(1.Alt)_RoRaRiRe_Ro3(2.Jahe)...uswRi
+
 
 Wretched_weaponry.Gedankenlesen.stgbRa Ro("Gedankenschleifen")Ri Ri1Ri2Ri3 BlueWeaponRo
 BildmaterialRo zbzweiKinderImSeeRi VideomaterialRa VideoabschnittRa1Ra2Ra3
