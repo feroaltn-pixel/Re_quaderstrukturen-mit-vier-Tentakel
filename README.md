@@ -167,6 +167,15 @@ PHP Richtungswechsel_zb_in_Software_oder_Briefverkehr_erkennenRi_zb_Ablehnungsbe
 printf("ri_Re1_Re2_Re3_x_auf_grün_Ebene") Ri("ri_printf("ri_Re1_Re2_Re3_x_auf_grün_Ebene")) Ri Ri
 IchBinKeinSoftwareEntwickler IchFasseEureEntwicklerZusammen_RoDevRaDevRiDev_analogRi_HardwarentwicklerRi Ri
 
+ProbezeitRo ProbezeitRa ProbezeitRi ProbezeitRe
+
+KommisionierungRi eg_BrillenRi Prof.MartinJohnsFallBeispiel PalettenNutzenUmProduktionUndLogistik
+300InhalteDurchschnittlichProStunde_Arbeitsnehmer_ErwartungRi 
+J o h ns
+NSRo NSRi || SAPRi
+
+
+
 InstitutReIstJetztDaUm Re1Re2Re3_Abschnitte_zerlegen_in_Re1(Ro) _Re2(Ro) _Re3(Ra) _selbstreplizierendeRe
 NeumanSonde Reptilienwarnsystem_muss_ich_erweitern_Sie_müssen_aber_anders_anfangen_denken_anzuwenden Ri Ri Ri
 
