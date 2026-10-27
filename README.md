@@ -30,6 +30,10 @@ Ra("Sabina Keric Ferhat Altun") haha TURa SieWirdDasNichtVerstehenDesorientiertB
 Ri("Sabina Keric Ferhat Altun") haha TURi MusikIndustrieRi
 Re("Sabina Keric Ferhat Altun") TuTTut IchbinRichtRerRo Ro("Liebenburg_Menschen_machen_krieg") 
 
+BMWBinaRo BMWBinaRo BMWBinaRo BMWBinaRe
+AlloheimRo AlloheimRa AlloheimRi AlloheimRe
+IchVersucheDasVerhsltenVonAlloheimZusammenzufassenErnstUndFestzuhaltenRi
+
 UmMeineExFrauZusammenZufassenMussIchIhrenRichtungswechselUndwohinSieGucktAbruptAufKopfHauen Ri Ri Ri
 Während_Richtungswechsel_finden_rot_schwarz_übergänge_statt_im_denkenRizb DasIstEineHilfsbezeichnung Ra Ra
 Thema: Schizophrenie Nie Niemals
