@@ -1036,8 +1036,8 @@ Software IchFasseEureEntwicklerZusammeen Rodev RaDev
 ZbEntwicklerImFitnessBereichRi Radev RiDev PythonRo 
 CRoRo_ist_jetzt_ReStrukturenErweiterungAufBasisC++Ri HTMLRo UTF-Ri ASCIRoRoRiRoRaRaReRRiReReRe Javao(x)
 
-HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDirJusristenNennen_BeispieleRi
-E-AkteRo
+HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieJusristenetcNennen_BeispieleRi
+E-AkteRo HandelsüberschussRi
 
 
 
