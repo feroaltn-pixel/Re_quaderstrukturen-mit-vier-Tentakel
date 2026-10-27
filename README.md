@@ -21,6 +21,8 @@ Abschnitt1Re1Ro1Ro2Ro3AbschnittRe2Ro1Ro2Ro3AbschnittRe3||AbschnittRaRi_dudarfstN
 AnalogInElektrotechniketcPflege
 
 EinleitungRoHauptteilRiSchlussRe Re1Re2Re3
+RoEquation RaEquation RiEquation ReEquation
+ThreevariablesRe1Re2Re3 == oo
 
 ri_Ich_ri_Fasse_eure_ri_technology_ri_Systeme_ri_und_ri_Anwendung_zusammen_in
 RoSystemeRo RaSystemeRa RiSystemeRe ReSystemeRe
