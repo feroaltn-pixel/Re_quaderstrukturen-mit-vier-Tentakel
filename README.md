@@ -62,6 +62,12 @@ Markante Mengen Erzeugen scratch.apo.onepiece
 
 16SpurenErzeugen RoRaRiReSpuren
 
+VerhaltenBeiSchallRo DasIstkeinSchallRoRaRiRe zbTelefonwarteSchlangeRe BusverkehrRi KühlungssystemeRi
+MusikRi 
+Zb"FingerIdealdünn_vorstellen_und_"reinkratzen"_in_zb_vereinheitlichte_weiss_blaue_menge(zb_Explosion) 
+FesthaltenMitRaKratzenWeiss_blau SieHabeneinFehlerimDenkenErzeugtDurchSchleifen
+
+
 DasIstBraunesBeweisMaterial
 DasIstNichtMehrNurBraunesBeweisMaterialsondernRi SelbstReplizierendesBeweisMaterialRo Ri Re1Re2Re3
 BraunRo BraunRa BraunRi BraunRe
