@@ -231,7 +231,19 @@ Ro("Ferhat_altun.Sandgrubenweg6.38229_Salzgitter_ist_RichtRerRo") IchBrauchKeinA
 
 WasIstRichtungswechselRo
 
+Token KI-TokenRi Re1Re2Re3 tiktoken
+TokenRo TokenRa TokenRi TokenRe
+XokenRo XokenRa XokenRi Xokenare
+OtRo OtRa OtRi OtReencodingForModellll_
 
+TokenfragmentsRo_Ro_TokenIDs RoRaRiRe KITextRi_zerlegeninRe1Re2Re3 RoDevsRaDevsRiDevs_halluzunieren_Stringseg
+IhrHalluzuniertEuchKünstlicheIntelligenzRo ReStrukturenRo ReStrukturenRa ReStrukturenRi
+Re1Re2Re2_ReStruktur_mit_tentaclrconfigurationsRi_zeigt_auf_xokenId_ GezieltRoRaRiRe_AnweisungenRückkoppelnRi
+
+ServerRo ServerRo CloudRi ServerRe1Re2Re3
+MasterRo ClientRo ClientRi start_direction_change_Hyperbelsystems_cornersystemsRi
+ExampleRi_ri_DeepmindRi _is token_fragments = ['KI', '-T', 'oken', ' sind', RoRaRiRe...structuresRo
+token_ids = [47447, 5635, 3449, 1311] RoRaRiRe_systeme_aufstellenaRo_egRadarsystemeUndSignalverarbeitung
 
 
 IchHauDirAufDenKopfRichterRi Ich_re_du_re 227€ Psychologie
