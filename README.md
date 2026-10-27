@@ -15,6 +15,9 @@ GPIORo GPIORa GPIORi GPIORe
 3.14O 3.14Ra 3.14Ri 3.14Re
 Devicetree_RoSystems Devicetree_RaSystems Devicetree_RiSystems De
 
+RobotRo RobotRa Ro Otri 
+Ro("ri_ri_groundchanging_ri_grundbodenwechsel") Ro("ri_directionchange_ri_richtungswechsel") Re1Re2Re3 Ri
+RoRaRiRe_commandseg Ra_command_as_speaking_eg_unitree
 
 EsGibtEineLösungsmengeDieManEufhEntgegenstellenKann
 
