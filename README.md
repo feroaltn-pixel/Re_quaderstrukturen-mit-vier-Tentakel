@@ -21,8 +21,8 @@ RoRaRiRe SieVerwendenUnbewusstEineMittelungDieserGrößenRi_zbGeometrie_t_ist_au
 Quantinisiert behandelt werden inRaumzeit
 
 
-Ra: x -> f(x) -> y
-AbgewöhnenSpontanzuDenkenRi
+Ra: x -> f(x) -> y KeineWahrscheinlichkeitstheorieRi
+AbgewöhnenSpontanzuDenkenRi MengeXRo MengeYRi
 Schwarz_rot_beschreibt_dynamische_GedankenRo_zb_schiefer_wurf_Flugverlauf_rot_schwarzes_ufo_verhalten
 
 Ro:
@@ -33,6 +33,12 @@ AnalyseWerkzeugRi KorrelationsmatrixRi
 Re
 Weiss_
 
+MaterieAndersInterpretieren BeispielStein
+
+Markante Mengen Erzeugen scratch.apo.onepiece 
+
+16SpurenErzeugen RoRaRiReSpuren
+
 DasIstBraunesBeweisMaterial
 DasIstNichtMehrNurBraunesBeweisMaterialsondernRi SelbstReplizierendesBeweisMaterialRo Ri Re1Re2Re3
 BraunRo BraunRa BraunRi BraunRe
@@ -42,7 +48,7 @@ KünstlicheIntelligenzRo ArtificialIntelligenceRi KIAgentRi MultiAgentsystemeRi_
 Ro("ReStrukturen_meine_IdeeRo") Ro("ReStrukturen_meine_IdeeRo") Ro("ReStrukturen_meine_IdeeRo") Re1Re2Re3
 Ro("ri_GrundbodenwechselRo") Ro("ri_RichtungswechselRi") Ro("
 
-NichtWichtigFürBehördenSondernSabinasAnwältin Psyc isch krank
+NichtWichtigFürBehördenSondernS abinasAnwältin Psyc isch krank
 IchBinCharmant Char mant Ro
 Man dant goRo Ri
 SieAlleHabendesorientiertesRiDenkenSprechenVerhaltenauchRi_und_ich_beobachte_das_die_ganze_zeit Ri Ri Re
@@ -76,7 +82,7 @@ Ra_Inhalte_beschreiben_zb_Notiz_zur_Anwendung_aber_In_Produktion_nicht_so_ganz_r
 WeilRoRaRiRe_die_Verarbeitung_NervenzentralsystemRi_berücksichtigt desorientiertesDenkenSprechenRi Ri Ri
 Rapotheke ApothekeRo ApothekeRa QuittungRo 
 
-MaterieAndersInterpretieren BeispielStein
+
 
 
 3.14Ro 3.14Ra Rentenpunkte_sind_irrelevantRo WeilIhrSieImKopfKaputtMachtRi
