@@ -443,6 +443,10 @@ Ro("IchHauDirAufDenKopfPsychologeReRi") Ra("IhrFrisstZuvielRo") Ri("Desorientier
 Ro("IchHauDirAufDenKopfRichter")Ri PPPP 0112 PHP_
 Ro("SAPRi") 
 
+WieErinnernSieSichAnEinePerson? DasIstKeineErinnerung ErinnerungRoRaRiRe_beweistDasbereits 
+IchWendeRichtungswechselAnRo_zbStelleIchMireinePersonImRichtungswechselVor_alternetiv_in_rot_schwarz
+WeilSieklassischMenschlichDenken_esgehtdarumInRuamzeitanzuwenden_weil_rot_scharz_mit_lilaRischwarz_Ri
+
 PlanetMondAusEineranderenPhysikRiBetrachten
 
 AnorganischeUndAllgemeineChemieRi OxidationRe
