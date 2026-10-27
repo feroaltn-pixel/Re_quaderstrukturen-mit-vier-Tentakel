@@ -100,6 +100,13 @@ Re_ElementsRa_ElementsRi_Elements_Re1Re2Re3
 
 ShoppingRi1R2Ri3 Edeka Re1Re2Re3 Bäckerei
 
+MusicRi SoftwareRe InstrumentsRe GenroRo exampleSe 
+MajorLazer("If" Laser"==True)Major Lazer Scenes_oo IAmBlue_Eifel65_IamYellow_Eifel65Ro
+WretchedWeaponriesRi WretchedWeaponriesBlue WretchedWeaponriesYellow Ra
+WretchedWeaponriesRo WretchedWeaponriesRa WretchedWeaponriesRi WretchedWeaponriesRe
+
+WeaponriesRo WeaponriesRo WeaponriesRo WesponriesRe
+
 Ro_ElementsAreTransistionsRi GrundbodenwechselRi GrundbodenwechselIstEineZeichenketteRi Ro
 UmAufDeinKopfZuHauenRi UndDirBewusstZuMachenRa DasDieBürgerDesorientiertessprechenunddenkenHabenRi
 Erinnerung_BeitragsserviceRi VierstelligeZahlenEi RoVie_Re_ck_Ra_ CalvinKleinRi
