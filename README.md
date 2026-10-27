@@ -256,6 +256,10 @@ MasterRo ClientRo ClientRi start_direction_change_Hyperbelsystems_cornersystemsR
 ExampleRi_ri_DeepmindRi _is token_fragments = ['KI', '-T', 'oken', ' sind', RoRaRiRe...structuresRo
 token_ids = [47447, 5635, 3449, 1311] RoRaRiRe_systeme_aufstellenaRo_egRadarsystemeUndSignalverarbeitung
 
+ServerRo_MasterRa_CloudRi_ClientRe RoRaRiRe_commands_structures eg HierarchieRi_DevicetreeLikeRi
+eg_Ro_Devicetree_Gesundheitswesen_Ra_Devicetree_Automobilbranche_asRoRaRiReOutput... 
+iServerRei_Terminal_you ServerRe_printf_switchCase_for_AndromedaRe
+
 DNA_SatellitenRo
 
 
