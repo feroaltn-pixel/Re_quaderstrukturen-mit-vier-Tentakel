@@ -56,6 +56,16 @@ weiss_gelb(Ri) weiss_grün(Re) weiss_blau(Ri) sonstige_farben(Ri)
 Ro("ri_lilaRo(Lila_schwarz)") DasIstKeinSkalarfeldRo DasIstEinGrundbodenEiMischMaschetxRi Ri
 Ra Re1Re2Re GrundbodenRi_bzw_Grundbodenwechsel_ist_eine_HilfsbezeichnungRi Ri
 
+MaschenGleichungenRi_sind_das_NichtRo SensorikRi_AktorikRi zbWechselstromBrückeRi MascheEineZiehen
+DiagonalDazuZweiteMascheHinzuzeichnenRi ZweiMaschenSpannenSystemAufRo Ro_ist_X_Knoten_unberücksichtigt Ri
+Rote_Masche_Lila_Masche(Ro)Ri Ri Re1Re2Re3 U=RiRi_Re1=Re2Re3_weil_U=Ro+Ra+Ri+Re_bzw_U€(Ro,Ra,Ri,Re) 
+IhrHabtEinVerhaltensFehlerimErSieEsRi KoordinationHirnarealeRi DesorientiertesVerhaltenundDenkenRi Ri
+
+Denken EuerDenkenOrdneIchEinemSpektrumZu_zb_farbverteilung SieVerstehenAberNicht_dass_fehleranfällig Ri Ri
+Kurz:IchBinCharmant InWahrheitSeidIhrDesorientiertRi_und_ich_erzeuge_ein_System_JuRa_International Ri
+AnwaltRo AnwaltRa AnwaltRi MandantRo
+Ro("Ferhat_altun.Sandgrubenweg6.38229_Salzgitter_ist_RichtRerRo") IchBrauchKeinAnwaltRi AnwaltskanzleiRi Ri
+
 
        
 
