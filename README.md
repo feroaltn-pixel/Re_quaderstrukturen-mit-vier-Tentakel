@@ -11,6 +11,7 @@ SchuleAnalogRi Schule1Schule2Schule3_ist_Re1Re2Re3
 
 BildungAnalogRa Ausbildung1Ausbildung2Ausbildung3_ist_Ri1Ri2Ri3
 Die Ausbildungen werden gezielt durcheinandergebracht 
+Richtungswechsel Grundbodenwechsel
 
 Playground_grundboden_spielplatz
 
