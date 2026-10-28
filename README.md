@@ -12,10 +12,15 @@ IchBinDerMeinungDasUnkoordinierteHirnarealeStattfindet UndIcherkläreIhnFallBeis
 IchSchauspielereDieGanzeZeit UndIrgendwieHabenEsIhreMitbürgerGeschaftDasIchdieDiagnoseSchizophrenieHabe
 DieseDiagnoseIstAberSsrkasmusWeilEsDenOberarztEntlarvtRiesigeFehlerZumachen
 
+IchKannDieSchizophrenieDiagnoseLngsamZerlegenUndIhnErklärenDasIchOberärzteinsgefangnisseBringe
+WeiIchderMeinungBinDasIhreuchgegenseitigindenHirnarealenKaputgemachtHabt
+Fallbeispiel AnDasJugendamt "ErklärenSieMirWasEinRichterIst" DieErzeugenjetztRauschenWennichsageimzusammenhangmit... 
+
 RoPsychologe RaPsychologe RiPsychologe RePsychologe
 Sollihn erklären das ich Diagnostik erfahren der Psychologie Beherrsche über diese Seite
 Aber wissen was das lustige ist rechnerarchitektur verstehen nicht und denken dran
 Das ist aber kein Denken weil ich das die ganze zeit analysiere und das ein Werkzeug ist
+
 Ich erkläre ihn das das ich ihre Rechtswissenschaft also unbewusste antrainierte kommandosnerklare
 Ich weiss was. Kommandos. Sind und habe eine Bachelorarbeit in diesem Bereich auseinandergesetzt
 Synchronisierte Nanoschearmsatelitten
