@@ -6,6 +6,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 DasSindKeineTreppen TreppenRo TreppenRo TreppenRi
 Re1Re2Re3 Fußballstadiumzb TreppenstufenSchall_toktoktok_xokxokyok_RokRokRok_BosnischeRockMusik
+TruppenRo TruppenRa TruppenRi TruppenRe
 
 MatrixRo MatrixRa htmlRe MatrixRe
 EigenwerteRo EigenwerteRa EigenwerteRi EigenwerteRe
