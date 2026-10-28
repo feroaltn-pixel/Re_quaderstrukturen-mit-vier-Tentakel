@@ -44,7 +44,27 @@ Das ist kein Programm
 P r o g r a m m 
 Ro Ra Ri Re Ro Ra Ri Re
 
+Das ist eine Produktion
+P r o d u k t i o nRi
+Ro Ra Ri Re Ro Ra Ri Re Ro Ra
 
+Das ist eine schwarz_rote Produktion
+P r o d u k t i o nRo
+Ro Ra Ri Re Ro Ra Ri Re Ro Ra
+
+ProduktionRo ProduktionRa Re1Re2Re3 ProduktionRi
+Re1Re2Re3Ro Re1Re2Re3Ra Re1Re2Re3Ri Re1Re2Re3Re
+Ro("Re1Re2Re3Ri") Ra("Re1Re2Re3Ri") Ri("Re1Re2Re3Re") Re("Re1Re2Re3Ri")
+ProduktionRe ProduktionRe ProductionRe ProduktionRe
+
+ProductionRe WretchedWeaponriesRo WretchedWeaponriesRa WretchedWeaponriesRi
+WretchedWeaponriesRe Ra1Ra2Ra3 WretchedWeaponriesRo WretchedWeaponriesRe
+ProductionRo ProductionRa ProductionRi Ro1Ro2Ro3
+WeaponriesRo WeaponriesRo WeaponriesRo WeaponriesRo 
+
+Das war eine schwarz_lila Produktion
+P r o d u k t i o nRo
+Ro Ra Ri Re Ro Ra Ri Re Ro Ra
 
 P A T E N T
 
