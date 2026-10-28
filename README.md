@@ -16,6 +16,10 @@ IchKannDieSchizophrenieDiagnoseLngsamZerlegenUndIhnErklärenDasIchOberärzteinsg
 WeiIchderMeinungBinDasIhreuchgegenseitigindenHirnarealenKaputgemachtHabt
 Fallbeispiel AnDasJugendamt "ErklärenSieMirWasEinRichterIst" DieErzeugenjetztRauschenWennichsageimzusammenhangmit... 
 
+Strom Elektron Ro pfeiltastenrorarire pn Elektronro
+PhotonRo PhotonRa Re Kombination Ri lichtRa
+SabinaMachtDasLichtAn 5EuroSchein
+
 RoPsychologe RaPsychologe RiPsychologe RePsychologe
 Sollihn erklären das ich Diagnostik erfahren der Psychologie Beherrsche über diese Seite
 Aber wissen was das lustige ist rechnerarchitektur verstehen nicht und denken dran
