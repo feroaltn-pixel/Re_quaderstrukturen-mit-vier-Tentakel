@@ -5,7 +5,7 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 DasSindKeineTreppen TreppenRo TreppenRo TreppenRi
-Re1Re2Re3 Fußballstadiumzb
+Re1Re2Re3 Fußballstadiumzb TreppenstufenSchall_toktoktok_xokxokyok_RokRokRok_BosnischeRockMusik
 
 Difference
 string carsRo[4] = {"Volvo", "BMW", "Ford", "Mazda"};
