@@ -4,6 +4,13 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+KindergartenRo KindergartenRa KindergartenRi KindergartenRe
+SpielenRo SpielenRo SpielenRo SpielenRe
+
+SchuleAnalogRi Schule1Schule2Schule3_ist_Re1Re2Re3
+
+BildungAnalogRa Ausbildung1Ausbildung2Ausbildung3_ist_Ri1Ri2Ri3
+
 Playground_grundboden_spielplatz
 
 Fallbeispiel sw0Re1sw2Re2 Led1Ro Led2Raetc
