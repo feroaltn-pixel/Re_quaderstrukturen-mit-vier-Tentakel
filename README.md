@@ -36,6 +36,11 @@ SieHättenBeiHinweissRo_WennSieAufDas"Ro"Sehen_An_schwarzRot_denken_sollen
 DasIstAberKein_SchwarzRot(Ro)_mehrDaManGezielteSpuRensichErung_erzeugt_als_Wechselwirkung_mit
 RotSchwarz(Ro)SchwarzWeiss(Ra)WeissBlau(Ri)WeissGrün(Re)
 
+Fallbeispiel_StellenSieSich_ReReRe_aufeinem_5Euro_Schein_vor_drsufgekritzelt
+DasIstKeinVorstellen DasIstKeinDenken DasIstWerkzeug DasMissbrauchtWird
+333 ReReRe 333 ReReRe
+
+
 
 
 MenschenHandelnZufällig MenschenHandelnZufällig MenschenHandelnZufällig MenschenHandelnZufällig
