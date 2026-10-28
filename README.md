@@ -32,9 +32,9 @@ IchStelleIhnen_RotSchwarz(Ro)_SchwarzWeiss(Ra)_WeissGelb(Ri_)WeissGrün(Re)_Verf
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
 
 DasSind_Keine_RotSchwarz(Ro)_SchwarzWeiss(Ra)_WeissGelb(Ri)_WeissGrün(Re)_Verfahren_HinweisRo
-SieHättenBeiHinweissRo_WennSieAufDasRoSehen_An_schwarzRot_denken_sollen
-Sondern Hilfsvariablen Überbrückung Raumzeitverhalten_AnpassenRo
-RotSchwarz(Ro1)SchwarzWeiss(Ra)WeissGelb(Ri)WeissGrün(Re)
+SieHättenBeiHinweissRo_WennSieAufDas"Ro"Sehen_An_schwarzRot_denken_sollen
+DasIstAberKein_SchwarzRot(Ro)_mehrDaManGezielteSpuRensichErung_erzeugt_als_Wechselwirkung_mit
+RotSchwarz(Ro)SchwarzWeiss(Ra)WeissBlau(Ri)WeissGrün(Re)
 
 
 
