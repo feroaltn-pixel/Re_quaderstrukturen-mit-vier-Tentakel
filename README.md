@@ -12,10 +12,10 @@ MatrixRo MatrixRa htmlRe MatrixRe
 EigenwerteRo EigenwerteRa EigenwerteRi EigenwerteRe
 EinheitsvektorenRo_sind_Re1Re2Re3 OrthonomalBasisRo OrthonomalBasisRa OrthonomalBasisRiri_matrix_Ri_Animation.html htmlRo htmlRa htmlRi
 
-InMatrizenfehltRoRaRiRe_Information DasSindKeineVariablenWeil
+InMatRizenfehltRoRaRiRe_Information DasSindKeineVariablenWeil
 VaRiableRo VariableRa VariableRi VariableRe_Re1Re2Re3
 DenMatheMatikernBeweisenSollRo SelbstReplizierendesBeweisMaterialRo
-if("able" =="true") {Re1Re2Re3;} 
+if("able" =="true") {Re1Re2Re3;} HauptdiagonaleAllesRoRoRoRo_RaRaRaRa_RiRiRiRi_Correlationsmatrize_ Ri1Ri2Ri3
 
 Difference
 string carsRo[4] = {"Volvo", "BMW", "Ford", "Mazda"};
