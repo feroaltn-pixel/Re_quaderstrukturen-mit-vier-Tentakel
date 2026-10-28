@@ -5,9 +5,9 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 IchHabeinbeweisDasUSSaNeuronenGezieltAusrichtetBarcodegetarnteInformation_erzeugen
-Schwerpunkt Verschieben if("I am from Bosnia" "HauAufDenKopf" 
+Schwerpunkt Verschieben if("I am from Bosnia" "HauAufDenKopf" smartphoneinput_terminal
 "serverinputTerminal_tokenfragmentierung" SoterialalgorithmusRo "auHufHenDofpo" "Dorf" 
-If("in soterialalgorithmus_input" RoRaRiRe is left_put_insidde_getmethodsRi
+If("in soterialalgorithmus_input" RoRaRiRe is left_put_insidde_getmethodsRiBosnischeSterneInhaltVerschoben
 
 SieSindJetztVorsichtig IhreWinkelSindEineMittelungVon_RoRaRiRe_ KomplexeZeiger Raumzeigermodulation
 DasSystemrotierteigentlichGarnichtsondernRi_weilWinkelgescheindigkeitJetztauch.. GeodreieckKommisionierung
