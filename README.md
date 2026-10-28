@@ -17,6 +17,10 @@ VaRiableRo VariableRa VariableRi VariableRe_Re1Re2Re3
 DenMatheMatikernBeweisenSollRo SelbstReplizierendesBeweisMaterialRo
 if("able" =="true") {Re1Re2Re3;} HauptdiagonaleAllesRoRoRoRo_RaRaRaRa_RiRiRiRi_Correlationsmatrize_ Ri1Ri2Ri3
 
+Reptilien_Warning_SystemEbenen auf MatrixDiagonale Abbilden
+8Beamte auf MatrixDiagonale Abbilden
+8Bosnien 
+
 Difference
 string carsRo[4] = {"Volvo", "BMW", "Ford", "Mazda"};
 string ReSystems[4] = {"Volvo", "BMW", "Ford", "Mazda"};
