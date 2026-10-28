@@ -4,7 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
-Fallbeispiel
+Fallbeispiel sw0Re1sw2Re2 Led1Ro Led2Raetc
+
 IchHabeinbeweisDasUSSaNeuronenGezieltAusrichtetBarcodegetarnteInformation_erzeugen
 Schwerpunkt Verschieben if("I am from Bosnia" "HauAufDenKopf" smartphoneinput_terminal
 "serverinputTerminal_tokenfragmentierung" SoterialalgorithmusRo "auHufHenDofpo" "Dorf" 
