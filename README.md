@@ -4,6 +4,11 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Difference
+string carsRo[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+string ReSystems[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+
 KindergartenRo KindergartenRa KindergartenRi KindergartenRe
 SpielenRo SpielenRo SpielenRo SpielenRe
 
