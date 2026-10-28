@@ -4,6 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+
+
 DenkenRaSieAnEinenSpürHundRefürdieSpurenSicherung SieaDenkenRiKlassischAnIhn_braun_schwarzRi
 DasIstKeinDenkenRo DasIstKeinDenkenRaDasIstKeinDenkenRiDasIstKeinDenkenRe 
 RoRaRiReOrArIrEr_i_laute_bdgetcRi_sind_Mittelujg_vonRoRaRiRei_da_Schall_daszeichen_unterscheidet_sich_von_schall SieKonnenEntgegengesetztZurNasenRichtungAnEineWaffeDenkenOderschwsrzenPfeilunsProtokollFühren
@@ -171,6 +173,11 @@ KreisoberflächeLiegtEntgegengesetztRo SpanntImInhalt_ri_vier_Ro_Ra_Ri_Re_Mengen
 ScratchRi_dhRo_kratzenRi_aufRi_äußere_MantelflächeRi_um_markanteRi_Menge
 
 VerhaltenDerExplosion 
+
+iPolizei iPolizei Polizei iPolizei
+BNDRi BNDRi RichterRo_RichterRa_RichterRi_RichterRe BNDRi
+Ro("BNDRiRo") Ra("BNDRiRa") NDR_Ro Re("BNDRiRe") 
+38229Ro 38229Ra 38229Ri 38229Re
 
 
 
@@ -405,6 +412,23 @@ Thema_PilotRo RaumzeitverhaltenEntgegengesetzt FallBeispielTrump_AnwendenWennMan
 DasGehtAnAnalysten_weil_ich_Richtungswechsel_abrupt_erzeuge_und_systeme_entgegen_erzeuge Re1Re2Re3 Ro Ri
 DenkenWirdAndersAngewendetKomplexRi DiskutierenSieNichtRo 
 
+PilotverhaltenRi_fasse_ich_zusammenRo in Vier_RoRaRiRe _Bereiche ri_StundenlohnRo
+PilotRo PilotRa PiloxRi PilotRe
+FlugverhaltenRo FlugverhaltenRo FlugsimulationRi FlugverhaltenRe
+Drei_FlugsystemeRi_Re1Re2Re3 RichtungswechselRo_inRi_entferntestenRa_MengeRi_sehenRo EntscheidentRi Ri1Ri2Ri3
+
+AstronautverhaltenRi_fasse_ich_zusammenRo in Vier_RoRaRiRe _Bereiche ri_StundenlohnRo
+PilotRo PilotRa PiloxRi PilotRe
+FlugverhaltenRo FlugverhaltenRo FlugsimulationRi FlugverhaltenRe
+Drei_FlugsystemeRi_Re1Re2Re3 RichtungswechselRo_inRi_entferntestenRa_MengeRi_sehenRo EntscheidentRi Ri1Ri2Ri3
+
+DaZwischenIstEineLückeWeilIchPilotAstronautBinUndRaumschiffeAndersAnwende GenauSoRi Ra_ist_RaumschiffRe
+RaumschiffeRo RaumschiffRa SpacesystemRi RaumschiffRe
+TrägerraketeRo TrägerraketeRo Falcon_HeavyRi TrägerraketeRe
+DasFasstIhreRaumzeitVerhalten_zusammenRi Das_Sind_aber_ ri_keine_spaceSystemsRi
+
+Mein_Stundenlohn: RoRa,RiRe € $ Lira
+RaumschiffRo
 USARo USARo Ro USARi 
 IchAnalysiereKurzdieUSARi TrumpRa ElonMuskRi Re1Re2Re3
 Direction_changeRi1Ri2Ri3 Trump El on
