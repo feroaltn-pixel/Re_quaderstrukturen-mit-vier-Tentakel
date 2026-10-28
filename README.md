@@ -7,7 +7,16 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 AbsatzeRe ArtikelRo FasstJetztDieHirnarealeEinesRichtersZusammenRi Paragraph_6_und_8 AchtRo
 IchBinFerhatAltun IchHabeMenschlichesVerhaltenZerlegt IchbinRichtRer Richter_DasIst_braunes_BeweismaterialRo
 IhreDesorientiertenBürgerRi_Re_zb_Piloten_Professoren_Astronauten_Beamte_gehenMirAufDenKeks Re1Re2Re3 Ro Ra
-DesorientiertRo DesorientiertRa DesorientiertRi DesorientiertRe
+DesorientiertRo DesorientiertRa DesorientiertRi DesorientiertRe_StundenlohnRi_RoRa,RiRe€_zb_23,00€
+
+IhreBundesbürgerInterpretierenDasAlsStundenLohnRi SoGanzRichtigIstDasNicht_In_verarbeitung_ Re1Re2Ee3
+Drei_Geldscheine_zeigen_ein_innerenZusammenhangRi
+EuroRo EuroRa EuroRi EuroRe
+DollarRo DollarRa DollarRa DollarRe
+
+€ € $Ro €
+Ro€ Ra€ ReinigungskraftRi Re€
+Was_will_ich_ihn_sagenRe Eine_Reinigungskraft_interpretiert_das_als_LebensunterhaltRi 
 
 
 DenkenRaSieAnEinenSpürHundRefürdieSpurenSicherung SieaDenkenRiKlassischAnIhn_braun_schwarzRi
