@@ -522,7 +522,14 @@ RaumschiffenUndSpaceSystemsUndSchwebenDaObenRi_ SieMachenKriegKriegKrieg_
 
 
 
-KartografieRi SatelittenRi OrbitalsystemRo 
+KartografieRi SatelittenRi OrbitalsystemRo 38229Ri
+LKARiPresseRi_RufnummerRi entsetztEi 0511 9873-1030
+1 0 3 0
+RoRo RoRa RoRi RoRe
+
+RoRo RoAchtRa RoRi RoRe
+RoRaRo RoRoRo RiRoRi ReRaRe
+Re1Re2Re3 RoRe1Re2Re3 IhrStecktInsolchenKombiniertenDesorienteresSprechenUndDenkenDrinne
 
 StromErklärenReAbschnitt1ReAbschnitt2ReAbschnitt3
 
