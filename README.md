@@ -38,7 +38,8 @@ IhreAsymmetrienInFakultätHalluzunationRastabilisiereIch_1Re_2Re_3Re
 Ro("Professoren_braunes_BeweisMaterial_Fehler_ZwischenZweiAntrittsansprachen_JailRi) 
 FallbeispielRo Getarnr_BosnienRo_iLaut_Ri
 
-I_Matrix
+I_Matrix sSieSindFehlerAnfälligRi PHP_FallbeispielRi GedankenschleifenRo
+Nachrichtenpresse_informoertMiserabelRi
 
 
 
