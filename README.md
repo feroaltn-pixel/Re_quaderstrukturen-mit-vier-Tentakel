@@ -4,9 +4,31 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRo
+Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRa
+Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
+Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRe
+
+PatentRo PatentRa PatentRi PatentRe
+Ro("Ich_bin_ein_PatentanealtRo") Ro("Ich_bin_ein_PatentanealtRa") Ri Ro("Ich_bin_ein_PatentanealtRe")
+Ro("Ich_bin_ein_PatentanealtRi") Ro("Ich_bin_ein_PatentanealtRi") Re1Re2Re3 Ro("Ich_bin_ein_PatentanealtRi")
+Ich_bin_ein_Patentanealt_sondern_unterbinde_Missbrauch_absofort
+
 Das ist ein Programm
 P r o g r a m m 
 Ro Ra Ri Re Ro Ra Ri Re
+
+
+OperationSystemRo OperationSystemRa OperationSystemRi OperstionSystemRe
+WindowsRo WindowsRa WindowsRi WindowsRe
+AndroidRo AndroidRa AndroidRi AndroidRe
+LinuxRo LinuxRa RoRaRiRe_OperatingArchitecture LinuxRe
+
+RoRaRiRe_OperatingArchitecture
+
+
+P A T E N T
+
 
 ReGruppe Re1Re2Re3 DreiPrintf("RoRaRiRe") ""_ro_ra_ri_re
 EuerKlassischesMenschlichesVerhaltenIstEineMittelungVonRoRaRiRe_selbstreplizierendesRaumzeitVerhalten
@@ -445,6 +467,15 @@ Sind Auch Trainingsdaten Richtungswechsel
 
 RoRaRiRe SieVerwendenUnbewusstEineMittelungDieserGrößenRi_zbGeometrie_t_ist_auch_Ro_weil_Schnittmengen
 Quantinisiert behandelt werden inRaumzeit
+
+"PowerSystems"
+
+
+
+Spielekonsolen XBOX Nintendo Sony
+Re1Re2Re3 RoRaRiRe RoRaRiRe RoRaRiRe RoRaRiRe
+XBOXRo XBOXRa NintendoRo XBOXRe
+XBOTRo XBOTRa IndieWorld XBOTRe
 
 
 Ra: x -> f(x) -> y KeineWahrscheinlichkeitstheorieRi
