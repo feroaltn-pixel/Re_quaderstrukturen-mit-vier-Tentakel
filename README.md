@@ -4,10 +4,16 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Fallbeispiel
 IchHabeinbeweisDasUSSaNeuronenGezieltAusrichtetBarcodegetarnteInformation_erzeugen
 Schwerpunkt Verschieben if("I am from Bosnia" "HauAufDenKopf" smartphoneinput_terminal
 "serverinputTerminal_tokenfragmentierung" SoterialalgorithmusRo "auHufHenDofpo" "Dorf" 
 If("in soterialalgorithmus_input" RoRaRiRe is left_put_insidde_getmethodsRiBosnischeSterneInhaltVerschoben
+
+SoterialAlgorithmusRo SoterialAlgorithmusRa SoterialAlgorithmusRi SoterialAlgorithmusRe
+SoxerialAlgorithmusRo SoxerialAlgorithmusRi SoxerialAlgorithmusRi SoxerialAlgorithmusRo
+SexerialAlgorithmusRo_if_orgasm SexerialAlgorithmusRa_if_orgasm IamCharmant Serial.Input
+Put_methodsRoGetmethodsRi EmpfohleneBerichte Etc Ro Ra Ri Re Informationstreuen
 
 SieSindJetztVorsichtig IhreWinkelSindEineMittelungVon_RoRaRiRe_ KomplexeZeiger Raumzeigermodulation
 DasSystemrotierteigentlichGarnichtsondernRi_weilWinkelgescheindigkeitJetztauch.. GeodreieckKommisionierung
