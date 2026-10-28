@@ -4,6 +4,59 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+ReGruppe Re1Re2Re3 DreiPrintf("RoRaRiRe") ""_ro_ra_ri_re
+EuerKlassischesMenschlichesVerhaltenIstEineMittelungVonRoRaRiRe_selbstreplizierendesRaumzeitVerhalten
+J U R A
+Ro Ra Ri Re
+
+printf("Das_ist_ein_f_auf_einer_roten_Ebene") 0000 1111 RoRaRiRe 0101
+printf("Das_ist_ein_t_auf_einer_schwarzen_Ebene") 0001 RiRiRiRi RaRaRaRa
+printf("Das_ist_eine_beeinträchtigte_Person_auf_einem_Bett_liegend") Pflegegrad5 BettRo BettRa
+Re1Re2Re3 BettRi BettRe BeerdigungRo_BeerdigungRa_BeerdigungRi_BeerdigungRe
+
+printf("SieHättenNachDreiPrintf_AufhörenSollen_WeilEsEineAufforderung_seinKönnte")
+printf("Ich_mutiere_langsam_diesen_Inhalt_in_ein_außerirdischen_Wahn") 
+printf("Ich_bin_RichtRer_und_nicht_Richter_Richter1Richter2Richter3") 
+Re1Re2Re3 DreiBegleiteteUmgängeSindFehlerhaft_Weil_unbewusstRo_dasBewusstRa_ist_Ich_bin_Schauspieler
+
+printf("Das_ist_eine_variable_x_auf_einer_BlauenEbene") 
+printf("Das_ist_eine_Rose_aus_einer_anderen_Perspektive__auf_einer_GrünenEbene") 
+printf("Das_ist_eine_Skalarfunktion_auf_einem_Vektorfeld") 
+Re1Re2Re3 
+
+printf("Das_ist_ein_Balun_auf_einer_weissen_Ebene") 
+printf("In_Drei_Wissenschaftlichen_Arbeiten_aus_einem_Institut_sind_Fehleranhäufungen") 
+printf("UniversitätRo_UniversitätRa_UniversitätRi_UniversitätRe_Sind_gemeinsames_RoRaRiRe_Spiel")Ro Ra Ri Re
+Re1Re2Re3
+
+printf("Ich_mach_es_kurz_und_knapp_Ro_Ra_Ri_Re_auf_einer_lila_Ebene") 
+printf("SieErzeugenFehlerhafteAnhäufungenImRaumZeitverhalten_lege_zb_Spielzeug_auf_gelbe_Ebene") 
+printf("Das_ist_meine_Schizophrenie_die_ich_jetzt_genetisch_Algorithmisch_mutiere") 
+Re1Re2Re3
+
+print("Ich_nenne_dieses_Verfahren_Grundbodenwechsel_EsKannAuchAndersOhneComputerAngewendetWerden") 
+printf("Ab_Hier_umzingel_Ich_Richter") 
+printf("Ich_bin_RichtRer_auf_einer_Ri_Ebene") 
+Re1Re2Re3
+
+printf("Das_ist_die_PKK_oder_Bosnische_Flagge_auf_einer_grünen_Ebene") 
+printf("Beispiele_um_in_ihnen_SchizophrenieRo_SchizophrenieRa_SchizophrenieRi_SchizophrenieRe") er zeug en
+printf("Das_ist_kein_Spielzeug_sondern_Ausrichtung_von_20Behördenfahrzeugen_DreiFehlerhaft")
+printf("Tentakel1_Ausgerichtet_alsFahrzeug1Verhalten_Tentakel2ausgerichtetalsFahrzeugVerhalten2") 
+
+printf("Tentakelausrichtung3und4_varrieren_zwischen_drittenFahrzeug_dynamisch_") 
+printf("Sie_erzeugen_wiederholend_unbewusst_Richtungswechsel_inDreierSystemen_FehlerhaftRi") 
+printf("WissenschaftlicheArbeit1WissenschaftlicheArbeit2WissenschaftlicheArbeit3_equivalent")
+
+printf("FürSabina:Pflegedokumentation1Pflegedokumentation2Pflegedokumentation3") 
+
+
+
+
+DasSystemMutiertSelbstreplizierendInEineSarkastischeInvasion
+
+
+
 AbsatzeRe ArtikelRo FasstJetztDieHirnarealeEinesRichtersZusammenRi Paragraph_6_und_8 AchtRo
 IchBinFerhatAltun IchHabeMenschlichesVerhaltenZerlegt IchbinRichtRer Richter_DasIst_braunes_BeweismaterialRo
 IhreDesorientiertenBürgerRi_Re_zb_Piloten_Professoren_Astronauten_Beamte_gehenMirAufDenKeks Re1Re2Re3 Ro Ra
