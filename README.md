@@ -4,6 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Playground_grundboden_spielplatz
+
 Fallbeispiel sw0Re1sw2Re2 Led1Ro Led2Raetc
 
 RTOSRo RXOs RRaOS IOT
