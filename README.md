@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+IchStelleIhnenRoRaRiRe_Verfahren_vor IchStelleIhnenRoRaRiRe_Verfahren_vor Re1Re2Re3 RoRaRiRe     IchStelleIhnenRoRaRiRe_Verfahren_vor IchStelleIhnenRoRaRiRe_Verfahren_vor Re1Re2Re3 RoRaRiRe
+IchStelleIhnenRotSchwarz(Ro)SchwarzWeiss(Ra)WeissGelb(Ri)WeissGrün(Re)_Verfahren_vor
+IchbinFerhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
+
 ReGruppe Re1Re2Re3 DreiPrintf("RoRaRiRe") ""_ro_ra_ri_re
 EuerKlassischesMenschlichesVerhaltenIstEineMittelungVonRoRaRiRe_selbstreplizierendesRaumzeitVerhalten
 J U R A
@@ -34,7 +38,7 @@ printf("SieErzeugenFehlerhafteAnhäufungenImRaumZeitverhalten_lege_zb_Spielzeug_
 printf("Das_ist_meine_Schizophrenie_die_ich_jetzt_genetisch_Algorithmisch_mutiere") 
 Re1Re2Re3
 
-print("Ich_nenne_dieses_Verfahren_Grundbodenwechsel_EsKannAuchAndersOhneComputerAngewendetWerden") 
+print("Ich_nenne_dieses_Verfahren_GrundbodenwechselRo_EsKannAuchAndersOhneVerfahrenAngewendetWerden") 
 printf("Ab_Hier_umzingel_Ich_Richter") 
 printf("Ich_bin_RichtRer_auf_einer_Ri_Ebene") 
 Re1Re2Re3
@@ -50,7 +54,7 @@ printf("WissenschaftlicheArbeit1WissenschaftlicheArbeit2WissenschaftlicheArbeit3
 
 printf("FürSabina:Pflegedokumentation1Pflegedokumentation2Pflegedokumentation3") 
 printf("Ich_bin_kein_PhysikerRi_GalayixieRo_liegt_auf_einer_gekrümmtenRaumzeit") 
-printf("CharmanterMann_Wie_Ich_Auf_einer_lila_Ebene_") 
+printf("CharmanterMann_Wie_Ich_Auf_einer_lila_Ebene_stehe") 
 
 printf("Die_Psychologen_machen_unbewusst_in_drei_Wörtern_aufeinanderfolgend_FehlerRi") 
 printf("Die_Richter_machen_unbewusst_in_drei_Wörtern_aufeinanderfolgend_FehlerRi") 
@@ -59,6 +63,21 @@ printf("Re1Re2Re3_sind_selbstreplizierende_Hilfsvariablen_")
 printf("Re_kommt_auch_inVater_oder_Mutter_vor_vertauscht_als_er") 
 printf("Sabine_Keric_trägt_Ri_vertauscht_als_ir_Ihr_ward_heute_nicht_bei_BU_28.10.2024")
 printf("SchizophrenieRo_auf_einer_roten_Ebene") 
+
+printf("Die_Ingenieure_machen_unbewusst_in_drei_Systemen_aufeinanderfolgend_FehlerRi") 
+printf("Die_Prodessoren_machen_unbewusst_in_drei_RiAspekten_aufeinanderfolgend_FehlerRi") 
+printf("Die_Psychologen_machen_unbewusst_in_drei_Wörtern_aufeinanderfolgend_FehlerRi") 
+printf("Die_Eltern_machen_unbewusst_in_drei_Wörtern_aufeinanderfolgend_FehlerRi") 
+
+Fallbeispiel: SchizophrenieAussprechen_AnDiePsychologen
+Schi zoph Re nie
+RoRaRiRe RoRaRiRe ReRoRaRi Ich_erzeuge_selbstreplizierendes_braunes_Beweismaterial
+Ihr_habt_desorientiertes_denken_und_sprechen_weilDasKeinDenkenUndSprechenIst
+
+DenkenRo DenkenRa DenkenRi DenkenaRe
+DenkAnEineRoteEcke_und_interpretiere_es_als_Richtungswechsel_aufstehen_und_denken_anwenden_alsRa
+RaIstEineHilfsbezeichnung_Das_denken_ein_Werkzeug_ist
+WerkzeugRo WerkzeugRa WerkzeugRi WerkzeugRe
 
 printf("Ich_bin_immer_wieder_in_Liebenburg_weil_ich_Char_mant_RoRaRiRe_bin") 
 printf("IchBinCharmantIchBinCharmant_LaserLaserWindowWindow_aufGrünerEbene")
@@ -89,7 +108,6 @@ printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebe
 printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebene_liegt")Ro Re1Re2Re3 Ra Re
 Barcodes_Explosionen 0110 0112 IchBinRichtRer
 
-
 printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebene_liegt")Ra Re1Re2Re3 Ri Re
 printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebene_liegt")Ra Ro Ra Ri
 printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebene_liegt")Ra Re1Re2Re3 Ra Re
@@ -99,6 +117,43 @@ printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebe
 printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebene_liegt")Re Ro Ra Ri
 printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebene_liegt")Re Re1Re2Re3 Ra Re
 Barcodes_Explosionen 0110 0112 IchBinRichtRer
+
+SelbstReplizierendesBeweisMaterialRo SelbstReplizierendesBeweisMaterialRo IchBinEineRaumschiffSpezies Re
+Raumschiffspezies1 Raumschiffspezies2 DasIstGarKeinRsumschiffRi Raumschiffspezies3
+RaumschiffRo RaumschiffRa DreiRaumschiffe_Drei_Unbewusste_Raumzeitverhalten_Re1Re2Re3 Ra
+EineTentakelZeigtRichtungRaumschiff1EineTentakelRichtungRaumschiff2EineTentakelvarriertbeiRaumschiff3 1 2 3
+
+1 2 3 4
+Ro Ra Ri Re
+JuristischeVerfahrenRo JuristischeVerfahrenRa JuristischeVerfahrenRi JuristischeVerfahrenRe
+Paragraph_6_und_8_reichen IchbinRichtRer 6Ro6Ra6Ri6Re IstNichtSechsMalRi
+
+5Mal2ergibt10 FalschRi Null Zero
+N U L L
+0 0 0 0
+0RoRaRiRe 0RoRaRiRe 0RoRaRiRe 0RoRaRiRe
+
+Richter_und_Anwälte_Ich_habe_Menschliches_Verhalten_zerlegt_in_Raumzeitverhalten_spektrumähnlich_besser Re Re
+Sie_sind_Fehleranfällig_sobald_Sie_drei_Wörter_verwenden_gegen_mich
+Wort1Ro Wort2Ra BeweisRi Wort3Re
+KriegRo KriegRa Ro("Drei_Fotos_sind_nicht_mehr_drei_fotos") KriegRi
+
+StringRo StringRa StringRi StringRe
+CharRo CharRa CharRi CharRe
+StructureRo StructureRa StructureRi StructureRe
+MittelungVonRoRaRiReRo MittelungVonRoRaRiReRa MittelungVonRoRaRiReRi MittelungVonRoRaRiReRe
+
+SieSindFehleranfälligInAlgorithmen DreiAlgorithmen_aus_gleicher_Quelle_TragenUnbewusstEinFehler Re1Re2Re3 Ri
+Gewaltschutzverfahren Diagnostischeverfahren RoRaRiReVerfahren BeeinträchtigteVerfahren
+RoRaRiRe_Verfahren_sind_meine_VerfahrenRi IrgendwozwischenRoRaRiRe IrgendwozwischenRoRaRiRe Re1Re2Re3
+RaumschiffverfahrenRo RaumschiffverfahrenRa RaumschiffverfahrenRi RaumschiffverfahrenRe
+
+
+
+
+
+
+
 
 
 
