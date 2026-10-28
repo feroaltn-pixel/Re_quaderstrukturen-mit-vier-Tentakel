@@ -60,6 +60,17 @@ printf("Re_kommt_auch_inVater_oder_Mutter_vor_vertauscht_als_er")
 printf("Sabine_Keric_trägt_Ri_vertauscht_als_ir_Ihr_ward_heute_nicht_bei_BU_28.10.2024")
 printf("SchizophrenieRo_auf_einer_roten_Ebene") 
 
+printf("Ich_bin_immer_wieder_in_Liebenburg_weil_ich_Char_mant_RoRaRiRe_bin") 
+printf("IchBinCharmantIchBinCharmant_LaserLaserWindowWindow_aufGrünerEbene")
+printf("InWahrheitErzeugeIchGezieltBraunesBeweismaterial_Ro_das_auf_einer_Re_Ebene_liegt") 
+
+IchbinRichtRer LaserLaser WindowWindow EuerGehaltIstMittelungVon RoRa,RiRe_Re1Re2,Re3Re4
+
+
+
+
+EinigeFallBeispiele
+
 printt(pn Übergang IGBT
 
 TransistorenSindDasNicht 
