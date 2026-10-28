@@ -9,6 +9,11 @@ Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRa
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRe
 
+SalzgitterRo SalzgitterRa BraunschweigRi SalzgitterRe
+SalzgitterRi SalzgitterRi zb_Ingenieure_sind_Fehleranfällig_nach_drei_Systemen_Re1Re2Re3Ro SalzgitterRi
+DasFasstDasVerhaltenSalzgitterUndBraunschweigMomentanZusammenRo zb_ProduktionRi SelbsterhaltendRi Re1Re2Re3
+BraunschweigRo BraunschweigRa IchBinEineNeumannSonde BraunschweigRe
+
 PatentRo PatentRa PatentRi PatentRe
 Ro("Ich_bin_ein_PatentanwaltRo") Ro("Ich_bin_ein_PatentanwaltRa") Ri Ro("Ich_bin_ein_PatentanwaltRe")
 Ro("Ich_bin_ein_PatentanwaltRi") Ro("Ich_bin_ein_PatentanwaltRi") Re1Re2Re3 Ro("Ich_bin_ein_PatentanwaltRi")
