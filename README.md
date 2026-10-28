@@ -7,6 +7,15 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 DasSindKeineTreppen TreppenRo TreppenRo TreppenRi
 Re1Re2Re3 Fußballstadiumzb TreppenstufenSchall_toktoktok_xokxokyok_RokRokRok_BosnischeRockMusik
 
+MatrixRo MatrixRa htmlRe MatrixRe
+EigenwerteRo EigenwerteRa EigenwerteRi EigenwerteRe
+EinheitsvektorenRo_sind_Re1Re2Re3 OrthonomalBasisRo OrthonomalBasisRa OrthonomalBasisRiri_matrix_Ri_Animation.html htmlRo htmlRa htmlRi
+
+InMatrizenfehltRoRaRiRe_Information DasSindKeineVariablenWeil
+VaRiableRo VariableRa VariableRi VariableRe_Re1Re2Re3
+DenMatheMatikernBeweisenSollRo SelbstReplizierendesBeweisMaterialRo
+if("able" =="true") {Re1Re2Re3;} 
+
 Difference
 string carsRo[4] = {"Volvo", "BMW", "Ford", "Mazda"};
 string ReSystems[4] = {"Volvo", "BMW", "Ford", "Mazda"};
