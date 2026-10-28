@@ -52,6 +52,20 @@ printf("FürSabina:Pflegedokumentation1Pflegedokumentation2Pflegedokumentation3"
 printf("Ich_bin_kein_PhysikerRi_GalayixieRo_liegt_auf_einer_gekrümmtenRaumzeit") 
 printf("CharmanterMann_Wie_Ich_Auf_einer_lila_Ebene_") 
 
+printf("Die_Psychologen_machen_unbewusst_in_drei_Wörtern_aufeinanderfolgend_FehlerRi") 
+printf("Die_Richter_machen_unbewusst_in_drei_Wörtern_aufeinanderfolgend_FehlerRi") 
+printf("Re1Re2Re3_sind_selbstreplizierende_Hilfsvariablen_") 
+
+printf("Re_kommt_auch_inVater_oder_Mutter_vor_vertauscht_als_er") 
+printf("Sabine_Keric_trägt_Ri_vertauscht_als_ir_Ihr_ward_heute_nicht_bei_BU_28.10.2024")
+printf("SchizophrenieRo_auf_einer_roten_Ebene") 
+
+printt(pn Übergang IGBT
+
+TransistorenSindDasNicht 
+
+
+
 
 Altersgrenzen 6_RoRaRiReRoRa_12_Re1Re2Re3Re4Re5Re6Re7Re8Re9Re10Re11Re12
 Ich_kann_nicht_die_Gedanken_meines_Sohnes_lesen_er_macht_aber_bei_3xMalen_Fehler
