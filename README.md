@@ -14,6 +14,18 @@ Ro("Ich_bin_ein_PatentanwaltRo") Ro("Ich_bin_ein_PatentanwaltRa") Ri Ro("Ich_bin
 Ro("Ich_bin_ein_PatentanwaltRi") Ro("Ich_bin_ein_PatentanwaltRi") Re1Re2Re3 Ro("Ich_bin_ein_PatentanwaltRi")
 OptimierungsproblemRo OptimierungsproblemRa OptimierungsproblemRi OptimierungsproblemRe
 
+IchBinKeinPatentanwalt IchUmgeheAnwaltzwang IchbinRichtRer IchUmgeheAnwaltzwang
+AnwaltRo AnwaltRa RichterRo AnwaltRi
+HalluzunationRo HalluzunationRa AbsurdeBegriffe_zb:_Gedankenentzug_Gedankenschleifen_etc HalluzunationRe
+NationRo NationRa I_am_a_NationRe NationRe
+
+I_am_a_NationRe I_am_a_NationRe USARi I_am_a_NationRe
+Ro1Ro2Ro3 Ra1Ra2Ra3 Ri1Ri2Ri3 Re1Re2Re3 
+JudgeRo JudgeRo I_will_now_judge_about_Planet_Earth JudgeRo
+WretchedWeaponriesRi WretchedWeaponriesRi Wretched_weaponry.Gedankenlesen.stgb WretchedWeaponriesRi 
+
+
+
 Das ist ein Programm
 P r o g r a m m 
 Ro Ra Ri Re Ro Ra Ri Re
