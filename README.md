@@ -12,6 +12,9 @@ Beispiel_Bosnien_USARi IAmFromBosniaZerlegenInRe1Re2Re3_undRückkoppeln
 Dubioza Kolektiv - I Am from Bosnia - Take Me to America (Official video)
 IAmFromBosnia_is_RoRaRiRePattern_IanalyseEverything_ ImmerWennSieBallhalten_diagonalRoRaRiReEntgegen Ri Ri
 
+LebensmittelRi Obst Gemüse Aldi 14UhrObstGemuseRaus
+Aldi Kommisionierung Teigwaren
+
 
 SOFTWAREImplementation SieHalluzunierenAnwendungenRi egLabyrinhIstDasNichtRi egKartenSpielIstDasNicht
 AuchIhreKartenSpieleet basierenUnbewusstAufaroRaRiReExperimentFunktionen_versuche_ich_auszurichten_als_system
