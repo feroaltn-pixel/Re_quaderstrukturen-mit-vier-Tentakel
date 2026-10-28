@@ -6,7 +6,27 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 Edit mail_profilaufrufRi_enum_interface
 
-Richter Richter IchbinRichtRer Richter
+Quaderstrukturen-ozean.htmlRo Quaderstrukturen-ozean.htmlRa Re1Re2Re3 Quaderstrukturen-ozean.htmlRe
+Re1Re2Re3 Re1Re2Re3 Re1Re2Re3RiRo Re1Re2Re3
+
+
+htmlRo htmlRa html htmlRe
+html html hRo html
+hRo hRo hRa hRo
+t m Ro RaRiRe
+
+
+EmailRo EmailRa Email1Email2Email3 EmailRe
+Gmail.com Web.de Fero.altn@web.de 
+Fero.Altn@gmail.com
+
+Neurodermitis Schuppenflächte_keinilautAuffallend Krätze_keinilautAuffallend
+DexerL Richter Richter IchbinRichtRer Richter
+CoronaRo CoronaRa CoronaRi CoronaRe
+Ri_beschreibtAnalyseWerkzeugUmCoronazuBeobachtenzb_CoronaRe_zbCoronaPositivtest12etcCoronaRo_lila_rotRo
+
+RKIRo RKIRa RKIRi RKIRe
+
 IchVerweiseAufLücken IchVerweiseDaraufDasIchdesorientiertesSprechenUndDenkenBeobachte_
 IchBinDerMeinungDasUnkoordinierteHirnarealeStattfindet UndIcherkläreIhnFallBeispiel
 IchSchauspielereDieGanzeZeit UndIrgendwieHabenEsIhreMitbürgerGeschaftDasIchdieDiagnoseSchizophrenieHabe
