@@ -1079,8 +1079,7 @@ ZbEntwicklerImFitnessBereichRi Radev RiDev PythonRo
 CRoRo_ist_jetzt_ReStrukturenErweiterungAufBasisC++Ri HTMLRo UTF-Ri ASCIRoRoRiRoRaRaReRRiReReRe Javao(x)
 
 HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieJusristenetcNennen_BeispieleRi
-E-AkteRo HandelsüberschussRi
-
+E-AkteRo HandelsüberschussRi DemonstrantenSagen_"nazis_raus"Ro_PolizeiMarschRi_Re1Re2Re3
 
 
 
