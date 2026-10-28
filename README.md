@@ -49,6 +49,8 @@ printf("Sie_erzeugen_wiederholend_unbewusst_Richtungswechsel_inDreierSystemen_Fe
 printf("WissenschaftlicheArbeit1WissenschaftlicheArbeit2WissenschaftlicheArbeit3_equivalent")
 
 printf("FürSabina:Pflegedokumentation1Pflegedokumentation2Pflegedokumentation3") 
+printf("Ich_bin_kein_PhysikerRi_GalayixieRo_liegt_auf_einer_gekrümmtenRaumzeit") 
+printf("CharmantePflegefach_Auf_einer_lila_Ebene_Haram") 
 
 
 Altersgrenzen 6_RoRaRiReRoRa_12_Re1Re2Re3Re4Re5Re6Re7Re8Re9Re10Re11Re12
