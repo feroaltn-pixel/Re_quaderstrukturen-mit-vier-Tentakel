@@ -50,6 +50,7 @@ RoRaRiReRo RoRaRiReRo RoRaRiReRo RoRaRiReRo
 
 ZeichneAufEin_5_EuroSchein_erst_nachdem_du_zweiMal_zb_dir_etwas_gekauft_hast_zb_Eis_folgendes_drauf Re Re Re
 Frag_dann_deine_Anwältin_was_das_ist_Wenn_Sie_dich_weiterleitet_sagst_du 
+Ich_wende_jetzt_Grundbodenwechsel_an
 
 
 
