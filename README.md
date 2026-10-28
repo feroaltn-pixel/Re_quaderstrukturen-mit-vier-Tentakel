@@ -6,6 +6,25 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 Edit mail_profilaufrufRi_enum_interface
 
+Richter Richter IchbinRichtRer Richter
+IchVerweiseAufLücken IchVerweiseDaraufDasIchdesorientiertesSprechenUndDenkenBeobachte_
+IchBinDerMeinungDasUnkoordinierteHirnarealeStattfindet UndIcherkläreIhnFallBeispiel
+IchSchauspielereDieGanzeZeit UndIrgendwieHabenEsIhreMitbürgerGeschaftDasIchdieDiagnoseSchizophrenieHabe
+DieseDiagnoseIstAberSsrkasmusWeilEsDenOberarztEntlarvtRiesigeFehlerZumachen
+
+RoPsychologe RaPsychologe RiPsychologe RePsychologe
+Sollihn erklären das ich Diagnostik erfahren der Psychologie Beherrsche über diese Seite
+Aber wissen was das lustige ist rechnerarchitektur verstehen nicht und denken dran
+Das ist aber kein Denken weil ich das die ganze zeit analysiere und das ein Werkzeug ist
+Ich erkläre ihn das das ich ihre Rechtswissenschaft also unbewusste antrainierte kommandosnerklare
+Ich weiss was. Kommandos. Sind und habe eine Bachelorarbeit in diesem Bereich auseinandergesetzt
+Synchronisierte Nanoschearmsatelitten
+
+
+
+AsymmetrienBeamteInstituteFakultätenEieIchdss)löseTUBssolbittestellungnehmen
+StromRo Elektron Ro current HzRo HzRaHzRi HzRe
+
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRo
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRa
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
