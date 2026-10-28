@@ -66,6 +66,23 @@ Das war eine schwarz_lila Produktion
 P r o d u k t i o nRo
 Ro Ra Ri Re Ro Ra Ri Re Ro Ra
 
+Das ist eine schwarz_rote BanknotenProduktion
+P r o d u k t i o nRo
+Ro Ra Ri Re Ro Ra Ri Re Ro Ra
+
+EuropäischeZentralbank Re1Re2Re3 100€ Ra1Ra2Ra3
+BanknotenRo BanknotenRa RoBanknote BanknotenRe
+RoBanknote RoBanknote Re1Re2Re3_scratch_inside_ri_kreuz_16spurig_ro.svg RoBanknote
+RaBanknote RiBanknote Ro("RoSchein||RaSchein||RiSchein||Re Schein") ReBanknote
+
+Das war eine schwarz_lila BanknotenProduktion
+P r o d u k t i o nRo
+Ro Ra Ri Re Ro Ra Ri Re Ro Ra
+
+
+
+
+
 P A T E N T
 
 
@@ -105,7 +122,7 @@ DasIstKeinVorstellen DasIstKeinDenken DasIstWerkzeug DasMissbrauchtWird
 
 
 MenschenHandelnZufällig MenschenHandelnZufällig MenschenHandelnZufällig MenschenHandelnZufällig
-DiesesVerfahrenBeinhaltet_KlassischeAusbildungen_Studiengänge_Herangehensweisen_(Ri) 
+DiesesVe rfahrenBeinhaltet_KlassischeAusbildungen_Studiengänge_Herangehensweisen_(Ri) 
 IchbinRichtRer IchbinRichtRer IchBinRichtRer IchBinRichtRer
 WennIchSchwarzWeissKombinationenSehe_DenkeIchAn_"Ra"_Das_ist_eine_Hilfsbezeichnung
 
