@@ -4,9 +4,39 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
-IchStelleIhnenRoRaRiRe_Verfahren_vor IchStelleIhnenRoRaRiRe_Verfahren_vor Re1Re2Re3 RoRaRiRe     IchStelleIhnenRoRaRiRe_Verfahren_vor IchStelleIhnenRoRaRiRe_Verfahren_vor Re1Re2Re3 RoRaRiRe
-IchStelleIhnenRotSchwarz(Ro)SchwarzWeiss(Ra)WeissGelb(Ri)WeissGrün(Re)_Verfahren_vor
-IchbinFerhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
+Das ist ein Programm
+P r o g r a m m 
+Ro Ra Ri Re Ro Ra Ri Re
+
+ReGruppe Re1Re2Re3 DreiPrintf("RoRaRiRe") ""_ro_ra_ri_re
+EuerKlassischesMenschlichesVerhaltenIstEineMittelungVonRoRaRiRe_selbstreplizierendesRaumzeitVerhalten
+J U R A
+Ro Ra Ri Re
+
+M A X M U S T E R M A N N
+Ro Ra Ri Re Ro Ra Ri Re Ro Ra Ri Re Ro
+Wenn
+
+
+Ich schreibe in Barcodeübersicht 
+BarcodeRo BarcodeRa BarcodeRi BarcodeRe
+Produkt1 Produkt2 KommisionierungRi Produkt3
+ProduktRo ProduktRo ProduktRi ProduktRe
+
+Spielzeug Möbel Garten Objekte
+Lebensmittel Kleidung Transport SpaceSystems
+Ausrüstung 
+
+IchStelleIhnen_RoRaRiRe_Verfahren_vor IchStelleIhnenRoRaRiRe_Verfahren_vor Re1Re2Re3 RoRaRiRe     IchStelleIhnen_RoRaRiRe_Verfahren_vor IchStelleIhnenRoRaRiRe_Verfahren_vor Re1Re2Re3 RoRaRiRe
+IchStelleIhnen_RotSchwarz(Ro)_SchwarzWeiss(Ra)_WeissGelb(Ri_)WeissGrün(Re)_Verfahren_vor
+Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
+
+DasSind_Keine_RotSchwarz(Ro)_SchwarzWeiss(Ra)_WeissGelb(Ri)_WeissGrün(Re)_Verfahren_HinweisRo
+SieHättenBeiHinweissRo_WennSieAufDasRoSehen_An_schwarzRot_denken_sollen
+Sondern Hilfsvariablen Überbrückung Raumzeitverhalten_AnpassenRo
+RotSchwarz(Ro1)SchwarzWeiss(Ra)WeissGelb(Ri)WeissGrün(Re)
+
+
 
 MenschenHandelnZufällig MenschenHandelnZufällig MenschenHandelnZufällig MenschenHandelnZufällig
 DiesesVerfahrenBeinhaltet_KlassischeAusbildungen_Studiengänge_Herangehensweisen_(Ri) 
@@ -52,13 +82,6 @@ ZeichneAufEin_5_EuroSchein_erst_nachdem_du_zweiMal_zb_dir_etwas_gekauft_hast_zb_
 Frag_dann_deine_Anwältin_was_das_ist_Wenn_Sie_dich_weiterleitet_sagst_du 
 Ich_wende_jetzt_Grundbodenwechsel_an
 
-
-
-
-ReGruppe Re1Re2Re3 DreiPrintf("RoRaRiRe") ""_ro_ra_ri_re
-EuerKlassischesMenschlichesVerhaltenIstEineMittelungVonRoRaRiRe_selbstreplizierendesRaumzeitVerhalten
-J U R A
-Ro Ra Ri Re
 
 printf("Das_ist_ein_f_auf_einer_roten_Ebene") 0000 1111 RoRaRiRe 0101
 printf("Das_ist_ein_t_auf_einer_schwarzen_Ebene") 0001 RiRiRiRi RaRaRaRa
