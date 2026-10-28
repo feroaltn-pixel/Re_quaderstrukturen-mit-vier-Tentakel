@@ -348,6 +348,10 @@ Gewaltschutzverfahren Diagnostischeverfahren RoRaRiReVerfahren BeeinträchtigteV
 RoRaRiRe_Verfahren_sind_meine_VerfahrenRi IrgendwozwischenRoRaRiRe IrgendwozwischenRoRaRiRe Re1Re2Re3
 RaumschiffverfahrenRo RaumschiffverfahrenRa RaumschiffverfahrenRi RaumschiffverfahrenRe
 
+FotoRo FotoRa FotoRi FotoRe
+PhotoRo PhotoRa PhoxonRi PhotoRe
+PhoxonRo PhoxonRo PhoxonRo PhoxonRo
+PhotonRo PhotonRa PhotonRe PhotonRo
 
 
 
