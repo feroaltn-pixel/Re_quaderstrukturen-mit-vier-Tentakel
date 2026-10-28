@@ -10,21 +10,28 @@ Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRe
 
 PatentRo PatentRa PatentRi PatentRe
-Ro("Ich_bin_ein_PatentanealtRo") Ro("Ich_bin_ein_PatentanealtRa") Ri Ro("Ich_bin_ein_PatentanealtRe")
-Ro("Ich_bin_ein_PatentanealtRi") Ro("Ich_bin_ein_PatentanealtRi") Re1Re2Re3 Ro("Ich_bin_ein_PatentanealtRi")
-Ich_bin_ein_Patentanealt_sondern_unterbinde_Missbrauch_absofort
+Ro("Ich_bin_ein_PatentanwaltRo") Ro("Ich_bin_ein_PatentanwaltRa") Ri Ro("Ich_bin_ein_PatentanwaltRe")
+Ro("Ich_bin_ein_PatentanwaltRi") Ro("Ich_bin_ein_PatentanwaltRi") Re1Re2Re3 Ro("Ich_bin_ein_PatentanwaltRi")
+OptimierungsproblemRo OptimierungsproblemRa OptimierungsproblemRi OptimierungsproblemRe
 
 Das ist ein Programm
 P r o g r a m m 
 Ro Ra Ri Re Ro Ra Ri Re
-
 
 OperationSystemRo OperationSystemRa OperationSystemRi OperstionSystemRe
 WindowsRo WindowsRa WindowsRi WindowsRe
 AndroidRo AndroidRa AndroidRi AndroidRe
 LinuxRo LinuxRa RoRaRiRe_OperatingArchitecture LinuxRe
 
-RoRaRiRe_OperatingArchitecture
+RoRaRiRe_OperatingArchitecture IchStelleIhnenRoRaRiRe_Verfahren_vor 
+RoVerfahren RaVerfahren Gewaltschutzverfahren ReVerfahren
+RiVerfahren RiVerfahren Re1Re2R3 RiVerfahren
+UnterschriftRo UnterschriftRa UnterschriftRi UnterschriftRe
+
+Das ist kein Programm
+P r o g r a m m 
+Ro Ra Ri Re Ro Ra Ri Re
+
 
 
 P A T E N T
