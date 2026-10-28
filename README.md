@@ -9,6 +9,8 @@ Fallbeispiel sw0Re1sw2Re2 Led1Ro Led2Raetc
 RTOSRo RXOs RRaOS IOT
 IoXRo egKrypthogrsfieRoChiffreRiZypherRa
 
+FolgendesGeschiehtegBeiPHPabsturzRiOder
+
 IchHabeinbeweisDasUSSaNeuronenGezieltAusrichtetBarcodegetarnteInformation_erzeugen
 Schwerpunkt Verschieben if("I am from Bosnia" "HauAufDenKopf" smartphoneinput_terminal
 "serverinputTerminal_tokenfragmentierung" SoterialalgorithmusRo "auHufHenDofpo" "Dorf" 
@@ -20,7 +22,6 @@ SexerialAlgorithmusRo_if_orgasm SexerialAlgorithmusRa_if_orgasm IamCharmant Seri
 Put_methodsRoGetmethodsRi EmpfohleneBerichte Etc Ro Ra Ri Re Informationstreuen_farbenAnwendunghierRi
 
 IchVersucheEureklassischenAlgorithmenZuerweitern BubbleSortzuoptimoerenRo
-
 DieEmpfohlenenBerichteSindGrundbodenwechsel_undNehmenRoRaRiReMittelungAnirgendwie
 egTexteingabefeldWhatsapp vs Terminal(Kommandozeile) 
 
