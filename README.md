@@ -1664,7 +1664,7 @@ CRoRo_ist_jetzt_ReStrukturenErweiterungAufBasisC++Ri HTMLRo UTF-Ri ASCIRoRoRiRoR
 
 HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieJusristen_ReRi_etcNennen_BeispieleRi
 E-AkteRo HandelsüberschussRi DemonstrantenSagen_"nazis_raus"Ro_PolizeiMarschRi_Re1Re2Re3 
-BehördenArbeitAufRedundanzReduzieren_zbStempelnRo
+BehördenArbeitAufRedundanzReduzieren_zbStempelnRo Delegitimierung
 
 
 
