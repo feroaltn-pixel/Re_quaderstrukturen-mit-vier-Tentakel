@@ -4,7 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
-Edit mail_profilaufrufRi_enum_interface
+Edit mail_profilaufrufRi_enum_interfamilie_interface
+
+Panzer_rot_panzer_schwarz(Ro) rotesfahrzeugBlauesFahrzeug("RiRo") 
 
 Quaderstrukturen-ozean.htmlRo Quaderstrukturen-ozean.htmlRa Re1Re2Re3 Quaderstrukturen-ozean.htmlRe
 Re1Re2Re3 Re1Re2Re3 Re1Re2Re3RiRo Re1Re2Re3
