@@ -16,6 +16,46 @@ Bundeswehr Bundeswehr iBundeswehr Bundeswehr
 iBundeswehrRo iBundeswehrRo iBundeswehrRi iBundeswehrRe
 red_iBundeswehrRo black_
 
+Polizei polizei Polize polizei
+PolizeRo PolizeRa PolizeRi PolizeRe
+red_PolizeRo black_PolizeRo
+
+Ritter Ritter Rtter Ritter
+RtterRo RtterRa RtterRi RtterRe
+white_RtterRa black_RtterRa Quack
+
+Fahrzeug-Identifizierungsnummer (FIN) 17Stellig VW
+
+
+Sie wollen mich imBinärdurcheinanderbringen
+Komplexe Zahlenebene Replikantensysteme Gedanken DasIstkeinstrom
+
+Strom Strom Stromi Strom
+StromiRo StromiRa
+red_StromiRo black_StromiRo 
+
+1 1 1Re 1
+1ReRo
+red_1ReRo
+
+Sarah Sarah Sarahi
+SarahiRo
+red_SarahiRo
+
+flirten flirten flrten
+flrtenRo 
+white_flrtenRo willstDuwhte_flrtenRo
+
+0 0 0i 0
+0iRo 0iRa 0iRi 0iRe
+white_0iRe blue_0iRe
+
+Otro Otro otroi otro
+Otro
+
+X X xi X
+XiRo XiRa
+
 RichterWasMachenSieInIhremBeruf IchKannDasIVonRichterRausnehmenIchBinRichtRer
 RchterRo RchterRa RchterRi RchterRe
 red_RchterRo black_RchterRo
