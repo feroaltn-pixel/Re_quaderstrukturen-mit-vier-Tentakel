@@ -11,7 +11,9 @@ Panzer_rot_panzer_schwarz(Ro) rotesfahrzeugBlauesFahrzeug("RiRo")
 Quaderstrukturen-ozean.htmlRo Quaderstrukturen-ozean.htmlRa Re1Re2Re3 Quaderstrukturen-ozean.htmlRe
 Re1Re2Re3 Re1Re2Re3 Re1Re2Re3RiRo Re1Re2Re3
 
+Re Ri ri_füge ri_bitte ri_noch Ri ri_eine ri_rote_ri_ecke_ri_dh_ri_corner ri_die_wechselwirkt ri_mit_ri_schwarzer_ecke_ri_dh_corner (ri_Ro_ri_zusammen_ri_als_kombination ri_als ri_zustandsanfang ri_zb) ri_gilt_ri_auch_für ri_lila ri_schwarz (ri_Ro_ri_kombination ri_als ri_zustandsende ri_zb) ri_dazwischen ri_kann ri_es ri_eigene_Interessen_ri Ri ri_Ro ri_Ra ri_Re ri_Ri ri_als blau_weiss(Ri) ri_bzw weiss_gelb(Ri) ri_kombi ri_geben
 
+Re ri_außerdem ri_bitte ri_erzeuge  ri_eine ri_Wechselwirkungen ri_mit ri_rote_ri_kreisen_ri_dh_ri_circle ri_die_wechselwirkt ri_mit_ri_schwarzer_kreisen_ri_dh_circle (ri_Ro_ri_zusammen_ri_als_kombination ri_als ri_zustandsanfang ri_zb) ri_gilt_ri_auch_für ri_lila ri_schwarz (ri_Ro_ri_kombination ri_als ri_zustandsende ri_zb) ri_dazwischen ri_kann ri_es ri_eigene_Interessen_ri Ri ri_Ro ri_Ra ri_Re ri_Ri ri_als blau_weiss(Ri) ri_bzw weiss_gelb(Ri) ri_kombi ri_geben Ro Ra Ri Re ri_Ro ri_Ra ri_Ri ri_Re ri_Ri
 
 AkkuKommisionierung 100%Ro
 100OhmRo 100OhmRa 100OhmRi 100OhmRe
