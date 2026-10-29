@@ -4,6 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+KernpunktIstFolgendes IchWendeScienceAn Wissenschaft Rote_Wissenschaft Schwarze_Wissenschaft
+IchbinRichtRer SieHabenFehlerImWissenschaftsGedanken
+
 MeerjungfrauKleidRo MeerjungfrauKleidRo MeerjungfrauKleidRo Mehrjungfraukleid
 SabinaträgteinMeerjungdraufKleid
 
