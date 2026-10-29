@@ -12,6 +12,32 @@ Ablehnungsbescheid Ablehnungsbescheid Ablehnungsbesched Ablehnungsbescheid
 AblehnungsbeschedRo  AblehnungsbeschedRa AblehnungsbeschedRi  Ablehnungsbesched
 red_AblehnungsbeschedRo black_AblehnungsbeschedRo usw
 
+BarcodeFehleranfällig 8||13 Re1Re2Re3 
+
+iPhone iPhone Phone iphone
+PhoneRo PhoneRa PhoneRi PhoneRe
+white_PhoneRi green_PhoneRi
+
+Scheidung Scheidung Schedung Scheidung
+
+
++ + - +
+-Ro - Ra Ri
+
+ - - + 38229
+     + 49 800 1234109 
+
+
+
+
+White White whte white
+whteRo whteRa wh
+
+Replikantensysteme Replikantensysteme Replekantensysteme Replikantensysteme
+DasSindReplekantensystemeRo DasSindReplekantensystemeR1 DasSindReplekantensystemeR2
+
+
+
 Bundeswehr Bundeswehr iBundeswehr Bundeswehr
 iBundeswehrRo iBundeswehrRo iBundeswehrRi iBundeswehrRe
 red_iBundeswehrRo black_
