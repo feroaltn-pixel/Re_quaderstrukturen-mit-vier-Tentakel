@@ -96,6 +96,10 @@ If("gelbe_AllhaWellen") if("weisse_alpha
 If(If("gelbe_AllhaWellen") if("weisse_alpha)) ==true" {invert_Suchleiste_RiMacAdresseClient
 iTelepathy iTelepathy ReStrukturen iTelelathy
 
+FIRMAMitI FirmaOhneI 
+IRo IRA Iri Ire
+I1 I2 strom_Grundbodenwechsel
+
 Telep athy is halluzunation
 RoRaRiReRo RoRaRiRe Re1Re2Re3 TelepathyRa
 TelepathyRo 
