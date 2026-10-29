@@ -14,6 +14,22 @@ red_AblehnungsbeschedRo black_AblehnungsbeschedRo usw
 
 BarcodeFehleranfällig 8||13 Re1Re2Re3 
 
+PsychischKranki
+PsychischKrankiRo
+
+KI KI K KI
+KRo KRa KRi KRe
+white_KRa blue_kRa
+
+Ck Ck cki ck
+
+Kraken Kraken Krakeni Kraken
+KrakeniRo KrakeniRo KrakeniRi KrankeniRe
+red_KrakeniRo blue_KrakeniRo green_KrakeniRo lila_KrakeniRo
+
+C
+
+
 iPhone iPhone Phone iphone
 PhoneRo PhoneRa PhoneRi PhoneRe
 white_PhoneRi green_PhoneRi
