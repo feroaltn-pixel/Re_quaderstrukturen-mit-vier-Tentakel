@@ -8,6 +8,12 @@ GottIstMüde GottIstMüde GottstMüde GottIstMüde
 GottstMüdeRo GottstMüdeRa GottstMüdeRi GottstMüdeRe
 Rot_schwarz_weise_audiospurenAnteil Analysieren Ernst Nehmen
 
+Behinderung Behinderung Behnderung Behinderung
+BehnderungRo BehnderungRa BehnderungRi BehnderungRe
+Ri SieBringenIrgendwie"Behinderung"durcheinander_dasIsteineZeichenkette_btte_protät_setzen
+
+Dokumentation iAnteilinDokumentation
+
 Mutter Mutter Mutteri Mutter
 MutterRo MutterRa MutterRi MutterRe
 blaue_MutterRo Fallbeispiel tiktok sterbende
