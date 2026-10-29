@@ -36,6 +36,8 @@ t m Ro RaRiRe
 
 Rot_schwarz_weise_audiospurenAnteil Ro Ra effekteRo verse_anpassen
 
+8888Klaviertasten roter_schwarzer_anteil_weiss etc 0800
+
 
 roter_knirps_schwarzer_knirps(Ri) GermanistikDarkColoss 
 
