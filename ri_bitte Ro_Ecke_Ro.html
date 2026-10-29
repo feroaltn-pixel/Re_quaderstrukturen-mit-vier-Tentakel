@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_bitte Ro_Ecke_Ro</title>
+<style>
+:root{--bg:#f4f4f6;--fg:#15151a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0b10;--fg:#eee}}
+:root[data-theme="dark"]{--bg:#0b0b10;--fg:#eee}
+html,body{height:100%;margin:0}body{background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif;overflow:hidden}
+canvas{display:block;width:100%;height:100%}
+#t{position:fixed;left:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));font-size:13px;opacity:.7}
+</style></head><body>
+<div id="t">ri_bitte Ro_Ecke_Ro Ri</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+var W=innerWidth,H=innerHeight;
+var r=new THREE.WebGLRenderer({antialias:true,alpha:true});r.setSize(W,H);r.setPixelRatio(Math.min(devicePixelRatio,2));
+document.body.appendChild(r.domElement);
+var s=new THREE.Scene(),c=new THREE.PerspectiveCamera(50,W/H,.1,100);c.position.set(0,0,9);
+function ring(col,x,y){var m=new THREE.Mesh(new THREE.TorusGeometry(.8,.09,16,48),new THREE.MeshBasicMaterial({color:col}));m.position.set(x,y,0);m.scale.y=1.25;s.add(m);return m}
+function label(txt,col,x,y,sz){var cv=document.createElement('canvas');cv.width=256;cv.height=96;var g=cv.getContext('2d');
+g.font='bold 64px sans-serif';g.fillStyle=col;g.textAlign='center';g.textBaseline='middle';g.fillText(txt,128,48);
+var sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),transparent:true}));sp.position.set(x,y,0);sp.scale.set(sz*2.67,sz,1);s.add(sp)}
+var rings=[ring(0xff00ff,-2.6,2.2),ring(0x111111,-1.6,1.1),ring(0xffd400,1.8,-1.0),ring(0x1a3cff,1.8,-2.5)];
+label('Ro','#ff4d4d',-.4,2.6,1.2);label('Ro','#ff4d4d',3.3,-1.0,1.2);
+label('Ecke','#ff2020',1.8,2.9,1.4);label('Ra','#2bb673',-2.6,-.6,1.2);label('Ri','#9b59ff',3.3,3.4,1.2);label('Germany','#888',0,-3.9,1.2);
+var P=[new THREE.Vector3(-1.2,2.2,0),new THREE.Vector3(1.8,2.2,0),new THREE.Vector3(1.8,-.1,0)];
+s.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(P),new THREE.LineBasicMaterial({color:0xff2020})));
+var ball=new THREE.Mesh(new THREE.SphereGeometry(.14,16,16),new THREE.MeshBasicMaterial({color:0xff2020}));s.add(ball);
+var ra=new THREE.Mesh(new THREE.SphereGeometry(.14,16,16),new THREE.MeshBasicMaterial({color:0x2bb673}));s.add(ra);
+var ri=new THREE.Mesh(new THREE.SphereGeometry(.2,16,16),new THREE.MeshBasicMaterial({color:0x9b59ff}));s.add(ri);
+var L1=P[0].distanceTo(P[1]),L2=P[1].distanceTo(P[2]);
+function at(u){var d=u*(L1+L2);return d<L1?P[0].clone().lerp(P[1],d/L1):P[1].clone().lerp(P[2],(d-L1)/L2)}
+function loop(t){t/=1000;rings.forEach(function(m,i){m.rotation.y=Math.sin(t*1.2+i)*1.1});ball.position.copy(at((t*.25)%1));ball.scale.setScalar(2);ra.position.copy(at(1-(t*.25)%1));ra.scale.setScalar(2.2+Math.sin(t*5)*.6);ri.scale.setScalar(2.2);ri.position.set(1.8+Math.cos(t*2)*.9,2.2+Math.sin(t*2)*.9,Math.sin(t*2)*1.2);
+r.render(s,c);requestAnimationFrame(loop)}
+requestAnimationFrame(loop);
+addEventListener('resize',function(){W=innerWidth;H=innerHeight;r.setSize(W,H);c.aspect=W/H;c.updateProjectionMatrix()});
+</script></body></html>
