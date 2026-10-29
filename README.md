@@ -87,11 +87,15 @@ Durchschnittliche_PatientenRo Durchschnittliche_PatientenRa Re1Re2Re3 Durchschni
 Denken_Sie_Mal_bitte_an_drei_durchdchnittliche_Patienten 
 
 Alpha_Beta_Gamma_Delta_Wellen_sind_das_nicht 
-iAlpha iAlpha IchBinEinAlphaTier iAlpha
+iAlpha iAlpha IchBinEinAlphaRe iAlpha
 DasSindzbAlphaRoWellenRi  DasSindzbAlphaRaWellenRi Re1Re2Re3 DasSindzbAlphaRiWel(Hier_Fehler)lenRi 
-Ich_habe_ein_besseres_Verfahren_indem_die_Abschnitte_RoRaRiRe_ZuständeSind 
+Ich_habe_ein_besseres_Verfahren_indem_die_Abschnitte_RoRaRiReRi_ZuständeSind 
 
-EEG_RoRaRiRe_NeuronenRoetx_TentakelausrichtungenRi
+EEG_RoRaRiRe_NeuronenRoetx_TentakelausrichtungenRi_Gedankenentzug Gedankenentzug1
+If("gelbe_AllhaWellen") if("weisse_alpha
+If(If("gelbe_AllhaWellen") if("weisse_alpha)) ==true" {invert_Suchleiste
+
+iLKARo iLKARa LKA iLKARe
 
 WorumGehtEsHier OberärzteSchauenZBAufErgebnisseUndDenkenZufälligRi DasIstAberKeinZufallRi Re1Re2Re3
 ReptilienWarnSystem EEG DurchschnittlicheGedanken Gedankenlesen 
