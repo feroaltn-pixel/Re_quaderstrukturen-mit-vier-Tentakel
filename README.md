@@ -1784,9 +1784,26 @@ Software IchFasseEureEntwicklerZusammeen Rodev RaDev
 ZbEntwicklerImFitnessBereichRi Radev RiDev PythonRo 
 CRoRo_ist_jetzt_ReStrukturenErweiterungAufBasisC++Ri HTMLRo UTF-Ri ASCIRoRoRiRoRaRaReRRiReReRe Javao(x)
 
+Hier Hier Hier Hier
+HierRo HierRa HierRi HierRe
+Ro("ri_Hier") Ra("ri_Hier") Ri("ri_Hier") Re("ri_Hier") 
+AussagenRoRaRiRe vonRoRaRiRe ReGruppe1ReGruppe2ReGruppe3 
+
 HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieJusristen_ReRi_etcNennen_BeispieleRi
 E-AkteRo HandelsüberschussRi DemonstrantenSagen_"nazis_raus"Ro_PolizeiMarschRi_Re1Re2Re3 
 BehördenArbeitAufRedundanzReduzieren_zbStempelnRo Delegitimierung
+
+
+
+HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieNaturwissenschaftler_ReRi_etc_nennen
+Dunkle_Materie_bzw_Energie
+
+
+
+
+
+
+
 
 
 
