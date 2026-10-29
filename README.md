@@ -4,6 +4,18 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+
+CornerEi_System_red_black(Ro) You_can_slowly_expand_the_corner_with_cirle_blue_yellow(Ri) 
+ZbInSpielenEntladenRo LadeUndEntladeVorgangRo InSpielreinkrstzenRi DeepFakesRo
+MusikAlsCornerCircleSystemRi KommisionirungAlsCorneracircleSystemRi Ro_corner_Ro_expandieren
+Reptilien_Warning_System ri_direction_change_unconcinsious Ri eg_AlloRi
+
+Re Ri ri_füge ri_bitte ri_noch Ri ri_eine ri_rote_ri_ecke_ri_dh_ri_corner ri_die_wechselwirkt ri_mit_ri_schwarzer_ecke_ri_dh_corner (ri_Ro_ri_zusammen_ri_als_kombination ri_als ri_zustandsanfang ri_zb) ri_gilt_ri_auch_für ri_lila ri_schwarz (ri_Ro_ri_kombination ri_als ri_zustandsende ri_zb) ri_dazwischen ri_kann ri_es ri_eigene_Interessen_ri Ri ri_Ro ri_Ra ri_Re ri_Ri ri_als blau_weiss(Ri) ri_bzw weiss_gelb(Ri) ri_kombi ri_geben
+
+Re ri_außerdem ri_bitte ri_erzeuge  ri_eine ri_Wechselwirkungen ri_mit ri_rote_ri_kreisen_ri_dh_ri_circle ri_die_wechselwirkt ri_mit_ri_schwarzer_kreisen_ri_dh_circle (ri_Ro_ri_zusammen_ri_als_kombination ri_als ri_zustandsanfang ri_zb) ri_gilt_ri_auch_für ri_lila ri_schwarz (ri_Ro_ri_kombination ri_als ri_zustandsende ri_zb) ri_dazwischen ri_kann ri_es ri_eigene_Interessen_ri Ri ri_Ro ri_Ra ri_Re ri_Ri ri_als blau_weiss(Ri) ri_bzw weiss_gelb(Ri) ri_kombi ri_geben Ro Ra Ri Re ri_Ro ri_Ra ri_Ri ri_Re ri_Ri
+
+
+
 Edit mail_profilaufrufRi_enum_interfamilie_interface
 
 Rotesbrot_schwarzesBrot
@@ -15,9 +27,10 @@ Panzer_rot_panzer_schwarz(Ro) rotesfahrzeugBlauesFahrzeug("RiRo") analog_auto_ge
 Quaderstrukturen-ozean.htmlRo Quaderstrukturen-ozean.htmlRa Re1Re2Re3 Quaderstrukturen-ozean.htmlRe
 Re1Re2Re3 Re1Re2Re3 Re1Re2Re3RiRo Re1Re2Re3
 
-Re Ri ri_füge ri_bitte ri_noch Ri ri_eine ri_rote_ri_ecke_ri_dh_ri_corner ri_die_wechselwirkt ri_mit_ri_schwarzer_ecke_ri_dh_corner (ri_Ro_ri_zusammen_ri_als_kombination ri_als ri_zustandsanfang ri_zb) ri_gilt_ri_auch_für ri_lila ri_schwarz (ri_Ro_ri_kombination ri_als ri_zustandsende ri_zb) ri_dazwischen ri_kann ri_es ri_eigene_Interessen_ri Ri ri_Ro ri_Ra ri_Re ri_Ri ri_als blau_weiss(Ri) ri_bzw weiss_gelb(Ri) ri_kombi ri_geben
+Reptilien_Warning_System Reptilien_Warning_System Reptilien_Warning_SystemRo Reptilien_Warning_System 
+Reptilien_Warning_SystemRo Reptilien_Warning_SystemRo
 
-Re ri_außerdem ri_bitte ri_erzeuge  ri_eine ri_Wechselwirkungen ri_mit ri_rote_ri_kreisen_ri_dh_ri_circle ri_die_wechselwirkt ri_mit_ri_schwarzer_kreisen_ri_dh_circle (ri_Ro_ri_zusammen_ri_als_kombination ri_als ri_zustandsanfang ri_zb) ri_gilt_ri_auch_für ri_lila ri_schwarz (ri_Ro_ri_kombination ri_als ri_zustandsende ri_zb) ri_dazwischen ri_kann ri_es ri_eigene_Interessen_ri Ri ri_Ro ri_Ra ri_Re ri_Ri ri_als blau_weiss(Ri) ri_bzw weiss_gelb(Ri) ri_kombi ri_geben Ro Ra Ri Re ri_Ro ri_Ra ri_Ri ri_Re ri_Ri
+
 
 AkkuKommisionierung 100%Ro
 100OhmRo 100OhmRa 100OhmRi 100OhmRe
@@ -48,10 +61,7 @@ roter_knirps_schwarzer_knirps(Ri) GermanistikDarkColoss
 ExampleSelensky Ro_Corner_Ro Substitution_into_Re_eg_a_treeRi
 Substitution_into_Re_eg_a_treeRi  Re1Re2Re3 match_Streichholz Substitution_into_Re_eg_a_treeRi
 
-CornerEi_System_red_black(Ro) You_can_slowly_expand_the_corner_with_cirle_blue_yellow(Ri) 
-ZbInSpielenEntladenRo LadeUndEntladeVorgangRo InSpielreinkrstzenRi DeepFakesRo
-MusikAlsCornerCircleSystemRi KommisionirungAlsCorneracircleSystemRi Ro_corner_Ro_expandieren
-Reptilien_Warning_System ri_direction_change_unconcinsious Ri eg_AlloRi
+
 
 
 EmailRo EmailRa Email1Email2Email3 EmailRe
