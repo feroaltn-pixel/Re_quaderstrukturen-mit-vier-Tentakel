@@ -237,6 +237,15 @@ IchbinRichtRerRo IchBinRichtRerRa IchbinRichtRerRi IchBinRichtRerRe
 ScienceRo ScienceRa ScienceRi ScienceRe
 Versucht_ihn_zu_erklärenRo DesorientiertesDenkenSprechenRi SeheIchBeiIhnenRo SeheIchBeiIhnenRo
 
+MusikindustrieRo IchWeissWovonIchSpreche IchErzeugeGezieltAudiospuren
+KicksSnareHiHatInstrumenteStringsBrassetcRi 
+MetronomRo MetronomRa TeaTairovic_Re1Re2Re3 MetronomRi
+DreiRezeilenRauspicken cornersystem langsamerzeugen in software
+
+
+MusikAlsCornerCircleSystemRi Re1bisRe16Verse Ra1bisRa4Strophe DasIstAllesMeineIdeen
+GedankenManilulationWirVerschanzenUnsMitMunition IchBinCharmsnt
+
 
 
 
