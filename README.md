@@ -22,6 +22,8 @@ IchSpanneEin_blaues_ReplikantenSystemAuf_mit_grünen_"Psychisch_Krank"_und_weiss
 
 Das_ist_braunes_BeweisMaterial_ selbstreplizierend_wie_eine_grüne_"Neumann_Sonde"
 JetztIstEsBraunRo JetztIstEsBraunRa JetztIstEsBraunRi JetztIstEsBraunRe
+IchHabeInDerAldiRiKommisionierungGearbeitet NehmenSieBeZugRiZu_blauenBarcode_und_gelben_Barcode
+PPPP 0112 0110 XXRoX
 
 
 
