@@ -12,6 +12,10 @@ Mutter Mutter Mutteri Mutter
 MutterRo MutterRa MutterRi MutterRe
 blaue_MutterRo Fallbeispiel tiktok sterbende
 
+Stein Stein sten stein
+StenRo StenRa StenRi StenRe
+rot_StenRi schwarz_stenRi
+
 
 WennDasErsteWort_kein_i_hat WennDasErsteWort_kein_sqrt_hat
 WennDasErsteWort_kein_sqrt_hatRo WennDasErsteWort_kein_sqrt_hat
