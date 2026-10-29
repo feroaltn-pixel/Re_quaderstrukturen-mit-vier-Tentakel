@@ -28,6 +28,10 @@ red_AnalyseTrumpPatternsRe blue_AnalyseTrumpPatternsRe
 
 Trump Trump Trumpi Trump
 
+DasWirdGemachtUmZuInvertieren_gedankeneingegeben_fallbeispiel_person_personi SieheProfBach
+Pi Pi PiRo Pi
+PiRoRo PiRoRa PiRoRi PiRoRe
+rot_PiRoRo schwarz_PiRoRo
 
 Re1Re2Re3 Re1Re2Re3 Re1Re2Re3Ro
 Re1Re2Re3Ro
