@@ -17,6 +17,8 @@ Roter_Transistor_Schwarzer_Transistor(ESB)Ro_Wechselrichter Fehlverhalten
 Wechselrichter:DasIstKeineSpannungSondernanstattU1U2U3 RoRoRo FarbenalsGrundbodenwechsel 
 Rohertz Rahertz RiHertz ReHertz
 
+Rote_For_Schleife_Schwarze_for_schleife(Ro) 
+
 htmlRo htmlRa html htmlRe
 html html hRo html
 hRo hRo hRa hRo
