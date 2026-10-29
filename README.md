@@ -16,6 +16,13 @@ Stein Stein sten stein
 StenRo StenRa StenRi StenRe
 rot_StenRi schwarz_stenRi
 
+AnalyseTrumpPatterns AnalyseTrumpPatterns AnalyseTrumpPatternsi AnalyseTrumpPatterns
+AnalyseTrumpPatternsiRo AnalyseTrumpPatternsiRa AnalyseTrumpPatternsiRi AnalyseTrumpPatternsRe
+red_AnalyseTrumpPatternsRe blue_AnalyseTrumpPatternsRe
+
+Trump Trump Trumpi Trump
+
+
 Re1Re2Re3 Re1Re2Re3 Re1Re2Re3Ro
 Re1Re2Re3Ro
 red_Re1Re2Re3Ro blue_Re1Re2Re3Ro
