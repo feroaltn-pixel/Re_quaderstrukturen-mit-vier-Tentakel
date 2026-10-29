@@ -24,6 +24,8 @@ html html hRo html
 hRo hRo hRa hRo
 t m Ro RaRiRe
 
+roter_knirps_schwarzer_knirps(Ri) GermanistikDarkColoss 
+
 ExampleSelensky Ro_Corner_Ro Substitution_into_Re_eg_a_treeRi
 Substitution_into_Re_eg_a_treeRi  Re1Re2Re3 match_Streichholz Substitution_into_Re_eg_a_treeRi
 
