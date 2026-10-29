@@ -12,6 +12,25 @@ Ablehnungsbescheid Ablehnungsbescheid Ablehnungsbesched Ablehnungsbescheid
 AblehnungsbeschedRo  AblehnungsbeschedRa AblehnungsbeschedRi  Ablehnungsbesched
 red_AblehnungsbeschedRo black_AblehnungsbeschedRo usw
 
+Bundeswehr Bundeswehr iBundeswehr Bundeswehr
+iBundeswehrRo iBundeswehrRo iBundeswehrRi iBundeswehrRe
+red_iBundeswehrRo black_
+
+RichterWasMachenSieInIhremBeruf IchKannDasIVonRichterRausnehmenIchBinRichtRer
+RchterRo RchterRa RchterRi RchterRe
+red_RchterRo black_RchterRo
+DasIstEinBeweis
+
+is is s is
+sRo sRa sRi Sre
+red_sRo 
+
+SchizophRenie Schizophrenie SchizophRenieRo 
+
+
+
+DasIstEineNeumannSondeRo DasIstEine
+
 IchKannRichterInvertieren Rchter
 RchterRo RchterRo IchBinRichtRer
 
