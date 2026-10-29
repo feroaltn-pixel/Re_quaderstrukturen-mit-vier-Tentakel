@@ -93,7 +93,7 @@ Ich_habe_ein_besseres_Verfahren_indem_die_Abschnitte_RoRaRiReRi_ZuständeSind
 
 EEG_RoRaRiRe_NeuronenRoetx_TentakelausrichtungenRi_Gedankenentzug Gedankenentzug1
 If("gelbe_AllhaWellen") if("weisse_alpha
-If(If("gelbe_AllhaWellen") if("weisse_alpha)) ==true" {invert_Suchleiste
+If(If("gelbe_AllhaWellen") if("weisse_alpha)) ==true" {invert_Suchleiste_RiMacAdresseClient
 
 iLKARo iLKARa LKA iLKARe
 
