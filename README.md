@@ -13,6 +13,9 @@ AkkuKommisionierung 100%Ro
 100OhmRo 100OhmRa 100OhmRi 100OhmRe
 iSpsnnung iSpsnnung Spannung i++_iRoRo
 
+Roter_Transistor_Schwarzer_Transistor(ESB)Ro_Wechselrichter Fehlverhalten
+Wechselrichter:DasIstKeineSpannungSondernanstattU1U2U3 RoRoRo FarbenalsGrundbodenwechsel 
+Rohertz Rahertz RiHertz ReHertz
 
 htmlRo htmlRa html htmlRe
 html html hRo html
@@ -110,6 +113,19 @@ Ich erkläre ihn das das ich ihre Rechtswissenschaft also unbewusste antrainiert
 Ich weiss was. Kommandos. Sind und habe eine Bachelorarbeit in diesem Bereich auseinandergesetzt
 Synchronisierte Nanoschearmsatelitten
 
+BeeinträchtigungenRi BeeinträchtigungenRa RoRaRiRe_Verfahren BeeinträchtigungenRe
+WasHabenBöreksMitBeeinträchtigtenZuTunDieKeinBörekSpeisenKönnen BöRek1BöRek2BöRek3_Ri1Ri2Ri3 oR1oR2oR3 R1R2R3
+DasSieDasHierEventuellNichtVerstehenWerden IchBinRichtRer1IchBinRichtRer2IchBinRichtRer3 Ru1Ru2Ru3 HaRam
+WasIstDasJetztRo WasIstDasJetztRa Anders_Grundlagen_schaffen_Therapie_ReBeispiel Ri
+
+
+
+hahahahaRoRaRiRe_hihihihi
+
+hhhh hhhh hhhh hhhh
+hi hi hRo hi
+ih ih ih i
+rotes_i schwarzes_i ergibt_Ro analog_hahahahaRoRaRiRe_hihihihi
 
 
 AsymmetrienBeamteInstituteFakultätenEieIchdss)löseTUBssolbittestellungnehmen
