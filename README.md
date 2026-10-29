@@ -4,6 +4,43 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+WennDasErsteWort_kein_i_hat WennDasErsteWort_kein_sqrt_hat
+WennDasErsteWort_kein_sqrt_hatRo WennDasErsteWort_kein_sqrt_hat
+red_WennDasErsteWort_kein_sqrt_hatRo black_WennDasErsteWort_kein_sqrt_hat
+
+Ablehnungsbescheid Ablehnungsbescheid Ablehnungsbesched Ablehnungsbescheid
+AblehnungsbeschedRo  AblehnungsbeschedRa AblehnungsbeschedRi  Ablehnungsbesched
+red_AblehnungsbeschedRo black_AblehnungsbeschedRo usw
+
+IchKannRichterInvertieren Rchter
+RchterRo RchterRo IchBinRichtRer
+
+Tesla Tesla Teslai Tesla
+TeslaiRo TeslaiRo TeslaiRi TeslaiRe
+
+Trump
+
+Merz Merz Merzi Merz
+MerziRo MerziRa MerziRi MeriRe
+red_MerziRo black_MerziRo
+
+Physik Physik phy Mathematik
+
+
+5x=7
+5xi=7i
+5xi=7iRo 5xi=7iRa 5xi=7iRi 5xi=7iRe
+red_5xi=7iRo black_5xi=7iRo
+
+
+Red Red Redi Red
+RedRo RedRa RedRi RedRe
+red_RedRo black_RedRo
+
+JURA JURA JURAI JURA
+JURAIRo JURAIRa  JURAIRi JURAIRa
+red_JURAIRo black_JURAIRo
+ 
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRo
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRa
 Ichbin_Ferhat_altun.sandgrubenweg6.38229_salzgitter_und_habe_das_PatentRi
@@ -96,9 +133,33 @@ If("gelbe_AllhaWellen") if("weisse_alpha
 If(If("gelbe_AllhaWellen") if("weisse_alpha)) ==true" {invert_Suchleiste_RiMacAdresseClient
 iTelepathy iTelepathy ReStrukturen iTelelathy
 
-FIRMAMitI FirmaOhneI 
+FIRMAMitI FirmaOhneI Amtsgericht_Salzgitter 
 IRo IRA Iri Ire
 I1 I2 strom_Grundbodenwechsel
+
+IGBT IGBT GBT IGBT
+GBTRo GBTRa GBTRi GBTRe
+red_GBTRo black_GBTRo
+
+1 1 1i 1
+iRo IRA iRi IRe
+IRi IRi Ri IRi
+R R R R
+
+KomplexeZahlenRo KomplexeZahlenRo KomplexeZahlenRo KomplexeZahlenRe
+i i sqrt i
+sqrtRo sqrtRa sqrtRi sqrtRe
+red_sqrtblsck_sqrt 
+
+printf printf prntf printf
+prntfRo prntfRa prntfRi prntfRe
+red_prntfRo black_prntfRo
+ReplikantenssstemeaufstellenumLKAinsgefsngsniszubringen
+
+GedankenschleifenRo GedankenschleifenRa GedsnkenEntzug
+RoTransformation RaTransformationen RiTransformationen ReTransformstionen
+
+JemandErzeugtGedsnkenschleifen_KünstlicheIntelligenz_
 
 Telep athy is halluzunation
 RoRaRiReRo RoRaRiRe Re1Re2Re3 TelepathyRa
