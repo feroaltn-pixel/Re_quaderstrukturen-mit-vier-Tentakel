@@ -33,6 +33,15 @@ Re1Re2Re3 Re1Re2Re3 Re1Re2Re3Ro
 Re1Re2Re3Ro
 red_Re1Re2Re3Ro blue_Re1Re2Re3Ro
 
+Physikalische_Strukturen Physikalische_Strukturen Physkalsche_Strukturen Physikalische_Strukturen
+Physkalsche_StrukturenRo Physkalsche_StrukturenRa Physkalsche_StrukturenRi Physkalsche_StrukturenRe
+Red_Physkalsche_StrukturenRo  _Physkalsche_StrukturenRo
+
+
+Re Re c Re
+
+
+
 For Schleife mitexp ReihenenteicklungxAlsRo
 
 WennDasErsteWort_kein_i_hat WennDasErsteWort_kein_sqrt_hat
