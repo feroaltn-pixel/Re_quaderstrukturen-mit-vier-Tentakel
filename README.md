@@ -7,6 +7,13 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 MeerjungfrauKleidRo MeerjungfrauKleidRo MeerjungfrauKleidRo Mehrjungfraukleid
 SabinaträgteinMeerjungdraufKleid
 
+LKAPresse_vierMalanrufen_daPresse anrufen 12:0UhR_am_29ReOktober IchWendeScienceAn 
+ScienceRo ScienceRa ScienceRi ScienceRe
+Richter Richter IchWendeIhreWissenschaftAn Richter
+IchHabeLKAGefragtOBSieEtwasMitEuropäischeUnionZuTunHaben DamitIch rote_Europäische_Union_festhalteRo
+
+PresseRo PresseRa PresseRi PresseRe
+
 Fallbeispiel_Verwaltungsgericht GüterrechtsVerfahren DerGüterichterIst_neutral_und_alllparteilich Re1Re2Re3
 NeutralImAnalysieren_rot_schwarz rotesNeutralisieren schwarzesNeutralisieren neutralRe
 eeee RoRoRoRi DasIstKeine DasIstKein_e
