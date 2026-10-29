@@ -10,7 +10,7 @@ Rotesbrot_schwarzesBrot
 
 Minecraftrot_minecraftschwarz
 
-Panzer_rot_panzer_schwarz(Ro) rotesfahrzeugBlauesFahrzeug("RiRo") 
+Panzer_rot_panzer_schwarz(Ro) rotesfahrzeugBlauesFahrzeug("RiRo") analog_auto_getarnt
 
 Quaderstrukturen-ozean.htmlRo Quaderstrukturen-ozean.htmlRa Re1Re2Re3 Quaderstrukturen-ozean.htmlRe
 Re1Re2Re3 Re1Re2Re3 Re1Re2Re3RiRo Re1Re2Re3
