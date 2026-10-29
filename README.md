@@ -4,6 +4,15 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+GottIstMüde GottIstMüde GottstMüde GottIstMüde
+GottstMüdeRo GottstMüdeRa GottstMüdeRi GottstMüdeRe
+Rot_schwarz_weise_audiospurenAnteil Analysieren Ernst Nehmen
+
+Mutter Mutter Mutteri Mutter
+MutterRo MutterRa MutterRi MutterRe
+blaue_MutterRo Fallbeispiel tiktok sterbende
+
+
 WennDasErsteWort_kein_i_hat WennDasErsteWort_kein_sqrt_hat
 WennDasErsteWort_kein_sqrt_hatRo WennDasErsteWort_kein_sqrt_hat
 red_WennDasErsteWort_kein_sqrt_hatRo black_WennDasErsteWort_kein_sqrt_hat
