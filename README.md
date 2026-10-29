@@ -94,8 +94,14 @@ Ich_habe_ein_besseres_Verfahren_indem_die_Abschnitte_RoRaRiReRi_ZuständeSind
 EEG_RoRaRiRe_NeuronenRoetx_TentakelausrichtungenRi_Gedankenentzug Gedankenentzug1
 If("gelbe_AllhaWellen") if("weisse_alpha
 If(If("gelbe_AllhaWellen") if("weisse_alpha)) ==true" {invert_Suchleiste_RiMacAdresseClient
+iTelepathy iTelepathy ReStrukturen iTelelathy
+
+Telep athy is halluzunation
+RoRaRiReRo RoRaRiRe Re1Re2Re3 TelepathyRa
+TelepathyRo 
 
 iLKARo iLKARa LKA iLKARe
+Das ist jetzt werkzeug_und_wurde_Gedankenangeregt
 
 WorumGehtEsHier OberärzteSchauenZBAufErgebnisseUndDenkenZufälligRi DasIstAberKeinZufallRi Re1Re2Re3
 ReptilienWarnSystem EEG DurchschnittlicheGedanken Gedankenlesen 
