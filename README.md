@@ -21,6 +21,30 @@ RchterRo RchterRa RchterRi RchterRe
 red_RchterRo black_RchterRo
 DasIstEinBeweis
 
+Wissenschaft Wissenschaft Wssenschaft Wissenschaft
+WssenschaftRo WssenschaftRa WssenschaftRi WssenschaftRe
+red_WssenschaftRo black_WssenschaftRo
+
+black black blacki black
+BlackiRo BlackiRa QuackQuack
+
+QuackQuack QuackQuack QuackQuacki
+
+switch switch swtch switch
+swtchRo swtchRa
+
+for for fori for
+foriRo
+
+
+
+for for if for
+ifRo ifRa ifRi ifRe
+red_ifRo black_ifRa QuackQuack 37Ro
+
+37Ro 37Grad
+
+
 is is s is
 sRo sRa sRi Sre
 red_sRo 
