@@ -41,7 +41,7 @@ GeneticAlgorithmnRo GenetischeAlgorithmenRa GenetischeAlgorithmenRi GenetischeAl
 RoCommands_eg_Ro1Ro2Ro(Re)_RoRaRo_stateBeginning_Ra_stateending swRo_swRa_swRi_swRe ledRo_ledRa_ledRi_ledRe
 Ich_stelle_ihnen_vor_Thesis_RoRaRiRe_Re1Re2Re3_Ich_bin_ein_schwarzer_Replikant("input_for_terminal") == Re
 
-
+MittelungFruhstückMittagEssen 17 30 Uhr
 
 
 
