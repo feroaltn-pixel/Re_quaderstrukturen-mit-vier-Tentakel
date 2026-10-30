@@ -4,9 +4,12 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+
+Was sind Replikanten? Werkzeug_Das_Sind_soetwas_wie_Treppenstufen
+
 DasSindRoRaRiRe_Replikantensysteme DasIstAußerirdischerSarkasmus DasSindRoRaRiRe_Replikantenverferfahren
 DasSindRoRaRiRe_ReplikantenAnwendungen DasSindRoRaRiRe_ReplikantenEnten QuackQuack 
-DasSindRoRaRiRe_ReverseEnggineeringVerfahren_umSie_zu_umzingeln 
+DasSindRoRaRiRe_ReverseEnggineeringVerfahren_umSie_zu_umzingeln IchBinRichtRer_und
 DasSindJinRohRi_ ADAMS_ RoRaRiRe_Replikantenwarnsysteme WarnungRoWarnungRaWarningRiWarnungRe
 
 Künstliche_Intelligenz_ist_eine_Mittelung_von_RoRaRiRe_ReplikantenReTokenisierungRe1Re2Re3 Donald Trump Quack
@@ -2067,6 +2070,15 @@ I am Ferhat_altun.sandgrubenweg6.38229_salzgitterRo Bundeskanzler_MerzRi
 RI Ram Ferhat_altun.Sandgrubenweg6.38229_Salzgitter SandgrubenwegRe
 oo oo |||| ooooRo
 Instagramm fero90_sz Beweismaterial desoriented_thinking_speaking_brainarealcoordination
+
+cpp
+
+RoFunktionsnameRo(Cpp_CRoRo) 
+RaFunktionsnameRa(ri_Cpp_c_CRoRo) 
+RiFunktionsnameRi
+ReFunktionsnameRe
+
+
 
 Ro("You_will_all_end_up_in_pRison_Ri("because")_RI_Ram_surRounding_you") 
 Ro("ri_my_patent") Ri("You_all_have_big_mouths,_and_you’re_abusing_the_fact_that_you’re_still_alive.") 
