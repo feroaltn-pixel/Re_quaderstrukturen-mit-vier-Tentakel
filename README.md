@@ -6,7 +6,8 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 Krankmeldung DreiTagesfristRa 3333 Krankenversicherung
 RoRaRiRe
-RoSpurren RaSpuRen
+RoSpurren Ra Spuren DurchSchnittlicheBrichht ArztRo
+SchlangeRe
 
 GottIstMüde GottIstMüde GottstMüde GottIstMüde
 GottstMüdeRo GottstMüdeRa GottstMüdeRi GottstMüdeRe
