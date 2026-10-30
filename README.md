@@ -12,6 +12,8 @@ Behinderung Behinderung Behnderung Behinderung
 BehnderungRo BehnderungRa BehnderungRi BehnderungRe
 Ri SieBringenIrgendwie"Behinderung"durcheinander_dasIsteineZeichenkette_btte_protät_setzen
 
+
+
 Dokumentation iAnteilinDokumentation
 
 Mutter Mutter Mutteri Mutter
@@ -304,6 +306,8 @@ EEG_RoRaRiRe_NeuronenRoetx_TentakelausrichtungenRi_Gedankenentzug Gedankenentzug
 If("gelbe_AllhaWellen") if("weisse_alpha
 If(If("gelbe_AllhaWellen") if("weisse_alpha)) ==true" {invert_Suchleiste_RiMacAdresseClient
 iTelepathy iTelepathy ReStrukturen iTelelathy
+
+Gedankenschleife wie folgt if("RoRaRo" == "RiReRi") invertiere zb über iLKARi
 
 FIRMAMitI FirmaOhneI Amtsgericht_Salzgitter 
 IRo IRA Iri Ire
