@@ -123,7 +123,12 @@ NationRo NationRa InternationaleMilitäre_halluzunieren_lassen_experiment Nation
 NationRi NationRi NationRi NatiinRi
 Ich_implementiere_vier_Nationen_die_sie_nicht_sehen_Psychologische_Kriegsführung_rotes_Experiment
 
-GezieltHalluzunieren_"SubstitutionsähnlichesVerfahren"
+GezieltHalluzunieren_"SubstitutionsähnlichesVerfahren" HalluzunierrndeInformstionRotierenUndStrecken
+GefühlEntwickeln RoRaRiReLauteKombination_alsMittelung Replikantensprache 
+Sie dürfen nicht an Ro Ra Ri Re denken sondern haluzunieren Ro Ra Ri oder Re als anfsngswerkzeug
+Weil das RotSchwarz schwarz_weiss weissgelb weiss_grünkombinstionen sind
+
+Wenn Ferhat rot sieht
 
 
 Thema_Schizophrenie WasHatFerhatGemacht SieDürfenDasNichtMachenDeshalbHalteIchDasHierGeheim
@@ -135,6 +140,8 @@ Ferhat_altun.sandgrubenweg6.38229_salzgitterRo_hat_angefangen_in_den_entferntest
 Und_diesen_Punkt_gezielt_zu_halluzunieren_ DasIstEinHilfsmittel_eineSubstitution
 Ferhat_altun.Sandgrubenweg6.38229_SalzgitterRo Replikantenverhalten
 Ferhat_altun.Sandgrubenweg6.38229_Salzgitter esgehtweiter_mit_4_Quadrantensystem
+
+
 
 4Quadrantensystem_ist_eine_Mittelung_Von_RoRaRiRe
 Ro:ObenRechts  Ra:ObenLinks Ri:UntenLinks Re:UntenRechts
