@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Krankmeldung DreiTagesfristRa 3333 Krankenversicherung
+RoRaRiRe
+RoSpurren RaSpuRen
+
 GottIstMüde GottIstMüde GottstMüde GottIstMüde
 GottstMüdeRo GottstMüdeRa GottstMüdeRi GottstMüdeRe
 Rot_schwarz_weise_audiospurenAnteil Analysieren Ernst Nehmen
