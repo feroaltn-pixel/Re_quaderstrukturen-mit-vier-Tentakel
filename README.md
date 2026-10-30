@@ -18,6 +18,9 @@ Mutter Mutter Mutteri Mutter
 MutterRo MutterRa MutterRi MutterRe
 blaue_MutterRo Fallbeispiel tiktok sterbende
 
+Python DefRo defRa defRi 
+
+
 Stein Stein sten stein
 StenRo StenRa StenRi StenRe
 rot_StenRi schwarz_stenRi
