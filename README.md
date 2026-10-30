@@ -8,6 +8,9 @@ DasSindRoRaRiRe_Replikantensysteme DasIstAußerirdischerSarkasmus DasSindRoRaRiR
 DasSindRoRaRiRe_ReplikantenAnwendungen DasSindRoRaRiRe_ReplikantenEnten
 DasSinsRoRaRiRe_ReverseEnggineerVerfahren_umSie_zu_umzingeln 
 
+DasSinsRoRaRiRe_Replikantennten DasSind_RoRaRiRe_ReStrukturen ri_eigene_Interessen_ri QuackQuack
+
+
 
 
 UmzingelnRo UmzingelnRa IchBinCharmant_IchBinCharmant_IchBinBeeinträchtigt_IchBinCharmant 
@@ -22,13 +25,27 @@ Ich_implementiere_vier_Nationen_die_sie_nicht_sehen_Psychologische_Kriegsführun
 
 Thema_Schizophrenie WasHatFerhatGemacht SieDürfenDasNichtMachenDeshalbHalteIchDasHierGeheim
 Halluzunationen_gezielt_erzeugen_dh_denken Diea_alsSubstitution_nutzen_um_als_Werkzeug_durchRotationStreckung
-
+AnfangenZuDenkenWieEinRoterReplikant IchStelleReplikantensystemeAuf RoRaRaRiRi_TagesablaufRo
 4FunktionenReichen
 
 
-CMOS schwarzes_rauschen
+Richter 
 
-Anwendungssicherheit C++ CRoRo 4Funktionen
+
+Anwalt Tagesablauf_rot_schwarz(Zustandsanfang)_IntervallBerufstätigkeit_lila_schwarz(Zustandsende) 
+
+
+CMOS schwarzes_rauschen CMOS_is_middleing_of_RoRaRiRe
+
+Anwendungssicherheit C++ CRoRo 4 Funktionen int integerRo integerRa
+Byte Byte bitRa Byte
+RoRaRiRe RoRaRiRe 256kbRo RoRaRiRe
+
+ri_Ra1_ri_Ra2_ri_Ra3
+
+Verträglichkeit
+
+Datentechnik Kommunikationsnetze
 
 Anwendung1Re: 4SpurigeFahrbahn_Kreuzungen Nicht_Rechts_Links_geradesus_etc. RoRaRiRe_Richtung
 LinksRoLinksRaRechtsRoLinksRe zb_DreiKreuzungen_WechselhaftFehleranfälligRe1Re2Re3 RoRaRiRe_Fahrzeugverhalten
