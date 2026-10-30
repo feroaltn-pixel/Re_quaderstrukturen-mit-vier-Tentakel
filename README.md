@@ -140,6 +140,7 @@ CMOS schwarzes_rauschen CMOS_is_middleing_of_RoRaRiRe
 Anwendungssicherheit C++ CRoRo 4 Funktionen int integerRo integerRa
 Byte Byte bitRa Byte
 RoRaRiRe RoRaRiRe 256kbRo RoRaRiRe
+Re1Re2Re3 XXX ttt fff
 
 ri_Ra1_ri_Ra2_ri_Ra3
 
@@ -171,7 +172,7 @@ rotes_BosnienRi schwarzes_BosnienRi
 
 
 Krankmeldung DreiTagesfristRa 3333 Krankenversicherung
-RoRaRiRe
+RoRaRiRe Rezept
 RoSpurren Ra Spuren DurchSchnittlicheBrichht ArztRo
 SchlangeRe
 
@@ -223,6 +224,16 @@ Red_Physkalsche_StrukturenRo  _Physkalsche_StrukturenRo
 
 
 Re Re c Re
+
+t t Ro t
+RoRo RoRa RoRi RoRe
+Rotes_RoRo blaues_RoRo
+
+f f Ro f
+RoRo
+
+X X Ro X
+
 
 
 
