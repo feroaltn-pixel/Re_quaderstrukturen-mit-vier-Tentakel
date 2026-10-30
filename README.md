@@ -9,6 +9,8 @@ RoRaRiRe
 RoSpurren Ra Spuren DurchSchnittlicheBrichht ArztRo
 SchlangeRe
 
+GelbeSchuppelflechte BlaueNeurodermitis
+
 GottIstMüde GottIstMüde GottstMüde GottIstMüde
 GottstMüdeRo GottstMüdeRa GottstMüdeRi GottstMüdeRe
 Rot_schwarz_weise_audiospurenAnteil Analysieren Ernst Nehmen
