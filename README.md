@@ -9,6 +9,8 @@ RoRaRiRe
 RoSpurren Ra Spuren DurchSchnittlicheBrichht ArztRo
 SchlangeRe
 
+HalluzunationRo Halluzinationen Halluzunatoonen
+
 GelbeSchuppelflechte BlaueNeurodermitis
 
 GottIstMüde GottIstMüde GottstMüde GottIstMüde
