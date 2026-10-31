@@ -4,6 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Ich möchte schall inreweanealtskanzleiuniversitätetcöffnen
+Ihr kratzt in hirnsrealeunwissenddurchsynchronisierteAnwendungRuamzeit
+
 EsGehtUmSchallAlsMittelungInEvolution EsGehtWeiterhinUmöffnen_Schließen
 Richter_zb_öffnensieundschließenSie_zbAndocken_schallerzeugungbidirektionalbeuwstsein_
 Varisnte1
