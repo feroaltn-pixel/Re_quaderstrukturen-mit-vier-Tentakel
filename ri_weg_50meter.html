@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ri_Weg_50meter</title>
+<style>
+html,body{height:100%;margin:0;background:#05060d;color:#e8e8f0;font-family:system-ui,sans-serif;overflow:hidden}
+canvas{display:block}
+#hud{position:fixed;left:0;right:0;top:0;padding:calc(env(safe-area-inset-top,0px) + 10px) 14px 0;font-size:13px;line-height:1.5;pointer-events:none}
+#hud b{color:#ff5a5a}
+</style></head><body>
+<div id="hud"><b>ri_Weg</b> 50 m · Person bei 0 m sieht das <b>ri_ReRi_Element</b> bei 50 m<br><span id="d"></span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const W=innerWidth,H=innerHeight;
+const r=new THREE.WebGLRenderer({antialias:true});r.setSize(W,H);r.setPixelRatio(Math.min(devicePixelRatio,2));document.body.appendChild(r.domElement);
+const s=new THREE.Scene();s.background=new THREE.Color(0x05060d);s.fog=new THREE.Fog(0x05060d,20,90);
+const cam=new THREE.PerspectiveCamera(55,W/H,0.1,200);
+s.add(new THREE.AmbientLight(0xffffff,.6));
+const dl=new THREE.DirectionalLight(0xffffff,.8);dl.position.set(5,10,-5);s.add(dl);
+// Weg (Z: 0 -> -50)
+const path=new THREE.Mesh(new THREE.PlaneGeometry(3,50),new THREE.MeshStandardMaterial({color:0x1a1c2c}));
+path.rotation.x=-Math.PI/2;path.position.z=-25;s.add(path);
+const cols=[0xff3b3b,0xffc933,0x3b8cff,0xa855f7];
+for(let m=0;m<=50;m+=10){
+  const t=new THREE.Mesh(new THREE.BoxGeometry(3,.02,.15),new THREE.MeshBasicMaterial({color:cols[(m/10)%4]}));
+  t.position.set(0,.02,-m);s.add(t);
+  const c=document.createElement('canvas');c.width=128;c.height=64;const g=c.getContext('2d');
+  g.fillStyle='#fff';g.font='bold 40px sans-serif';g.textAlign='center';g.fillText(m+' m',64,44);
+  const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c)}));
+  sp.position.set(2.4,.6,-m);sp.scale.set(2,1,1);s.add(sp);
+}
+// Person
+const P=new THREE.Group();
+const mat=new THREE.MeshStandardMaterial({color:0xdddddd});
+const body=new THREE.Mesh(new THREE.CylinderGeometry(.22,.26,.9,16),mat);body.position.y=1.05;
+const head=new THREE.Mesh(new THREE.SphereGeometry(.17,16,16),mat);head.position.y=1.7;
+const legs=new THREE.Mesh(new THREE.CylinderGeometry(.2,.2,.6,16),new THREE.MeshStandardMaterial({color:0x444466}));legs.position.y=.3;
+P.add(body,head,legs);s.add(P);
+// ri_ReRi_Element bei -50: Ro Ra Ri Re + vier Tentakel
+const E=new THREE.Group();E.position.set(0,2,-50);s.add(E);
+const orbs=[];
+cols.forEach((c,i)=>{
+  const o=new THREE.Mesh(new THREE.SphereGeometry(.7,24,24),new THREE.MeshStandardMaterial({color:c,emissive:c,emissiveIntensity:.6}));
+  const a=i*Math.PI/2;o.position.set(Math.cos(a)*1.6,Math.sin(a)*1.6,0);E.add(o);orbs.push(o);
+  const t=new THREE.Mesh(new THREE.CylinderGeometry(.05,.18,3,8),new THREE.MeshStandardMaterial({color:c}));
+  t.position.set(Math.cos(a)*3,Math.sin(a)*3,0);t.rotation.z=a+Math.PI/2;E.add(t);
+});
+const core=new THREE.Mesh(new THREE.BoxGeometry(1.4,1.4,1.4),new THREE.MeshStandardMaterial({color:0xffffff,emissive:0x888888}));E.add(core);
+E.add(new THREE.PointLight(0xffffff,1.2,40));
+// Blickstrahl
+const ray=new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,1.7,-.2),new THREE.Vector3(0,2,-48)]),new THREE.LineBasicMaterial({color:0xff5a5a,transparent:true}));s.add(ray);
+// Sterne
+const pts=[];for(let i=0;i<400;i++)pts.push((Math.random()-.5)*160,Math.random()*60,-Math.random()*120);
+const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.Float32BufferAttribute(pts,3));
+s.add(new THREE.Points(sg,new THREE.PointsMaterial({size:.25,color:0xffffff})));
+// Gedankenblase: Re1 Re2 Re3 abwechselnd in Ri
+const bc=document.createElement('canvas');bc.width=256;bc.height=160;const bg=bc.getContext('2d');
+const bt=new THREE.CanvasTexture(bc);
+const bubble=new THREE.Sprite(new THREE.SpriteMaterial({map:bt,transparent:true}));
+bubble.position.set(0,3.1,0);bubble.scale.set(2.4,1.5,1);s.add(bubble);
+const hexes=['#ff3b3b','#3b8cff','#a855f7','#ffc933'];let lastB=-1;
+function setBubble(i){
+  bg.clearRect(0,0,256,160);const c=hexes[i];
+  bg.fillStyle='rgba(10,12,24,.85)';bg.strokeStyle=c;bg.lineWidth=5;
+  bg.beginPath();bg.ellipse(128,64,100,52,0,0,6.28);bg.fill();bg.stroke();
+  [[88,128,11],[72,146,7],[62,157,4]].forEach(q=>{bg.beginPath();bg.arc(q[0],q[1],q[2],0,6.28);bg.fill();bg.stroke()});
+  bg.fillStyle=c;bg.textAlign='center';
+  if(i<3){bg.font='bold 54px sans-serif';bg.fillText('Re'+(i+1),128,84)}
+  else{bg.font='bold 24px sans-serif';bg.fillText('ri_eigene_',128,62);bg.fillText('Interessen_ri',128,90)}
+  bg.fillStyle='#e8e8f0';bg.font='20px sans-serif';bg.fillText('Ri',128,114);
+  bt.needsUpdate=true;
+}
+// Wechselwirkung: Blase -> aktives re_ri_objekt
+const link=new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(),new THREE.Vector3()]),new THREE.LineBasicMaterial({color:0xffffff,transparent:true}));s.add(link);
+const wp=new THREE.Vector3();
+// Enge: zwei gegenläufige Kegel (Ra_ri_denken verengt zum Element, entgegengesetzte_enge verengt zur Person)
+function cone(len,rTop,rBot,zc,col){
+  const g=new THREE.Group();g.position.set(0,1.8,zc);
+  const m=new THREE.Mesh(new THREE.CylinderGeometry(rTop,rBot,len,16,1,true),new THREE.MeshBasicMaterial({color:col,wireframe:true,transparent:true,opacity:.35}));
+  m.rotation.x=Math.PI/2;g.add(m);s.add(g);return g;
+}
+const coneA=cone(24,1.2,.1,-13,0xff3b3b);
+const coneB=cone(22,.1,1.8,-37,0x3b8cff);
+function label(txt,col,x,y,z){
+  const c=document.createElement('canvas');c.width=320;c.height=64;const q=c.getContext('2d');
+  q.fillStyle=col;q.font='bold 24px sans-serif';q.textAlign='center';q.fillText(txt,160,42);
+  const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c),transparent:true}));
+  sp.position.set(x,y,z);sp.scale.set(5,1,1);s.add(sp);
+}
+label('Ra_ri_denken','#ff6b6b',-2.5,3.4,-13);
+label('entgegengesetzte_menge Ri','#6ba6ff',-3.4,4.2,-37);
+// schwarzer Stein (überlagert den Blickstrahl); roter Stein folgt später
+const stone=new THREE.Mesh(new THREE.SphereGeometry(.4,20,20),new THREE.MeshStandardMaterial({color:0x000000,roughness:.4}));
+const halo=new THREE.Mesh(new THREE.SphereGeometry(.48,20,20),new THREE.MeshBasicMaterial({color:0xaaaaaa,transparent:true,opacity:.25,side:THREE.BackSide}));
+stone.add(halo);s.add(stone);
+label('schwarzer Stein','#cccccc',2.6,2.6,-25);
+const dEl=document.getElementById('d');
+function loop(t){
+  t*=.001;
+  E.rotation.z=t*.6;orbs.forEach((o,i)=>o.scale.setScalar(1+.15*Math.sin(t*3+i*1.57)));
+  core.rotation.x=t;core.rotation.y=t*.7;
+  ray.material.opacity=.5+.5*Math.sin(t*4);
+  head.rotation.y=Math.sin(t*.8)*.1;
+  const bi=Math.floor(t/2)%4;if(bi!==lastB){lastB=bi;setBubble(bi)}
+  bubble.position.y=3.1+.08*Math.sin(t*2);
+  orbs.forEach((o,i)=>{o.material.emissiveIntensity=i===bi?1.4:.5;if(i===bi)o.scale.multiplyScalar(1.35)});
+  orbs[bi].getWorldPosition(wp);
+  link.geometry.setFromPoints([bubble.position.clone(),wp.clone()]);
+  link.material.color.set(hexes[bi]);link.material.opacity=.4+.6*Math.abs(Math.sin(t*3));
+  coneA.rotation.z=t*.5;coneB.rotation.z=-t*.5;
+  const sz=-3-(Math.sin(t*.3)+1)/2*40;
+  stone.position.set(0,1.9+.2*Math.sin(t*2),sz);
+  // Kamera: langsam von hinter der Person bis zur Seite
+  const k=(Math.sin(t*.25)+1)/2;
+  cam.position.set(k*9-1.2,2.4+k*2,5+k*3);cam.lookAt(0,1.8,-8-k*14);
+  dEl.textContent='Sichtdistanz: 50 m · Ro Ra Ri Re · hilfsRa Ri';
+  r.render(s,cam);requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+addEventListener('resize',()=>{r.setSize(innerWidth,innerHeight);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()});
+</script></body></html>
