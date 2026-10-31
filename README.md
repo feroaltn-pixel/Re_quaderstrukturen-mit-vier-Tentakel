@@ -9,6 +9,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 Was sind "Replikanten" ? Werkzeug_Das_Sind_soetwas_wie_Treppenstufen Hilfsbezeichnung 
 DreiMusiknotensindeineMittelungvon_Replikanten"systemen"
+Weil Das keine Ecken sind und man Räume Ken und Gebäudeecken Bezug nimmt 
 
 Liebe Behörde DasSindKeineBits_Das_sind_Mittelungen_von_RoRaRiRe ReplikantenRaBits
 DasSindKeineFrequenzenDassindEineMittelungVon._RoRaRiRe_Replikantenkratzspuren 
