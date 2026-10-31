@@ -25,6 +25,37 @@ SchallöffnenPhotonSchließenVibration_Ro SchallöffnenPhotonSchließenVibration
 
 Halbleiter Physik kennlinie mathemstik_physik
 
+module game_clockRoch_PuaseRi(
+    input wire clk,
+    input wire rst,
+    input wire pause,
+    output reg game_clk
+    );
+
+    reg [31:0] counterRo;
+    always @ (posedge clk) begin
+        if (!pause) begin
+            if (rst) begin
+                counter <= 0;
+                game_clk <= 0;
+            end else begin
+                if (counter == 25000000) begin // 1 Hz
+                    counter <= 0;
+                    game_clk <= 1;
+                end else begin
+                    counter <= counter + 1;
+                    game_clk <= 0;
+                end
+            end
+        end
+    end
+
+endmodule
+
+endmoduleRo endmoduleRa endmoduleRoi endmoduleRe
+endmoduleRoiRo endmoduleRoiRa
+endmoduleRoiRo_black endmoduleRoiRo_red
+Counter RoRo (schall==phoxon)Ro (posedge clk)Ro regRo
 
 YoutubetubeetcgenaubeiöffnenschließenGedankenAufKopfhauen
 Öffnen1 Schließen1 ÖffnenRo SchließenRo
