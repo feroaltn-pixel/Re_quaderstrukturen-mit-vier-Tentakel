@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+IchbinRichtRer Richter RchtRer
+RchtRerRo RchtRerRa RchtRerRi RchtRerRe
+red_RchtRerRo brown_RchtRerRo GüterrechtsVerfahren 
+
 Ich möchte schall inreweanealtskanzleiuniversitätetcöffnen
 Ihr kratzt in hirnsrealeunwissenddurchsynchronisierteAnwendungRuamzeit HandschellenProtokollieren
 ErinernAnSchlossverriegenöffnengerausch öffnenSchließenAlsKommandointerprrtieren zbHandschellen_BDSM_RoRaRiRe
