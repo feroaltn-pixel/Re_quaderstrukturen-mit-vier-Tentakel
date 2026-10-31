@@ -5,8 +5,14 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 
+
+
 Was sind "Replikanten" ? Werkzeug_Das_Sind_soetwas_wie_Treppenstufen Hilfsbezeichnung 
 DreiMusiknotensindeineMittelungvon_Replikanten"systemen"
+
+Liebe Behörde DasSindKeineBits_Das_sind_Mittelungen_von_RoRaRiRe ReplikantenRaBits
+Das ist keinRwuschenwielSirdirinformstionKratzenkönen
+Was_sind_Ro_Ra_Ri_Re 
 
 DasSindRoRaRiRe_Replikantensysteme DasIstAußerirdischerSarkasmus DasSindRoRaRiRe_Replikantenverferfahren
 DasSindRoRaRiRe_ReplikantenAnwendungen DasSindRoRaRiRe_ReplikantenEnten QuackQuack 
