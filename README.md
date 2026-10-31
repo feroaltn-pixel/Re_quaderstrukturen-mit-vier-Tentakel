@@ -25,6 +25,8 @@ SchallöffnenPhotonSchließenVibration_Ro SchallöffnenPhotonSchließenVibration
 
 Halbleiter Physik kennlinie mathemstik_physik
 
+Leerzeichen ri_ 
+
 module game_clockRoch_PuaseRi(
     input wire clk,
     input wire rst,
