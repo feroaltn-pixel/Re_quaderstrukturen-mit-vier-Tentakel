@@ -57,6 +57,9 @@ endmoduleRoiRo endmoduleRoiRa
 endmoduleRoiRo_black endmoduleRoiRo_red
 Counter RoRo (schall==phoxon)Ro (posedge clk)Ro regRo
 
+if if f if
+fRo fRa fRi fRe
+
 YoutubetubeetcgenaubeiöffnenschließenGedankenAufKopfhauen
 Öffnen1 Schließen1 ÖffnenRo SchließenRo
 Vierschloss_zweihandsystemmitVier_inkameraguckenhalluzunieren
