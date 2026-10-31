@@ -18,6 +18,10 @@ r_Balkanija r_Balkanija r_Balkanja r_Balkanija
 r_BalkanjaRo r_BalkanjaRa r_BalkanjaRi r_BalkanjaRe
 HierHalluzunierteInformationProduzieren HierHalluzunierteInformationProduzieren Re1Re2Re3 r_BalkanjaRa==0
 
+DasIstEinSchlüssselZuMeinemHerz(Key) 
+KeyRo KeyRa KeyRi KeyRe
+Key1 KeyRe1KeyRe2KeyRe3 Notruf_sirenen_schloss_beiausteigen_motorandersverarbeiten
+
 
 RontacleRantscleOrakelRentakel
 
