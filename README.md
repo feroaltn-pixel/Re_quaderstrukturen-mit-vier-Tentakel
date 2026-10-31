@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+MitRe1Re2Re3drückeIchAus GezieltHirnarealNeuronenAuszurichten WeilMensfjenFehleranfälligSind
+Re1RoR1_solllenIhnenDasErklären
+Re1RoR1Ro  Re1RoR1Ra Re1RoR1Ri Re1RoR1Re
+RoRaRiRe_sind_Kommandos_die_sie_erkennen_müssen_ähnlich_Or_Ar_Ir_Er_.. I_laute_ OderMittelungDazeischen
 
 
 
