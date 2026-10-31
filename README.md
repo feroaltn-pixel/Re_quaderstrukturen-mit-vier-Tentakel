@@ -25,6 +25,8 @@ Varisnte2
 
 Video1 VideoRo EinbettungRi EinbettunghtmlYoutubevideo
 
+Radar_Sonar_Lidar txRo rxRo TRo=1Ro+RRo
+
 
 ImKameraGegucktSünet_BeeinträchtigungenInKameraGuckenLassenRi 
 
