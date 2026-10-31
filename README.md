@@ -65,6 +65,8 @@ fRo fRa fRi fRe
 black_fRo red_fRo
 (black_fRo) Ro 
 
+I na Mandslorian_waffe_Kommisionierung_Bobafett
+
 RegisterRo RegisterRo RegisterRi RegisterRe
 0x6F if("xRo" =="exp(-x)) Re1RichterKrankenhausRe
 
