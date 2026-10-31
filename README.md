@@ -13,6 +13,7 @@ ImKameraGegucktSünet_BeeinträchtigungenInKameraGuckenLassenRi
 
 (Braunschweig or Hannover)Ro TUBS_Instagramm_Fallbeispiel öffnen_schließenGedankne_andersAnwendenImRaum
 Java RoRaRiRe_KlassenErzeugen eg_Map1Map2MapRoMapRa_Ri_alldesorientied exp(xRo) GeometricReihen
+SchallöffnenPhotonSchließenVibration_dreimalAufKopfBerührenArztRi
 
 Halbleiter Physik kennlinie mathemstik_physik
 
