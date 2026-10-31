@@ -61,6 +61,11 @@ Counter RoRo (schall==phoxon)Ro (posedge clk)Ro regRo
 
 if if f if
 fRo fRa fRi fRe
+black_fRo red_fRo
+(black_fRo) Ro 
+
+RegisterRo RegisterRo RegisterRi RegisterRe
+0x6F if("xRo" =="exp(-x)) Re1RichterKrankenhausRe
 
 YoutubetubeetcgenaubeiöffnenschließenGedankenAufKopfhauen
 Öffnen1 Schließen1 ÖffnenRo SchließenRo
