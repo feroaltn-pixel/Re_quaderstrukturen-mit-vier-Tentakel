@@ -8,6 +8,8 @@ GenauZwischenHyperschallErzeugung_Schalten_HyperschallgeschwindigkeitAufFresseHa
 SchallGezieltAnwenden_als_SchallwellenausrichtungRi InformaionStauchendStreckenSpeisen DigitalanzeigeAusmitte
 StreckennachSenke QuellenUndSenkenOptimalAuflösenRo
 
+Translation Rotation Ro wRo_4_4Ro_(4km/h)Ro
+
 IchbinRichtRer Richter RchtRer
 RchtRerRo RchtRerRa RchtRerRi RchtRerRe
 red_RchtRerRo brown_RchtRerRo GüterrechtsVerfahren 
