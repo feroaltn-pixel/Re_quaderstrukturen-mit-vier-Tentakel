@@ -4,6 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+GenauZwischenHyperschallErzeugung_Schalten_HyperschallgeschwindigkeitAufFresseHauenRi
+SchallGezieltAnwenden_als_SchallwellenausrichtungRi
+
 IchbinRichtRer Richter RchtRer
 RchtRerRo RchtRerRa RchtRerRi RchtRerRe
 red_RchtRerRo brown_RchtRerRo GüterrechtsVerfahren 
