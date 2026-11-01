@@ -8,7 +8,8 @@ GenauZwischenHyperschallErzeugung_Schalten_HyperschallgeschwindigkeitAufFresseHa
 SchallGezieltAnwenden_als_SchallwellenausrichtungRi InformaionStauchendStreckenSpeisen DigitalanzeigeAusmitte
 StreckennachSenke QuellenUndSenkenOptimalAuflösenRo
 
-Translation Rotation Ro wRo_4_4Ro_(4km/h)Ro ElonMuskKindNameRi
+Translation Rotation Ro wRo_4_4Ro_(4km/h)Ro ElonMuskKindNameRi X Æ A-12
+RiBuchstabenstrckrnBidirektionalFallbrispielAlphabetRaumzeitVerhaltenAnalyseLinguistikRo
 
 IchbinRichtRer Richter RchtRer
 RchtRerRo RchtRerRa RchtRerRi RchtRerRe
