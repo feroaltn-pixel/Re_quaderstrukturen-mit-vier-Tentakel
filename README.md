@@ -4984,6 +4984,7 @@ HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieJusrist
 E-AkteRo HandelsüberschussRi DemonstrantenSagen_"nazis_raus"Ro_PolizeiMarschRi_Re1Re2Re3 
 BehördenArbeitAufRedundanzReduzieren_zbStempelnRo Delegitimierung
 
+KIstattMitarbeiter:O2RoverkauftCallcenterTelefónicainRostock|NDRInfo
 
 
 
