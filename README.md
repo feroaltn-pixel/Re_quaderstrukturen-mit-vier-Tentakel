@@ -40,6 +40,8 @@ AnderesOperatingSystem EfeldRo EfeldRaEfeldRi EfeldRe_wievieleAuslenkungenHatBAn
 Thema_TemperaturSkalarfeldFeldverteilung 
 
 Blackosmosis reverseosmosis p1V1=p2V2_Ri NavierStokesRo
+VolumenRe VolumenRe BeweisIhnenDasDassKeinVolumenIstRi VolumenRe
+StirlingProzessÄhnlichRi mgh_vier_Massen_mRo_mRa_mRi_mRe_und_nicht_zweiMassenRi vRo_vRa_viergescheindigkeitRi
 
 EntropieRo WärmekraftmaschineRi
 
