@@ -5,7 +5,8 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 GenauZwischenHyperschallErzeugung_Schalten_HyperschallgeschwindigkeitAufFresseHauenRi
-SchallGezieltAnwenden_als_SchallwellenausrichtungRi
+SchallGezieltAnwenden_als_SchallwellenausrichtungRi InformaionStauchendStreckenSpeisen DigitalanzeigeAusmitte
+StreckennachSenke QuellenUndSenkenOptimalAuflösenRo
 
 IchbinRichtRer Richter RchtRer
 RchtRerRo RchtRerRa RchtRerRi RchtRerRe
