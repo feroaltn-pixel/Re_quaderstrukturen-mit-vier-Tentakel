@@ -40,6 +40,7 @@ Three-PhaseSystemRo KuraatRo Drahtlos Ro 50Hz_4Ro
 
 AbhörenRo AbhörenRa AbhörenRi AbhörenRe
 SchallVibrationPhoxonÖffnenSchließenRichtungswechsel_circuitBreaker_schsltenFrewuenz_4RoRaRiRe
+GlrichtsichtglasRo BrillenRo_VibrationenSchallPhoxonenÖffnen_RichtungswechselRo
 
 
 BruchstrichStelltGestreckteInformationDarRo
