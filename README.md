@@ -50,6 +50,10 @@ DasIstKeinRauschenRoDasIstKeinSpektrumRoDasIstRaIstRauschenSpektrumRa RaRichtung
 DasIstKeinRauschenRoDasIstKeinSpektrumRoDasIstRaIstRauschenSpektrumRi RiRichtung
 DasIstKeinRauschenRoDasIstKeinSpektrumRoDasIstRaIstRauschenSpektrumRe ReRichtung
 
+RoSchild RaSchild Verkehrsschilder ReSchild
+SchildRo SchildRa SchildRi SchildRe
+KratzenRo KratzenRa KratzenRi KratzenRe
+
 IchbinRichtRer Richter RchtRer
 RchtRerRo RchtRerRa RchtRerRi RchtRerRe
 red_RchtRerRo brown_RchtRerRo GüterrechtsVerfahren 
