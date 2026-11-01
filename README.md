@@ -36,6 +36,10 @@ Ro Ra Ri Re
 MEESRo MEESRa MEESRi MEESRe
 Three-PhaseSystemRo KuraatRo Drahtlos Ro 50Hz_4Ro
 50Hz_erweiternZuRi 50Hz_4RoRo Frewurnzsspektrum_4Hz_4Ro_0Ro
+ÜberSpannungsabgriffMitteAngriffspunktErzeugenGezielt_bei_4_8_12_16_abhörmaßnahmen
+
+AbhörenRo AbhörenRa AbhörenRi AbhörenRe
+SchallVibrationPhoxonÖffnenSchließenRichtungswechsel_circuitBreaker_schsltenFrewuenz_4RoRaRiRe
 
 
 BruchstrichStelltGestreckteInformationDarRo
