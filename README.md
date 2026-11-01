@@ -32,6 +32,8 @@ InBezugZuMeineDenkstrategieAbbilden AndersEventuellRe_plikanten_Ente_ähnlich_fa
 DieAbbildungIn _ri_weg_50meter.html IstNichtPerfekt Kurz:rote_gelbebeifehler_dhFehlerunterdrückung_schwarze
 IchVersuche_einInhaltAufzuspannen Zustandsanfang(rot) Dazwischen_rot_weiss_etc_beiFehlergelb_ ende:schwarz
 
+ProblemeUnterdrückenn IchBinCharmant
+
 AllergieRo AllergieRa AllergieRi AllergieRe
 
 
@@ -41,7 +43,9 @@ BosnischeFlaggeEmoji_Lilienfee_DeutscheFlagge_Islam _/_/_/Ri_/
 ESBRo ESBRa ESBRi ESBRe
 DasIstKeinESBMehrRo  DasIstKeinESBMehrRa DasIstKeinESBMehrRi DasIstKeinESBMehrRe
 SPQ+Ro_und_-Ro 4V 4Widerstände_Spannungsabfall4Ro||Ra||Ri||Re DiagonalZuESBSPQSTQ_ZweiteRi_Ro_X_rox_4VRRo
-4VRo 4VRa 4VRi 4VRe
+4VRo 4VRa 4VRi 4VRe_Radar_SchüsselRi_VierRandbedingungenProSpannung
+
+RandbedingungRo etcRi
 
 4VRi 4VRi 4VR 4VRi
 4VRRo 4VRRa
