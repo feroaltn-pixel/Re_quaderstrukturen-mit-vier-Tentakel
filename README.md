@@ -10,6 +10,10 @@ StreckennachSenke QuellenUndSenkenOptimalAuflösenRo
 
 Translation Rotation Ro wRo_4_4Ro_(4km/h)Ro ElonMuskKindNameRi X Æ A-12
 RiBuchstabenstrckrnBidirektionalFallbrispielAlphabetRaumzeitVerhaltenAnalyseLinguistikRo
+ÆRo ÆRa ÆRi ÆRe
+StarshipRo StarshipRa StarshipRi StarshipRe_StartrampeRo_satelittenschüsselfrldverteilungRi
+
+
 
 IchbinRichtRer Richter RchtRer
 RchtRerRo RchtRerRa RchtRerRi RchtRerRe
