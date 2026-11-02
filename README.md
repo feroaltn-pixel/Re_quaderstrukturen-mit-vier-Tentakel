@@ -21,7 +21,7 @@ mRo_mRa_mRi_mRe AngriffspunkteRi
 
 Anwalt1i Anwalt2i
 
-Vibrator Schlagstock
+Vibrator Schlagstock ProstitutionRoRaRiRe FallbeispielBruchstraßeBraunschweig_HannoverSteintor
 
 
 
