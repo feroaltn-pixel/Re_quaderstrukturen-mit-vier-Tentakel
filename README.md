@@ -17,6 +17,7 @@ ChatgptRiRi ClaudeRiRi DeepmindRiRi AgentenAllesrotierenRi_BDIAgentspeakRo
 
 
 MailalsMassenverteilungSehenRo OsziloskopRotieren Jets_Flüge_Raketen_SatelittenBeobschtenRi
+MasseEnergieLeistungKraftSchallLhotonVibrationenUniversumRikontinuierlichumwandelnRi Ri RI Riaufhören
 
 KadirSahan FrankKlingebiel 
 Seite4 Sete4_getMethodsRo txrx
