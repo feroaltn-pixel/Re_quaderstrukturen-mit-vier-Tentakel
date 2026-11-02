@@ -13,6 +13,7 @@ DoppelspaltexperimentWICHTIG Hauptmaxima_nebenmaxima_romaxima_rimaxima XX3X c_0_
 c c c8 c
 c8Ro c8Ra c8Ri c8Re
 KriegsspieleRo EntferntestesObjekt Entladenzb_mRo Barcode_rotierenRi
+ChatgptRiRi ClaudeRiRi DeepmindRiRi AgentenAllesrotierenRi_BDIAgentspeakRo
 
 
 MailalsMassenverteilungSehenRo OsziloskopRotieren
