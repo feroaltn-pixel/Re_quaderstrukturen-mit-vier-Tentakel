@@ -20,6 +20,13 @@ KadirSahan FrankKlingebiel
 Seite4 Sete4_getMethodsRo txrx
 TatooRo TatooRa DruckerRi TatooRe
 
+ICHBINEINEEMAILDIEGEZIELTALSMASSENVERTEILUNGWÄHRENDÖFFNENVORGANGSINSERVERARCHITEKTUR Missbraucht dssihr re
+MauszeigerVerwendetzb dersichbewegt MauszeigerRotieren IchBinEinMenschReplikant
+240ml 240ml 240mlRi 240ml
+240mlRiRo 240mlRiRa 240mlRiRa 240mlRiRe_IchBinDerMeinungIhrSeidDaDrinne
+
+Eigeneserversysteme_entkoppelt
+
 TatooRotieren
 
 mRo_mRa_mRi_mRe Angriffspunkte Ri less_autonome_systems_more_ _mRo_ integerRo_masseRo_Ri
