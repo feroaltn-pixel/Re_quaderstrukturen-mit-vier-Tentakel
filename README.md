@@ -22,7 +22,7 @@ PersonSiehtNichtdanschausdesorientiertRo PersonSiehtNichtdanschausdesorientiertR
 
 AntriebsstrangDimensionierenRotationRo EnergieSpeicherTrägtRotierrndeInformation
 LastträgtRotierrndeInformationRo 230V_ ACRoRa DCRiRe RoRaRiRe RotierendeGlühbirne
-RotierendeLhotonenLaseretc
+RotierendeLPhotonenLaseretc RotierendeOsziloskop
 
 
 PornoRo
