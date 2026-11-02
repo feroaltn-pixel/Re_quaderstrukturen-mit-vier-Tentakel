@@ -18,6 +18,9 @@ MailalsMassenverteilungSehenRo OsziloskopRotieren
 
 KadirSahan FrankKlingebiel 
 Seite4 Sete4_getMethodsRo txrx
+TatooRo TatooRa DruckerRi TatooRe
+
+TatooRotieren
 
 mRo_mRa_mRi_mRe Angriffspunkte Ri less_autonome_systems_more_ _mRo_ integerRo_masseRo_Ri
 
