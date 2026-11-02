@@ -5,13 +5,14 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 
-MassenvernichtungswaffenMassenverteilungÄndern E=mc^2_Rotieren RoRaRiRe
+MassenvernichtungswaffenMassenverteilungÄndern E=mc^2_Rotieren RoRaRiRe_proRotation_
 Materialparameterfehleranfällig4 1Staatsexam 2Staatsexam RoStastsexam RaStaatsexam_beeinträchtigungen
 TUBs_brückenfarbe BrückenfarbeRotieren EndgültigNichtbestandenIrausnehmen IchbinRichtRer
 DoppelspaltexperimentWICHTIG Hauptmaxima_nebenmaxima_romaxima_rimaxima XX3X c_0_8_ro_ra_ri_re_c=sqrt(1/(eu))
 
 c c c8 c
 c8Ro c8Ra c8Ri c8Re
+KriegsspieleRo EntferntestesObjekt Entladenzb_mRo Barcode_rotierenRi
 
 
 MailalsMassenverteilungSehenRo OsziloskopRotieren
