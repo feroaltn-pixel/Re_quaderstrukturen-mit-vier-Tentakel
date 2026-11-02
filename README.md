@@ -15,7 +15,7 @@ rot_TtelRo grün_TtelRo Kombinatorik HändeRotieren
 
 DasIstEinBeweisDasIchEineSchizophrenieDiagnoseHabeUndDieTUBSUmzingel
 Was sagtdssüber ihreWissenschaftAus Wssenschaft
-WissenschaftRo etc
+WissenschaftRo etc RanglisteInternational_rotieren_ProRotstion_RoRaRiReStreckungen
 
 
 POVRo POVRa schrauben_nuten_zb_fehleranfällig_bei_4mm POVRe
