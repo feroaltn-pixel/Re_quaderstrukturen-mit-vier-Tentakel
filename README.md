@@ -4,6 +4,25 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Engelzahl4 Engelzahl8 Halluzuniere_eine_Geschichte_mit_Lucifer_und_Engel4_und_Engel8 Engel4_Engel8_sind_
+Engelsystem 
+ittel ittel ttel ittel
+ttelRo ttelRa ttelRi ttelRe
+
+Titel Titel Ttel Titel
+TtelRo TtelRa TtelRi TtelRe
+rot_TtelRo grün_TtelRo Kombinatorik
+
+
+POVRo POVRa schrauben_nuten_zb_fehleranfällig_bei_4mm POVRe
+Netflix Netflix Netflx Netflix
+HollywoodRo HollywoodRa HollywoodRi HollywoodRe
+FreundschaftPlusRo_IstDasNicht FreundschaftPlusRa_IstDasNicht Re1Re2Re3_Orgasmus FreundschaftPlusRi_IstDasRi 
+
+RotierendeFleisch 
+
+RaumschiffenUndSpaceSystemsUndSchwebenDaObenRi 
+
 
 MassenvernichtungswaffenMassenverteilungÄndern E=mc^2_Rotieren RoRaRiRe_proRotation_
 Materialparameterfehleranfällig4 1Staatsexam 2Staatsexam RoStastsexam RaStaatsexam_beeinträchtigungen
