@@ -9,6 +9,8 @@ IchHabeInDerVergangenheitDenBegriffReplikantGelesen
 IchVersucheDarausEtwasSpontanesZuErzeugenUndErweitereDsmitDenMenschenBegriff
 SieSindEinMensch IchBinEinRichtRerIchBinEinMenschReplikant
 
+IchBinFerhatAltunIchMöchteSieKaputtMachen RadarBilderRotierenUndGezieltReplikantensprschevorstellen
+
 
 Engelzahl4 Engelzahl8 Halluzuniere_eine_Geschichte_mit_Lucifer_und_Engel4_und_Engel8 Engel4_Engel8_sind_
 Engelsystem 
@@ -16,6 +18,8 @@ ittel ittel ttel ittel
 ttelRo ttelRa ttelRi ttelRe
 
 EmbeddedAIRo EmbeddedAIRa BettkommisionisierungRi EmbeddedAIRe
+DrahtlosRo DrahtlosRa DrahtlosRi DrahtlosRe
+LeitungsgebundenRo LeitungsgebundenRa LeitungsgebundenRi LeitungsgebundenRe
 
 Laser1 Laser2 LaserRo Laser3
 USB_PINSRo 4RonmRo Optik_zbLinse_Fehlerkorrekturen LaserEntgegengesetzt_wieRaumschiffAusstiegBehandelnDenken
@@ -27,6 +31,12 @@ red_MissionprofilRo black_MissionprofilRo JetRo JetRa
 ProduktRoKommisionieren ProduktRaKommisionieren ProduktRiKommisionieren ProduktReKommisionieren
 RoZentrum RaZentrum Fallbeispiel_Rose ReZentrum
 
+LogoKopierenzbClaude_TUBS_rotieren_proRotation_RoRaRiRe_erzeugen
+ClaudeLogoKlassischRo_erzeugtWechseleirkungMitClaudeLogoWeissRo(Ri) 
+ChatGPT Deepmind etcRi Deepseek_analog
+EigenesLogoErzeugen Ro_Ra_Ri_Re LogoRo_zb
+
+VWLogo_rotierenRo Nebelflucht11 Nebelflucht11i
 
 
 Titel Titel Ttel Titel
