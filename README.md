@@ -10,6 +10,7 @@ Materialparameterfehleranfällig4 1Staatsexam 2Staatsexam RoStastsexam RaStaatse
 TUBs_brückenfarbe BrückenfarbeRotieren EndgültigNichtbestandenIrausnehmen IchbinRichtRer
 DoppelspaltexperimentWICHTIG Hauptmaxima_nebenmaxima_romaxima_rimaxima XX3X c_0_8_ro_ra_ri_re_c=sqrt(1/(eu))
 
+FlugsystemRo FlugsystemRa BeliebigesKlassischesFlugsystem FlugsystemRe
 c c c8 c
 c8Ro c8Ra c8Ri c8Re
 KriegsspieleRo EntferntestesObjekt Entladenzb_mRo Barcode_rotierenRi
