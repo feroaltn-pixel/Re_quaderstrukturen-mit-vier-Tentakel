@@ -12,6 +12,8 @@ GewaltschutzverfahrenRo GewaltschutzverfahrenRa Gewi GewaltschutzverfahrenRe
 GewiRo GewiRa GewiRi GewiRe
 rotes_GewiR rotes_Gewehr
 
+EsGehtUmBundesBürgerGesundheit DieBundesbürgerSindAlleImKopfKaputt DasIstEineHilfsvariablelle
+
 FallbeispielIrenenstift PersonSiehtNichtdanschausdesorientiertRa Zeigerrotieren
 PersonSiehtNichtdanschausdesorientiertRo PersonSiehtNichtdanschausdesorientiertRa.. 
 
