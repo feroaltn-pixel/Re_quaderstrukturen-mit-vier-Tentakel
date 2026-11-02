@@ -19,6 +19,9 @@ WiderstandAlsAddionDsrstellen Anstatt4UhrZusagen_4UhrRotSchwarz(Ro)
 RotSchearzDientAlsUhrZeitähnlicherQuantinisierterZustandsbeschreibunf...Ro...Ro
 WunFallbeispiel:DerSchslterwird_ts_geschaltet_IstWenigInformation_rotschwarz_lila_schwarzInfo_fehlt
 
+SiemachenUnbewusstRoRaRiRe Re1Re2Re3(Ro1)XRa1Ra2Ra3(Ro2) zbC1C2C3_CRo L1L2_LRoLRa
+SieSindJetztFehleranfälligInNetzwerken
+
 
 Engelzahl4 Engelzahl8 Halluzuniere_eine_Geschichte_mit_Lucifer_und_Engel4_und_Engel8 Engel4_Engel8_sind_
 Engelsystem 
