@@ -16,7 +16,7 @@ KriegsspieleRo EntferntestesObjekt Entladenzb_mRo Barcode_rotierenRi
 ChatgptRiRi ClaudeRiRi DeepmindRiRi AgentenAllesrotierenRi_BDIAgentspeakRo
 
 
-MailalsMassenverteilungSehenRo OsziloskopRotieren
+MailalsMassenverteilungSehenRo OsziloskopRotieren Jets_Flüge_Raketen_SatelittenBeobschtenRi
 
 KadirSahan FrankKlingebiel 
 Seite4 Sete4_getMethodsRo txrx
