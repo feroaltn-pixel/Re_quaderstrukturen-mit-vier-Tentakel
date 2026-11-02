@@ -14,6 +14,9 @@ FilterRo LNARi BandbassfilterMischerReElementeRo RiRiRi
 Vierpole RoRaRiRe Matrix SieverwendenDie4unbewusstAlsRo_4V_EingangsspannungSollIhnErklären
 230V=40V+40V+40V+40V+40V+30V RoRaRiReWieStrahlungsDiaGrammInAusrichtungsinformationRo
 
+AnhandWunErklären U(t) U(Ro) DasIstKeineZeitRoSondernSymmetrienRo U(f)_Amplitudenspektrum
+WiderstandAlsAddionDsrstellen
+
 
 Engelzahl4 Engelzahl8 Halluzuniere_eine_Geschichte_mit_Lucifer_und_Engel4_und_Engel8 Engel4_Engel8_sind_
 Engelsystem 
