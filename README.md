@@ -8,14 +8,18 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 MassenvernichtungswaffenMassenverteilungÄndern E=mc^2_Rotieren RoRaRiRe
 Materialparameterfehleranfällig4 1Staatsexam 2Staatsexam RoStastsexam RaStaatsexam_beeinträchtigungen
 TUBs_brückenfarbe BrückenfarbeRotieren EndgültigNichtbestandenIrausnehmen IchbinRichtRer
-DoppelspaltexperimentWICHTIG Hauptmaxima_nebenmaxima_romaxima_rimaxima XX3X
+DoppelspaltexperimentWICHTIG Hauptmaxima_nebenmaxima_romaxima_rimaxima XX3X c_0_8_ro_ra_ri_re_c=sqrt(1/(eu))
 
-MailalsMassenverteilungSehenRo
+c c c8 c
+c8Ro c8Ra c8Ri c8Re
+
+
+MailalsMassenverteilungSehenRo OsziloskopRotieren
 
 KadirSahan FrankKlingebiel 
 Seite4 Sete4_getMethodsRo txrx
 
-mRo_mRa_mRi_mRe AngriffspunkteRi
+mRo_mRa_mRi_mRe Angriffspunkte Ri less_autonome_systems_more_ _mRo_ integerRo_masseRo_Ri
 
 
 
