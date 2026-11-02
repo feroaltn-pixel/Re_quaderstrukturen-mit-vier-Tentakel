@@ -4,16 +4,25 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+IhrEntwickeltUnbewusstRoRaRiRe_Replikantenforschung
+IchHabeInDerVergangenheitDenBegriffReplikantGelesen
+IchVersucheDarausEtwasSpontanesZuErzeugenUndErweitereDsmitDenMenschenBegriff
+SieSindEinMensch IchBinEinRichtRerIchBinEinMenschReplikant
+
+
 Engelzahl4 Engelzahl8 Halluzuniere_eine_Geschichte_mit_Lucifer_und_Engel4_und_Engel8 Engel4_Engel8_sind_
 Engelsystem 
 ittel ittel ttel ittel
 ttelRo ttelRa ttelRi ttelRe
 
+EmbeddedAIRo EmbeddedAIRa BettkommisionisierungRi EmbeddedAIRe
+
 Laser1 Laser2 LaserRo Laser3
 USB_PINSRo 4RonmRo Optik_zbLinse_Fehlerkorrekturen LaserEntgegengesetzt_wieRaumschiffAusstiegBehandelnDenken
 MissionRo MissionRa Emission MissionRe
 MissionsprofilRo MissionsprofilRa MissionsprofilRi MissionsprofilRe
-red_MissionprofilRo black_MissionprofilRo 
+
+red_MissionprofilRo black_MissionprofilRo JetRo JetRa
 
 ProduktRoKommisionieren ProduktRaKommisionieren ProduktRiKommisionieren ProduktReKommisionieren
 RoZentrum RaZentrum Fallbeispiel_Rose ReZentrum
