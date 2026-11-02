@@ -4,6 +4,27 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+
+MassenvernichtungswaffenMassenverteilungÄndern E=mc^2_Rotieren RoRaRiRe
+Materialparameterfehleranfällig4 1Staatsexam 2Staatsexam RoStastsexam RaStaatsexam_beeinträchtigungen
+TUBs_brückenfarbe BrückenfarbeRotieren EndgültigNichtbestandenIrausnehmen IchbinRichtRer
+DoppelspaltexperimentWICHTIG Hauptmaxima_nebenmaxima_romaxima_rimaxima XX3X
+
+MailalsMassenverteilungSehenRo
+
+KadirSahan FrankKlingebiel 
+Seite4 Sete4_getMethodsRo txrx
+
+mRo_mRa_mRi_mRe AngriffspunkteRi
+
+
+
+Anwalt1i Anwalt2i
+
+Vibrator Schlagstock
+
+
+
 GenauZwischenHyperschallErzeugung_Schalten_HyperschallgeschwindigkeitAufFresseHauenRi
 SchallGezieltAnwenden_als_SchallwellenausrichtungRi InformaionStauchendStreckenSpeisen DigitalanzeigeAusmitte
 StreckennachSenke QuellenUndSenkenOptimalAuflösenRo
