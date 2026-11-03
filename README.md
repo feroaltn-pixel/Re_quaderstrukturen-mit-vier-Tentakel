@@ -25,6 +25,7 @@ WolodymryrRo WolodymryrRa WolodymryrRi WolodymryrRe
 SkyRo SkyRa SkyRi SkyRe
 
 RhodeIslandRo RhodeIslandRa RouteIslandRe1Re2Re3 RhodeIslandRe
+SplodytelRo 
 
 SkyDragonSlashRo SkyDragonSlashRa SkyDragonSlashRi SkyDragonSlashRe
 RedBlack(Ro)_BreathingDragon BlackWhite(Ra)_BreathingDragon Re1Re2Re3 WhiteGreen(Re)_BreathingDragon
