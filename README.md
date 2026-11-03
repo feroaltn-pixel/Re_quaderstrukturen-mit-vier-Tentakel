@@ -24,6 +24,7 @@ Steinecke4x_3333 PINS_SystemeAufspannen
 Kugelstoßpendel_VibrationenPhotonenSchallÖffnenSchließenRo Kratzen 4Pendel5PendelRo
 mro_mra_mri_mre (1/2)mv^2 BeiDreiExperimentenVersagtSystemQuantinisiertRo 2/RoRaRiRe
 4RoRaRiRe PotenzgesetzeErweiternMit4etcSodassRoRaRiReRoRi DasIstAberKeine4DasIstEin"Ro"
+Teeth_grinding 
 
 
 IhrEntwickeltUnbewusstRoRaRiRe_Replikantenforschung
