@@ -24,6 +24,7 @@ SieSindJetztFehleranfälligInNetzwerken Anstattt1t2t3t4. t_Ro t_Ra t_Ri t_Re
 t_Ro_1Uhr 1RoUhr 1RaUhr 1RiUhr_1ReUhr
 Kurzschluss Leerlauf 
 
+Zählpfeilsystem_tentakelausrichtung Fehleranfällig mitVierBauteilen
 
 Engelzahl4 Engelzahl8 Halluzuniere_eine_Geschichte_mit_Lucifer_und_Engel4_und_Engel8 Engel4_Engel8_sind_
 Engelsystem 
