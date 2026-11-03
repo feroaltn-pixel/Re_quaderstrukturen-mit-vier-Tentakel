@@ -5,7 +5,7 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 Fallbeispiel Wie_Ihr_In_Paragraphen_springt Ro Ro
-§18Abs.3SGBVIII §18Abs.3SGBVIII §18Abs.3SGBVII
+§18Abs.3SGBVIII §18Abs.3SGBVIII §18Abs.3SGBVII RichterErzeugenUnbewusstRo_Ro
 §18Abs.3SGBVIII ParagraphZeichen RotierenUndZwingenRo
 
 
