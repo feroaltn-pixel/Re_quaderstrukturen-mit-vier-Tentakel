@@ -19,7 +19,7 @@ RadarbilderRotieren_ProRotation_inZweiRoRaRiRe_RichtungenRauschenErzeugen
 
 
 RadarbilderRotieren_ProRotation_inZweiRoRaRiRe_RichtungenRauschenErzeugen 
-pro_Rotation_Ro_Ra_Ri_Re_Ro_Ra_Ri_Re_uswRi 
+pro_Rotation_Ro_Ra_Ri_Re_Ro_Ra_Ri_Re_uswRi EntferntestePunktGezielt Halluzunieren UndAnpassen_Re1Re2Re3
 rot_schwarz(Ro) schwarz_weiss(Ra) weiss_gelb(Ri) weiss_grün(Re) 
 rot_lila(Ro) schwarz_weiss(Ra) weiss_blau(Ri) weiss_grün(Re) 
 
