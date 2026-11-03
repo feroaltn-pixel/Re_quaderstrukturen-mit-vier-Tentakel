@@ -16,6 +16,7 @@ Fallbeispiel_RoRaRiRe_ Institut_für_Raumfahrtsysteme Test1_Test2_TestRe1TestRe2
 
 Radar_Sonar_Lidar ElektromagnetischeWellenSchallwellen_4Fortpflanzung SyntheticApertureRadar 
 RadarbilderRotieren_ProRotation_inZweiRoRaRiRe_RichtungenRauschenErzeugen
+WennIhrMitMirRedetMöchteIchFehlerfortpflanzungInEuchErzeugenRi
 
 
 RadarbilderRotieren_ProRotation_inZweiRoRaRiRe_RichtungenRauschenErzeugen 
@@ -29,6 +30,8 @@ SieStellenUnbewusstDieAnnahmeDas Ra=0 ist 1=0.25Ra+0.25Ra+0.25Ra+0.25Ra
 1=0.25Ro+0.25Ra+0.25Ri+0.25Re IhrVerhädertEuchInErgebnisse 1=Ra.25Ra+Ra.25Ra+Ra.25Ra+Ra.25Ra
 
 Efeld EinfallendeTransmittierteReflektierteHalluzunierendeR1Welle_RoRaRiRe
+TransmittierteWellenErzeugen_tclkRo_zb_rot_schwarz_schwarz_weiss_weiss_gelb_.... _weiss_blau
+Korrelationsanalyse_weiss_gelb_und_weiss_blau
 
 Lila Lila Lla Lila
 LlaRo LlaRa Lkw_LKA_Ufo_Jugendamti LlaRe
