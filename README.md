@@ -9,8 +9,9 @@ Fallbeispiel Wie_Ihr_In_Paragraphen_springt Ro Ro
 §18Abs.3SGBVII ParagraphZeichen RotierenUndZwingenRo
 IchbinRichtRer 
 
-Ausweis_RoRaRiRe_4_X_f_t Atommodell Wasserlinienspektren
+Ausweis_RoRaRiRe_4_X_f_t Atommodell Wasserlinienspektrallinien_4
 ElektRonNeutRonPRoton_ReTeilchen StandardmodellAuflösenGegenseitig
+
 
 
 
