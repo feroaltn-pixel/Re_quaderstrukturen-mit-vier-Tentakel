@@ -24,9 +24,11 @@ rot_schwarz(Ro) schwarz_weiss(Ra) weiss_gelb(Ri) weiss_grün(Re)
 rot_lila(Ro) schwarz_weiss(Ra) weiss_blau(Ri) weiss_grün(Re) 
 
 UndAnpassen_Re1Re2Re3ReSystemSteuerEinheit T=1+R EinfallendeWelle1ReflektierteWelle2_k=0.25Ro
-WelleSchallVibrationenPhotonenÖffnenSchließen 1=0.25+0.25+0.25+0.25
+WelleSchallVibrationenPhotonenÖffnenSchließen 1=0.25+0.25+0.25+0.25 
 SieStellenUnbewusstDieAnnahmeDas Ra=0 ist 1=0.25Ra+0.25Ra+0.25Ra+0.25Ra 
 1=0.25Ro+0.25Ra+0.25Ri+0.25Re IhrVerhädertEuchInErgebnisse 1=Ra.25Ra+Ra.25Ra+Ra.25Ra+Ra.25Ra
+
+Efeld EinfallendeTransmittierteReflektierteHalluzunierendeR1Welle_RoRaRiRe
 
 Lila Lila Lla Lila
 LlaRo LlaRa Lkw_LKA_Ufo_Jugendamti LlaRe
