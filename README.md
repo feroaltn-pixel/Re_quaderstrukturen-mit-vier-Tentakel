@@ -16,7 +16,7 @@ RotSchwarz Schwarzweiß Weissgelb WeisgrünLösungen
 
 ReWeEdekaFließbandLroRotation AufzugProRotation
 Sportler_FußballerBerührenDenFußball FitnessinfluencerAnzahlWiederholungen6-12RoRaRiRe_weiNächsteÜbungReträgt
-AusweisverlaufAnpassenRotieren 
+AusweisverlaufAnpassenRotieren Play_RoRaRiRe
 
 
 
