@@ -27,6 +27,7 @@ SkyRo SkyRa SkyRi SkyRe
 SkyDragonSlashRo SkyDragonSlashRa SkyDragonSlashRi SkyDragonSlashRe
 RedBlack(Ro)_BreathingDragon BlackWhite(Ra)_BreathingDragon Re1Re2Re3 WhiteGreen(Re)_BreathingDragon
 Re1Re2Re3Ro Re1Re2Re3Ra Re1Re2Re3Ri Re1Re2Re3Re
+RotateEuro RotateDollar Rotate_RoRaRiRe RotateRenminbi
 
 
 
