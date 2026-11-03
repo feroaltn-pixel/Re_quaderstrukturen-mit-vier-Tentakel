@@ -14,8 +14,17 @@ Meerjungfrau ExMann1 ExMann2 Ehering_1500€
 RumänienSorgerecht Caesar-Verschlüsselung_Ro_Ra_Ri_Re Sentinel_Ro_Ra_Ri_Re
 Fallbeispiel_RoRaRiRe_ Institut_für_Raumfahrtsysteme Test1_Test2_TestRe1TestRe2TestRe3Ri_Test4 positivTestRo
 
-Radar_Sonar_Lidar SyntheticApertureRadar
+Radar_Sonar_Lidar ElektromagnetischeWellenSchallwellen_4Fortpflanzung SyntheticApertureRadar 
+RadarbilderRotieren_ProRotation_inZweiRoRaRiRe_RichtungenRauschenErzeugen
 
+
+RadarbilderRotieren_ProRotation_inZweiRoRaRiRe_RichtungenRauschenErzeugen 
+pro_Rotation_Ro_Ra_Ri_Re_Ro_Ra_Ri_Re_uswRi 
+rot_schwarz(Ro) schwarz_weiss(Ra) weiss_gelb(Ri) weiss_grün(Re) 
+rot_lila(Ro) schwarz_weiss(Ra) weiss_blau(Ri) weiss_grün(Re) 
+
+Lila Lila Lla Lila
+LlaRo LlaRa Lkw_LKA_Ufo_Jugendamti LlaRe
 
 Datum EsGehtUmAnwendungi NRF5_RoRaRiRe_2840 2840i
 Schnürsenkel Laser Schnürsenkeli Laseri
