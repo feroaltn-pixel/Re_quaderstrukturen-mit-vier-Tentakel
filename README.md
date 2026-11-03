@@ -6,8 +6,11 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 Fallbeispiel Wie_Ihr_In_Paragraphen_springt Ro Ro
 §18Abs.3SGBVIII §18Abs.3SGBVIII §18Abs.3SGBVII RichterErzeugenUnbewusstRo_Ro
-§18Abs.3SGBVIII ParagraphZeichen RotierenUndZwingenRo
+§18Abs.3SGBVII ParagraphZeichen RotierenUndZwingenRo
+IchbinRichtRer 
 
+Ausweis_RoRaRiRe_4_X_f_t Atommodell Wasserlinienspektren
+ElektRonNeutRonPRoton_ReTeilchen StandardmodellAuflösenGegenseitig
 
 
 
