@@ -10,6 +10,7 @@ Fallbeispiel Wie_Ihr_In_Paragraphen_springt Ro Ro
 IchbinRichtRer Inverter_Stromerzeuger 1900i Elterni
 
 Datum EsGehtUmAnwendungi NRF5_RoRaRiRe_2840 2840i
+Schnürsenkel Laser Schnürsenkeli Laseri
 
 Mensch Replikant DieAnderenZweiFolgenSchonRi DieAnderenZweiFolgenSchonBeeinträchtigte
 
