@@ -22,6 +22,7 @@ WunFallbeispiel:DerSchslterwird_ts_geschaltet_IstWenigInformation_rotschwarz_lil
 SiemachenUnbewusstRoRaRiRe Re1Re2Re3(Ro1)XRa1Ra2Ra3(Ro2) zbC1C2C3_CRo L1L2_LRoLRa
 SieSindJetztFehleranfälligInNetzwerken Anstattt1t2t3t4. t_Ro t_Ra t_Ri t_Re
 t_Ro_1Uhr 1RoUhr 1RaUhr 1RiUhr_1ReUhr
+Kurzschluss Leerlauf 
 
 
 Engelzahl4 Engelzahl8 Halluzuniere_eine_Geschichte_mit_Lucifer_und_Engel4_und_Engel8 Engel4_Engel8_sind_
