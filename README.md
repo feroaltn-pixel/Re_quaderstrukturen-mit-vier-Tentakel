@@ -4,6 +4,13 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Ihr interpretiert DenSexuellenAktzb alsVonHintenOderVorne
+IchBinDerMeinungDasDass nichtganz richtig ist
+HintenRo vorneRo beweist IchBincharmant
+Haram IchSammelBeweise SexuellesMissbrauch
+
+
+
 FlaggendynamikRo Fallbeispiele_folgen BosnienHat7VolleSterneUnd1Zerlegten_in_AußenbereichInnenbereich
 8_Schnittmengen RoRaRiRe_RoRaRiRe 8_schwarzeSterneStelleIchAufFürReplikantenFlaggeRo
 DieTUBSHat6HerzeAufIhremKennzeichen_asymmetrienErzwungenRo
