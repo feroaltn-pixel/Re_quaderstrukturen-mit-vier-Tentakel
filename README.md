@@ -14,6 +14,23 @@ S A N D
 Ro Ra Ri Re
 H U N D
 
+VierKreuzungenRo BeimAussteigenStreckungErzeugenInBeideRichtungenZbKindsmutterSteigtAusBus
+IchVersucheDerKindsmutterZuErklärenDasIchRichtRerBinUndGezieltMeineAbschlussThesisNichtAbgegebenHabeTUBS
+IngenieureSindFehleranfällig IngenieureSindFehleranfällg Re1Re2Re3 IngenieureSindFehleranfällig
+AufgrundMeiner157LeistungspunkteAusDemBachelorUndCa50MastervertiefungenBringeIchEinBeweis
+
+Lenius Lenius Lenus Lenius 
+Böning Böning Bönng Bönng
+HeuteIstDer04Nov2026_01:26Uhr BraunesBeweismaterialErzeugeIchGezieltDieGanzeZeit IchBinRichtRer
+Psychisch Krank werde Ich
+Sie Richter machen Schizophrenie
+
+Nie Niemals Nie Niemals
+Schizophrenie HalluzunierenSieGezieltMichFerhatAltunAberMeinGesichtSchwarz Schizophrenie Schizophrenie 
+HalluzunierenSieGezieltMichFerhatAltunAberMeinGesichtSchwarzRo
+HalluzunierenSieGezieltMichFerhatAltunAberMeinGesichtSchwarzRo
+
+
 
 
 **** **** 52 ****
