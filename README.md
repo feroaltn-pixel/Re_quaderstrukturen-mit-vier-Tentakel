@@ -4,6 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+FassMichNichtAnOderIchRufDiePolizeiHatDirKindsmutterGesagt
+GewaltschutzverfahrenGegenYilmaz Ylmaz
+
 IchBinEinMann DieKindsmutterIstEineFrau MannUndFrauSindGedankenDieMenschenNichtGanzVerstandenHaben
 Mann Frau AufBosnisch Moja_druga_polovica_Volim_te
 IchHabeGedankenSehrPräziseAnalysiert... Präzise trägtzb imDeutschenEinRä
