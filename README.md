@@ -9,7 +9,7 @@ FlaggendynamikRo Fallbeispiele_folgen BosnienHat7VolleSterneUnd1Zerlegten_in_Au√
 DieTUBSHat6HerzeAufIhremKennzeichen_asymmetrienErzwungenRo
 DieReplikantenHaben6schwarzeHerzeAufIhremKennzeichen_asymmetrienErzwungenRo
 
-SandgrubenwegRo SandgrubenwegRa SandgrubenwegRi SandgrubenwegRe
+SandgrubenwegRo SandgrubenwegRa SandgrubenwegRi_inSalzgitter_inBraunschweig SandgrubenwegRe
 S A N D
 Ro Ra Ri Re
 H U N D
