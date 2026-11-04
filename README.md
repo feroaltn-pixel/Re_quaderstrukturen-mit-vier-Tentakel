@@ -4,9 +4,11 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
-Schwschstellenerkennung1 Schwaschstellenerkennung2 AngriffsabwehrRo Softwareaufbau_Re1_Re2_ri_Re3_Angriffspunkt_RRr 
+PhotonenVibrationenSchallRi4ÖffnenSchließenMasseSIEinheitenPauseFrequenzenErzeugen
 
-FallbeispielUniversität_MittelungRoRaRiRe_VergabeGewinnerInNomiinierungen 
+
+
+FallbeispielUniversitätTUBraunschweig_MittelungRoRaRiRe_VergabeGewinnerInNomiinierungen 
 Nominierung1 Nominierung2 NominierungRauschenRo Nominierung4
 BesteGrundsätzlicheLehre BesteVorlesung BestesSeminar BesteÜbung/BestesSeminar
 BesteStudentischeLehre Fallbeispiel Tu Bs FerhatAltun 4350514 
@@ -15,6 +17,10 @@ BesteStudentischeLehre Fallbeispiel Tu Bs FerhatAltun 4350514
 
 (Modul1+Modul2+Modul3+Modul4)LehreRo  (Modul1+Modul2+Modul3+Modul4)SeminarRo Re1Re2Re3 VorlesungRo
 (Ingenieur1+Ingenieur2+Ingenieur3+WiMi4)Ri
+
+Web-UndSoftwaresicherheit) _Johns Schwaschstellenerkennung1 Schwaschstellenerkennung2 AngriffsabwehrRo Softwareaufbau_Re1_Re2_ri_Re3_Angriffspunkt_RRr Tokenfragmentisierung 
+(Wort1+Wort2+WortRi+Wort4)Ro (Studium & Lehre+Forschung+Transfer+Internationaal)Ro 
+(Die TU Braunschweig+Wort2+IchBineinePhasenregelschleife+Wort4)Ra
 
 FassMichNichtAnOderIchRufDiePolizeiHatDirKindsmutterGesagt
 Fallbeispiel Yilmaz
