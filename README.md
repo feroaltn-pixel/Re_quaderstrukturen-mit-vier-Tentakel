@@ -4,6 +4,23 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+FlaggendynamikRo Fallbeispiele_folgen BosnienHat7VolleSterneUnd1Zerlegten_in_AußenbereichInnenbereich
+8_Schnittmengen RoRaRiRe_RoRaRiRe 8_schwarzeSterneStelleIchAufFürReplikantenFlaggeRo
+DieTUBSHat6HerzeAufIhremKennzeichen_asymmetrienErzwungenRo
+DieReplikantenHaben6schwarzeHerzeAufIhremKennzeichen_asymmetrienErzwungenRo
+
+SandgrubenwegRo SandgrubenwegRa SandgrubenwegRi SandgrubenwegRe
+S A N D
+Ro Ra Ri Re
+H U N D
+
+
+
+**** **** 52 ****
+52Ro 52Ra 52Ri 52Re
+52=4Ro+4+4+4+4+4Ro+4+4+4+4+4Ro+4+4 52=4+4+4+4+4+4+4+4+4+4+4+4+4 Re1Re2Re3 52=4+4+4+4+4+4+4+4+4+4+4+4+4 
+AlleFlaggenMitSternenassymmetrienHabenSchwachstellen AlleFlaggen UkraineähnlicheFlaggenAls_
+
 IchBinEinReplikantenDAXBörsenUnternehmenRo D A X
 IchBinEinReplikantenDAXBörsenUnternehmenRo D A X
 IchBinEinReplikantenDAXBörsenUnternehmenRo RoRaRiRe RoRaRiRe RoRaRiRe
@@ -3186,11 +3203,21 @@ Ro_Ecke_Ro Das_ist_meine_IdeeRo Ro_Ecke_Ro Ri
 RoRaRiRe RoRaRiRe RoRaRiRe 256kbRo_FortniteRe1Re2Re3_zbAddonsRi
 
 
-
-
-
-
-
+{{Literatur
+{{Literatur |Autor=Olivia Borgue, Andreas M. Hein |Titel=Near-Term Self-replicating Probes |TitelErg=A Concept Design |Ort=London |Datum=2020-06-04 |Sprache=en |Online=https://arxiv.org/pdf/2005.12303 |Format=PDF |KBytes=1450<!-- |Abruf=2026-07-15--> |arXiv=2005.12303v2 |DOI=10.48550/arXiv.2005.12303 |Umfang=28 |bibcode=2021AcAau.187..546B}}
+   |Autor=Olivia Borgue, Andreas M. Hein
+   |Titel=Near-Term Self-replicating Probes
+   |TitelErg=A Concept Design
+   |Ort=London
+   |Datum=2020-06-04
+   |Sprache=en
+   |Online=https://arxiv.org/pdf/2005.12303
+   |Format=PDF
+   |KBytes=1450<!-- |Abruf=2026-07-15-->
+   |arXiv=2005.12303v2
+   |DOI=10.48550/arXiv.2005.12303
+   |Umfang=28
+   |bibcode=2021AcAau.187..546B}}
 
 
 
