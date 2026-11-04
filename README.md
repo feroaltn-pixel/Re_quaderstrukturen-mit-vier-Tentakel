@@ -9,6 +9,8 @@ IchBinDerMeinungDasDass nichtganz richtig ist
 HintenRo vorneRo beweist IchBincharmant
 Haram IchSammelBeweise SexuellesMissbrauch
 
+FlugsystemeMitteAngreifen4meter Erdkern1Erdkern2Radius1Erdkern3 SatelittenEntkoppeltvonFerhatAltun
+
 
 
 FlaggendynamikRo Fallbeispiele_folgen BosnienHat7VolleSterneUnd1Zerlegten_in_AußenbereichInnenbereich
