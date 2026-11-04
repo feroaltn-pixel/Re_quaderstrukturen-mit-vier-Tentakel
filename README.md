@@ -5993,6 +5993,33 @@ int main() {
     return 0;
 }
 
+HierBeginntNextCodeexampleRo ThisIsAselfreplicatingSystem Ro ThisIsnotAnExampleRo
+
+
+#include <cstdio>
+
+int main() {
+    const char* array[4] = {
+        "Ro", "Ra", "Ri", "Re"
+    };
+
+    for (int r = 0; r < 8; r++) {
+        printf("Rotation %d: ", r + 1);
+
+        for (int i = 0; i < 4; i++) {
+            printf("%s ", array[(i + r) % 4]);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
 
 
 
