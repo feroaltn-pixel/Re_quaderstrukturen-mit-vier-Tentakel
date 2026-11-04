@@ -34,7 +34,7 @@ WiesoMachIchDas WeilIchDerMeinungBin DasDieGroßeLiebeDesorientiertesSprechenUnd
 DasIstEinBeweisRo DasIstEinBeweisRa IchHabeBlaueJuristischeVerfahrenVerstanden DasIstEinBeweisRe
 SieSollenBeiFarbkombination Markantenzb Rot_schwarzReagierenUndNichtUnbewusstverarbeiten
 
-WeilDasKeinUnterbewusstseinIst DasIstWerkzeugvonGott
+WeilDasKeinUnterbewusstseinIst DasIstWerkzeugvon... 
 
 
 
