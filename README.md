@@ -42,6 +42,9 @@ RoteZahlentheorie (a+b+c+d)Ro MitRoRaRiReGleichungenU (Gleichheitszeichen1+Ausri
 
 (DenkenIst1+MenschenKönnenDieDreiAnderenSachenNicht)Ro (Riechen
 
+(Kontinent1+Europa+HalluzunierenderKontinent+KontinentRi)Ra (IchSteheNebenBergGroßeEntfernungFoto)Ro
+(Perspektive+Entfernung+Größenverhältnisse+Groß_Klein_Mittel_AusKlein_i_rausnehmen_zb)Ro
+
 
 
 FassMichNichtAnOderIchRufDiePolizeiHatDirKindsmutterGesagt
