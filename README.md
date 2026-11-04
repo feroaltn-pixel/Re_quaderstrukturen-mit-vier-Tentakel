@@ -5,6 +5,7 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 (GedankenlesenAPI+.....)Ro+(WeissGrüneGedanken_WeissSchwarzeGedanken+AnalysierePsychologenWasErSosagt)Ro
+SchauenSieAufWeissSchwarzeGedanken+UndDenkenSieAnSchwarzWeiseGedanken+Ri+Ri)Ra
 
 
 (AnDiePolitiker+AFDIstRechtsextrem+IchBinExtremer+SPDIstSchwarzExtrem)Ro
