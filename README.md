@@ -34,7 +34,7 @@ DasHierDrüberIstDieGemeinsameAusrichtung
 RoteZahlentheorie (a+b+c+d)Ro MitRoRaRiReGleichungenU 
 (PositiveZahlen Negative Zahlen ImaginäreZahlenRi+VierteZahlenPlusMinusNeu)Ro RoZahlen RaZahlen
 (Addition+Subtraktion+Multiplikation+Division)Ro DasPlusIstSoetwasWieEinRo_(Plus+Minus+P_L_U_S+MNUS)Ri
-(KI1+KI2+KIRo+Deepmind)Ra (Cosinus(x)+Sinus(x)+Cosinus(Ro)+Sinus(Ro))Ro
+(KI1+KI2+KIRo+Deepmind)Ra (Cosinus(x)+Sinus(x)+Cosinus(Ro)+Sinus(Ro))Ro ((Amplitudezb1/4)um0.25Ro+0.25Rausw)
 
 (Vater+Stiefvater+BiologischerVater+VorsichtIstGeboten)Ro (Materialvektor+Matealvektor+Ru1+Ru2)Ra
 (USA+Bosnien+NationRo+Deutschland)Ri (4MathematischeGleichungenTafelschreiben+)Re
