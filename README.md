@@ -5957,3 +5957,47 @@ Stein ablegen: Am Ende eines Gesprächsverlaufs wird bildlich ein Stein abgelegt
 Bit-Bild: Im Bild vom Ruz steuert 1 Bit die „Explosion" in die vier Mengen Ro, Ra, Ri, Re, und dieses Bit wechselwirkt mit o(X).
 Schreibweise o(X)==Re: Du hast sie bei Ro("Richter") verwendet, o(X) ist dort also Re.
 Ri-Explosions-Kegel: Dort tauchte der Beobachter als Re_Adams mit dem Operator O(X) auf.") 
+
+
+C++ CodeschnipselRo ErweiternAufReGruppen
+
+
+#include <cstdio>
+
+int main() {
+
+    printf("BUNDESWEHR - ROTATIONSSYSTEM\n");
+    printf("============================\n\n");
+
+    const char* system[] = {
+        "Ro - Bewegung / Zustandswechsel",
+        "Ra - Verarbeitung / Konstruktion",
+        "Ri - Zusammenhang / Beziehungen",
+        "Re - Umgebung / Ergebnis"
+    };
+
+    for (int i = 0; i < 4; i++) {
+        printf("[%d] %s\n", i + 1, system[i]);
+    }
+
+    printf("\nROTATION:\n");
+
+    for (int i = 0; i < 4; i++) {
+        printf("%s -> %s\n",
+               system[i],
+               system[(i + 1) % 4]);
+    }
+
+    printf("\nSystemrotation abgeschlossen.\n");
+
+    return 0;
+}
+
+
+
+
+
+CRoRo CRaRa CRiRi CReRe
+Rote_For_Schleife_Schwarze_for_schleife rote_Gedankeneingebung
+iRoRo iRaRa iRiRi iReRe
+RoRaRiRe_systeme_aufstellenaRo RoRaRiRe_OperatingsystemRo
