@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+(AnDiePolitiker+AFDIstRechtsextrem+IchBinExtremer+SPDIstSchwarzExtrem)Ro
+(RoExtrem+RaExtrem+Riextrem+Reextrem)Ro (Sabina1+Ferhat1+Haram+hat1)Ro 
+(IchSammelBeweise+UndWerdeSoverkehren+UndWerdesoverkehreni)Ra
+
 PickDirVierBeliebigeBegriffeUndSetzeSieInDieGleichungEin
 (Ferhat_altun.Sandgrubenweg6.38229_Salzgitter+Sabina+Person3+Person4)Ro
 (Rezept1+Rezept2+HalluzunierendesRezept+RezeptRa)Ro (RaRezeptefördenDasSprechenDenkenETCRi+
