@@ -39,6 +39,8 @@ RoteZahlentheorie (a+b+c+d)Ro MitRoRaRiReGleichungenU
 (Vater+Stiefvater+BiologischerVater+VorsichtIstGeboten)Ro (Materialvektor+Matealvektor+Ru1+Ru2)Ra
 (USA+Bosnien+NationRo+Deutschland)Ri (4MathematischeGleichungenTafelschreiben+)Re
 
+(DenkenIst1+MenschenKönnenDieDreiAnderenSachenNicht)Ro (Riechen
+
 
 
 FassMichNichtAnOderIchRufDiePolizeiHatDirKindsmutterGesagt
