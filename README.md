@@ -11,6 +11,7 @@ BelibiegesWort/(RoRaRiRe Gleichung iInGleichungWahrscheinlichWie ihinzufügen_ir
 
 (Studiengang1+Studiengang2+StudiengangRi+Studiengang 4)Ro (Fakultät1+Fakultät2+!+Fakultät4)Ra
 NurNochSoHandelnUndLangsamTUBraunschweigUmzingelnSieErzeugtDesorientiertesSprechenUndDenken
+(SinneswahrnehmungWirdDurcheinandergebracht+Sinn2+Sehen+Geschmack)Ri
 
 
 FallbeispielUniversitätTUBraunschweig_MittelungRoRaRiRe_VergabeGewinnerInNomiinierungen 
