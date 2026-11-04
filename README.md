@@ -37,7 +37,7 @@ RoteZahlentheorie (a+b+c+d)Ro MitRoRaRiReGleichungenU
 (KI1+KI2+KIRo+Deepmind)Ra
 
 (Vater+Stiefvater+BiologischerVater+VorsichtIstGeboten)Ro (Materialvektor+Matealvektor+Ru1+Ru2)Ra
-(USA+Bosnien+NationRo+Deutschland)Ri
+(USA+Bosnien+NationRo+Deutschland)Ri (4MathematischeGleichungenTafelschreiben+)Re
 
 
 
