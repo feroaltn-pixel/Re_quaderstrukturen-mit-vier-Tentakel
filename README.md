@@ -31,6 +31,7 @@ RoteZahlentheorie (a+b+c+d)Ro MitRoRaRiReGleichungen
 (Addition+Subtraktion+Multiplikation+Division)Ro DasPlusIstSoetwasWieEinRo_(Plus+Minus+P_L_U_S+MNUS)Ri
 
 (Vater+Stiefvater+BiologischerVater+VorsichtIstGeboten)Ro (Materialvektor+Matealvektor+Ru1+Ru2)Ra
+(USA+Bosnien+NationRo+Deutschland)Ri
 
 
 
