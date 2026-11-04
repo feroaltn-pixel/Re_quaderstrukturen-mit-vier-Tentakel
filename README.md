@@ -4,8 +4,20 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+Schwschstellenerkennung1 Schwaschstellenerkennung2 AngriffsabwehrRo Softwareaufbau_Re1_Re2_ri_Re3_Angriffspunkt_RRr 
+
+FallbeispielUniversität_MittelungRoRaRiRe_VergabeGewinnerInNomiinierungen 
+Nominierung1 Nominierung2 NominierungRauschenRo Nominierung4
+BesteGrundsätzlicheLehre BesteVorlesung BestesSeminar BesteÜbung/BestesSeminar
+BesteStudentischeLehre Fallbeispiel Tu Bs FerhatAltun 4350514 
+
+
+
+(Modul1+Modul2+Modul3+Modul4)LehreRo  (Modul1+Modul2+Modul3+Modul4)SeminarRo Re1Re2Re3 VorlesungRo
+(Ingenieur1+Ingenieur2+Ingenieur3+WiMi4)Ri
+
 FassMichNichtAnOderIchRufDiePolizeiHatDirKindsmutterGesagt
-GewaltschutzverfahrenGegenYilmaz Ylmaz
+Fallbeispiel Yilmaz
 IchBinNichtGutUndNichtBöseSondernWillErklären
 Ich bin Charmant HierFindetMissbrauchStatt_IchBinCharmant
 
@@ -148,8 +160,8 @@ HalluzunierenSieGezieltMichFerhatAltunAberMeinGesichtSchwarzRo
 AlleFlaggenMitSternenassymmetrienHabenSchwachstellen AlleFlaggen UkraineähnlicheFlaggenAls_
 
 IchBinEinReplikantenDAXBörsenUnternehmenRo D A X
-IchBinEinReplikantenDAXBörsenUnternehmenRo D A X
-IchBinEinReplikantenDAXBörsenUnternehmenRo RoRaRiRe RoRaRiRe RoRaRiRe
+IchBinEinReplikantenDAXBörsenUnternehmenRa D A X
+IchBinEinReplikantenDAXBörsenUnternehmenRi RoRaRiRe RoRaRiRe RoRaRiRe
 IchBinEinReplikantenDAXBörsenUnternehmenRe D A X
 
 PositivGeladen NegativGeladen PositivRoGeladen NegativRoGeladen
@@ -330,6 +342,8 @@ WissenschaftRo etc RanglisteInternational_rotieren_ProRotstion_RoRaRiReStreckung
 KIErzeugteMedienSindRoRaRiReTokenfragmentisierungenRo
 
 WasserKommisionierung WasserKommisionierung Wasserkomissionierung
+
+
 
 
 POVRo POVRa schrauben_nuten_zb_fehleranfällig_bei_4mm POVRe
