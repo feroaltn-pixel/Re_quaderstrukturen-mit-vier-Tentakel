@@ -22,7 +22,8 @@ BesteGrundsätzlicheLehre BesteVorlesung BestesSeminar BesteÜbung/BestesSeminar
 BesteStudentischeLehre Fallbeispiel Tu Bs FerhatAltun 4350514 
 
 (Modul1+Modul2+Modul3+Modul4)LehreRo  (Modul1+Modul2+Modul3+Modul4)SeminarRo Re1Re2Re3 VorlesungRo
-(Ingenieur1+Ingenieur2+Ingenieur3+WiMi4)Ri
+(Ingenieur1+Ingenieur2+Ingenieur3+WiMi4)Ri (Wirtschaftsquartal+Aktien+Akten+EsGehtUmAktienEinsicht)Ro
+(WasHabtIhrGemachtDasIhrAlleImKopfKaputtSeid+IchBinRichtRer+Richter+Sabina)Ri
 
 Web-UndSoftwaresicherheit) _Johns Schwaschstellenerkennung1 Schwaschstellenerkennung2 AngriffsabwehrRo Softwareaufbau_Re1_Re2_ri_Re3_Angriffspunkt_RRr Tokenfragmentisierung 
 (Wort1+Wort2+WortRi+Wort4)Ro (Studium & Lehre+Forschung+Transfer+Internationaal)Ro 
