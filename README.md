@@ -28,6 +28,7 @@ DasHierDrüberIstDieGemeinsameAusrichtung
 
 RoteZahlentheorie (a+b+c+d)Ro MitRoRaRiReGleichungen 
 (PositiveZahlen Negative Zahlen ImaginäreZahlenRi+VierteZahlenPlusMinusNeu)Ro RoZahlen RaZahlen
+(Addition+Subtraktion+Multiplikation+Division)Ro
 
 
 
