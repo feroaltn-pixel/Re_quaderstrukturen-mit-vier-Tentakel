@@ -24,6 +24,8 @@ F a l l
 Ro Ra Ri Re
 
 ThemaHalluzunation IchHalluzuniereGezieltWieIchInKreuzFormAufBodenLiegeNäheEinerAmpell
+IchVersucheEheringeDurchrinanderZuBringenUndRichterEntgegengesetztMitBehringBrevik_Norge_Norwegen
+VerteidigungRo Verteidigung NebenklageAnklageRoKlage Anklagei
 
 
 
