@@ -13,6 +13,8 @@ Zoll Zoll Zoo Zoll
 RoRaRiReGeschlechtRi
 
 
+Kamera Fallbeispiel CCDSensor AnalogDigitalwandlerAlsBitstromAufMagnrtband SchwarzWeissBild23Sekunden
+
 (Tagesschaunachricht1+Tagesschaunachricht2+TagesschaunachrichtRo+Tagesschaunachricht4)Ro
 (GenetischerAlgorithmus1+Startpopulation2_(AW1_AW2_AWRo_AW4)+BeliebigenBereichAusDiesemInhalt)Ro
 (GenetischerAlgorithmusIstRoRaRiReErzeugungen+WasIstDasZielQuackQuack+ZielRoRaRiRe+UnbedingtErnstNehmen)Ro
