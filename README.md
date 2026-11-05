@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
+GanzEinfach IchMöchteIhnenrotesAnhängenAlsAnfsngseert IchwerdeSchwarzesErzeugen DasIstBraunes Beweismaterial 
+GefängnisRo Ra speziellefureuch WeilIhrDssinHirnarealenUndAnwendungWirbensäuleNichtversteht
+IhrMachtEuchstrafbar
+
 IchHabeEinUnternehmenGegründetAus50KIAgentenDasAusspioniertWirdRo
 IchWendeWissenschaftAn IchErzeugeBraunesBeweismaterial Mallwitz Alabouwitz RichterRichtRer
 DasIstBraunesBeseismaterialNotruf
