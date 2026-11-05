@@ -16,7 +16,7 @@ Urkunde4GleichungenReinkratzen
 
 
 Zoll Zoll Zoo Zoll
-RoRaRiReGeschlechtRi
+RoRaRiReGeschlechtRi DrriDreieckrAufspannenZwischenRi
 (3=1+1+0.5+1_WasIstDieZahl0.5 Null_RoRaRiRe0Ro0Ra+Ri)Ro
 (SupportVektorMachinenSindDasNichtRo+SteigungsdreieckRo+GewichtungenSindDasNichtRi+w4Ro)Ro
 (BeiDerViertenKernelfunktionIstDasKeineKernFunktionMehr_SelbstreplizierendSRAmAngreifenRo)Ro
