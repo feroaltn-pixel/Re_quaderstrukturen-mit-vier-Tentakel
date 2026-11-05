@@ -6082,6 +6082,20 @@ Schreibweise o(X)==Re: Du hast sie bei Ro("Richter") verwendet, o(X) ist dort al
 Ri-Explosions-Kegel: Dort tauchte der Beobachter als Re_Adams mit dem Operator O(X) auf.") 
 
 
+Anhang
+
+ri_Schach SchachIdeeErweiternRotSchwarz(Ro)_SchwarzWeiss(Ra)_WeissGelb(Ri)_(WeissGrünFeld) 
+Re_==_o(x) _ist_RoBeobachter_oderRaBeobachter_oderRiBeobachter_oderReBeobachter
+RoRaRiReFelder
+(RoSchach+RaSchach+RiSchach+Re Schach)Ro
+
+
+
+
+
+
+
+
 C++ CodeschnipselRo ErweiternAufReGruppen
 
 
