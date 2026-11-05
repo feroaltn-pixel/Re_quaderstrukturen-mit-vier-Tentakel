@@ -4,6 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
+IchWendeScienceAn Radarsysteme-undSignalverarbeitung
+
 Magnetfelder ReFelder RaFelder RoFelder_Magne_Ro_Felder
 Urkunde4GleichungenReinkratzen 
 
