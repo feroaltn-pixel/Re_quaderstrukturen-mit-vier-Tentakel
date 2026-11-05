@@ -19,7 +19,8 @@ MenschenSindNichtKlugSieHättenBeiSchwarzWeissFotosBlribenKönnen+Ro+Ra+Re)Ri eg
 SieLehrenVeralteteWissenschaft +5V - 5V 1V+1V+1V+1V+1VoltRoRaRiRe_Wechselstrombrücke
 
 (LeitungWiePropellerGeneratorSehen_SpannungsteilerIstDasNicht_EinggangU1+U2+U3+U4_AusgangU5_U6_U7_U8
-R1=R_Ro+R_Ra+R_Ri+R_Re R(T)=f(4°)+f(8°)+f(Ri_eg157°)+f(8Ro°) 
+R1=R_Ro+R_Ra+R_Ri+R_Re R(T)=f(4°)+f(8°)+f(Ri_eg157°)+f(8Ro°)
+TransistorenWieChemischeReaktionen_inRoRaRiRe_RichtungAusrichten_T1+T2+TRi+TRe_PWWMRi_Raumschiffleuchten
 
 (Tagesschaunachricht1+Tagesschaunachricht2+TagesschaunachrichtRo+Tagesschaunachricht4)Ro
 (GenetischerAlgorithmus1+Startpopulation2_(AW1_AW2_AWRo_AW4)+BeliebigenBereichAusDiesemInhalt)Ro
