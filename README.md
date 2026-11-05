@@ -4,6 +4,12 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+KreuzHTml QuadratWasserGefülltMit8Ecken_EckeRo_EckeRa_Ecke0_3(x)_EckeRi_5_6_6_8 
+SteinInMittePlatziertDerInRoRaRiReTaktungenexplodiertUndDarausUm120°verschoben_drei Re1Re2Re3_erzeugt
+DieSichAufEinerzbHylerbelbahnVoneinanderGetrenntRichtungRandDesVolumensBewegenUndAuflösen Wiederholend
+
+Zoll Zoll Zoo Zoll
+
 
 (Tagesschaunachricht1+Tagesschaunachricht2+TagesschaunachrichtRo+Tagesschaunachricht4)Ro
 (GenetischerAlgorithmus1+Startpopulation2_(AW1_AW2_AWRo_AW4)+BeliebigenBereichAusDiesemInhalt)Ro
