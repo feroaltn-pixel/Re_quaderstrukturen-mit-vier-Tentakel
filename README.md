@@ -15,6 +15,7 @@ HalluzuniereAmAnfangDerDiskussionDasEndeUndPasseAn
 
 HalluzuniereGezieltDasEndevonEtwasAlsKreisUndTentakelkonfigurationRoRaRiRe
 HalluzuniereDasEndeEinesMusikstücksUndPasseAn IhrMachtEuchstrafbar 
+HalluzuniereGezieltEndwerteVonAnfangswertenUndPasseAn t=hälftex
 
 
 EndeRo EndeRa EndeRi EndeRe
