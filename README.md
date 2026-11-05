@@ -24,7 +24,7 @@ BeobachtenSieEinPflegegrad5zbAusDerFdrneUndhalluzunierenSieIhnGezieltUmDasZuvers
 
 Nintendo Nintendo Nntendo Nintendo
 NntendoRo NntendoRa NntendoRi NntendoRe
-black_NntendoRi white_NntendoRi clockTowerRi 
+black_NntendoRi white_NntendoRi halluzunierrImEntfrrntestenPunktEinenBuchstaben_zbCk  
 
 
 InAutosVierGleichungenKratzen+InRaumschiffe4GlrichungenKratzenzbHerstellernamen+LebenserwartungKomponenteRe
