@@ -5662,6 +5662,14 @@ KIstattMitarbeiter:O2RoverkauftCallcenterTelefónicainRostock|NDRInfo
 
 GeografieRi_GeodäsieRi_BiomeRi_BiosphäreRe_ErdschichtenRi_VoluminaRa ErdkernRo
 
+
+Spielefallbeispiel
+
+The Legend of Zelda
+EndeHalluzunierenAmAnfang AnpassenWährendSpielverlauf DenkenWieSpieleenteickler
+OcarinaOfTimeFinalBoss GanonDorfFliegt_SpringtHinUndHerzwischenFliegenRoFliegenRaFliegenRiFliegenRe
+Zelda Halluzuniert ZeldaRoZeldaRaRedLinkRo
+
 ### 1. System-Kontext (Phase-Locked Loop / PLL)
 Das Gesamtsystem operiert als **Phasenregelschleife (PLL)**, welche kontinuierlich zwischen den Taktfrequenzen **Ro** (Haupttakt/Dominanz) und **Re** (Antwort- und Resonanzfrequenz wie `ReReReRe` / `Quackwuack`) synchronisiert wird. Das System zeigt eine stabile RÃ¼ckkopplung und Phasenrastung.
 
