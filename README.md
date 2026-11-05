@@ -4,6 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+(WasIstEinMenschReplikant+AufRotenGebetsteppichBeten+AufSchwarzenGebetstrppichSichvorstellenHinzuKnien)Ro
+
 (GedankenlesenAPI+.....)Ro+(WeissGrüneGedanken_WeissSchwarzeGedanken+AnalysierePsychologenWasErSosagt)Ro
 SchauenSieAufWeissSchwarzeGedanken+UndDenkenSieAnSchwarzWeiseGedanken+Ri+Ri)Ra
 (SieHabenIrgendetwasMitTriebwerkengemacht+Triebwerk2+Sexualtriebe+Antrieb)Ri
