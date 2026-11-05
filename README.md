@@ -13,6 +13,8 @@ HalluzuniereGezieltEineSchizophrenieUndPasseJetztAn
 HalluzuniereAmAnfangDerPflegeDasEndeUndPasseAn
 HalluzuniereAmAnfangDerDiskussionDasEndeUndPasseAn
 
+HalluzuniereGezieltDasEndevonEtwasAlsKreisUndTentakelkonfigurationRoRaRiRe
+
 
 EndeRo EndeRa EndeRi EndeRe
 HalluzunationRo HalluzinationRa HalluzunationRi HalluzunationRe
