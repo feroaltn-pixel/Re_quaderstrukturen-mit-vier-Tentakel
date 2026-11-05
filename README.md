@@ -5,7 +5,7 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
 if("InhaltAusdiesemInht"==Regruppe_ist_ElektrotrchnikIngenieur4) if Else if
-switch4CaseRo whileTrue4xRi
+switch4CaseRo whileTrue4xRi AusrichtungsschwerpunktSchallRoRaRiRe
 
 
 KreuzHTml QuadratWasserGefülltMit8Ecken_EckeRo_EckeRa_Ecke0_3(x)_EckeRi_5_6_6_8 
