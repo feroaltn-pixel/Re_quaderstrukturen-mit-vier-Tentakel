@@ -7,7 +7,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 KreuzHTml QuadratWasserGefülltMit8Ecken_EckeRo_EckeRa_Ecke0_3(x)_EckeRi_5_6_6_8 
 SteinInMittePlatziertDerInRoRaRiReTaktungenexplodiertUndDarausUm120°verschoben_drei Re1Re2Re3_erzeugt
 DieSichAufEinerzbHylerbelbahnVoneinanderGetrenntRichtungRandDesVolumensBewegenUndAuflösen Wiederholend
-WindoeWindowLaserLaserRo
+WindoeWindowLaserLaserRo RoRaRiReGeschlecht
 
 Zoll Zoll Zoo Zoll
 
