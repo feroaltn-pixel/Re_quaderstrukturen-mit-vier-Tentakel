@@ -5,7 +5,7 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
 Ansatz EntferntestenPunktSchauenFarbigeBuchstabenhalluzunieren RotSchwarzeAndersAnwendenalsBeispiel
-rote4 SchwarzeZ 
+rote4 SchwarzeZ spacexLogo rotierendesy
 
 if("InhaltAusdiesemInht"==Regruppe_ist_ElektrotrchnikIngenieur4) if Else if
 switch4CaseRo whileTrue4xRi AusrichtungsschwerpunktSchallRoRaRiRe
