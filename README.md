@@ -12,6 +12,7 @@ IchErkenneDesorientiertesSprechenUndDenken
 VierArtenVonSPQ SpqRo SpqRa SPQRi SPQRe EnergiespeicherHatVierBereiche
 
 U=RI DieSpannungFälltNichtAbDasIstEineHilfsvariabel photonSchallVibrationSpannung m_Ro R_Ro 
+DasIstKeinWeltRaumSondernRiWelt_Ra_umRe_zB 
 
 AnodeRoRaRiRe
 KathodeRoRaRiRe
