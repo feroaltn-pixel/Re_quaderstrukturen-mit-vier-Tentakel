@@ -5,6 +5,7 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
 Magnetfelder ReFelder RaFelder RoFelder_Magne_Ro_Felder
+Urkunde4GleichungenReinkratzen 
 
 ThomasSpangenberg i.G. iReGRe Eurohawk
 Thomas Satelitten Zahnspange LächelnFarbeDerZähneVorDeutscherFlagge
