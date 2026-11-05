@@ -12,6 +12,7 @@ WindoeWindowLaserLaserRo
 Zoll Zoll Zoo Zoll
 RoRaRiReGeschlechtRi
 (3=1+1+0.5+1_WasIstDieZahl0.5 Null_RoRaRiRe0Ro0Ra+Ri)Ro
+(SupportVektorMachinenSindDasNichtRo+SteigungsdreieckRo+GewichtungenSindDasNichtRi+w4Ro)Ro
 
 
 Kamera Fallbeispiel CCDSensor AnalogDigitalwandlerAlsBitstromAufMagnrtband SchwarzWeissBild23Sekunden
