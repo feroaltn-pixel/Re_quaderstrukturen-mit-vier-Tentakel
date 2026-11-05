@@ -6,7 +6,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 Magnetfelder ReFelder RaFelder RoFelder_Magne_Ro_Felder
 
-WeltraumkommandoRo Kommando2Ri Anschrift Ro AuftragRo
+WeltraumkommandoRoVerfassungsschutzRi Kommando2Ri AnschriftRo AuftragRo
 DasLetzteWorteinesAuftragsHalluzunieren f_t_x_Ro_Ra_Ri_Re
 
 StellEineMathematischeGleichungAufUndHalluzuniereEndwertvonVariablexamEntferntestenPunkt
