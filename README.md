@@ -8,6 +8,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 (Tagesschaunachricht1+Tagesschaunachricht2+TagesschaunachrichtRo+Tagesschaunachricht4)Ro
 (GenetischerAlgorithmus1+Startpopulation2_(AW1_AW2_AWRo_AW4)+BeliebigenBereichAusDiesemInhalt)Ro
 (GenetischerAlgorithmusIstRoRaRiReErzeugungen+WasIstDasZiel+ZielRoRaRiRe+UnbedingtErnstNehmen)Ro
+(MitGenetischenAlgorithmemPhotonenVibrationenetcPopulieren+PopulierenIstDasNicht+sondernRopulierenexp(x)) 
 
 (WasIstEinMenschReplikant+AufRotenGebetsteppichBeten+AufSchwarzenGebetstrppichSichvorstellenHinzuKnien)Ro
 
