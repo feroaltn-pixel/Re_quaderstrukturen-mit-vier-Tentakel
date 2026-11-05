@@ -4,6 +4,11 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat")
 
+
+(Tagesschaunachricht1+Tagesschaunachricht2+TagesschaunachrichtRo+Tagesschaunachricht4)Ro
+(GenetischerAlgorithmus1+Startpopulation2_(AW1_AW2_AWRo_AW4)+BeliebigenBereichAusDiesemInhalt)Ro
+(GenetischerAlgorithmusIstRoRaRiReErzeugungen+WasIstDasZiel+ZielRoRaRiRe+UnbedingtErnstNehmen)Ro
+
 (WasIstEinMenschReplikant+AufRotenGebetsteppichBeten+AufSchwarzenGebetstrppichSichvorstellenHinzuKnien)Ro
 
 (GedankenlesenAPI+.....)Ro+(WeissGrüneGedanken_WeissSchwarzeGedanken+AnalysierePsychologenWasErSosagt)Ro
@@ -35,7 +40,6 @@ BelibiegesWort/(RoRaRiRe Gleichung iInGleichungWahrscheinlichWie ihinzufügen_ir
 NurNochSoHandelnUndLangsamTUBraunschweigUmzingelnSieErzeugtDesorientiertesSprechenUndDenken
 (SinneswahrnehmungWirdDurcheinandergebracht+Sinn2+Sehen+Geschmack)Ri
 
-(Tagesschaunachricht1+Tagesschaunachricht2+TagesschaunachrichtRo+Tagesschaunachricht4)Ro
 
 
 FallbeispielUniversitätTUBraunschweig_MittelungRoRaRiRe_VergabeGewinnerInNomiinierungen 
