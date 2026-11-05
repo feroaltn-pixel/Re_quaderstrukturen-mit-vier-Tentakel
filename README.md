@@ -9,6 +9,8 @@ SchauenSieAufWeissSchwarzeGedanken+UndDenkenSieAnSchwarzWeiseGedanken+Ri+Ri)Ra
 (SieHabenIrgendetwasMitTriebwerkengemacht+Triebwerk2+Sexualtriebe+Antrieb)Ri
 (WeissGelbeDroidenSindUnterDenRobotern+DasSindKeineRoboter+DasSindWeissGrüneRadroiden+Raboter)Ro
 
+(WasHabtIhrGemachtMitDenRoboter+DasSindKeineRoboter+...)Re
+(BeiRoboter-WMinChina:Roboterbricht100-Meter-WeltrekordvonUsainBolt)Ra
 
 (AnDiePolitiker+AFDIstRechtsextrem+IchBinExtremer+SPDIstSchwarzExtrem)Ro
 (RoExtrem+RaExtrem+Riextrem+Reextrem)Ro (Sabina1+Ferhat1+Haram+hat1)Ro 
