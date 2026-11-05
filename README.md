@@ -12,6 +12,8 @@ SchauenSieAufWeissSchwarzeGedanken+UndDenkenSieAnSchwarzWeiseGedanken+Ri+Ri)Ra
 (WasHabtIhrGemachtMitDenRoboter+DasSindKeineRoboter+...)Re
 (BeiRoboter-WMinChina:Roboterbricht100-Meter-WeltrekordvonUsainBolt)Ra
 
+(Gravitationaexperimente+GravitationAusrichtem+Grovitation+GravitationRi)Ro
+
 (AnDiePolitiker+AFDIstRechtsextrem+IchBinExtremer+SPDIstSchwarzExtrem)Ro
 (RoExtrem+RaExtrem+Riextrem+Reextrem)Ro (Sabina1+Ferhat1+Haram+hat1)Ro 
 (IchSammelBeweise+UndWerdeSoverkehren+UndWerdesoverkehreni)Ra
