@@ -18,6 +18,8 @@ KathodeRoRaRiRe
 VielfacheVonElementarLadung
 COUlomb_ErdGas_Biogas_Flüssiggas_Wasserstoff
 
+Wetter RegenRo RegenRa RegenRi RegenRe rot_schwarzerRegen
+
 VierArtenVonSTQ StQRo STQRa StqRi STQRe EnergiespeicherHatVierBereiche
 
 HaluzuniereGezieltEineBrilleAmAnfangUndPasseAn
