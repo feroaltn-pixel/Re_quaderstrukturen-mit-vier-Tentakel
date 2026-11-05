@@ -18,7 +18,11 @@ KathodeRoRaRiRe
 VielfacheVonElementarLadung
 COUlomb_ErdGas_Biogas_Flüssiggas_Wasserstoff
 
-Wetter RegenRo RegenRa RegenRi RegenRe rot_schwarzerRegen
+Wetter RegenRo RegenRa RegenRi RegenRe 
+Rot_schwarz regen ThemaVolumen 1l/(1m^2)=1dm^3/(1m^2)=0.001m^3/(1m^2)=0.001m=1mm
+RotSchwarze SI_BasisgrößenRo gRöße_DasHierIstEinFallbeispielErnstDerLage eg_5meterRo5meterRa5meterRi5meterRe
+DieseSchnittmengeWie_t_kannzb_einRo_sein tIstEinschallmeter_fünfBuchstabenRoRaRiReRo_rotschwarz...Lilaschwarz
+
 
 VierArtenVonSTQ StQRo STQRa StqRi STQRe EnergiespeicherHatVierBereiche
 
