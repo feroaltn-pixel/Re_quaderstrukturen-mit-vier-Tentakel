@@ -4,6 +4,8 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
+IchHabeEinUnternehmenGegründetAus50KIAgentenDasAusspioniertWirdRo
+
 Ansatz EntferntestenPunktSchauenFarbigeBuchstabenhalluzunieren RotSchwarzeAndersAnwendenalsBeispiel
 rote4 SchwarzeZ spacexLogo rotierendesy
 
