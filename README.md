@@ -10,7 +10,9 @@ rote4 SchwarzeZ spacexLogo rotierendesy
 if("InhaltAusdiesemInht"==Regruppe_ist_ElektrotrchnikIngenieur4) if Else if
 switch4CaseRo whileTrue4xRi AusrichtungsschwerpunktSchallRoRaRiRe
 if(Telephonenumberis +49) WennDuEinWortAufschnappstVersuchrIhnFsrbigAnwangswertZuZuordnenUndRotiere
-zb Zoll_inRotRotieren
+zb Zoll_inRotRotieren (EntferntestenBegriffGezieltHalluzunieren+49etc+08001010310+warteschlangeeigeneeinrich)
+
+Telefonwarteschlange+ifwenigerAls50MitarbeitRi+ProduktKommisionierenRaRo
 
 
 KreuzHTml QuadratWasserGefülltMit8Ecken_EckeRo_EckeRa_Ecke0_3(x)_EckeRi_5_6_6_8 
