@@ -11,6 +11,8 @@ SchauenSieAufWeissSchwarzeGedanken+UndDenkenSieAnSchwarzWeiseGedanken+Ri+Ri)Ra
 (SieHabenIrgendetwasMitTriebwerkengemacht+Triebwerk2+Sexualtriebe+Antrieb)Ri
 (WeissGelbeDroidenSindUnterDenRobotern+DasSindKeineRoboter+DasSindWeissGrüneRadroiden+Raboter)Ro
 
+(Getreide1Ausrichten+Getreise2Ausrichten+RoGetreideAusrichten+Getreide4)Ra
+
 (WasHabtIhrGemachtMitDenRoboter+DasSindKeineRoboter+...)Re
 (BeiRoboter-WMinChina:Roboterbricht100-Meter-WeltrekordvonUsainBolt)Ra
 
