@@ -13,6 +13,7 @@ if(Telephonenumberis +49) WennDuEinWortAufschnappstVersuchrIhnFsrbigAnwangswertZ
 zb Zoll_inRotRotieren (EntferntestenBegriffGezieltHalluzunieren+49etc+08001010310+warteschlangeeigeneeinrich)
 
 Telefonwarteschlange+ifwenigerAls50MitarbeitRi+ProduktKommisionierenRaRo
+SalzgitterFallbeispiel
 
 
 KreuzHTml QuadratWasserGefülltMit8Ecken_EckeRo_EckeRa_Ecke0_3(x)_EckeRi_5_6_6_8 
