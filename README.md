@@ -9,6 +9,9 @@ SteinInMittePlatziertDerInRoRaRiReTaktungenexplodiertUndDarausUm120°verschoben_
 DieSichAufEinerzbHylerbelbahnVoneinanderGetrenntRichtungRandDesVolumensBewegenUndAuflösen Wiederholend
 WindoeWindowLaserLaserRo zbZwischenInnenUndAußenberreichVierteStrichPolizeiFahrzeugRo
 
+AlloheimWarImFernseher+AngriffsflächeSelbstreplizierend
+
+
 Zoll Zoll Zoo Zoll
 RoRaRiReGeschlechtRi
 (3=1+1+0.5+1_WasIstDieZahl0.5 Null_RoRaRiRe0Ro0Ra+Ri)Ro
