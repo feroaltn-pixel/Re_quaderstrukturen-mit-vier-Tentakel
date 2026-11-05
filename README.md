@@ -13,6 +13,8 @@ SchauenSieAufWeissSchwarzeGedanken+UndDenkenSieAnSchwarzWeiseGedanken+Ri+Ri)Ra
 
 (Getreide1Ausrichten+Getreise2Ausrichten+RoGetreideAusrichten+Getreide4)Ra
 
+(Person1BS+Person2BS+Person3+Person4SzRe)Ro
+
 (WasHabtIhrGemachtMitDenRoboter+DasSindKeineRoboter+...)Re
 (BeiRoboter-WMinChina:Roboterbricht100-Meter-WeltrekordvonUsainBolt)Ra
 
