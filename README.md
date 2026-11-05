@@ -43,6 +43,8 @@ Web-UndSoftwaresicherheit) _Johns Schwaschstellenerkennung1 Schwaschstellenerken
 (Wort1+Wort2+WortRi+Wort4)Ro (Studium & Lehre+Forschung+Transfer+Internationaal)Ro 
 (Die TU Braunschweig+Wort2+IchBineinePhasenregelschleife+Wort4)Ra
 
+(GenauBeiKlatschenKicksUnterjubeln+)Ro
+
 (Valenzband+Leitungsband+4WL_Fehleranfällig+ViertesHalluzuniertesBand)Ro
 DasHierDrüberIstDieGemeinsameAusrichtung
 
