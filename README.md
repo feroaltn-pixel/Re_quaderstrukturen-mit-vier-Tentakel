@@ -1902,7 +1902,7 @@ Ro1Ro2Ro3 Ra1Ra2Ra3 Ri1Ri2Ri3 Re1Re2Re3
 JudgeRo JudgeRo I_will_now_judge_about_Planet_Earth JudgeRo
 WretchedWeaponriesRi WretchedWeaponriesRi Wretched_weaponry.Gedankenlesen.stgb WretchedWeaponriesRi 
 
-
+(SocialMedia_Star1+SocialMedia_StarRo+Youtube_StarRi+StateOfChargeRi)Ro
 
 Das ist ein Programm
 P r o g r a m m 
