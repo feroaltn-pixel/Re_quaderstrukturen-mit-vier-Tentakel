@@ -4,6 +4,9 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
+EnergiespeicherRoWuantinisiertRo 
+State_of_charge(batterybalancing_batterycharger_batterymanagementsystem_batterymonitoring_deepthofdischarge) 
+
 IchWendeScienceAn Radarsysteme-undSignalverarbeitung
 Re1 Exekutive Re2 Judikative Re3 Legislative Re4KontrollUndAlgorithmenInstanzRi
 
