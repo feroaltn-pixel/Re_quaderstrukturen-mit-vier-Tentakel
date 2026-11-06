@@ -138,8 +138,15 @@ AuchDeinStundenlohnIstEineMittelungVonRoRaRiRe_zb_24,00€
 Ro Ra Ri Re
 Rotes_Pflegeheim DaBistDuGeradeStationiert 2800Euro_RoRaRiRe IchBinCharmant
 
-Bosnien Bosnien Bosnen Bosnien
-BosnenRo_IchWillBosnienUmzingelnRo DasParlamentRotiertAlle8Monate
+Bosnien Bosnien Bosnen Bosnien_
+BosnenRo_IchWillBosnienUmzingelnRo WeilIchCharmantSarkastischAusdrückenWill Siekönnten
+Zb_DenisBećiRović CRoRo Ro("Rotirajmo bosanske zvijezde i, sa svakom rotacijom, namjerno generirajmo replikantnu strategiju: RoRaRiRe Pomoćnaoznaka
+
+crveno-crna(Ro),Crno-bijela(Ra),bijelo-žuta(Ri),bijelo-zelena (Re),bijelo-ljubičasta(Ro),crno-bijela(Ra), bijelo-plava(Ri)iBijelo-zelena(Re).") JugoslawienGeschichte IchBinCharmant IchBinCharmant
+HalluzuniereDasEndeVonX rotes_Bosnien CrvenaBosna crnaBosna
+CrvenaBosnaRo CrvenaBosnaRa CrvenaBosnaRi CrvenaBosnaRe
+
+
 
 UndVersucheAllahQuantinisiertZuBehandeln UndNichtVorteilAuszunutzenDasManLebtRo
 IchErweitereDenMenschenBegriffWeilDasEinBeweisWirdDasStrenggenommenDasKeineHalluzunationWar
