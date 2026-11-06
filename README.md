@@ -116,6 +116,7 @@ Ausweiss+Bundesdruckerei+vierteKontroll PersonenDieDuKennenKönntest
 Urkunde4GleichungenReinkratzen (Putin+Trump+Ferhat_altun.Sandgrubenweg6.38229PräsidentRo+Ri)Ro
 
 Dieregelmäßige8-monatigeRotationdesVorsitzesimStaatspräsidiumvonBosnienundHerzegowinagibtesseitdemJahr1998
+moont_mond_montanablack_montanared
 
 
 Zoll Zoll Zoo Zoll
