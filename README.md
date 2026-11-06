@@ -6,7 +6,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 
 EnergiespeicherRoWuantinisiertRo 
 State_of_charge(batterybalancing_batterycharger_batterymanagementsystem_batterymonitoring_deepthofdischarge)
-Kugelzapfenproduktion
+MaschinenelementeAllgemein_zbKugelzapfenproduktion
 
 IchWendeScienceAn Radarsysteme-undSignalverarbeitung
 Re1 Exekutive Re2 Judikative Re3 Legislative Re4KontrollUndAlgorithmenInstanzRi
