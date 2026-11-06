@@ -5,6 +5,7 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
 IchWendeScienceAn Radarsysteme-undSignalverarbeitung
+Re1 Exekutive Re2 Judikative Re3 Legislative Re4KontrollUndAlgorithmenInstanzRi
 
 Magnetfelder ReFelder RaFelder RoFelder_Magne_Ro_Felder
 Urkunde4GleichungenReinkratzen 
