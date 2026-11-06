@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ri_Paragraphenlogo</title>
+<style>body{margin:0;background:#0e0e12;color:#ddd;font-family:Georgia,serif}svg{width:100%;max-width:480px;display:block;margin:auto}</style>
+</head><body>
+<svg viewBox="0 0 380 400"><g id="g0"></g><g id="g1"></g><g id="g2"></g><g id="g3"></g>
+<g fill="#ddd" font-size="16" text-anchor="middle">
+<text x="95" y="188">Ro</text><text x="285" y="188">Ra</text>
+<text x="95" y="384">Ri</text><text x="285" y="384">Re</text></g></svg>
+<script>
+var NS='http://www.w3.org/2000/svg',cols=['#1a1a1a','#DD0000','#FFCE00'];
+var cx=[95,285,95,285],cy=[100,100,296,296],L=[];
+for(var q=0;q<4;q++){var a=[];for(var i=0;i<3;i++){
+ var t=document.createElementNS(NS,'text');
+ t.setAttribute('x',cx[q]);t.setAttribute('y',cy[q]+50);
+ t.setAttribute('text-anchor','middle');t.setAttribute('fill',cols[i]);
+ t.setAttribute('style','font-size:130px;font-weight:700');
+ t.textContent='§';document.getElementById('g'+q).appendChild(t);a.push(t);}
+ L.push(a);}
+var t0=0,last=performance.now(),a=[0,0,0,0];
+function Y(e,x,ang){e.setAttribute('transform','translate('+x+' 0) scale('+Math.cos(ang)+' 1) translate('+(-x)+' 0)');}
+function Z(e,x,y,ang){e.setAttribute('transform','rotate('+ang+' '+x+' '+y+')');}
+function f(now){var dt=Math.min((now-last)/1000,.05);last=now;t0+=dt;
+ a[0]+=1.6*dt;a[1]-=1.6*dt;
+ a[2]+=2*Math.tanh(3*Math.sin(2*Math.PI*t0/10))*dt;a[3]+=60*dt;
+ for(var i=0;i<3;i++){var lag=(2-i)*.12;
+  Y(L[0][i],cx[0],a[0]-lag);Y(L[1][i],cx[1],a[1]+lag);
+  Y(L[2][i],cx[2],a[2]-lag);Z(L[3][i],cx[3],cy[3],a[3]-(2-i)*8);}
+ requestAnimationFrame(f);}
+requestAnimationFrame(f);
+</script></body></html>
