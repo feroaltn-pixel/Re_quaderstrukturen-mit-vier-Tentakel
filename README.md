@@ -3876,6 +3876,9 @@ BehördenArbeitAufRedundanzReduzieren_zbStempelnRo Delegitimierung
 HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieNaturwissenschaftler_ReRi_etc_nennen
 Dunkle_Materie_bzw_Energie
 
+Medizin Cortisol Urin Stuhlgang Haut
+Urindrang Niere
+
 Elektrotechnik 
 
 AnalogeDigitaleSchaltungenSindDasNichtRo GrundlagenOperationsverstärkerAddiererSubtrahieretcRo
