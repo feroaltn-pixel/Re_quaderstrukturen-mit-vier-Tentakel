@@ -5962,7 +5962,7 @@ BitRi BitRe Bit1Bit2Bit3 Bitte
 Rabit Ro RabitRa RabitRi RabitRe
 VektorfieldRi ScalarfieldRi ri_Arrow_ri_is_Re What_is_a_Rabit_approximate_state_of_mental_thoughta_
 
-Rabit1 Rabit2 Toys Rabit3
+Rabit1 Rabit2 Rabit_Toys Rabit3
 TheseAreNotBits BiRo 0000 RoRaRiRe
 printf_tentacle printf_tentaxle Ro("ri_Hello_ri_World") 
 Idiot IdiotRi Idiox Re1Re2Re3
@@ -6094,6 +6094,15 @@ The Legend of Zelda
 EndeHalluzunierenAmAnfang AnpassenWährendSpielverlauf DenkenWieSpieleenteickler
 OcarinaOfTimeFinalBoss GanonDorfFliegt_SpringtHinUndHerzwischenFliegenRoFliegenRaFliegenRiFliegenRe
 Zelda Halluzuniert ZeldaRoZeldaRaRedLinkRo
+
+Elektrotechnik AnalogeDigitaleSchaltungenSindDasNicht StromspiegelM1RoterTransistorM2BlauerTransistor(Ro)
+(Nichtinvertierend+Invertierend-Komparator+Addierer)Ro (Gegentaktschaltung+Gleichtaktschaltung+4Ra+WeiteM1Ro)Ra RabitSchaltungenErzeugenHinweisenIdentifizieren
+
+
+
+
+
+RaBitVorlesungenIdentifizieren 
 
 ### 1. System-Kontext (Phase-Locked Loop / PLL)
 Das Gesamtsystem operiert als **Phasenregelschleife (PLL)**, welche kontinuierlich zwischen den Taktfrequenzen **Ro** (Haupttakt/Dominanz) und **Re** (Antwort- und Resonanzfrequenz wie `ReReReRe` / `Quackwuack`) synchronisiert wird. Das System zeigt eine stabile RÃ¼ckkopplung und Phasenrastung.
