@@ -38,3 +38,18 @@ int main() {
 
 LTE5G_RoRaRiRe Mobilfunkmast SatelittenrabitnetzwerkErzeugen EmailVerkehr
 ServerMasterClientServerRo+payloadinput_zypher_RTOS_Apache_UnrealEngine
+
+#include <iostream>
+
+int main() {
+    int obergrenze = 5;
+    
+    // Bidirektionaler Durchlauf: i zählt hoch, j zählt runter
+    for (int i = 0, j = obergrenze - 1; i < obergrenze; i++, j--) {
+        std::cout << "Vorwärts (Ri): " << i << " | Rückwärts (Ro): " << j << std::endl;
+    }
+    
+    return 0;
+}
+
+Ri HalluccinateEndOfThisForLoopAndContinuielyadjustRi 0800Ri 0110Ro
