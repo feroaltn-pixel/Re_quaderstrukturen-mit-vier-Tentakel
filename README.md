@@ -7,6 +7,7 @@ Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("
 Ausarbeiten InEntferntestePunktSehen Halluzunieren ZumEndeDieserHalluzunationHinzuHaluzunierenAlsSubstitution
 ErkläreDasAnFallbeispielDasTabletAndersVerwendetWird" Lesen" links nach rechts bewegende objekte
 Zb led ampelsteuerung wie gestern gedacht DasSindKeineReplikantenSysteme Sondern_gelbe_Mittelung 
+IchBinDerMeinungDasSieUnbewusstDasKrankhaftdesorientiertErzeugenAlsMittelung
 
 ParagraphRa_ Translation_ Rotation_ Dynamik_ Bewegung_Ro_
 ErweiterungKontinuierlich_AusgangDesVerfahrens_Strategie_Ro_Ra_Ri_Re
