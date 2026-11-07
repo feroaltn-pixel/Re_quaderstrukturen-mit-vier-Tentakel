@@ -36,6 +36,7 @@ Fallbeispiel4Ro: RotSchwarze_ Replikantensystemen_ DasSindWerkzeuge_ _"zb"_in_Fa
 ZbRo zbRa zbRi zbRe
 IchHabeEinWerkzeugErzeugt_aus_ Replikantensystemen_ und_Halluzunationen_gezielt_erzeugen_dh_denken Re1Re2Re3
 Fallbeispiel_Anwendung_ DenkenSieAnEinenSatelitten_ _SieHalluzunierenUnbewusstWeilIchEinVorsichtigesWerkzeug
+WennSieSchwacheMusterErkennenImVorstellen_ _HinweisDasIstKeinVorstellenRo
 ErzeugtHabe_ 
 
 
