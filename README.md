@@ -3870,6 +3870,16 @@ BehördenArbeitAufRedundanzReduzieren_zbStempelnRo Delegitimierung
 HierRo sammel_IchRi BeweiseRa DesorientiertesDenkenSprechenRi_BegriffeDieNaturwissenschaftler_ReRi_etc_nennen
 Dunkle_Materie_bzw_Energie
 
+Elektrotechnik 
+
+Geschichte
+
+Informatik
+
+HalluzunationsStudiengänge_eg_DataScience
+
+Maschinenbau
+
 
 Youtube Kommentare Replikantensysteme Re1Re2Re3 
 Youtube Youtube Youtubei Youtube
