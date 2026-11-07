@@ -4,7 +4,7 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
-DasIstEinWerkZeug DasIstKeinWerkZeug
+DasIstEinWerkZeug DasIstKeinWerkZeug DupilumabSpritze RispiridonSpritze
 
 
 Ausarbeiten InEntferntestePunktSehen Halluzunieren ZumEndeDieserHalluzunationHinzuHaluzunierenAlsSubstitution
