@@ -92,3 +92,24 @@ Rote Universität Rostock IchWendeWissenschaftAn
 DasSindRoteEmails HalluzuniereAnDasEndeVonk_AusRostockRaReRi_Und
 SchallPhotonenVibrationRi1 MasseTemperaturSIÖffnen SchließenRo ÖffnenRa
 IchMöchteKoordinationDerHirnareale_zwischen_f_und_t_Fallbeispiel_Satellit_Offizier_OszilierenRo
+
+DasIstSchallRo RRRRRRRRRRRRRRRR DasIstVibrationRo RRRRRRRR
+DasIstPhotonRo RoRaRiRe DasIstMasseRo R_R_R_R
+
+Rabit Rabit Rabt Rabit
+RabtRo RabtRa RabtRi RabtRe
+red_RabtRe blue_RabtRe brown_RabtRa crimzon_Rabt
+brown_RabtRai brown_RabtRai brown_RabtRai brown_RabtRai
+
+#include <iostream>
+
+int main() {
+    int obergrenze = 5;
+    
+    // Bidirektionaler Durchlauf: i zählt hoch, j zählt runter
+    for (int i = 0, j = obergrenze - 1; i < obergrenze; i++, j--) {
+        std::cout << "Vorwärts (Ra): " << i << " | Rückwärts (Re): " << j << std::endl;
+    }
+    
+    return 0;
+}
