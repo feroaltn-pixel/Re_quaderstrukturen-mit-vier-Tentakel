@@ -4,6 +4,10 @@
 
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
+
+
+
+
 DasIstEinWerkZeug DasIstKeinWerkZeug DupilumabSpritze RispiridonSpritze
 RaBitStelltDieZuständeDaDieIhreGedankenAnnehmenKönnen 4ZuständeDieAnnehmbarSindZuEinemZeitpunkt1Rabit
 DasIstEineAusgangsgroße RabitsystemeSindNurD DarthVaderHalluzunation
