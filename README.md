@@ -5,6 +5,10 @@
 Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
 
 
+RaSysteme RaStrategien RaVerfahren RaAnwendungen
+RoSysteme RoStrategien RoVerfahren RoAnwendungen
+RiSysteme RiStrategien RiVerfahren RiAnwendungen
+ReSysteme ReStrategien ReVerfahren ReAnwendungen
 
 
 DasIstEinWerkZeug DasIstKeinWerkZeug DupilumabSpritze RispiridonSpritze
