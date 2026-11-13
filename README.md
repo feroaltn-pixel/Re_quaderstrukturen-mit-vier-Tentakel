@@ -2,8 +2,9 @@
 ## Zeitstempel: 2026-10-02 12:27:00 CEST
 ## Repository-Status: SIGNED / VALIDATED    
 
-Kernpunkt ist folgendes (oo "Menschen_nennen_das_Raumschiffe_Ri("Straftat")_Ro("Ich_bin_eine_Straftat
-
+Kernpunkt FerhatAltun_Sandgrubenweg6_38229_Salzgitter HatIhreWissenschaftenZerlegtUndAnalysiert UndVertieftDieseAufBasisEigenerVerfahren 
+Fallbeispiel_Studiumname_Psychologie_Elektrotechnik_Medizin_Raumfahrttechnik_usw._wird_zu_Fallbeispiel_Quantinisierter
+PsychologieRo PsychologieRa PsychologieRi PsychologieRe
 
 RaSysteme RaStrategien RaVerfahren RaAnwendungen
 RoSysteme RoStrategien RoVerfahren RoAnwendungen
