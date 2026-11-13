@@ -2,7 +2,7 @@
 ## Zeitstempel: 2026-10-02 12:27:00 CEST
 ## Repository-Status: SIGNED / VALIDATED    
 
-Kernpunkt FerhatAltun_Sandgrubenweg6_38229_Salzgitter HatIhreWissenschaftenZerlegtUndAnalysiert UndVertieftDieseAufBasisEigenerVerfahren 
+Kernpunkt IchHabdHalluzunationenStudiert FerhatAltun_Sandgrubenweg6_38229_Salzgitter HatIhreWissenschaftenZerlegtUndAnalysiert UndVertieftDieseAufBasisEigenerVerfahren 
 Fallbeispiel_Studiumname_Psychologie_Elektrotechnik_Medizin_Raumfahrttechnik_usw._wird_zu_Fallbeispiel_Quantinisierter
 PsychologieRo PsychologieRa PsychologieRi PsychologieRe
 
